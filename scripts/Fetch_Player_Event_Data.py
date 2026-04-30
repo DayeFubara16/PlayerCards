@@ -37,6 +37,7 @@ import argparse
 import csv
 import json
 import time
+import re
 from collections import OrderedDict, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -440,6 +441,12 @@ def summarize_shots(shots: list[dict[str, Any]]) -> dict[str, Any]:
         "by_shot_type": _count_by(shots, "shot_type"),
     }
 
+def clean_filename(text: str | None, fallback: str = "Player") -> str:
+    text = str(text or fallback).strip()
+    text = re.sub(r"[^\w\s.-]", "", text)
+    text = re.sub(r"\s+", "_", text)
+    return text or fallback
+
 
 def build_output(
     player_id: int,
@@ -563,9 +570,27 @@ def main() -> None:
         include_heatmap=not args.no_heatmap,
     )
 
-    out_path = args.out or f"{output['profile'].get('name') or '?'}_{player_id}_{season.replace('/', '-')}.json"
+    player_name = output["profile"].get("name") or f"player_{player_id}"
+    base = f"{clean_filename(player_name)}_{player_id}_{season.replace('/', '-')}"
 
-    Path(out_path).write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
+    if args.out:
+        out_path = Path(args.out)
+
+        # If --out is a directory or has no file suffix, write inside it.
+        if out_path.exists() and out_path.is_dir():
+            out_path = out_path / f"{base}.json"
+        elif out_path.suffix.lower() != ".json":
+            out_path.mkdir(parents=True, exist_ok=True)
+            out_path = out_path / f"{base}.json"
+    else:
+        out_path = Path(f"{base}.json")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    out_path.write_text(
+        json.dumps(output, indent=2, ensure_ascii=False),
+        encoding="utf-8"
+    )
 
     print(f"\n{'─' * 50}")
     print(f"  Player:      {output['profile'].get('name') or '?'}")

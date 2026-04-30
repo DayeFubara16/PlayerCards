@@ -1,0 +1,131 @@
+{
+  "player_id": 1121923,
+  "event_id": 14065212,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Antonio Nusa",
+      "firstName": "Antonio",
+      "lastName": "Nusa",
+      "slug": "antonio-nusa",
+      "shortName": "A. Nusa",
+      "position": "F",
+      "jerseyNumber": "7",
+      "height": 180,
+      "userCount": 12159,
+      "gender": "M",
+      "sofascoreId": "nusaantonio",
+      "id": 1121923,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1113696000,
+      "proposedMarketValueRaw": {
+        "value": 31000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نوسا، أنطونيو",
+          "bn": "নুসা, আন্তোনিও",
+          "hi": "नुसा, एंटोनियो"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. نوسا",
+          "bn": "এ. নুসা",
+          "hi": "ए. नुसा"
+        }
+      }
+    },
+    "team": {
+      "name": "RB Leipzig",
+      "slug": "rb-leipzig",
+      "shortName": "Leipzig",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 401894,
+      "nameCode": "RBL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 36360,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#dd0000",
+        "text": "#dd0000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "آر بي لايبزيغ",
+          "hi": "RB लैपज़िग",
+          "ru": "РБ Лейпциг"
+        },
+        "shortNameTranslation": {
+          "ar": "لايبزيغ",
+          "bn": "লিপজিগ",
+          "hi": "लीपज़िग"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 16,
+      "accuratePass": 10,
+      "totalLongBalls": 1,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 1,
+      "totalOwnHalfPasses": 1,
+      "accurateOppositionHalfPasses": 9,
+      "totalOppositionHalfPasses": 15,
+      "totalCross": 3,
+      "accurateCross": 1,
+      "aerialLost": 1,
+      "duelLost": 5,
+      "duelWon": 2,
+      "dispossessed": 1,
+      "totalContest": 3,
+      "ballRecovery": 3,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 4,
+      "wasFouled": 1,
+      "minutesPlayed": 66,
+      "touches": 36,
+      "rating": 6.6,
+      "possessionLostCtrl": 16,
+      "expectedAssists": 0.0522053,
+      "totalBallCarriesDistance": 107.56178799142,
+      "ballCarriesCount": 7,
+      "totalProgression": 73.064205718119,
+      "bestBallCarryProgression": 23.612092939935,
+      "totalProgressiveBallCarriesDistance": 91.039033195516,
+      "progressiveBallCarriesCount": 5,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 6.6,
+        "alternative": 6.6
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.07,
+      "dribbleValueNormalized": 0.26,
+      "defensiveValueNormalized": 0.14,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14065212/player/1121923/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T15:18:09.671753Z"
+  }
+}

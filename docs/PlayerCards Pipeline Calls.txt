@@ -52,7 +52,7 @@ Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=978838
+$PLAYER_ID=1121923
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
@@ -60,7 +60,7 @@ python scripts/Find_Similar_Players.py --input data/processed/player_season_tota
 
 # 7. Fetch player event/card data
 # IMPORTANT: output should live in cards/event_data, not project root.
-python scripts/Fetch_Player_Event_Data.py --player-id $PLAYER_ID --season $SEASON --delay 1.2 --out-dir cards/event_data
+python scripts/Fetch_Player_Event_Data.py --player-id $PLAYER_ID --season $SEASON --delay 1.2 --out cards/event_data
 
 # 7b. Optional action scraping
 # Player-specific only. Do not run this for the whole dataset.
