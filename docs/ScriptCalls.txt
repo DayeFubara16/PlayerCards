@@ -1,0 +1,157 @@
+PlayerCards Pipeline Calls
+==========================
+
+Recommended structure
+---------------------
+
+PlayerCards/
+├─ scripts/
+├─ data/
+│  ├─ raw/
+│  ├─ processed/
+│  ├─ context/
+│  └─ diagnostics/
+├─ cards/
+│  ├─ event_data/
+│  ├─ heatmaps/
+│  ├─ actions/
+│  ├─ similarities/
+│  └─ output/
+├─ cache/
+│  ├─ player_profile_cache.json
+│  ├─ action_cache/
+│  └─ .heatmap_cache/
+├─ docs/
+└─ versions/
+
+
+Global dataset build
+--------------------
+
+# 1. Scrape all leagues for matchweek
+python scripts/Player_Scraper.py --season 2025-26 --matchweek 35 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
+
+# 1b. Build positional context
+python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
+
+# 2. Add ages / DOBs
+# Uses previous enriched CSV/cache so it does not refetch everyone.
+python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv --output data/processed/player_match_logs_with_ages.csv --cache cache/player_profile_cache.json --seed-from data/processed/player_match_logs_with_ages.csv --delay 1.2
+
+# 3. Collapse to season totals
+python scripts/Player_Collapse.py --input data/processed/player_match_logs_with_ages.csv --output data/processed/player_season_totals.csv
+
+# 4. Arbitrate positions
+python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 450 --position-context data/context/position_context_by_event.json
+
+# 5. Classify roles
+python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 450
+
+
+Player-specific build
+---------------------
+
+# Edit these per card
+$PLAYER_ID=934235
+$SEASON="2025-26"
+
+# 6. Similar players, all leagues
+python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --player-id $PLAYER_ID --season $SEASON --top 25 --min-minutes 450 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
+
+# 7. Fetch player event/card data
+# IMPORTANT: output should live in cards/event_data, not project root.
+python scripts/Fetch_Player_Event_Data.py --player-id $PLAYER_ID --season $SEASON --delay 1.2 --out-dir cards/event_data
+
+# 7b. Optional action scraping
+# Player-specific only. Do not run this for the whole dataset.
+python scripts/Player_Action_Scraper.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv --out-dir cards/actions --cache-dir cache/action_cache --delay 1.2 --format both
+
+# 8. Build visual-only heatmap
+# IMPORTANT: output should live in cards/heatmaps, not project root.
+python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv --out-dir cards/heatmaps --delay 1.2 --format both
+
+# 9. Build final player card
+# Pass explicit paths so the builder does not accidentally auto-load old root files.
+python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json
+
+
+Housekeeping rules
+------------------
+
+Root folder should contain scripts/folders only, not generated player files.
+
+Move existing files as follows:
+
+*_PLAYERID_2025-26.json that are event-data files
+→ cards/event_data/
+
+*_heatmap_position.json
+→ cards/heatmaps/
+
+*_heatmap_position_cells.csv
+→ cards/heatmaps/
+
+*_actions_raw.json
+*_actions_summary.json
+*_actions_flat.csv
+→ cards/actions/
+
+similar_*.json
+similar_*.csv
+→ cards/similarities/
+
+player_card_*.json
+→ cards/output/
+
+player_profile_cache.json
+→ cache/
+
+.heatmap_cache/
+→ cache/.heatmap_cache/
+
+
+Suggested cleanup commands
+--------------------------
+
+# Create folders
+mkdir cards\event_data -Force
+mkdir cards\heatmaps -Force
+mkdir cards\actions -Force
+mkdir cards\similarities -Force
+mkdir cards\output -Force
+mkdir cache -Force
+
+# Move generated event data
+Move-Item "*_2025-26.json" cards\event_data -ErrorAction SilentlyContinue
+
+# Move heatmaps back out of event_data if caught by the broad rule above
+Move-Item "cards\event_data\*_heatmap_position.json" cards\heatmaps -ErrorAction SilentlyContinue
+Move-Item "*_heatmap_position.json" cards\heatmaps -ErrorAction SilentlyContinue
+Move-Item "*_heatmap_position_cells.csv" cards\heatmaps -ErrorAction SilentlyContinue
+
+# Move similarities
+Move-Item "similar_*.json" cards\similarities -ErrorAction SilentlyContinue
+Move-Item "similar_*.csv" cards\similarities -ErrorAction SilentlyContinue
+
+# Move final cards
+Move-Item "player_card_*.json" cards\output -ErrorAction SilentlyContinue
+
+# Move caches
+Move-Item "player_profile_cache.json" cache -ErrorAction SilentlyContinue
+Move-Item ".heatmap_cache" cache -ErrorAction SilentlyContinue
+
+
+Important notes
+---------------
+
+1. Similarity should usually be all-league:
+   do not pass --league unless you intentionally want same-league comps.
+
+2. Heatmap is visual/action-density only:
+   position truth comes from Position_Arbitrator.py.
+
+3. Action scraper is optional and player-specific:
+   it belongs with event data and heatmaps, not the global dataset build.
+
+4. Player_Card_Builder should be given explicit paths or a clean --search-dir:
+   this avoids accidentally using old files from the root folder.
