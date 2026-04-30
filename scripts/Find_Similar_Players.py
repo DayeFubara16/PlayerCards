@@ -224,6 +224,77 @@ def subset_matrix(cols_all: list[str], matrix: np.ndarray, wanted: list[str]) ->
 
 
 
+ROLE_RESULTS_COLUMNS = [
+    "role_source_column", "role_source_value", "role_model_family",
+    "arbitrated_position", "arbitrated_role_group", "arbitrated_lane",
+    "arbitrated_confidence", "position_conflict_flag",
+    "season_avg_x", "season_avg_y", "season_position_zone",
+    "spatial_matches_used", "spatial_wide_pct", "spatial_right_pct",
+    "spatial_left_pct", "spatial_high_wide_pct",
+    "primary_role", "secondary_role", "role_score", "role_bvalue",
+    "confidence", "cohort_size", "warning",
+    "measured_metrics_available", "measured_metrics_possible",
+    "partial_proxies_available", "partial_proxies_possible",
+    "measured_inputs", "partial_proxies", "unmeasured_traits",
+]
+
+
+def enrich_with_player_roles(
+    df: pd.DataFrame,
+    roles_path: str | Path | None,
+    prefer_role_file: bool = True,
+) -> pd.DataFrame:
+    """
+    Merge role-model results from data/processed/player_roles.csv into the main
+    season-total table before similarity is calculated.
+
+    The merge uses the strongest available shared keys in this order:
+    player_id + season + league + team, falling back only when a column is missing.
+    Existing stat columns are left alone; only role/spatial/explanation columns from
+    player_roles.csv are added or refreshed.
+    """
+    if not roles_path:
+        return df
+
+    roles_path = Path(roles_path)
+    if not roles_path.exists():
+        raise FileNotFoundError(f"Role results file not found: {roles_path}")
+
+    roles = pd.read_csv(roles_path)
+    if "player_id" not in roles.columns or "player_id" not in df.columns:
+        raise ValueError("Both input and role results must contain player_id.")
+
+    merge_keys = [c for c in ["player_id", "season", "league", "team"] if c in df.columns and c in roles.columns]
+    if "player_id" not in merge_keys:
+        merge_keys = ["player_id"]
+
+    keep_cols = merge_keys + [c for c in ROLE_RESULTS_COLUMNS if c in roles.columns and c not in merge_keys]
+    roles = roles[keep_cols].copy()
+
+    # Avoid many-to-many expansion if the role file has duplicate keys.
+    sort_cols = [c for c in ["minutes_played", "role_score", "confidence"] if c in roles.columns]
+    if sort_cols:
+        roles = roles.sort_values(sort_cols, ascending=False)
+    roles = roles.drop_duplicates(subset=merge_keys, keep="first")
+
+    merged = df.merge(roles, how="left", on=merge_keys, suffixes=("", "__rolefile"))
+
+    for col in ROLE_RESULTS_COLUMNS:
+        role_col = f"{col}__rolefile"
+        if role_col not in merged.columns:
+            continue
+        if col in merged.columns:
+            if prefer_role_file:
+                merged[col] = merged[role_col].combine_first(merged[col])
+            else:
+                merged[col] = merged[col].combine_first(merged[role_col])
+            merged = merged.drop(columns=[role_col])
+        else:
+            merged = merged.rename(columns={role_col: col})
+
+    return merged
+
+
 def normalize_family(value: Any) -> str | None:
     if pd.isna(value):
         return None
@@ -622,7 +693,9 @@ def rescale_similarity(raw: pd.Series) -> pd.Series:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="Find similar players with broad stats, z-scores, percentiles, and spatial context.")
-    ap.add_argument("--input", default="player_season_totals_arbitrated.csv")
+    ap.add_argument("--input", default="data/processed/player_season_totals_arbitrated.csv")
+    ap.add_argument("--roles-input", default="data/processed/player_roles.csv", help="Path to role-model results CSV to merge before similarity scoring.")
+    ap.add_argument("--prefer-input-roles", action="store_true", help="Keep role columns from --input when both files contain the same role fields.")
     ap.add_argument("--player-id", type=int, required=True)
     ap.add_argument("--season", default=None)
     ap.add_argument("--league", default=None)
@@ -644,6 +717,7 @@ def main() -> None:
     args = ap.parse_args()
 
     df = pd.read_csv(args.input)
+    df = enrich_with_player_roles(df, args.roles_input, prefer_role_file=not args.prefer_input_roles)
 
     if args.season and "season" in df.columns:
         df = df.loc[df["season"].astype(str) == str(args.season)].copy()
