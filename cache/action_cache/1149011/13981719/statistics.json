@@ -1,0 +1,130 @@
+{
+  "player_id": 1149011,
+  "event_id": 13981719,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Kenan Yıldız",
+      "firstName": "Kenan Yıldız",
+      "slug": "yildiz-kenan",
+      "shortName": "K. Yıldız",
+      "position": "F",
+      "jerseyNumber": "10",
+      "height": 187,
+      "userCount": 95500,
+      "gender": "M",
+      "sofascoreId": "KenanYıldız",
+      "id": 1149011,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1115164800,
+      "proposedMarketValueRaw": {
+        "value": 72000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كنان يلدز",
+          "bn": "ইলদিজ, কেনান",
+          "hi": "यिल्डिज़, केनान"
+        },
+        "shortNameTranslation": {
+          "ar": "ك. يلدز",
+          "bn": "কে. ইলদিজ",
+          "hi": "के. यिल्डिज़"
+        }
+      }
+    },
+    "team": {
+      "name": "Juventus",
+      "slug": "juventus",
+      "shortName": "Juventus",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1603419,
+      "nameCode": "JUV",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2687,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "يوفنتوس",
+          "bn": "জুভেন্টাস",
+          "hi": "जुवेंटस",
+          "ru": "Ювентус"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 31,
+      "accuratePass": 20,
+      "totalLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 4,
+      "totalOwnHalfPasses": 5,
+      "accurateOppositionHalfPasses": 16,
+      "totalOppositionHalfPasses": 26,
+      "totalCross": 7,
+      "accurateCross": 1,
+      "duelLost": 3,
+      "duelWon": 2,
+      "challengeLost": 1,
+      "totalContest": 2,
+      "bigChanceCreated": 1,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 2,
+      "goals": 1,
+      "ballRecovery": 3,
+      "unsuccessfulTouch": 5,
+      "wasFouled": 2,
+      "minutesPlayed": 90,
+      "touches": 55,
+      "rating": 7.7,
+      "possessionLostCtrl": 24,
+      "expectedGoals": 0.1965,
+      "expectedGoalsOnTarget": 0.3519,
+      "expectedAssists": 0.219708,
+      "totalBallCarriesDistance": 180.19086782852,
+      "ballCarriesCount": 21,
+      "totalProgression": 102.58512250439,
+      "bestBallCarryProgression": 14.621398678862,
+      "totalProgressiveBallCarriesDistance": 52.935803003917,
+      "progressiveBallCarriesCount": 4,
+      "keyPass": 2,
+      "ratingVersions": {
+        "original": 7.7,
+        "alternative": 8
+      },
+      "totalShots": 3,
+      "shotValueNormalized": 0.5,
+      "passValueNormalized": 0.3,
+      "dribbleValueNormalized": 0.34,
+      "defensiveValueNormalized": -0.1,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13981719/player/1149011/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T23:18:37.978156Z"
+  }
+}

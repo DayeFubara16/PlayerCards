@@ -1,0 +1,131 @@
+{
+  "player_id": 1134351,
+  "event_id": 13981737,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Ismael Koné",
+      "firstName": "Ismael Koné",
+      "slug": "ismael-kone",
+      "shortName": "I. Koné",
+      "position": "M",
+      "jerseyNumber": "90",
+      "height": 188,
+      "userCount": 3040,
+      "gender": "M",
+      "id": 1134351,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1023321600,
+      "proposedMarketValueRaw": {
+        "value": 21000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إسماعيل كوني",
+          "bn": "ইসমাইল কোনে",
+          "hi": "इस्माइल कोने"
+        },
+        "shortNameTranslation": {
+          "ar": "إ. كوني",
+          "bn": "আই. কোনে",
+          "hi": "आई. कोने"
+        }
+      }
+    },
+    "team": {
+      "name": "Sassuolo",
+      "slug": "sassuolo",
+      "shortName": "Sassuolo",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 115742,
+      "nameCode": "SAS",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2793,
+      "teamColors": {
+        "primary": "#006600",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ساسولو",
+          "bn": "সাসুওলো",
+          "hi": "ससुओलो",
+          "ru": "Сассуоло"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 41,
+      "accuratePass": 40,
+      "totalLongBalls": 4,
+      "accurateLongBalls": 3,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 23,
+      "totalOwnHalfPasses": 23,
+      "accurateOppositionHalfPasses": 17,
+      "totalOppositionHalfPasses": 18,
+      "aerialLost": 1,
+      "duelLost": 3,
+      "duelWon": 6,
+      "dispossessed": 1,
+      "totalContest": 1,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 1,
+      "goals": 1,
+      "interceptionWon": 1,
+      "ballRecovery": 4,
+      "totalTackle": 2,
+      "wonTackle": 2,
+      "errorLeadToAShot": 1,
+      "wasFouled": 4,
+      "minutesPlayed": 87,
+      "touches": 55,
+      "rating": 7.4,
+      "possessionLostCtrl": 3,
+      "expectedGoals": 0.7374,
+      "expectedGoalsOnTarget": 0.9137,
+      "expectedAssists": 0.0131788,
+      "totalBallCarriesDistance": 294.35090225055,
+      "ballCarriesCount": 26,
+      "totalProgression": 152.93621682842,
+      "bestBallCarryProgression": 24.461341885158,
+      "totalProgressiveBallCarriesDistance": 50.826213801145,
+      "progressiveBallCarriesCount": 2,
+      "keyPass": 2,
+      "ratingVersions": {
+        "original": 7.4,
+        "alternative": 7.5
+      },
+      "totalShots": 2,
+      "shotValueNormalized": 0.31,
+      "passValueNormalized": 0.14,
+      "dribbleValueNormalized": 0.25,
+      "defensiveValueNormalized": -0.13,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13981737/player/1134351/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T18:40:57.311002Z"
+  }
+}

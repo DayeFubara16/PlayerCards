@@ -1,0 +1,192 @@
+{
+  "player_id": 886363,
+  "event_id": 14025227,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 60.1,
+          "y": 85.5
+        },
+        "passEndCoordinates": {
+          "x": 60.7,
+          "y": 77.1
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 52.8,
+          "y": 70.3
+        },
+        "passEndCoordinates": {
+          "x": 46.8,
+          "y": 58.9
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 60.5,
+          "y": 70
+        },
+        "passEndCoordinates": {
+          "x": 57.7,
+          "y": 47.8
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 62.6,
+          "y": 79.8
+        },
+        "passEndCoordinates": {
+          "x": 71.6,
+          "y": 78.7
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 56,
+          "y": 89.2
+        },
+        "passEndCoordinates": {
+          "x": 47.4,
+          "y": 77.2
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 41.8,
+          "y": 81.3
+        },
+        "passEndCoordinates": {
+          "x": 44.6,
+          "y": 76.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [
+      {
+        "playerCoordinates": {
+          "x": 55.8,
+          "y": 95.8
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 63,
+          "y": 40.6
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 57.2,
+          "y": 96.2
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 90.4,
+          "y": 69.2
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 75.6,
+          "y": 82.1
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 40.1,
+          "y": 86.1
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 43,
+          "y": 79.9
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 74.2,
+          "y": 87.6
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 31.8,
+          "y": 77.2
+        },
+        "eventActionType": "interception",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025227/player/886363/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T23:23:06.886933Z"
+  }
+}

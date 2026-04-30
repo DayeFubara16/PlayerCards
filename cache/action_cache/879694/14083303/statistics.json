@@ -1,0 +1,125 @@
+{
+  "player_id": 879694,
+  "event_id": 14083303,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Pape Gueye",
+      "slug": "pape-gueye",
+      "shortName": "P. Gueye",
+      "position": "M",
+      "jerseyNumber": "18",
+      "height": 187,
+      "userCount": 36251,
+      "gender": "M",
+      "sofascoreId": "p.gueye24",
+      "id": 879694,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 917136000,
+      "proposedMarketValueRaw": {
+        "value": 19400000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باب غاي",
+          "bn": "পেপে গুয়ে",
+          "hi": "पपे गुये"
+        },
+        "shortNameTranslation": {
+          "ar": "ب. غاي",
+          "bn": "পি.গুয়ে",
+          "hi": "पी. गुये"
+        }
+      }
+    },
+    "team": {
+      "name": "Villarreal",
+      "slug": "villarreal",
+      "shortName": "Villarreal",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 452905,
+      "nameCode": "VIL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2819,
+      "teamColors": {
+        "primary": "#ffff00",
+        "secondary": "#013765",
+        "text": "#013765"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "فياريال",
+          "bn": "ভিলারিয়াল",
+          "hi": "विल्लारियल",
+          "ru": "Вильярреал"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 28,
+      "accuratePass": 22,
+      "totalLongBalls": 4,
+      "accurateLongBalls": 2,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 18,
+      "totalOwnHalfPasses": 18,
+      "accurateOppositionHalfPasses": 4,
+      "totalOppositionHalfPasses": 10,
+      "aerialWon": 1,
+      "duelLost": 7,
+      "duelWon": 6,
+      "challengeLost": 1,
+      "dispossessed": 2,
+      "totalContest": 1,
+      "wonContest": 1,
+      "totalClearance": 2,
+      "interceptionWon": 2,
+      "ballRecovery": 3,
+      "totalTackle": 1,
+      "unsuccessfulTouch": 2,
+      "wasFouled": 3,
+      "fouls": 4,
+      "minutesPlayed": 90,
+      "touches": 45,
+      "rating": 6.4,
+      "possessionLostCtrl": 10,
+      "expectedAssists": 0.00508809,
+      "totalBallCarriesDistance": 62.460594093853,
+      "ballCarriesCount": 10,
+      "totalProgression": 8.190703658876,
+      "progressiveBallCarriesCount": 0,
+      "ratingVersions": {
+        "original": 6.4,
+        "alternative": 6.6
+      },
+      "totalShots": 0,
+      "passValueNormalized": -0.08,
+      "dribbleValueNormalized": 0.04,
+      "defensiveValueNormalized": -0.08,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14083303/player/879694/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T18:06:02.393519Z"
+  }
+}

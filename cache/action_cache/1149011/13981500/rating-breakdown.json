@@ -1,0 +1,190 @@
+{
+  "player_id": 1149011,
+  "event_id": 13981500,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 54.9,
+          "y": 51.7
+        },
+        "passEndCoordinates": {
+          "x": 41.2,
+          "y": 63.9
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 64.8,
+          "y": 93.1
+        },
+        "passEndCoordinates": {
+          "x": 56.9,
+          "y": 94.4
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 67.5,
+          "y": 82
+        },
+        "passEndCoordinates": {
+          "x": 54.6,
+          "y": 53
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 83.1,
+          "y": 76.7
+        },
+        "passEndCoordinates": {
+          "x": 85.3,
+          "y": 65.6
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 60.4,
+          "y": 67.9
+        },
+        "passEndCoordinates": {
+          "x": 53.4,
+          "y": 48.2
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 74,
+          "y": 48.6
+        },
+        "passEndCoordinates": {
+          "x": 68.7,
+          "y": 47.3
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 99.4,
+          "y": 99.3
+        },
+        "passEndCoordinates": {
+          "x": 92.9,
+          "y": 95.1
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 60.1,
+          "y": 72.2
+        },
+        "passEndCoordinates": {
+          "x": 54.4,
+          "y": 64.8
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 80,
+          "y": 82.9
+        },
+        "passEndCoordinates": {
+          "x": 92.2,
+          "y": 52.4
+        },
+        "eventActionType": "cross",
+        "isHome": false,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 63.3,
+          "y": 83.8
+        },
+        "passEndCoordinates": {
+          "x": 72.2,
+          "y": 92.8
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [
+      {
+        "playerCoordinates": {
+          "x": 70.7,
+          "y": 91.8
+        },
+        "eventActionType": "dribble",
+        "isHome": false,
+        "keypass": false
+      }
+    ],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 61.9,
+          "y": 66.1
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 17.9,
+          "y": 92.4
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13981500/player/1149011/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T23:17:42.544303Z"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "player_id": 1011375,
+  "event_id": 14083096,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Abdessamad Ezzalzouli",
+      "slug": "abdessamad-ezzalzouli",
+      "shortName": "A. Ezzalzouli",
+      "position": "M",
+      "jerseyNumber": "10",
+      "height": 177,
+      "userCount": 50836,
+      "gender": "M",
+      "sofascoreId": "ez_abde",
+      "id": 1011375,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1008547200,
+      "proposedMarketValueRaw": {
+        "value": 21000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "عبد الصمد الزلزولي",
+          "bn": "আবদেসামাদ ইজ্জালজৌলি",
+          "hi": "अब्देस्समद एज़लज़ौली"
+        },
+        "shortNameTranslation": {
+          "ar": "ع. الزلزولي",
+          "bn": "এ. ইজ্জালজৌলি",
+          "hi": "ए. एज़लज़ौली"
+        }
+      }
+    },
+    "team": {
+      "name": "Real Betis",
+      "slug": "real-betis",
+      "shortName": "Real Betis",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 589018,
+      "nameCode": "BET",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2816,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#006633",
+        "text": "#006633"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريال بيتيس",
+          "ru": "Реал Бетис"
+        },
+        "shortNameTranslation": {
+          "ar": "ريال بيتيس",
+          "bn": "বেটিস",
+          "hi": "बेटिस"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 24,
+      "accuratePass": 16,
+      "totalLongBalls": 1,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 3,
+      "totalOwnHalfPasses": 4,
+      "accurateOppositionHalfPasses": 13,
+      "totalOppositionHalfPasses": 20,
+      "totalCross": 4,
+      "aerialLost": 3,
+      "aerialWon": 2,
+      "duelLost": 14,
+      "duelWon": 7,
+      "challengeLost": 1,
+      "dispossessed": 2,
+      "totalContest": 8,
+      "wonContest": 2,
+      "shotOffTarget": 2,
+      "onTargetScoringAttempt": 2,
+      "blockedScoringAttempt": 1,
+      "goals": 1,
+      "interceptionWon": 1,
+      "ballRecovery": 5,
+      "unsuccessfulTouch": 3,
+      "wasFouled": 3,
+      "fouls": 2,
+      "minutesPlayed": 90,
+      "touches": 57,
+      "rating": 6.8,
+      "possessionLostCtrl": 24,
+      "expectedGoals": 0.288,
+      "expectedGoalsOnTarget": 0.2444,
+      "expectedAssists": 0.0147138,
+      "totalBallCarriesDistance": 187.67308010523,
+      "ballCarriesCount": 16,
+      "totalProgression": 149.415,
+      "bestBallCarryProgression": 33.285,
+      "totalProgressiveBallCarriesDistance": 108.73503967886,
+      "progressiveBallCarriesCount": 6,
+      "ratingVersions": {
+        "original": 6.8,
+        "alternative": 7.1
+      },
+      "totalShots": 5,
+      "shotValueNormalized": 0.46,
+      "passValueNormalized": -0.47,
+      "dribbleValueNormalized": 0.3,
+      "defensiveValueNormalized": -0.18,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14083096/player/1011375/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T18:28:53.700513Z"
+  }
+}

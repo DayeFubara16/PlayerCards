@@ -1,0 +1,134 @@
+{
+  "player_id": 886363,
+  "event_id": 14025056,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Matheus Cunha",
+      "firstName": "Matheus",
+      "lastName": "Cunha",
+      "slug": "matheus-cunha",
+      "shortName": "M. Cunha",
+      "position": "F",
+      "jerseyNumber": "10",
+      "height": 184,
+      "userCount": 74388,
+      "gender": "M",
+      "sofascoreId": "Cunha",
+      "id": 886363,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 927763200,
+      "proposedMarketValueRaw": {
+        "value": 73000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماثيوس كونيا",
+          "bn": "ম্যাথিউস কুনহা",
+          "hi": "मैथियस कुन्हा"
+        },
+        "shortNameTranslation": {
+          "ar": "م. كونيا",
+          "bn": "এম. কুনহা",
+          "hi": "एम. कुन्हा"
+        }
+      }
+    },
+    "team": {
+      "name": "Manchester United",
+      "slug": "manchester-united",
+      "shortName": "Man Utd",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 3517935,
+      "nameCode": "MUN",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 35,
+      "teamColors": {
+        "primary": "#ff0000",
+        "secondary": "#373737",
+        "text": "#373737"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مانتشستر يونايتد",
+          "hi": "मेनचेस्टर यूनाइटेड ऍफ़सी",
+          "ru": "Манчестер Юнайтед"
+        },
+        "shortNameTranslation": {
+          "ar": "مان يونايتد",
+          "bn": "ম্যান ইউনাইটেড",
+          "hi": "मैन यूनाइटेड"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 16,
+      "accuratePass": 14,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 1,
+      "totalOwnHalfPasses": 2,
+      "accurateOppositionHalfPasses": 13,
+      "totalOppositionHalfPasses": 14,
+      "aerialLost": 5,
+      "aerialWon": 1,
+      "duelLost": 12,
+      "duelWon": 8,
+      "challengeLost": 1,
+      "dispossessed": 4,
+      "totalContest": 6,
+      "wonContest": 4,
+      "onTargetScoringAttempt": 3,
+      "blockedScoringAttempt": 1,
+      "ballRecovery": 2,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "wasFouled": 3,
+      "minutesPlayed": 90,
+      "touches": 35,
+      "rating": 7,
+      "possessionLostCtrl": 9,
+      "expectedGoals": 0.4023,
+      "expectedGoalsOnTarget": 0.2097,
+      "expectedAssists": 0.0528298,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 7,
+        "alternative": 7.4
+      },
+      "totalShots": 4,
+      "shotValueNormalized": -0.14,
+      "passValueNormalized": 0.24,
+      "dribbleValueNormalized": 0.33,
+      "defensiveValueNormalized": -0.03,
+      "metersCoveredWalkingKm": 4.19,
+      "metersCoveredJoggingKm": 3.28,
+      "metersCoveredRunningKm": 1.07,
+      "metersCoveredHighSpeedRunningKm": 0.58,
+      "metersCoveredSprintingKm": 0.29,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025056/player/886363/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T23:22:55.265515Z"
+  }
+}
