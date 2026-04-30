@@ -1,0 +1,52 @@
+
+      <!-- SCOUTING SUMMARY -->
+      <div style="
+        background:#151515;padding:20px 22px;
+        border-radius:16px;margin-top:18px;
+      ">
+        <h3 style="margin:0 0 8px 0;font-size:16px;color:white;">Scouting Summary</h3>
+
+        <p style="margin:0 0 16px 0;font-size:13.5px;color:#aaa;line-height:1.6;">
+          ${player.summary?.one_liner ?? ""}
+        </p>
+
+        ${player.summary?.strengths?.length > 0 ? html`
+          <div style="
+            display:flex;gap:6px;flex-wrap:wrap;
+            align-items:center;margin-bottom:10px;
+          ">
+            <span style="
+              font-size:11px;color:#555;text-transform:uppercase;
+              letter-spacing:.07em;white-space:nowrap;margin-right:2px;
+            ">Strengths</span>
+            ${player.summary.strengths.map(l =>
+              tagChip(l, "#ec4899", "#1f1020", "#3d1f35")
+            )}
+          </div>
+        ` : ""}
+
+        ${player.summary?.watchpoints?.length > 0 ? html`
+          <div style="
+            display:flex;gap:6px;flex-wrap:wrap;
+            align-items:center;margin-bottom:10px;
+          ">
+            <span style="
+              font-size:11px;color:#555;text-transform:uppercase;
+              letter-spacing:.07em;white-space:nowrap;margin-right:2px;
+            ">Watchpoints</span>
+            ${player.summary.watchpoints.map(l =>
+              tagChip(l, "#f59e0b", "#1a1510", "#3a2a1a")
+            )}
+          </div>
+        ` : ""}
+
+        ${xaCallout}
+
+        <p style="
+          margin:${xaGap >= 1 ? "12px" : "0"} 0 0 0;
+          font-size:11px;color:#555;line-height:1.6;
+          border-top:1px solid #1f1f1f;padding-top:10px;
+        ">
+          ${player.summary?.model_caveat ?? ""}
+        </p>
+      </div>
