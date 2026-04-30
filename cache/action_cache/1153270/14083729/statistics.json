@@ -1,0 +1,120 @@
+{
+  "player_id": 1153270,
+  "event_id": 14083729,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Fermín López",
+      "firstName": "Fermín López",
+      "slug": "fermin-lopez",
+      "shortName": "F. López",
+      "position": "M",
+      "jerseyNumber": "16",
+      "height": 176,
+      "userCount": 192864,
+      "gender": "M",
+      "sofascoreId": "FermínLópez",
+      "id": 1153270,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1052611200,
+      "proposedMarketValueRaw": {
+        "value": 103000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "فرمين لوبيز",
+          "bn": "ফার্মিন লোপেজ",
+          "hi": "फ़र्मिन लोपेज़"
+        },
+        "shortNameTranslation": {
+          "ar": "ف. لوبيز",
+          "bn": "এফ. লোপেজ",
+          "hi": "एफ. लोपेज़"
+        }
+      }
+    },
+    "team": {
+      "name": "FC Barcelona",
+      "slug": "barcelona",
+      "shortName": "Barcelona",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 7126270,
+      "nameCode": "BAR",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2817,
+      "teamColors": {
+        "primary": "#154284",
+        "secondary": "#9d1009",
+        "text": "#9d1009"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "برشلونة",
+          "bn": "বার্সেলোনা",
+          "hi": "बार्सिलोना",
+          "ru": "Барселона"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 32,
+      "accuratePass": 26,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 8,
+      "totalOwnHalfPasses": 9,
+      "accurateOppositionHalfPasses": 18,
+      "totalOppositionHalfPasses": 23,
+      "aerialWon": 1,
+      "duelLost": 4,
+      "duelWon": 2,
+      "dispossessed": 3,
+      "totalContest": 1,
+      "onTargetScoringAttempt": 4,
+      "goals": 1,
+      "totalClearance": 1,
+      "ballRecovery": 2,
+      "unsuccessfulTouch": 1,
+      "wasFouled": 1,
+      "minutesPlayed": 90,
+      "touches": 47,
+      "rating": 7.2,
+      "possessionLostCtrl": 12,
+      "expectedGoals": 0.5929,
+      "expectedGoalsOnTarget": 0.4113,
+      "expectedAssists": 0.0253311,
+      "ratingVersions": {
+        "original": 7.2,
+        "alternative": 7.5
+      },
+      "totalShots": 4,
+      "shotValueNormalized": 0.44,
+      "passValueNormalized": -0.04,
+      "dribbleValueNormalized": 0.31,
+      "defensiveValueNormalized": -0.07,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14083729/player/1153270/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T16:27:37.565264Z"
+  }
+}

@@ -47,12 +47,11 @@ python scripts/Position_Arbitrator.py --input data/processed/player_season_total
 # 5. Classify roles
 python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 450
 
-
 Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=1121923
+$PLAYER_ID=1153270
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
