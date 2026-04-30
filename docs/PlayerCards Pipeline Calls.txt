@@ -29,7 +29,7 @@ Global dataset build
 --------------------
 
 # 1. Scrape all leagues for matchweek
-python scripts/Player_Scraper.py --season 2025-26 --matchweek 35 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
+python scripts/Player_Scraper.py --season 2025-26 --matchweek 1 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
 
 # 1b. Build positional context
 python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
@@ -52,7 +52,7 @@ Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=934235
+$PLAYER_ID=978838
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
@@ -64,7 +64,7 @@ python scripts/Fetch_Player_Event_Data.py --player-id $PLAYER_ID --season $SEASO
 
 # 7b. Optional action scraping
 # Player-specific only. Do not run this for the whole dataset.
-python scripts/Player_Action_Scraper.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv --out-dir cards/actions --cache-dir cache/action_cache --delay 1.2 --format both
+python scripts/Player_Action_Scraper.py --player-id $PLAYER_ID --season $SEASON --refresh-cache --schema-debug
 
 # 8. Build visual-only heatmap
 # IMPORTANT: output should live in cards/heatmaps, not project root.

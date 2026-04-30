@@ -1,25 +1,27 @@
-
 """
 Player_Card_Builder.py
 ──────────────────────
-Build one Observable-ready player-card JSON from the current scouting pipeline.
+Build one Observable-ready player-card JSON from the scouting pipeline.
 
-V2 updates for the new pipeline:
-- understands RB/LB/RWB/LWB/CB-FB labels from the arbitrator
-- carries season spatial distribution fields into the card
-- reads Find_Similar_Players_v4 JSON shape with {target, cohort_info, results}
-- uses normalized role-family cohorts for percentiles instead of exact raw label only
-- supports visual-only heatmap files from Build_Player_Season_Heatmap_v3_visual_only.py
+V3 / action-ready rewrite:
+- Preserves the existing card shape: profile, position, role, grades, season_stats,
+  per90, percentiles, similar_players, shotmap, heatmap, summary.
+- Adds an Observable-friendly actions block for passes, ball carries, dribbles,
+  defensive actions, and any other normalized action category.
+- Accepts either the new action scraper flat CSV or raw JSON.
+- Keeps raw action payloads out of the final card by default so the JSON stays UI-friendly.
+- Produces compact summaries, zone shares, and map-ready point arrays.
 
 Recommended run:
-  python Player_Card_Builder.py --player-id 994546 --season 2025-26 --league "Premier League"
-
-Expected inputs:
-  player_season_totals_arbitrated.csv
-  player_roles.csv
-  similar_994546.json OR *_994546_*similarities.json
-  Elliot Anderson_994546_2025-26.json OR 994546_2025-26.json
-  *_994546_*heatmap_position.json
+  python Player_Card_Builder.py \
+    --player-id 978838 \
+    --season 2025-26 \
+    --season-totals data/processed/player_season_totals_arbitrated.csv \
+    --roles data/processed/player_roles.csv \
+    --similarity cards/similarities/similar_978838_all_leagues.json \
+    --event-data "Michael Olise_978838_2025-26.json" \
+    --heatmap "Michael_Olise_978838_2025-26_heatmap_position.json" \
+    --actions "cards/actions/Michael_Olise_978838_2025-26_actions_flat.csv"
 
 Output:
   player_card_PlayerName_playerID_season.json
@@ -28,12 +30,14 @@ Output:
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import math
 import re
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 
 import numpy as np
 import pandas as pd
@@ -91,16 +95,12 @@ DISPLAY_STAT_ALIASES = {
     "dispossessed": ["dispossessed"],
 }
 
-# Dedicated GK metrics are only used for GK profiles. Shared outfielder stats
-# that also appear for keepers stay available to keep the card flexible.
 GK_ONLY_METRICS = {
     "gk_saves", "gk_saves_inside_box", "gk_xgot_faced", "gk_goals_prevented",
     "gk_goals_prevented_raw", "gk_save_value", "gk_high_claims", "gk_punches",
     "gk_sweeper_total", "gk_sweeper_accurate", "penalties_faced",
 }
 
-# Physical / metadata / provider-specific fields are intentionally excluded from
-# percentile and grading selection because they are not universal scouting outputs.
 EXCLUDED_METRIC_TOKENS = {
     "sofascore", "rating", "height", "weight", "shirt", "jersey", "market_value",
     "contract", "injury", "date_of_birth", "dob", "age_as_of", "distance_walking",
@@ -110,8 +110,6 @@ EXCLUDED_METRIC_TOKENS = {
     "avg_x", "avg_y", "sub_on", "sub_off", "is_substitute", "mw",
 }
 
-# Role weights guide ordering and composite role_grade; they do not hard-filter
-# outfielder metrics. Any valid, available outfielder stat can still surface.
 ROLE_METRIC_WEIGHTS = {
     "ST": {"goal": 1.6, "xg": 1.5, "xgot": 1.4, "shot": 1.3, "touches_opp_box": 1.2, "aerial": 0.9, "key_pass": 0.8, "xa": 0.8},
     "AM": {"key_pass": 1.5, "xa": 1.5, "assist": 1.3, "pass": 1.1, "progressive": 1.1, "carry": 1.1, "dribble": 1.0, "shot": 0.9, "xg": 0.9},
@@ -133,6 +131,31 @@ GRADE_CATEGORIES = {
     "possession": ["passes", "pass_accuracy", "touches", "dribble", "dispossessed", "possession_lost"],
     "goalkeeping": ["gk_", "penalties_faced"],
 }
+
+ACTION_CATEGORY_ALIASES = {
+    "passes": "passes",
+    "pass": "passes",
+    "ball-carries": "carries",
+    "ball_carries": "carries",
+    "ballCarries": "carries",
+    "carries": "carries",
+    "carry": "carries",
+    "dribbles": "dribbles",
+    "dribble": "dribbles",
+    "defensive": "defensive",
+    "defence": "defensive",
+    "defense": "defensive",
+    "tackles": "defensive",
+    "interceptions": "defensive",
+    "recoveries": "defensive",
+}
+
+MAP_CATEGORY_ORDER = ["passes", "carries", "dribbles", "defensive", "other"]
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Generic helpers
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def clean_filename(text: str | None, fallback: str = "Player") -> str:
@@ -156,7 +179,7 @@ def num(x: Any) -> float | None:
         return None
     try:
         v = float(x)
-        return None if math.isnan(v) else v
+        return None if math.isnan(v) or math.isinf(v) else v
     except Exception:
         return None
 
@@ -166,13 +189,14 @@ def round_or_none(x: Any, digits: int = 3):
     return None if v is None else round(v, digits)
 
 
-def value(row: pd.Series | dict[str, Any] | None, names: list[str], default=None):
+def value(row: pd.Series | dict[str, Any] | None, names: Iterable[str | None], default=None):
     if row is None:
         return default
+    names = [n for n in names if n]
     if isinstance(row, pd.Series):
         lower = {str(c).lower(): c for c in row.index}
         for name in names:
-            col = lower.get(name.lower())
+            col = lower.get(str(name).lower())
             if col is not None:
                 v = row.get(col)
                 if pd.notna(v):
@@ -180,12 +204,47 @@ def value(row: pd.Series | dict[str, Any] | None, names: list[str], default=None
     else:
         lower = {str(c).lower(): c for c in row.keys()}
         for name in names:
-            col = lower.get(name.lower())
+            col = lower.get(str(name).lower())
             if col is not None:
                 v = row.get(col)
                 if v not in (None, ""):
                     return v
     return default
+
+
+def clean_json(obj):
+    if isinstance(obj, dict):
+        return {str(k): clean_json(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [clean_json(v) for v in obj]
+    if isinstance(obj, tuple):
+        return [clean_json(v) for v in obj]
+    if isinstance(obj, (np.floating, np.integer)):
+        obj = obj.item()
+    if isinstance(obj, float):
+        return None if math.isnan(obj) or math.isinf(obj) else obj
+    try:
+        if pd.isna(obj):
+            return None
+    except Exception:
+        pass
+    return obj
+
+
+def read_csv_safely(path: str | Path | None) -> pd.DataFrame | None:
+    if not path:
+        return None
+    p = Path(path)
+    if not p.exists():
+        return None
+    if p.stat().st_size == 0:
+        return pd.DataFrame()
+    return pd.read_csv(p)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Role / percentile helpers
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def choose_role_col(df: pd.DataFrame) -> str | None:
@@ -200,36 +259,25 @@ def normalize_family(role_value: Any) -> str | None:
         return None
     text = str(role_value).upper().replace("_", "-").replace(" ", "-").strip()
     text = re.sub(r"-+", "-", text)
-
-    if text in {"GK", "G", "GOALKEEPER"}:
-        return "GK"
-    if text in {"CB", "RCB", "LCB"}:
-        return "CB"
-    if text in {"CB-FB", "FB-CB", "WCB", "WIDE-CB", "RB-CB", "LB-CB"}:
-        return "CB-FB"
-    if text in {"RB", "LB", "FB", "FULLBACK", "FULL-BACK", "RIGHT-BACK", "LEFT-BACK"}:
-        return "FB"
-    if text.startswith("FB"):
-        return "FB"
-    if text in {"RWB", "LWB", "WB", "WINGBACK", "WING-BACK"}:
-        return "WB"
-    if text.startswith("WB"):
-        return "WB"
-    if text in {"RW", "LW", "W", "AM-W", "AMR", "AML", "WM", "RM", "LM"}:
-        return "W"
-    if text.startswith("AM"):
-        return "AM"
-    if text in {"ST", "SS", "CF", "F", "FW", "ST-SS", "ST-W"} or text.startswith("ST"):
-        return "ST"
-    if text in {"CM", "DM"}:
-        return text
+    if text in {"GK", "G", "GOALKEEPER"}: return "GK"
+    if text in {"CB", "RCB", "LCB"}: return "CB"
+    if text in {"CB-FB", "FB-CB", "WCB", "WIDE-CB", "RB-CB", "LB-CB"}: return "CB-FB"
+    if text in {"RB", "LB", "FB", "FULLBACK", "FULL-BACK", "RIGHT-BACK", "LEFT-BACK"} or text.startswith("FB"): return "FB"
+    if text in {"RWB", "LWB", "WB", "WINGBACK", "WING-BACK"} or text.startswith("WB"): return "WB"
+    if text in {"RW", "LW", "W", "AM-W", "AMR", "AML", "WM", "RM", "LM"}: return "W"
+    if text.startswith("AM"): return "AM"
+    if text in {"ST", "SS", "CF", "F", "FW", "ST-SS", "ST-W"} or text.startswith("ST"): return "ST"
+    if text in {"CM", "DM"}: return text
     return text
 
 
 def normalized_family_series(series: pd.Series) -> pd.Series:
     return series.apply(normalize_family)
 
+
 def find_player_row(df: pd.DataFrame, player_id: int, season: str | None, league: str | None) -> pd.Series:
+    if "player_id" not in df.columns:
+        raise ValueError("season_totals must include player_id")
     work = df.loc[pd.to_numeric(df["player_id"], errors="coerce") == int(player_id)].copy()
     if season and "season" in work.columns:
         work = work.loc[work["season"].astype(str) == str(season)]
@@ -241,10 +289,8 @@ def find_player_row(df: pd.DataFrame, player_id: int, season: str | None, league
 
 
 def find_role_row(path: str | Path | None, player_id: int, season: str | None, league: str | None) -> dict[str, Any]:
-    if not path or not Path(path).exists():
-        return {}
-    df = pd.read_csv(path)
-    if "player_id" not in df.columns:
+    df = read_csv_safely(path)
+    if df is None or df.empty or "player_id" not in df.columns:
         return {}
     work = df.loc[pd.to_numeric(df["player_id"], errors="coerce") == int(player_id)].copy()
     if season and "season" in work.columns:
@@ -259,31 +305,24 @@ def auto_find_json(player_id: int, season: str, kind: str, search_dir: str | Pat
     season_clean = str(season).replace("/", "-")
     if kind == "event":
         patterns = [f"{player_id}_{season_clean}.json", f"*{player_id}*{season_clean}.json"]
-        exclude = ["heatmap", "similar", "card"]
+        exclude = ["heatmap", "similar", "card", "action"]
     elif kind == "heatmap":
         patterns = [f"*{player_id}*{season_clean}*heatmap_position.json", f"*{player_id}*heatmap*.json"]
         exclude = ["card"]
     elif kind == "similarity":
         patterns = [f"similar_{player_id}.json", f"*{player_id}*{season_clean}*similarit*.json", f"*{player_id}*similar*.json"]
         exclude = ["card", "heatmap"]
+    elif kind == "actions":
+        patterns = [f"*{player_id}*{season_clean}*actions_flat.csv", f"*{player_id}*actions_flat.csv", f"*{player_id}*actions_raw.json"]
+        exclude = ["card"]
     else:
         return None
-
     for pat in patterns:
-        for p in d.glob(pat):
+        for p in d.rglob(pat):
             name = p.name.lower()
             if any(e in name for e in exclude):
                 continue
             return str(p)
-    return None
-
-
-def metric_col(df: pd.DataFrame, metric: str) -> str | None:
-    lower = {c.lower(): c for c in df.columns}
-    candidates = [metric] if metric.endswith(("_per90", "_p90")) else [f"{metric}_per90", f"{metric}_p90", metric]
-    for c in candidates:
-        if c.lower() in lower:
-            return lower[c.lower()]
     return None
 
 
@@ -295,9 +334,6 @@ def is_excluded_metric(metric: str, family: str | None) -> bool:
     m = base_metric_name(metric)
     if family != "GK" and any(m == g or m.startswith(f"{g}_") for g in GK_ONLY_METRICS):
         return True
-    if family == "GK":
-        # Keep GK-only metrics plus normal football stats that also apply to keepers.
-        pass
     return any(tok in m for tok in EXCLUDED_METRIC_TOKENS)
 
 
@@ -312,8 +348,7 @@ def metric_weight(metric: str, family: str | None) -> float:
 
 
 def available_percentile_metric_cols(df: pd.DataFrame, family: str | None) -> list[str]:
-    cols: list[str] = []
-    seen: set[str] = set()
+    cols, seen = [], set()
     for col in df.columns:
         cl = str(col).lower()
         if not cl.endswith(("_per90", "_p90")):
@@ -322,9 +357,7 @@ def available_percentile_metric_cols(df: pd.DataFrame, family: str | None) -> li
         if base in seen or is_excluded_metric(cl, family):
             continue
         vals = pd.to_numeric(df[col], errors="coerce")
-        if vals.notna().sum() < 3:
-            continue
-        if vals.nunique(dropna=True) <= 1:
+        if vals.notna().sum() < 3 or vals.nunique(dropna=True) <= 1:
             continue
         cols.append(col)
         seen.add(base)
@@ -348,19 +381,16 @@ def prettify_metric(metric: str) -> str:
 
 def build_percentiles(df: pd.DataFrame, row: pd.Series, role_col: str | None, role_value: Any, family: str | None, max_items: int) -> list[dict[str, Any]]:
     if role_col and role_col in df.columns and family is not None:
-        fam = normalized_family_series(df[role_col])
-        cohort = df.loc[fam == family].copy()
+        cohort = df.loc[normalized_family_series(df[role_col]) == family].copy()
     elif role_col and role_col in df.columns and role_value is not None:
         cohort = df.loc[df[role_col].astype(str) == str(role_value)].copy()
     else:
         cohort = df.copy()
-
     if cohort.empty or len(cohort) < 3:
         cohort = df.copy()
 
-    metric_cols = available_percentile_metric_cols(df, family)
     out, seen = [], set()
-    for col in metric_cols:
+    for col in available_percentile_metric_cols(df, family):
         if col in seen or col not in row.index:
             continue
         v = num(row.get(col))
@@ -382,9 +412,6 @@ def build_percentiles(df: pd.DataFrame, row: pd.Series, role_col: str | None, ro
             "cohort_size": int(len(cohort)),
         })
         seen.add(col)
-
-    # Sort by role-weighted value first, then raw percentile. This keeps the card
-    # flexible while still surfacing the most role-relevant strengths.
     out.sort(key=lambda d: (d["weighted_percentile"], d["percentile"]), reverse=True)
     return out[:max_items]
 
@@ -404,8 +431,7 @@ def build_stat_block(row: pd.Series, aliases: dict[str, list[str]], per90: bool)
 
 
 def letter_grade(score: float | None) -> str | None:
-    if score is None:
-        return None
+    if score is None: return None
     if score >= 90: return "A+"
     if score >= 82: return "A"
     if score >= 75: return "A-"
@@ -416,24 +442,6 @@ def letter_grade(score: float | None) -> str | None:
     if score >= 38: return "C"
     if score >= 30: return "C-"
     return "D"
-
-
-def category_grade(percentiles: list[dict[str, Any]], tokens: list[str], weighted: bool = False) -> str | None:
-    vals = []
-    weights = []
-    for p in percentiles:
-        metric = str(p.get("metric", "")).lower()
-        if not any(t in metric for t in tokens):
-            continue
-        pct = num(p.get("percentile"))
-        if pct is None:
-            continue
-        vals.append(pct)
-        weights.append(num(p.get("weight")) or 1.0)
-    if not vals:
-        return None
-    score = float(np.average(vals, weights=weights)) if weighted else float(np.mean(vals))
-    return letter_grade(score)
 
 
 def numeric_category_score(percentiles: list[dict[str, Any]], tokens: list[str]) -> float | None:
@@ -452,32 +460,26 @@ def build_grades(percentiles: list[dict[str, Any]], role_row: dict[str, Any], fa
     scores = {name: numeric_category_score(percentiles, tokens) for name, tokens in GRADE_CATEGORIES.items()}
     if family != "GK":
         scores.pop("goalkeeping", None)
-
-    category_grades = {name: letter_grade(score) for name, score in scores.items()}
     valid_scores = [s for s in scores.values() if s is not None]
     role_output_score = float(np.mean(valid_scores)) if valid_scores else None
-
     return {
         "role_fit": letter_grade(num(role_row.get("role_score"))),
         "role_output": letter_grade(role_output_score),
-        **category_grades,
+        **{name: letter_grade(score) for name, score in scores.items()},
     }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Similarity / shotmap / heatmap extractors
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def extract_similarity(sim_json: Any) -> list[dict[str, Any]]:
     if not sim_json:
         return []
-
-    cohort_info = {}
-    if isinstance(sim_json, dict):
-        cohort_info = sim_json.get("cohort_info") or {}
-        rows = sim_json.get("results") or sim_json.get("similar_players") or []
-    else:
-        rows = sim_json
-
-    rows = rows or []
+    rows = (sim_json.get("results") or sim_json.get("similar_players") or []) if isinstance(sim_json, dict) else sim_json
     out = []
-    for r in rows:
+    for r in rows or []:
         if not isinstance(r, dict):
             continue
         out.append({
@@ -506,7 +508,6 @@ def extract_similarity(sim_json: Any) -> list[dict[str, Any]]:
             "display_role": r.get("similarity_display_role") or r.get("primary_role") or r.get("arbitrated_role_group"),
             "color_key": r.get("similarity_color_key") or r.get("similarity_archetype") or r.get("primary_role") or r.get("arbitrated_role_group"),
         })
-
     return out
 
 
@@ -526,21 +527,26 @@ def extract_similarity_meta(sim_json: Any) -> dict[str, Any]:
         "score_blend": info.get("score_blend"),
     }
 
+
 def extract_shotmap(event_json: Any) -> dict[str, Any]:
     block = event_json.get("shotmap", {}) if isinstance(event_json, dict) else {}
     shots = block.get("shots") or []
-    clean = [{
-        "event_id": s.get("event_id"),
-        "x": round_or_none(s.get("x"), 3),
-        "y": round_or_none(s.get("y"), 3),
-        "xg": round_or_none(s.get("xg"), 4),
-        "xgot": round_or_none(s.get("xgot"), 4),
-        "result": s.get("shot_type"),
-        "is_goal": bool(s.get("is_goal")),
-        "body_part": s.get("body_part"),
-        "situation": s.get("situation"),
-        "minute": s.get("minute"),
-    } for s in shots if isinstance(s, dict)]
+    clean = []
+    for s in shots:
+        if not isinstance(s, dict):
+            continue
+        clean.append({
+            "event_id": s.get("event_id"),
+            "x": round_or_none(s.get("x"), 3),
+            "y": round_or_none(s.get("y"), 3),
+            "xg": round_or_none(s.get("xg"), 4),
+            "xgot": round_or_none(s.get("xgot"), 4),
+            "result": s.get("shot_type") or s.get("result"),
+            "is_goal": bool(s.get("is_goal")),
+            "body_part": s.get("body_part"),
+            "situation": s.get("situation"),
+            "minute": s.get("minute"),
+        })
     return {"count": len(clean), "summary": block.get("summary") or {}, "shots": clean}
 
 
@@ -554,36 +560,281 @@ def extract_heatmap(heat_json: Any) -> dict[str, Any]:
             "position_estimate": None,
             "position_note": "No heatmap file supplied.",
         }
-
     heat = heat_json.get("heatmap", {}) if isinstance(heat_json.get("heatmap"), dict) else {}
     points = heat.get("points") or []
     clean = [
-        {
-            "x": round_or_none(p.get("x"), 3),
-            "y": round_or_none(p.get("y"), 3),
-            "value": round_or_none(p.get("value"), 5),
-        }
-        for p in points
-        if isinstance(p, dict)
+        {"x": round_or_none(p.get("x"), 3), "y": round_or_none(p.get("y"), 3), "value": round_or_none(p.get("value"), 5)}
+        for p in points if isinstance(p, dict)
     ]
-
-    visual_summary = heat_json.get("visual_summary") or {}
-    position_note = heat_json.get("position_note") or (
-        "Visual heatmap only. Tactical position is intentionally not estimated here; use Position_Arbitrator output."
-    )
-
     return {
         "cell_count": len(clean),
         "raw_point_count": heat.get("raw_point_count"),
         "precision": heat.get("precision"),
         "points": clean,
-        "visual_summary": visual_summary,
+        "visual_summary": heat_json.get("visual_summary") or {},
         "position_estimate": None,
-        "position_note": position_note,
+        "position_note": heat_json.get("position_note") or "Visual heatmap only. Tactical position is intentionally not estimated here; use Position_Arbitrator output.",
         "source_position_labels": heat_json.get("source_position_labels", {}),
     }
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Action extractor: Observable-friendly output
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def normalize_action_category(category: Any, action_type: Any = None) -> str:
+    raw = str(category or action_type or "other").strip()
+    key = raw.replace(" ", "_").replace("-", "_")
+    if raw in ACTION_CATEGORY_ALIASES:
+        return ACTION_CATEGORY_ALIASES[raw]
+    if key in ACTION_CATEGORY_ALIASES:
+        return ACTION_CATEGORY_ALIASES[key]
+    low = raw.lower()
+    if "pass" in low:
+        return "passes"
+    if "carry" in low or "ball" in low:
+        return "carries"
+    if "dribble" in low or "contest" in low:
+        return "dribbles"
+    if any(t in low for t in ["def", "tackle", "interception", "recover", "clearance", "block", "duel"]):
+        return "defensive"
+    return "other"
+
+
+def action_bool(value_: Any) -> bool | None:
+    if value_ in (None, ""):
+        return None
+    if isinstance(value_, bool):
+        return value_
+    s = str(value_).strip().lower()
+    if s in {"true", "1", "yes", "y", "success", "successful", "won", "accurate", "complete", "completed"}:
+        return True
+    if s in {"false", "0", "no", "n", "fail", "failed", "lost", "inaccurate", "incomplete"}:
+        return False
+    return None
+
+
+def infer_action_success(row: dict[str, Any]) -> bool | None:
+    for key in ["successful", "success", "accurate", "won", "isSuccessful", "outcome", "result"]:
+        if key in row:
+            b = action_bool(row.get(key))
+            if b is not None:
+                return b
+    return None
+
+
+def infer_progressive(row: dict[str, Any]) -> bool | None:
+    for key in ["progressive", "is_progressive", "isProgressive"]:
+        if key in row:
+            b = action_bool(row.get(key))
+            if b is not None:
+                return b
+    x = num(row.get("x"))
+    end_x = num(row.get("end_x") or row.get("endX") or row.get("passEndCoordinates_x"))
+    if x is None or end_x is None:
+        return None
+    return (end_x - x) >= 10
+
+
+def zone_from_xy(x: Any, y: Any) -> dict[str, Any]:
+    xv, yv = num(x), num(y)
+    if xv is None or yv is None:
+        return {"third": None, "lane": None, "zone": None}
+
+    if xv < 33.333:
+        third = "defensive_third"
+    elif xv < 66.667:
+        third = "middle_third"
+    else:
+        third = "attacking_third"
+
+    if yv < 20:
+        lane = "left_wide"
+    elif yv < 40:
+        lane = "left_halfspace"
+    elif yv < 60:
+        lane = "central"
+    elif yv < 80:
+        lane = "right_halfspace"
+    else:
+        lane = "right_wide"
+
+    return {"third": third, "lane": lane, "zone": f"{third}:{lane}"}
+
+
+def get_any(row: dict[str, Any], names: Iterable[str]) -> Any:
+    lower = {str(k).lower(): k for k in row.keys()}
+    for name in names:
+        k = lower.get(str(name).lower())
+        if k is not None and row.get(k) not in (None, "", np.nan):
+            return row.get(k)
+    return None
+
+
+def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
+    category_raw = get_any(row, ["category", "_source_path", "type", "action_type", "name"])
+    action_type = get_any(row, ["action_type", "type", "name", "event_type", "eventType"])
+    category = normalize_action_category(category_raw, action_type)
+
+    x = get_any(row, ["x", "playerCoordinates_x", "coordinates_x", "startCoordinates_x", "start_x", "startX"])
+    y = get_any(row, ["y", "playerCoordinates_y", "coordinates_y", "startCoordinates_y", "start_y", "startY"])
+    end_x = get_any(row, ["end_x", "endX", "passEndCoordinates_x", "endCoordinates_x", "to_x"])
+    end_y = get_any(row, ["end_y", "endY", "passEndCoordinates_y", "endCoordinates_y", "to_y"])
+
+    z = zone_from_xy(x, y)
+    out = {
+        "event_id": int(num(get_any(row, ["event_id", "match_id"])) or 0) or None,
+        "match_date": get_any(row, ["match_date", "date"]),
+        "minute": round_or_none(get_any(row, ["minute", "time"]), 0),
+        "second": round_or_none(get_any(row, ["second"]), 0),
+        "category": category,
+        "raw_category": category_raw,
+        "type": action_type or category,
+        "x": round_or_none(x, 3),
+        "y": round_or_none(y, 3),
+        "end_x": round_or_none(end_x, 3),
+        "end_y": round_or_none(end_y, 3),
+        "success": infer_action_success(row),
+        "progressive": infer_progressive(row),
+        "outcome": get_any(row, ["outcome", "result"]),
+        "third": z["third"],
+        "lane": z["lane"],
+        "zone": z["zone"],
+    }
+
+    # Preserve a few useful optional raw fields if they exist.
+    for key in ["rating", "value", "body_part", "situation", "endpoint", "_endpoint", "_source_path"]:
+        v = get_any(row, [key])
+        if v not in (None, ""):
+            out[key] = round_or_none(v, 4) if num(v) is not None and key in {"rating", "value"} else v
+
+    return out
+
+
+def flatten_raw_action_json(raw: Any) -> list[dict[str, Any]]:
+    """Accepts the action scraper raw JSON and returns compact action rows."""
+    rows: list[dict[str, Any]] = []
+    if not isinstance(raw, dict):
+        return rows
+
+    for ev in raw.get("events", []) or []:
+        if not isinstance(ev, dict):
+            continue
+        event_info = ev.get("event") or {}
+        event_id = ev.get("event_id")
+        for ep in ev.get("endpoints", []) or []:
+            if not isinstance(ep, dict):
+                continue
+            endpoint = ep.get("endpoint")
+            data = ep.get("data")
+            if endpoint != "rating-breakdown" or not isinstance(data, dict):
+                continue
+            for category, items in data.items():
+                if not isinstance(items, list):
+                    continue
+                for item in items:
+                    if not isinstance(item, dict):
+                        continue
+                    flat = dict(item)
+                    pc = item.get("playerCoordinates") or {}
+                    pe = item.get("passEndCoordinates") or {}
+                    flat.update({
+                        "event_id": event_id,
+                        "match_date": event_info.get("date"),
+                        "category": category,
+                        "endpoint": endpoint,
+                        "x": pc.get("x", flat.get("x")),
+                        "y": pc.get("y", flat.get("y")),
+                        "end_x": pe.get("x", flat.get("end_x")),
+                        "end_y": pe.get("y", flat.get("end_y")),
+                    })
+                    rows.append(compact_action_row(flat))
+    return rows
+
+
+def load_action_rows(actions_path: str | Path | None) -> list[dict[str, Any]]:
+    if not actions_path:
+        return []
+    p = Path(actions_path)
+    if not p.exists() or p.stat().st_size == 0:
+        return []
+
+    if p.suffix.lower() == ".csv":
+        rows = []
+        with p.open("r", encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                rows.append(compact_action_row(dict(r)))
+        return rows
+
+    if p.suffix.lower() == ".json":
+        raw = parse_json(p)
+        # Already-final action block.
+        if isinstance(raw, dict) and "actions" in raw and isinstance(raw["actions"], list):
+            return [compact_action_row(r) for r in raw["actions"] if isinstance(r, dict)]
+        return flatten_raw_action_json(raw)
+
+    return []
+
+
+def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: int = 750) -> dict[str, Any]:
+    valid = [r for r in rows if r.get("x") is not None and r.get("y") is not None]
+    by_category: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for r in valid:
+        by_category[r.get("category") or "other"].append(r)
+
+    categories = {}
+    for cat in MAP_CATEGORY_ORDER + sorted(k for k in by_category if k not in MAP_CATEGORY_ORDER):
+        cat_rows = by_category.get(cat, [])
+        if not cat_rows:
+            continue
+        success_vals = [r.get("success") for r in cat_rows if r.get("success") is not None]
+        progressive_vals = [r.get("progressive") for r in cat_rows if r.get("progressive") is not None]
+        zone_counts = Counter(r.get("zone") for r in cat_rows if r.get("zone"))
+        third_counts = Counter(r.get("third") for r in cat_rows if r.get("third"))
+        lane_counts = Counter(r.get("lane") for r in cat_rows if r.get("lane"))
+
+        points = cat_rows[:max_points_per_category]
+        categories[cat] = {
+            "count": len(cat_rows),
+            "success_count": sum(1 for x in success_vals if x is True),
+            "success_rate": round(sum(1 for x in success_vals if x is True) / len(success_vals), 4) if success_vals else None,
+            "progressive_count": sum(1 for x in progressive_vals if x is True),
+            "progressive_rate": round(sum(1 for x in progressive_vals if x is True) / len(progressive_vals), 4) if progressive_vals else None,
+            "zone_counts": dict(zone_counts),
+            "third_counts": dict(third_counts),
+            "lane_counts": dict(lane_counts),
+            "points": points,
+            "points_truncated": len(cat_rows) > len(points),
+        }
+
+    all_zones = Counter(r.get("zone") for r in valid if r.get("zone"))
+    map_layers = [
+        {"key": cat, "label": cat.replace("_", " ").title(), "count": info["count"]}
+        for cat, info in categories.items()
+    ]
+
+    return {
+        "count": len(valid),
+        "raw_count": len(rows),
+        "categories": {cat: {k: v for k, v in info.items() if k != "points"} for cat, info in categories.items()},
+        "map_layers": map_layers,
+        "zone_counts": dict(all_zones),
+        "points_by_category": {cat: info["points"] for cat, info in categories.items()},
+        "all_points": valid[:max_points_per_category],
+        "all_points_truncated": len(valid) > max_points_per_category,
+        "note": "Action rows are normalized for Observable maps. Use points_by_category for layered pass/carry/dribble/defensive plots.",
+    }
+
+
+def extract_actions(actions_path: str | Path | None, max_points_per_category: int = 750) -> dict[str, Any]:
+    rows = load_action_rows(actions_path)
+    return summarize_action_rows(rows, max_points_per_category=max_points_per_category)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Card profile / summary
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def build_spatial_profile(row: pd.Series) -> dict[str, Any]:
@@ -603,23 +854,11 @@ def build_spatial_profile(row: pd.Series) -> dict[str, Any]:
         v = row.get(k)
         if pd.isna(v):
             continue
-        if isinstance(v, (int, float, np.number)):
-            out[k] = round_or_none(v, 4)
-        else:
-            out[k] = v
+        out[k] = round_or_none(v, 4) if isinstance(v, (int, float, np.number)) else v
     return out
 
 
-
-
 def profile_from_sources(row: pd.Series, event_json: Any) -> dict[str, Any]:
-    """
-    Build display-only player profile metadata.
-
-    These fields are useful context for the UI/card, but they are not used in
-    percentile or grading calculations. Calculation exclusions are handled by
-    EXCLUDED_METRIC_TOKENS and available_percentile_metric_cols().
-    """
     ep = event_json.get("profile", {}) if isinstance(event_json, dict) else {}
     return {
         "player_id": int(value(row, ["player_id"], ep.get("player_id"))),
@@ -640,18 +879,26 @@ def profile_from_sources(row: pd.Series, event_json: Any) -> dict[str, Any]:
         "injury_status": ep.get("injury_status"),
     }
 
-def build_summary(profile: dict[str, Any], position: dict[str, Any], role: dict[str, Any], grades: dict[str, Any], percentiles: list[dict[str, Any]]) -> dict[str, Any]:
+
+def build_summary(profile: dict[str, Any], position: dict[str, Any], role: dict[str, Any], grades: dict[str, Any], percentiles: list[dict[str, Any]], actions: dict[str, Any]) -> dict[str, Any]:
     name = profile.get("name") or "Player"
     role_name = role.get("primary") or "role pending"
     pos = position.get("arbitrated_role_group") or position.get("listed_role")
     top_labels = [p["label"] for p in percentiles[:4]]
+    action_count = actions.get("count") or 0
+    action_phrase = f" with {action_count:,} mapped non-shot actions" if action_count else ""
     return {
         "headline": f"{name} profiles as a {pos} with strongest value in {', '.join(top_labels[:2]).lower() if top_labels else 'role-specific outputs'}.",
-        "one_liner": f"{name}: {role_name} profile with {grades.get('progression') or 'N/A'} progression and {grades.get('defense') or 'N/A'} defensive indicators.",
+        "one_liner": f"{name}: {role_name} profile with {grades.get('progression') or 'N/A'} progression and {grades.get('defense') or 'N/A'} defensive indicators{action_phrase}.",
         "strengths": top_labels,
         "watchpoints": [],
-        "model_caveat": "Role, similarity, and position labels are model outputs. Season average-position distribution is the primary spatial source; heatmaps are visual/action-density layers only.",
+        "model_caveat": "Role, similarity, and position labels are model outputs. Season average-position distribution is the primary spatial source; heatmaps and actions are visual/action-density layers only.",
     }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Main card builder
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def build_card(args: argparse.Namespace) -> dict[str, Any]:
@@ -661,6 +908,7 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
     event_path = args.event_data or auto_find_json(args.player_id, args.season, "event", args.search_dir)
     heat_path = args.heatmap or auto_find_json(args.player_id, args.season, "heatmap", args.search_dir)
     sim_path = args.similarity or auto_find_json(args.player_id, args.season, "similarity", args.search_dir)
+    actions_path = args.actions or auto_find_json(args.player_id, args.season, "actions", args.search_dir)
 
     event_json = parse_json(event_path)
     heat_json = parse_json(heat_path)
@@ -674,6 +922,7 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
 
     profile = profile_from_sources(row, event_json)
     heatmap = extract_heatmap(heat_json)
+    actions = extract_actions(actions_path, max_points_per_category=args.max_action_points_per_category)
 
     position = {
         "listed_role": value(row, ["primary_role_position", "role_position"]),
@@ -685,8 +934,6 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
         "position_conflict_flag": value(row, ["position_conflict_flag"]),
         "arbitration_reason": value(row, ["arbitration_reason"]),
         "season_spatial": build_spatial_profile(row),
-
-        # Heatmaps are now visual/action-density only.
         "heatmap_estimate": None,
         "heatmap_role_group": None,
         "heatmap_lane": None,
@@ -718,12 +965,14 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
             "season": args.season,
             "league": args.league,
             "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "schema_version": "player-card-v3-actions",
             "input_files": {
                 "season_totals": str(args.season_totals),
                 "roles": str(args.roles) if args.roles else None,
                 "similarity": str(sim_path) if sim_path else None,
                 "event_data": str(event_path) if event_path else None,
                 "heatmap": str(heat_path) if heat_path else None,
+                "actions": str(actions_path) if actions_path else None,
             },
         },
         "profile": profile,
@@ -737,32 +986,13 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
         "similar_players": extract_similarity(sim_json),
         "shotmap": extract_shotmap(event_json),
         "heatmap": heatmap,
+        "actions": actions,
     }
-    card["summary"] = build_summary(profile, position, role, grades, percentiles)
+    card["summary"] = build_summary(profile, position, role, grades, percentiles, actions)
     return card
 
-def clean_json(obj):
-    if isinstance(obj, dict):
-        return {k: clean_json(v) for k, v in obj.items()}
-    if isinstance(obj, list):
-        return [clean_json(v) for v in obj]
-    if isinstance(obj, tuple):
-        return [clean_json(v) for v in obj]
-    if isinstance(obj, float):
-        if math.isnan(obj) or math.isinf(obj):
-            return None
-        return obj
-    if isinstance(obj, (np.floating, np.integer)):
-        v = obj.item()
-        if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
-            return None
-        return v
-    if pd.isna(obj):
-        return None
-    return obj
 
-
-def main() -> None:
+def parse_args() -> argparse.Namespace:
     ap = argparse.ArgumentParser(description="Build Observable-ready player-card JSON.")
     ap.add_argument("--player-id", "-p", type=int, required=True)
     ap.add_argument("--season", "-s", default="2025-26")
@@ -772,25 +1002,30 @@ def main() -> None:
     ap.add_argument("--similarity", default=None)
     ap.add_argument("--event-data", default=None)
     ap.add_argument("--heatmap", default=None)
+    ap.add_argument("--actions", default=None, help="Action scraper flat CSV or raw JSON.")
     ap.add_argument("--search-dir", default=".")
     ap.add_argument("--out", "-o", default=None)
     ap.add_argument("--max-percentiles", type=int, default=18)
-    args = ap.parse_args()
+    ap.add_argument("--max-action-points-per-category", type=int, default=750)
+    return ap.parse_args()
 
-    card = build_card(args)
-    card = clean_json(card)
 
+def main() -> None:
+    args = parse_args()
+    card = clean_json(build_card(args))
     name = card["profile"].get("name") or str(args.player_id)
     out_path = Path(args.out or f"player_card_{clean_filename(name)}_{args.player_id}_{str(args.season).replace('/', '-')}.json")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(card, indent=2, ensure_ascii=False, allow_nan=False, default=str), encoding="utf-8")
 
     print(f"Saved: {out_path}")
-    print(f"Player: {card['profile'].get('name')}")
-    print(f"Role:   {card['role'].get('primary')} / {card['role'].get('secondary')}")
-    print(f"Pos:    {card['position'].get('arbitrated_role_group')} | heatmap=visual-only")
-    print(f"Shots:  {card['shotmap'].get('count')}")
-    print(f"Heat:   {card['heatmap'].get('cell_count')} cells")
-    print(f"Comps:  {len(card['similar_players'])}")
+    print(f"Player:  {card['profile'].get('name')}")
+    print(f"Role:    {card['role'].get('primary')} / {card['role'].get('secondary')}")
+    print(f"Pos:     {card['position'].get('arbitrated_role_group')} | heatmap=visual-only")
+    print(f"Shots:   {card['shotmap'].get('count')}")
+    print(f"Heat:    {card['heatmap'].get('cell_count')} cells")
+    print(f"Actions: {card['actions'].get('count')} mapped rows")
+    print(f"Comps:   {len(card['similar_players'])}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,134 @@
+{
+  "player_id": 978838,
+  "event_id": 14065109,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Michael Olise",
+      "firstName": "",
+      "lastName": "",
+      "slug": "michael-olise",
+      "shortName": "M. Olise",
+      "position": "M",
+      "jerseyNumber": "17",
+      "height": 184,
+      "userCount": 173837,
+      "gender": "M",
+      "sofascoreId": "MOlise",
+      "id": 978838,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1008115200,
+      "proposedMarketValueRaw": {
+        "value": 125000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مايكل أوليس",
+          "bn": "মাইকেল ওলিস",
+          "hi": "माइकल ओलिस"
+        },
+        "shortNameTranslation": {
+          "ar": "م. أوليس",
+          "bn": "এম. ওলিস",
+          "hi": "एम. ओलिस"
+        }
+      }
+    },
+    "team": {
+      "name": "FC Bayern München",
+      "slug": "fc-bayern-munchen",
+      "shortName": "Bayern",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 2797577,
+      "nameCode": "FCB",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2672,
+      "teamColors": {
+        "primary": "#cf142f",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إف سي بايرن ميونيخ",
+          "ru": "Бавария Мюнхен"
+        },
+        "shortNameTranslation": {
+          "ar": "بايرن",
+          "bn": "বায়ার্ন",
+          "hi": "बायर्न"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 52,
+      "accuratePass": 42,
+      "totalLongBalls": 3,
+      "accurateLongBalls": 2,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 10,
+      "totalOwnHalfPasses": 14,
+      "accurateOppositionHalfPasses": 32,
+      "totalOppositionHalfPasses": 38,
+      "totalCross": 2,
+      "aerialLost": 2,
+      "duelLost": 7,
+      "duelWon": 6,
+      "challengeLost": 1,
+      "dispossessed": 3,
+      "totalContest": 2,
+      "wonContest": 1,
+      "bigChanceCreated": 1,
+      "shotOffTarget": 2,
+      "onTargetScoringAttempt": 2,
+      "blockedScoringAttempt": 1,
+      "hitWoodwork": 1,
+      "goals": 1,
+      "interceptionWon": 2,
+      "ballRecovery": 7,
+      "unsuccessfulTouch": 2,
+      "wasFouled": 5,
+      "totalOffside": 1,
+      "minutesPlayed": 90,
+      "touches": 82,
+      "rating": 8.1,
+      "possessionLostCtrl": 19,
+      "expectedGoals": 1.0673,
+      "expectedGoalsOnTarget": 1.1141,
+      "expectedAssists": 0.230714,
+      "keyPass": 3,
+      "ratingVersions": {
+        "original": 8.1,
+        "alternative": 8.6
+      },
+      "totalShots": 5,
+      "shotValueNormalized": 0.4,
+      "passValueNormalized": 0.36,
+      "dribbleValueNormalized": 0.61,
+      "defensiveValueNormalized": -0.09,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14065109/player/978838/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-04-30T13:54:52.665568Z"
+  }
+}
