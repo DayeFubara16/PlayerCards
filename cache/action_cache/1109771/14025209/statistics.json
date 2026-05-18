@@ -1,0 +1,132 @@
+{
+  "player_id": 1109771,
+  "event_id": 14025209,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Adam Wharton",
+      "firstName": "",
+      "lastName": "",
+      "slug": "adam-wharton",
+      "shortName": "A. Wharton",
+      "position": "M",
+      "jerseyNumber": "20",
+      "height": 182,
+      "userCount": 6677,
+      "gender": "M",
+      "id": 1109771,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1076025600,
+      "proposedMarketValueRaw": {
+        "value": 63000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "آدم وارتون",
+          "bn": "অ্যাডাম ওয়ার্টন",
+          "hi": "एडम व्हार्टन"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. وارتون",
+          "bn": "এ. ওয়ার্টন",
+          "hi": "ए. व्हार्टन"
+        }
+      }
+    },
+    "team": {
+      "name": "Crystal Palace",
+      "slug": "crystal-palace",
+      "shortName": "Crystal Palace",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 443745,
+      "nameCode": "CRY",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 7,
+      "teamColors": {
+        "primary": "#0033ff",
+        "secondary": "#b90d2b",
+        "text": "#b90d2b"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كريستال بالاس",
+          "bn": "ক্রিস্টাল প্যালেস",
+          "hi": "क्रिस्टल पैलेस",
+          "ru": "Кристал Пэлас"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 67,
+      "accuratePass": 51,
+      "totalLongBalls": 7,
+      "accurateLongBalls": 2,
+      "goalAssist": 1,
+      "accurateOwnHalfPasses": 22,
+      "totalOwnHalfPasses": 26,
+      "accurateOppositionHalfPasses": 29,
+      "totalOppositionHalfPasses": 41,
+      "totalCross": 4,
+      "accurateCross": 1,
+      "duelLost": 6,
+      "duelWon": 2,
+      "challengeLost": 3,
+      "dispossessed": 1,
+      "totalContest": 1,
+      "bigChanceCreated": 1,
+      "blockedScoringAttempt": 2,
+      "totalClearance": 4,
+      "interceptionWon": 1,
+      "ballRecovery": 7,
+      "totalTackle": 2,
+      "errorLeadToAShot": 1,
+      "fouls": 1,
+      "minutesPlayed": 83,
+      "touches": 84,
+      "rating": 7,
+      "possessionLostCtrl": 21,
+      "expectedGoals": 0.0631,
+      "expectedAssists": 0.313787,
+      "totalBallCarriesDistance": 238.65141835828,
+      "ballCarriesCount": 29,
+      "totalProgression": 110.58039989574,
+      "bestBallCarryProgression": 11.780354500968,
+      "totalProgressiveBallCarriesDistance": 17.892177061498,
+      "progressiveBallCarriesCount": 1,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 7,
+        "alternative": 6.8
+      },
+      "totalShots": 2,
+      "shotValueNormalized": 0,
+      "passValueNormalized": 0.67,
+      "dribbleValueNormalized": 0.3,
+      "defensiveValueNormalized": -0.33,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025209/player/1109771/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-18T12:05:23.613272Z"
+  }
+}
