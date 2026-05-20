@@ -29,7 +29,7 @@ Global dataset build
 --------------------
 
 # 1. Scrape all leagues for matchweek
-python scripts/Player_Scraper.py --season 2025-26 --matchweek 1 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
+python scripts/Player_Scraper.py --season 2025-26 --matchweek 23 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
 
 # 1b. Build positional context
 python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
@@ -42,7 +42,7 @@ python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv --outpu
 python scripts/Player_Collapse.py --input data/processed/player_match_logs_with_ages.csv --output data/processed/player_season_totals.csv
 
 # 4. Arbitrate positions
-python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 450 --position-context data/context/position_context_by_event.json
+python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 900 --position-context data/context/position_context_by_event.json
 
 # 5. Classify roles
 python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 900
@@ -55,7 +55,7 @@ $PLAYER_ID=1109771
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
-python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 25 --min-minutes 450 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
+python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 25 --min-minutes 900 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
 
 # 7. Fetch player event/card data
 # IMPORTANT: output should live in cards/event_data, not project root.

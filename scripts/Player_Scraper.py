@@ -44,6 +44,9 @@ LEAGUE_NAMES: dict[int, str] = {
     23: "Serie A",
     34: "Ligue 1",
     35: "Bundesliga",
+    37: "VriendenLoterij Eredivisie",
+    38: "Pro League",
+    238: "Liga Portugal Betclic",
 }
 SEASON_IDS: dict[int, dict[str, int]] = {
     8: {"2023-24": 52376, "2024-25": 61643, "2025-26": 77559},
@@ -51,6 +54,9 @@ SEASON_IDS: dict[int, dict[str, int]] = {
     23: {"2023-24": 52760, "2024-25": 63515, "2025-26": 76457},
     34: {"2023-24": 52571, "2024-25": 61736, "2025-26": 77356},
     35: {"2023-24": 52608, "2024-25": 63516, "2025-26": 77333},
+    37: {"2023-24": 52554, "2024-25": 61666, "2025-26": 77012},
+    38: {"2023-24": 52383, "2024-25": 61459, "2025-26": 77040},
+    238:{"2023-24": 52769, "2024-25": 63670, "2025-26": 77806},
 }
 
 DEFAULT_TOURNAMENT_ID = 35
@@ -76,6 +82,16 @@ LEAGUE_ALIASES: dict[str, int] = {
     "france": 34,
     "bundesliga": 35,
     "germany": 35,
+    "eredivisie": 37,
+    "netherlands": 37,
+    "holland": 37,
+    "pro league": 38,
+    "proleague": 38,
+    "belgium": 38,
+    "liga portugal": 238,
+    "ligaportugal": 238,
+    "ligaportugalbetclic": 238,
+    "portugal": 238,
 }
 
 CSV_COLUMNS = [
