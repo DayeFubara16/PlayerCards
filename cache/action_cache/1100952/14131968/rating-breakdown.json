@@ -1,0 +1,178 @@
+{
+  "player_id": 1100952,
+  "event_id": 14131968,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 88.4,
+          "y": 24
+        },
+        "passEndCoordinates": {
+          "x": 100,
+          "y": 61.2
+        },
+        "eventActionType": "cross",
+        "isHome": false,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 88.9,
+          "y": 79.1
+        },
+        "passEndCoordinates": {
+          "x": 92.2,
+          "y": 52.8
+        },
+        "eventActionType": "cross",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 78,
+          "y": 95.7
+        },
+        "passEndCoordinates": {
+          "x": 65.4,
+          "y": 81.7
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 81.9,
+          "y": 74.2
+        },
+        "passEndCoordinates": {
+          "x": 86.7,
+          "y": 75.6
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 68,
+          "y": 84.1
+        },
+        "passEndCoordinates": {
+          "x": 70.4,
+          "y": 59.8
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 59,
+          "y": 86.5
+        },
+        "passEndCoordinates": {
+          "x": 56.4,
+          "y": 100
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 89.1,
+          "y": 81.3
+        },
+        "passEndCoordinates": {
+          "x": 80.5,
+          "y": 81.4
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 92.3,
+          "y": 72.7
+        },
+        "passEndCoordinates": {
+          "x": 91.3,
+          "y": 66.6
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 99,
+          "y": 64.8
+        },
+        "passEndCoordinates": {
+          "x": 97.2,
+          "y": 51.7
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": true,
+        "isAssist": true
+      }
+    ],
+    "dribbles": [
+      {
+        "playerCoordinates": {
+          "x": 96.4,
+          "y": 70.8
+        },
+        "eventActionType": "dribble",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 29.4,
+          "y": 94.2
+        },
+        "eventActionType": "tackle",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 21.9,
+          "y": 93
+        },
+        "eventActionType": "tackle",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14131968/player/1100952/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-20T20:07:38.194104Z"
+  }
+}

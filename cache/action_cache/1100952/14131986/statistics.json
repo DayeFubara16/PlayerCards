@@ -1,0 +1,124 @@
+{
+  "player_id": 1100952,
+  "event_id": 14131986,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Andreas Schjelderup",
+      "firstName": "",
+      "lastName": "",
+      "slug": "andreas-schjelderup",
+      "shortName": "A. Schjelderup",
+      "position": "F",
+      "jerseyNumber": "21",
+      "height": 177,
+      "userCount": 10519,
+      "gender": "M",
+      "sofascoreId": "andreasschjelderup",
+      "id": 1100952,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1086048000,
+      "proposedMarketValueRaw": {
+        "value": 21000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أندرياس شيلدراب",
+          "bn": "আন্দ্রেয়াস স্জেল্ডারুপ",
+          "hi": "एंड्रियास श्जेल्डरुप"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. شيلدراب",
+          "bn": "এ. স্জেল্ডারুপ",
+          "hi": "ए. श्जेल्डरुप"
+        }
+      }
+    },
+    "team": {
+      "name": "Benfica",
+      "slug": "benfica",
+      "shortName": "Benfica",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 880295,
+      "nameCode": "SLB",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 3006,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بنفيكا",
+          "bn": "বেনফিকা",
+          "hi": "बेनफिका",
+          "ru": "Бенфика"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 6,
+      "accuratePass": 6,
+      "totalLongBalls": 1,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 2,
+      "totalOwnHalfPasses": 2,
+      "accurateOppositionHalfPasses": 4,
+      "totalOppositionHalfPasses": 4,
+      "duelLost": 1,
+      "duelWon": 1,
+      "blockedScoringAttempt": 1,
+      "ballRecovery": 1,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 3,
+      "fouls": 1,
+      "minutesPlayed": 13,
+      "touches": 11,
+      "rating": 6.7,
+      "possessionLostCtrl": 3,
+      "expectedGoals": 0.1498,
+      "expectedAssists": 0.0210704,
+      "totalBallCarriesDistance": 85.724687973168,
+      "ballCarriesCount": 5,
+      "totalProgression": -62.055,
+      "bestBallCarryProgression": -3.885,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 6.7,
+        "alternative": 6.8
+      },
+      "totalShots": 1,
+      "shotValueNormalized": -0.39,
+      "passValueNormalized": -0.04,
+      "dribbleValueNormalized": 0.47,
+      "defensiveValueNormalized": -0.02,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14131986/player/1100952/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-20T20:07:43.559753Z"
+  }
+}

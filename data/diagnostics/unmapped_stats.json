@@ -1,8 +1,164 @@
 {
   "summary": {
-    "unique_unmapped_keys": 0,
-    "total_unmapped_values": 0
+    "unique_unmapped_keys": 3,
+    "total_unmapped_values": 4
   },
-  "by_key": {},
-  "records": []
+  "by_key": {
+    "owngoals": {
+      "count": 2,
+      "example": 1,
+      "sample_records": [
+        {
+          "league": "La Liga",
+          "season": "2025-26",
+          "MW": 37,
+          "event_id": 14083687,
+          "match_id": "37|Real Sociedad|Valencia",
+          "team": "Valencia",
+          "opponent": "Real Sociedad",
+          "venue": "away",
+          "player_id": 996928,
+          "player_name": "César Tárrega",
+          "player_position": "D",
+          "raw_key": "ownGoals",
+          "normalized_key": "owngoals",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        },
+        {
+          "league": "Serie A",
+          "season": "2025-26",
+          "MW": 37,
+          "event_id": 13980067,
+          "match_id": "37|Hellas Verona|Inter",
+          "team": "Hellas Verona",
+          "opponent": "Inter",
+          "venue": "away",
+          "player_id": 906963,
+          "player_name": "Andrias Edmundsson",
+          "player_position": "D",
+          "raw_key": "ownGoals",
+          "normalized_key": "owngoals",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        }
+      ]
+    },
+    "penaltymiss": {
+      "count": 1,
+      "example": 1,
+      "sample_records": [
+        {
+          "league": "La Liga",
+          "season": "2025-26",
+          "MW": 37,
+          "event_id": 14083676,
+          "match_id": "37|Levante UD|Mallorca",
+          "team": "Levante UD",
+          "opponent": "Mallorca",
+          "venue": "home",
+          "player_id": 997244,
+          "player_name": "Adrián de la Fuente",
+          "player_position": "D",
+          "raw_key": "penaltyMiss",
+          "normalized_key": "penaltymiss",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        }
+      ]
+    },
+    "crossnotclaimed": {
+      "count": 1,
+      "example": 1,
+      "sample_records": [
+        {
+          "league": "Premier League",
+          "season": "2025-26",
+          "MW": 37,
+          "event_id": 14023958,
+          "match_id": "37|Fulham|Wolverhampton",
+          "team": "Wolverhampton",
+          "opponent": "Fulham",
+          "venue": "home",
+          "player_id": 252669,
+          "player_name": "José Sá",
+          "player_position": "G",
+          "raw_key": "crossNotClaimed",
+          "normalized_key": "crossnotclaimed",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        }
+      ]
+    }
+  },
+  "records": [
+    {
+      "league": "La Liga",
+      "season": "2025-26",
+      "MW": 37,
+      "event_id": 14083676,
+      "match_id": "37|Levante UD|Mallorca",
+      "team": "Levante UD",
+      "opponent": "Mallorca",
+      "venue": "home",
+      "player_id": 997244,
+      "player_name": "Adrián de la Fuente",
+      "player_position": "D",
+      "raw_key": "penaltyMiss",
+      "normalized_key": "penaltymiss",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    },
+    {
+      "league": "La Liga",
+      "season": "2025-26",
+      "MW": 37,
+      "event_id": 14083687,
+      "match_id": "37|Real Sociedad|Valencia",
+      "team": "Valencia",
+      "opponent": "Real Sociedad",
+      "venue": "away",
+      "player_id": 996928,
+      "player_name": "César Tárrega",
+      "player_position": "D",
+      "raw_key": "ownGoals",
+      "normalized_key": "owngoals",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    },
+    {
+      "league": "Premier League",
+      "season": "2025-26",
+      "MW": 37,
+      "event_id": 14023958,
+      "match_id": "37|Fulham|Wolverhampton",
+      "team": "Wolverhampton",
+      "opponent": "Fulham",
+      "venue": "home",
+      "player_id": 252669,
+      "player_name": "José Sá",
+      "player_position": "G",
+      "raw_key": "crossNotClaimed",
+      "normalized_key": "crossnotclaimed",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    },
+    {
+      "league": "Serie A",
+      "season": "2025-26",
+      "MW": 37,
+      "event_id": 13980067,
+      "match_id": "37|Hellas Verona|Inter",
+      "team": "Hellas Verona",
+      "opponent": "Inter",
+      "venue": "away",
+      "player_id": 906963,
+      "player_name": "Andrias Edmundsson",
+      "player_position": "D",
+      "raw_key": "ownGoals",
+      "normalized_key": "owngoals",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    }
+  ]
 }
