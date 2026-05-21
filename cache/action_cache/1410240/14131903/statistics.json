@@ -1,0 +1,126 @@
+{
+  "player_id": 1410240,
+  "event_id": 14131903,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Rodrigo Mora",
+      "firstName": "Rodrigo Mora",
+      "slug": "mora-rodrigo",
+      "shortName": "R. Mora",
+      "position": "M",
+      "jerseyNumber": "86",
+      "height": 168,
+      "userCount": 14729,
+      "gender": "M",
+      "id": 1410240,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1178323200,
+      "proposedMarketValueRaw": {
+        "value": 40000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مورا، رودريغو",
+          "bn": "মোরা, রদ্রিগো",
+          "hi": "मोरा, रोड्रिगो"
+        },
+        "shortNameTranslation": {
+          "ar": "ر. مورا",
+          "bn": "আর. মোরা",
+          "hi": "आर. मोरा"
+        }
+      }
+    },
+    "team": {
+      "name": "FC Porto",
+      "slug": "fc-porto",
+      "shortName": "Porto",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 697033,
+      "nameCode": "FCP",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 3002,
+      "teamColors": {
+        "primary": "#194f93",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "اف سي بورتو",
+          "hi": "ऍफ़सी पोर्टो",
+          "ru": "Порту"
+        },
+        "shortNameTranslation": {
+          "ar": "بورتو",
+          "bn": "পোর্তো",
+          "hi": "पोर्तो"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 17,
+      "accuratePass": 15,
+      "totalLongBalls": 4,
+      "accurateLongBalls": 3,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 5,
+      "totalOwnHalfPasses": 6,
+      "accurateOppositionHalfPasses": 10,
+      "totalOppositionHalfPasses": 11,
+      "aerialWon": 1,
+      "duelLost": 3,
+      "duelWon": 5,
+      "dispossessed": 1,
+      "totalContest": 3,
+      "wonContest": 1,
+      "shotOffTarget": 1,
+      "totalClearance": 2,
+      "interceptionWon": 1,
+      "ballRecovery": 2,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "wasFouled": 2,
+      "minutesPlayed": 56,
+      "touches": 31,
+      "rating": 7,
+      "possessionLostCtrl": 7,
+      "expectedGoals": 0.0296,
+      "expectedAssists": 0.0356479,
+      "ratingVersions": {
+        "original": 7,
+        "alternative": 6.9
+      },
+      "totalShots": 1,
+      "shotValueNormalized": -0.19,
+      "passValueNormalized": 0.13,
+      "dribbleValueNormalized": 0.06,
+      "defensiveValueNormalized": 0.19,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14131903/player/1410240/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T20:36:21.063765Z"
+  }
+}

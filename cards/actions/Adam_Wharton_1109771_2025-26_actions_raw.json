@@ -5,37 +5,37 @@
     "season": "2025-26",
     "league": null,
     "match_log": "data/raw/player_match_logs.csv",
-    "events_found": 31,
+    "events_found": 33,
     "endpoints": [
       "rating-breakdown",
       "statistics"
     ],
-    "generated_at_utc": "2026-05-18T12:05:45.432471Z",
+    "generated_at_utc": "2026-05-21T21:57:15.033482Z",
     "cache_dir": "cache/action_cache",
     "no_fetch": false,
     "refresh_cache": true
   },
   "summary": {
-    "events": 31,
-    "events_with_any_available_endpoint": 31,
-    "flat_rows": 1741,
+    "events": 33,
+    "events_with_any_available_endpoint": 33,
+    "flat_rows": 1848,
     "endpoint_summary": {
       "rating-breakdown": {
-        "available_events": 31,
+        "available_events": 33,
         "missing_events": 0,
-        "flat_rows": 1741
+        "flat_rows": 1848
       },
       "statistics": {
-        "available_events": 31,
+        "available_events": 33,
         "missing_events": 0,
         "flat_rows": 0
       }
     },
     "category_counts": {
-      "rating-breakdown:passes": 1250,
+      "rating-breakdown:passes": 1316,
       "rating-breakdown:dribbles": 29,
-      "rating-breakdown:defensive": 286,
-      "rating-breakdown:ball-carries": 176
+      "rating-breakdown:defensive": 306,
+      "rating-breakdown:ball-carries": 197
     },
     "endpoint_debug_sample": {
       "rating-breakdown": [
@@ -664,7 +664,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:25.021972Z"
+            "fetched_at_utc": "2026-05-21T21:55:49.658820Z"
           }
         },
         {
@@ -683,7 +683,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -715,7 +715,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -792,7 +792,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:26.338729Z"
+            "fetched_at_utc": "2026-05-21T21:55:51.000868Z"
           }
         }
       ]
@@ -1545,7 +1545,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:27.567585Z"
+            "fetched_at_utc": "2026-05-21T21:55:52.289475Z"
           }
         },
         {
@@ -1564,7 +1564,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -1596,7 +1596,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -1663,7 +1663,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:28.871554Z"
+            "fetched_at_utc": "2026-05-21T21:55:53.586777Z"
           }
         }
       ]
@@ -2226,7 +2226,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:30.160263Z"
+            "fetched_at_utc": "2026-05-21T21:55:54.878097Z"
           }
         },
         {
@@ -2245,7 +2245,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -2277,7 +2277,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -2341,7 +2341,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:31.456820Z"
+            "fetched_at_utc": "2026-05-21T21:55:56.172054Z"
           }
         }
       ]
@@ -3015,7 +3015,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:32.775233Z"
+            "fetched_at_utc": "2026-05-21T21:55:57.456113Z"
           }
         },
         {
@@ -3034,7 +3034,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -3066,7 +3066,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -3141,7 +3141,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:34.065172Z"
+            "fetched_at_utc": "2026-05-21T21:55:58.745703Z"
           }
         }
       ]
@@ -3596,7 +3596,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:35.370329Z"
+            "fetched_at_utc": "2026-05-21T21:56:00.041373Z"
           }
         },
         {
@@ -3615,7 +3615,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -3647,7 +3647,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -3721,7 +3721,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:36.662407Z"
+            "fetched_at_utc": "2026-05-21T21:56:01.325677Z"
           }
         }
       ]
@@ -4562,7 +4562,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:37.965586Z"
+            "fetched_at_utc": "2026-05-21T21:56:02.614212Z"
           }
         },
         {
@@ -4581,7 +4581,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -4613,7 +4613,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -4686,7 +4686,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:39.287489Z"
+            "fetched_at_utc": "2026-05-21T21:56:03.915393Z"
           }
         }
       ]
@@ -5381,7 +5381,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:40.609249Z"
+            "fetched_at_utc": "2026-05-21T21:56:05.219280Z"
           }
         },
         {
@@ -5400,7 +5400,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -5432,7 +5432,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -5510,7 +5510,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:41.920380Z"
+            "fetched_at_utc": "2026-05-21T21:56:06.521504Z"
           }
         }
       ]
@@ -6180,7 +6180,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:43.220471Z"
+            "fetched_at_utc": "2026-05-21T21:56:07.803445Z"
           }
         },
         {
@@ -6199,7 +6199,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -6231,7 +6231,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -6304,7 +6304,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:44.510169Z"
+            "fetched_at_utc": "2026-05-21T21:56:09.088354Z"
           }
         }
       ]
@@ -6818,7 +6818,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:45.827003Z"
+            "fetched_at_utc": "2026-05-21T21:56:10.320008Z"
           }
         },
         {
@@ -6837,7 +6837,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -6869,7 +6869,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -6946,7 +6946,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:47.141628Z"
+            "fetched_at_utc": "2026-05-21T21:56:11.616969Z"
           }
         }
       ]
@@ -7959,7 +7959,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:48.448164Z"
+            "fetched_at_utc": "2026-05-21T21:56:12.916765Z"
           }
         },
         {
@@ -7978,7 +7978,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -8010,7 +8010,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -8085,7 +8085,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:49.747641Z"
+            "fetched_at_utc": "2026-05-21T21:56:14.223406Z"
           }
         }
       ]
@@ -8719,7 +8719,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:51.054019Z"
+            "fetched_at_utc": "2026-05-21T21:56:15.516961Z"
           }
         },
         {
@@ -8738,7 +8738,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -8770,7 +8770,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -8849,7 +8849,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:52.295966Z"
+            "fetched_at_utc": "2026-05-21T21:56:16.820504Z"
           }
         }
       ]
@@ -9592,7 +9592,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:53.526531Z"
+            "fetched_at_utc": "2026-05-21T21:56:18.109340Z"
           }
         },
         {
@@ -9611,7 +9611,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -9643,7 +9643,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -9714,7 +9714,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:54.861063Z"
+            "fetched_at_utc": "2026-05-21T21:56:19.396512Z"
           }
         }
       ]
@@ -10540,7 +10540,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:56.169508Z"
+            "fetched_at_utc": "2026-05-21T21:56:20.699058Z"
           }
         },
         {
@@ -10559,7 +10559,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -10591,7 +10591,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -10670,7 +10670,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:57.461823Z"
+            "fetched_at_utc": "2026-05-21T21:56:21.990778Z"
           }
         }
       ]
@@ -11562,7 +11562,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:04:58.746443Z"
+            "fetched_at_utc": "2026-05-21T21:56:23.289632Z"
           }
         },
         {
@@ -11581,7 +11581,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -11613,7 +11613,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -11692,7 +11692,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:00.072990Z"
+            "fetched_at_utc": "2026-05-21T21:56:24.594234Z"
           }
         }
       ]
@@ -12694,7 +12694,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:01.414665Z"
+            "fetched_at_utc": "2026-05-21T21:56:25.889157Z"
           }
         },
         {
@@ -12713,7 +12713,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -12745,7 +12745,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -12828,7 +12828,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:02.717130Z"
+            "fetched_at_utc": "2026-05-21T21:56:27.181177Z"
           }
         }
       ]
@@ -13904,7 +13904,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:04.014670Z"
+            "fetched_at_utc": "2026-05-21T21:56:28.474837Z"
           }
         },
         {
@@ -13923,7 +13923,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -13955,7 +13955,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -14037,7 +14037,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:05.353985Z"
+            "fetched_at_utc": "2026-05-21T21:56:29.777816Z"
           }
         }
       ]
@@ -14754,7 +14754,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:06.649527Z"
+            "fetched_at_utc": "2026-05-21T21:56:31.060687Z"
           }
         },
         {
@@ -14773,7 +14773,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -14805,7 +14805,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -14882,7 +14882,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:07.989018Z"
+            "fetched_at_utc": "2026-05-21T21:56:32.363363Z"
           }
         }
       ]
@@ -15682,7 +15682,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:09.281822Z"
+            "fetched_at_utc": "2026-05-21T21:56:33.659094Z"
           }
         },
         {
@@ -15701,7 +15701,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -15733,7 +15733,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -15808,7 +15808,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:10.601549Z"
+            "fetched_at_utc": "2026-05-21T21:56:34.955207Z"
           }
         }
       ]
@@ -16689,7 +16689,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:11.891460Z"
+            "fetched_at_utc": "2026-05-21T21:56:36.251982Z"
           }
         },
         {
@@ -16708,7 +16708,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -16740,7 +16740,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -16820,7 +16820,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:13.178597Z"
+            "fetched_at_utc": "2026-05-21T21:56:37.544732Z"
           }
         }
       ]
@@ -17582,7 +17582,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:14.497920Z"
+            "fetched_at_utc": "2026-05-21T21:56:38.825542Z"
           }
         },
         {
@@ -17601,7 +17601,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -17633,7 +17633,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -17708,7 +17708,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:15.791715Z"
+            "fetched_at_utc": "2026-05-21T21:56:40.121251Z"
           }
         }
       ]
@@ -18836,7 +18836,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:17.103750Z"
+            "fetched_at_utc": "2026-05-21T21:56:41.420852Z"
           }
         },
         {
@@ -18855,7 +18855,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -18887,7 +18887,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -18964,7 +18964,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:18.404643Z"
+            "fetched_at_utc": "2026-05-21T21:56:42.723862Z"
           }
         }
       ]
@@ -19559,7 +19559,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:19.718668Z"
+            "fetched_at_utc": "2026-05-21T21:56:44.005899Z"
           }
         },
         {
@@ -19578,7 +19578,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -19610,7 +19610,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -19688,7 +19688,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:21.020245Z"
+            "fetched_at_utc": "2026-05-21T21:56:45.295891Z"
           }
         }
       ]
@@ -21226,7 +21226,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:22.312900Z"
+            "fetched_at_utc": "2026-05-21T21:56:46.594947Z"
           }
         },
         {
@@ -21245,7 +21245,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -21277,7 +21277,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -21358,7 +21358,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:23.613272Z"
+            "fetched_at_utc": "2026-05-21T21:56:47.894984Z"
           }
         }
       ]
@@ -22294,7 +22294,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:24.937785Z"
+            "fetched_at_utc": "2026-05-21T21:56:49.207327Z"
           }
         },
         {
@@ -22313,7 +22313,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -22345,7 +22345,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -22426,7 +22426,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:26.228035Z"
+            "fetched_at_utc": "2026-05-21T21:56:50.509092Z"
           }
         }
       ]
@@ -22946,7 +22946,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:27.539309Z"
+            "fetched_at_utc": "2026-05-21T21:56:51.810086Z"
           }
         },
         {
@@ -22965,7 +22965,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -22997,7 +22997,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -23065,7 +23065,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:28.831377Z"
+            "fetched_at_utc": "2026-05-21T21:56:53.107223Z"
           }
         }
       ]
@@ -23943,7 +23943,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:30.130717Z"
+            "fetched_at_utc": "2026-05-21T21:56:54.412371Z"
           }
         },
         {
@@ -23962,7 +23962,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -23994,7 +23994,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -24078,7 +24078,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:31.364972Z"
+            "fetched_at_utc": "2026-05-21T21:56:55.710457Z"
           }
         }
       ]
@@ -24612,7 +24612,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:32.659463Z"
+            "fetched_at_utc": "2026-05-21T21:56:57.003584Z"
           }
         },
         {
@@ -24631,7 +24631,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -24663,7 +24663,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -24734,7 +24734,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:33.959175Z"
+            "fetched_at_utc": "2026-05-21T21:56:58.302596Z"
           }
         }
       ]
@@ -24986,7 +24986,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:35.262372Z"
+            "fetched_at_utc": "2026-05-21T21:56:59.585146Z"
           }
         },
         {
@@ -25005,7 +25005,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -25037,7 +25037,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -25103,7 +25103,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:36.545702Z"
+            "fetched_at_utc": "2026-05-21T21:57:00.882492Z"
           }
         }
       ]
@@ -25900,7 +25900,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:37.852266Z"
+            "fetched_at_utc": "2026-05-21T21:57:02.180846Z"
           }
         },
         {
@@ -25919,7 +25919,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -25951,7 +25951,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -26031,7 +26031,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:39.087226Z"
+            "fetched_at_utc": "2026-05-21T21:57:03.484917Z"
           }
         }
       ]
@@ -26542,7 +26542,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:40.396889Z"
+            "fetched_at_utc": "2026-05-21T21:57:04.774609Z"
           }
         },
         {
@@ -26561,7 +26561,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -26593,7 +26593,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -26669,7 +26669,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:41.628917Z"
+            "fetched_at_utc": "2026-05-21T21:57:06.082831Z"
           }
         }
       ]
@@ -28060,7 +28060,7 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:42.866407Z"
+            "fetched_at_utc": "2026-05-21T21:57:07.371249Z"
           }
         },
         {
@@ -28079,7 +28079,7 @@
               "position": "M",
               "jerseyNumber": "20",
               "height": 182,
-              "userCount": 6677,
+              "userCount": 6707,
               "gender": "M",
               "id": 1109771,
               "marketValueCurrency": "EUR",
@@ -28111,7 +28111,7 @@
                 "slug": "football",
                 "id": 1
               },
-              "userCount": 443745,
+              "userCount": 444457,
               "nameCode": "CRY",
               "disabled": false,
               "national": false,
@@ -28192,7 +28192,1722 @@
             "status_code": 200,
             "ok": true,
             "error": null,
-            "fetched_at_utc": "2026-05-18T12:05:44.125230Z"
+            "fetched_at_utc": "2026-05-21T21:57:08.669696Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1109771,
+      "player_name": "Adam Wharton",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 15999228,
+      "event": {
+        "event_id": 15999228,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Crystal Palace",
+        "minutes": 30.0,
+        "player_name": "Adam Wharton"
+      },
+      "endpoints": [
+        {
+          "player_id": 1109771,
+          "event_id": 15999228,
+          "endpoint": "rating-breakdown",
+          "available": true,
+          "source": "fetch",
+          "data": {
+            "passes": [
+              {
+                "playerCoordinates": {
+                  "x": 24.9,
+                  "y": 40.6
+                },
+                "passEndCoordinates": {
+                  "x": 14.2,
+                  "y": 30.4
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 59.1,
+                  "y": 11.7
+                },
+                "passEndCoordinates": {
+                  "x": 58.7,
+                  "y": 31.9
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 56.8,
+                  "y": 33.7
+                },
+                "passEndCoordinates": {
+                  "x": 82.1,
+                  "y": 29.4
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 55.1,
+                  "y": 75.7
+                },
+                "passEndCoordinates": {
+                  "x": 100,
+                  "y": 34.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 60.1,
+                  "y": 75
+                },
+                "passEndCoordinates": {
+                  "x": 90.6,
+                  "y": 74.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 27.7,
+                  "y": 17.4
+                },
+                "passEndCoordinates": {
+                  "x": 26.1,
+                  "y": 40.8
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 36.6,
+                  "y": 45.7
+                },
+                "passEndCoordinates": {
+                  "x": 75.4,
+                  "y": 82.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 32,
+                  "y": 39.7
+                },
+                "passEndCoordinates": {
+                  "x": 23.2,
+                  "y": 27
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 30.2,
+                  "y": 32.1
+                },
+                "passEndCoordinates": {
+                  "x": 37.8,
+                  "y": 19.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 31.7,
+                  "y": 40.5
+                },
+                "passEndCoordinates": {
+                  "x": 46.4,
+                  "y": 79.9
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 37.2,
+                  "y": 21.6
+                },
+                "passEndCoordinates": {
+                  "x": 32.8,
+                  "y": 53.1
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 53.6,
+                  "y": 55.2
+                },
+                "passEndCoordinates": {
+                  "x": 64.7,
+                  "y": 61
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 18.4,
+                  "y": 54.9
+                },
+                "passEndCoordinates": {
+                  "x": 22.3,
+                  "y": 74.7
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 44.1,
+                  "y": 28
+                },
+                "passEndCoordinates": {
+                  "x": 29.5,
+                  "y": 26.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 53.5,
+                  "y": 45.6
+                },
+                "passEndCoordinates": {
+                  "x": 81.3,
+                  "y": 37.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 42.7,
+                  "y": 32.4
+                },
+                "passEndCoordinates": {
+                  "x": 54.8,
+                  "y": 27.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 34.9,
+                  "y": 54.1
+                },
+                "passEndCoordinates": {
+                  "x": 86.7,
+                  "y": 91.8
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 31.8,
+                  "y": 54.4
+                },
+                "passEndCoordinates": {
+                  "x": 27.3,
+                  "y": 63
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 41.9,
+                  "y": 33.7
+                },
+                "passEndCoordinates": {
+                  "x": 42.2,
+                  "y": 54.7
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 61.2,
+                  "y": 58.9
+                },
+                "passEndCoordinates": {
+                  "x": 70.1,
+                  "y": 91
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": true
+              }
+            ],
+            "dribbles": [],
+            "defensive": [
+              {
+                "playerCoordinates": {
+                  "x": 59.1,
+                  "y": 11.7
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 57,
+                  "y": 66.9
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 53.6,
+                  "y": 55.2
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 61.7,
+                  "y": 43
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 17.9,
+                  "y": 54.4
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 21.4,
+                  "y": 40.3
+                },
+                "eventActionType": "tackle",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 48.3,
+                  "y": 65.8
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              }
+            ],
+            "ball-carries": [
+              {
+                "playerCoordinates": {
+                  "x": 57,
+                  "y": 66.9
+                },
+                "passEndCoordinates": {
+                  "x": 60.1,
+                  "y": 75
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 25.9,
+                  "y": 47.1
+                },
+                "passEndCoordinates": {
+                  "x": 36.6,
+                  "y": 45.7
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 57.6,
+                  "y": 42.3
+                },
+                "passEndCoordinates": {
+                  "x": 61.7,
+                  "y": 43
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 61.7,
+                  "y": 43
+                },
+                "passEndCoordinates": {
+                  "x": 40,
+                  "y": 56.8
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 32.7,
+                  "y": 43.6
+                },
+                "passEndCoordinates": {
+                  "x": 34.9,
+                  "y": 54.1
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 48.3,
+                  "y": 65.8
+                },
+                "passEndCoordinates": {
+                  "x": 61.2,
+                  "y": 58.9
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              }
+            ]
+          },
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/15999228/player/1109771/rating-breakdown",
+            "status_code": 200,
+            "ok": true,
+            "error": null,
+            "fetched_at_utc": "2026-05-21T21:57:09.967925Z"
+          }
+        },
+        {
+          "player_id": 1109771,
+          "event_id": 15999228,
+          "endpoint": "statistics",
+          "available": true,
+          "source": "fetch",
+          "data": {
+            "player": {
+              "name": "Adam Wharton",
+              "firstName": "",
+              "lastName": "",
+              "slug": "adam-wharton",
+              "shortName": "A. Wharton",
+              "position": "M",
+              "jerseyNumber": "20",
+              "height": 182,
+              "userCount": 6707,
+              "gender": "M",
+              "id": 1109771,
+              "marketValueCurrency": "EUR",
+              "dateOfBirthTimestamp": 1076025600,
+              "proposedMarketValueRaw": {
+                "value": 63000000,
+                "currency": "EUR"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "آدم وارتون",
+                  "bn": "অ্যাডাম ওয়ার্টন",
+                  "hi": "एडम व्हार्टन"
+                },
+                "shortNameTranslation": {
+                  "ar": "أ. وارتون",
+                  "bn": "এ. ওয়ার্টন",
+                  "hi": "ए. व्हार्टन"
+                }
+              }
+            },
+            "team": {
+              "name": "Crystal Palace",
+              "slug": "crystal-palace",
+              "shortName": "Crystal Palace",
+              "gender": "M",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "userCount": 444457,
+              "nameCode": "CRY",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 7,
+              "teamColors": {
+                "primary": "#0033ff",
+                "secondary": "#b90d2b",
+                "text": "#b90d2b"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "كريستال بالاس",
+                  "bn": "ক্রিস্টাল প্যালেস",
+                  "hi": "क्रिस्टल पैलेस",
+                  "ru": "Кристал Пэлас"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "statistics": {
+              "totalPass": 20,
+              "accuratePass": 17,
+              "totalLongBalls": 4,
+              "accurateLongBalls": 2,
+              "goalAssist": 0,
+              "accurateOwnHalfPasses": 10,
+              "totalOwnHalfPasses": 10,
+              "accurateOppositionHalfPasses": 7,
+              "totalOppositionHalfPasses": 10,
+              "duelLost": 3,
+              "duelWon": 2,
+              "challengeLost": 1,
+              "dispossessed": 2,
+              "ballRecovery": 6,
+              "totalTackle": 1,
+              "wonTackle": 1,
+              "wasFouled": 1,
+              "minutesPlayed": 30,
+              "touches": 26,
+              "rating": 6.8,
+              "possessionLostCtrl": 5,
+              "expectedAssists": 0.0189489,
+              "totalBallCarriesDistance": 68.485159465515,
+              "ballCarriesCount": 6,
+              "totalProgression": 10.768017607754,
+              "bestBallCarryProgression": 14.150939905762,
+              "totalProgressiveBallCarriesDistance": 14.334639479247,
+              "progressiveBallCarriesCount": 1,
+              "keyPass": 2,
+              "ratingVersions": {
+                "original": 6.8,
+                "alternative": 6.6
+              },
+              "totalShots": 0,
+              "passValueNormalized": 0.28,
+              "dribbleValueNormalized": 0.04,
+              "defensiveValueNormalized": -0.01,
+              "statisticsType": {
+                "sportSlug": "football",
+                "statisticsType": "player"
+              }
+            },
+            "position": "M",
+            "extra": null
+          },
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/15999228/player/1109771/statistics",
+            "status_code": 200,
+            "ok": true,
+            "error": null,
+            "fetched_at_utc": "2026-05-21T21:57:11.267348Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1109771,
+      "player_name": "Adam Wharton",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14023953,
+      "event": {
+        "event_id": 14023953,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Crystal Palace",
+        "minutes": 90.0,
+        "player_name": "Adam Wharton"
+      },
+      "endpoints": [
+        {
+          "player_id": 1109771,
+          "event_id": 14023953,
+          "endpoint": "rating-breakdown",
+          "available": true,
+          "source": "fetch",
+          "data": {
+            "passes": [
+              {
+                "playerCoordinates": {
+                  "x": 65,
+                  "y": 23.3
+                },
+                "passEndCoordinates": {
+                  "x": 70.3,
+                  "y": 16.4
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 64.6,
+                  "y": 21
+                },
+                "passEndCoordinates": {
+                  "x": 69.4,
+                  "y": 7.9
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 45,
+                  "y": 53.2
+                },
+                "passEndCoordinates": {
+                  "x": 56.7,
+                  "y": 47.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 42.2,
+                  "y": 69.7
+                },
+                "passEndCoordinates": {
+                  "x": 81.8,
+                  "y": 53.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 64.2,
+                  "y": 46.6
+                },
+                "passEndCoordinates": {
+                  "x": 69.4,
+                  "y": 54.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 36.8,
+                  "y": 11.9
+                },
+                "passEndCoordinates": {
+                  "x": 40.8,
+                  "y": 18.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 67.8,
+                  "y": 37.9
+                },
+                "passEndCoordinates": {
+                  "x": 88,
+                  "y": 54.9
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 76.3,
+                  "y": 63.4
+                },
+                "passEndCoordinates": {
+                  "x": 89.4,
+                  "y": 70
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 99.5,
+                  "y": 0.5
+                },
+                "passEndCoordinates": {
+                  "x": 84.4,
+                  "y": 25.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 88.2,
+                  "y": 11
+                },
+                "passEndCoordinates": {
+                  "x": 91.7,
+                  "y": 43.6
+                },
+                "eventActionType": "cross",
+                "isHome": false,
+                "outcome": true,
+                "keypass": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 38.3,
+                  "y": 47.3
+                },
+                "passEndCoordinates": {
+                  "x": 38.6,
+                  "y": 22.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 63,
+                  "y": 54.6
+                },
+                "passEndCoordinates": {
+                  "x": 71.1,
+                  "y": 87.4
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 67.4,
+                  "y": 53.3
+                },
+                "passEndCoordinates": {
+                  "x": 75.6,
+                  "y": 37.1
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 99.5,
+                  "y": 0.5
+                },
+                "passEndCoordinates": {
+                  "x": 91.7,
+                  "y": 65.2
+                },
+                "eventActionType": "cross",
+                "isHome": false,
+                "outcome": true,
+                "keypass": true,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 69.2,
+                  "y": 29.4
+                },
+                "passEndCoordinates": {
+                  "x": 78.1,
+                  "y": 11.1
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 99.5,
+                  "y": 0.5
+                },
+                "passEndCoordinates": {
+                  "x": 96.1,
+                  "y": 34.9
+                },
+                "eventActionType": "cross",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 38.4,
+                  "y": 17.6
+                },
+                "passEndCoordinates": {
+                  "x": 43,
+                  "y": 29.8
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 25.5,
+                  "y": 59.9
+                },
+                "passEndCoordinates": {
+                  "x": 30.5,
+                  "y": 70.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 35.9,
+                  "y": 42.8
+                },
+                "passEndCoordinates": {
+                  "x": 28.4,
+                  "y": 64
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 30.9,
+                  "y": 81.2
+                },
+                "passEndCoordinates": {
+                  "x": 28.5,
+                  "y": 91.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 29.5,
+                  "y": 72.4
+                },
+                "passEndCoordinates": {
+                  "x": 66.6,
+                  "y": 59.6
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 64.8,
+                  "y": 74.7
+                },
+                "passEndCoordinates": {
+                  "x": 74.9,
+                  "y": 78.7
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 73.6,
+                  "y": 67.3
+                },
+                "passEndCoordinates": {
+                  "x": 69,
+                  "y": 79.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 63.6,
+                  "y": 40.1
+                },
+                "passEndCoordinates": {
+                  "x": 57.6,
+                  "y": 61.8
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 66.2,
+                  "y": 50.1
+                },
+                "passEndCoordinates": {
+                  "x": 65.9,
+                  "y": 63
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 74.8,
+                  "y": 46.7
+                },
+                "passEndCoordinates": {
+                  "x": 86.6,
+                  "y": 32.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 72,
+                  "y": 78.5
+                },
+                "passEndCoordinates": {
+                  "x": 90.1,
+                  "y": 53.4
+                },
+                "eventActionType": "cross",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 69.2,
+                  "y": 47.2
+                },
+                "passEndCoordinates": {
+                  "x": 75.6,
+                  "y": 58.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 74,
+                  "y": 32.1
+                },
+                "passEndCoordinates": {
+                  "x": 90.1,
+                  "y": 32.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 15.3,
+                  "y": 11.6
+                },
+                "passEndCoordinates": {
+                  "x": 30.3,
+                  "y": 6.4
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 54.4,
+                  "y": 22.2
+                },
+                "passEndCoordinates": {
+                  "x": 64.1,
+                  "y": 33.7
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 63,
+                  "y": 36.8
+                },
+                "passEndCoordinates": {
+                  "x": 80.6,
+                  "y": 35.6
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 64,
+                  "y": 37.1
+                },
+                "passEndCoordinates": {
+                  "x": 65.8,
+                  "y": 52.8
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 57.4,
+                  "y": 26.8
+                },
+                "passEndCoordinates": {
+                  "x": 45.3,
+                  "y": 49.1
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 54.6,
+                  "y": 68.2
+                },
+                "passEndCoordinates": {
+                  "x": 37.3,
+                  "y": 55.2
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 60.3,
+                  "y": 67
+                },
+                "passEndCoordinates": {
+                  "x": 60.8,
+                  "y": 91.8
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 63.5,
+                  "y": 36.3
+                },
+                "passEndCoordinates": {
+                  "x": 68.1,
+                  "y": 52.4
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 67.1,
+                  "y": 63.6
+                },
+                "passEndCoordinates": {
+                  "x": 69.5,
+                  "y": 57.9
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 64.8,
+                  "y": 64
+                },
+                "passEndCoordinates": {
+                  "x": 52.6,
+                  "y": 71.7
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 31.9,
+                  "y": 14.3
+                },
+                "passEndCoordinates": {
+                  "x": 39.1,
+                  "y": 13.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false,
+                "isLongBall": true
+              },
+              {
+                "playerCoordinates": {
+                  "x": 51.8,
+                  "y": 42.2
+                },
+                "passEndCoordinates": {
+                  "x": 44.2,
+                  "y": 16.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 63.2,
+                  "y": 29.1
+                },
+                "passEndCoordinates": {
+                  "x": 71.1,
+                  "y": 23.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 35,
+                  "y": 25.8
+                },
+                "passEndCoordinates": {
+                  "x": 54.9,
+                  "y": 33.1
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 70.3,
+                  "y": 70.3
+                },
+                "passEndCoordinates": {
+                  "x": 68.8,
+                  "y": 84.5
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 65.8,
+                  "y": 27.3
+                },
+                "passEndCoordinates": {
+                  "x": 74.4,
+                  "y": 31.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 58.1,
+                  "y": 33
+                },
+                "passEndCoordinates": {
+                  "x": 66,
+                  "y": 79.3
+                },
+                "eventActionType": "pass",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false,
+                "isLongBall": true
+              }
+            ],
+            "dribbles": [],
+            "defensive": [
+              {
+                "playerCoordinates": {
+                  "x": 63.7,
+                  "y": 45.8
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 29.3,
+                  "y": 54
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 47.4,
+                  "y": 47
+                },
+                "eventActionType": "interception",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 29.5,
+                  "y": 72.4
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 68.1,
+                  "y": 25.5
+                },
+                "eventActionType": "tackle",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 72.5,
+                  "y": 31.3
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 60.6,
+                  "y": 35.1
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 63.8,
+                  "y": 37.1
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 71.4,
+                  "y": 21.9
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 12.4,
+                  "y": 57
+                },
+                "passEndCoordinates": {
+                  "x": 31.2,
+                  "y": 26
+                },
+                "eventActionType": "clearance",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 65.8,
+                  "y": 27.7
+                },
+                "eventActionType": "interception",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 69.5,
+                  "y": 24.4
+                },
+                "eventActionType": "ball-recovery",
+                "isHome": false,
+                "outcome": true,
+                "keypass": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 37.8,
+                  "y": 16.6
+                },
+                "eventActionType": "tackle",
+                "isHome": false,
+                "keypass": false
+              }
+            ],
+            "ball-carries": [
+              {
+                "playerCoordinates": {
+                  "x": 62.8,
+                  "y": 34.3
+                },
+                "passEndCoordinates": {
+                  "x": 67.8,
+                  "y": 37.9
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 33.8,
+                  "y": 59.4
+                },
+                "passEndCoordinates": {
+                  "x": 38.3,
+                  "y": 47.3
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 64.6,
+                  "y": 24
+                },
+                "passEndCoordinates": {
+                  "x": 69.2,
+                  "y": 29.4
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 26.6,
+                  "y": 15
+                },
+                "passEndCoordinates": {
+                  "x": 29.5,
+                  "y": 12.3
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 21.6,
+                  "y": 7.4
+                },
+                "passEndCoordinates": {
+                  "x": 38.4,
+                  "y": 17.6
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 29.3,
+                  "y": 54
+                },
+                "passEndCoordinates": {
+                  "x": 25.5,
+                  "y": 59.9
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 34.1,
+                  "y": 31.9
+                },
+                "passEndCoordinates": {
+                  "x": 35.9,
+                  "y": 42.8
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 34.1,
+                  "y": 66
+                },
+                "passEndCoordinates": {
+                  "x": 32.7,
+                  "y": 76.4
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 77.2,
+                  "y": 41.9
+                },
+                "passEndCoordinates": {
+                  "x": 74.8,
+                  "y": 46.7
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 66.3,
+                  "y": 53.9
+                },
+                "passEndCoordinates": {
+                  "x": 69,
+                  "y": 71.6
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 70.1,
+                  "y": 17.9
+                },
+                "passEndCoordinates": {
+                  "x": 71.4,
+                  "y": 21.9
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 71.4,
+                  "y": 21.9
+                },
+                "passEndCoordinates": {
+                  "x": 71.7,
+                  "y": 37.9
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 56.9,
+                  "y": 66.1
+                },
+                "passEndCoordinates": {
+                  "x": 67.1,
+                  "y": 63.6
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 61.3,
+                  "y": 29.2
+                },
+                "passEndCoordinates": {
+                  "x": 69.5,
+                  "y": 24.4
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              },
+              {
+                "playerCoordinates": {
+                  "x": 69.5,
+                  "y": 24.4
+                },
+                "passEndCoordinates": {
+                  "x": 63.2,
+                  "y": 29.1
+                },
+                "eventActionType": "ball-carry",
+                "isHome": false
+              }
+            ]
+          },
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14023953/player/1109771/rating-breakdown",
+            "status_code": 200,
+            "ok": true,
+            "error": null,
+            "fetched_at_utc": "2026-05-21T21:57:12.499114Z"
+          }
+        },
+        {
+          "player_id": 1109771,
+          "event_id": 14023953,
+          "endpoint": "statistics",
+          "available": true,
+          "source": "fetch",
+          "data": {
+            "player": {
+              "name": "Adam Wharton",
+              "firstName": "",
+              "lastName": "",
+              "slug": "adam-wharton",
+              "shortName": "A. Wharton",
+              "position": "M",
+              "jerseyNumber": "20",
+              "height": 182,
+              "userCount": 6707,
+              "gender": "M",
+              "id": 1109771,
+              "marketValueCurrency": "EUR",
+              "dateOfBirthTimestamp": 1076025600,
+              "proposedMarketValueRaw": {
+                "value": 63000000,
+                "currency": "EUR"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "آدم وارتون",
+                  "bn": "অ্যাডাম ওয়ার্টন",
+                  "hi": "एडम व्हार्टन"
+                },
+                "shortNameTranslation": {
+                  "ar": "أ. وارتون",
+                  "bn": "এ. ওয়ার্টন",
+                  "hi": "ए. व्हार्टन"
+                }
+              }
+            },
+            "team": {
+              "name": "Crystal Palace",
+              "slug": "crystal-palace",
+              "shortName": "Crystal Palace",
+              "gender": "M",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "userCount": 444457,
+              "nameCode": "CRY",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 7,
+              "teamColors": {
+                "primary": "#0033ff",
+                "secondary": "#b90d2b",
+                "text": "#b90d2b"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "كريستال بالاس",
+                  "bn": "ক্রিস্টাল প্যালেস",
+                  "hi": "क्रिस्टल पैलेस",
+                  "ru": "Кристал Пэлас"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "statistics": {
+              "totalPass": 42,
+              "accuratePass": 33,
+              "totalLongBalls": 5,
+              "accurateLongBalls": 2,
+              "goalAssist": 0,
+              "accurateOwnHalfPasses": 10,
+              "totalOwnHalfPasses": 11,
+              "accurateOppositionHalfPasses": 23,
+              "totalOppositionHalfPasses": 31,
+              "totalCross": 4,
+              "accurateCross": 2,
+              "aerialWon": 1,
+              "duelLost": 3,
+              "duelWon": 4,
+              "challengeLost": 1,
+              "dispossessed": 1,
+              "shotOffTarget": 1,
+              "onTargetScoringAttempt": 2,
+              "blockedScoringAttempt": 1,
+              "goals": 1,
+              "totalClearance": 1,
+              "interceptionWon": 2,
+              "ballRecovery": 8,
+              "totalTackle": 2,
+              "wonTackle": 1,
+              "unsuccessfulTouch": 2,
+              "wasFouled": 1,
+              "fouls": 1,
+              "minutesPlayed": 90,
+              "touches": 62,
+              "rating": 8.1,
+              "possessionLostCtrl": 15,
+              "expectedGoals": 0.1296,
+              "expectedGoalsOnTarget": 0.0356,
+              "expectedAssists": 0.147669,
+              "totalBallCarriesDistance": 121.83904056319,
+              "ballCarriesCount": 15,
+              "totalProgression": 48.399309907651,
+              "progressiveBallCarriesCount": 0,
+              "keyPass": 4,
+              "ratingVersions": {
+                "original": 8.1,
+                "alternative": 8.3
+              },
+              "totalShots": 4,
+              "shotValueNormalized": 0.49,
+              "passValueNormalized": 0.41,
+              "dribbleValueNormalized": 0.14,
+              "defensiveValueNormalized": -0.13,
+              "statisticsType": {
+                "sportSlug": "football",
+                "statisticsType": "player"
+              }
+            },
+            "position": "M",
+            "extra": null
+          },
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14023953/player/1109771/statistics",
+            "status_code": 200,
+            "ok": true,
+            "error": null,
+            "fetched_at_utc": "2026-05-21T21:57:13.732278Z"
           }
         }
       ]

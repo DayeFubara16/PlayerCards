@@ -1,0 +1,89 @@
+{
+  "player_id": 1410240,
+  "event_id": 14288822,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Rodrigo Mora",
+      "firstName": "Rodrigo Mora",
+      "slug": "mora-rodrigo",
+      "shortName": "R. Mora",
+      "position": "M",
+      "jerseyNumber": "86",
+      "height": 168,
+      "userCount": 14729,
+      "gender": "M",
+      "id": 1410240,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1178323200,
+      "proposedMarketValueRaw": {
+        "value": 40000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مورا، رودريغو",
+          "bn": "মোরা, রদ্রিগো",
+          "hi": "मोरा, रोड्रिगो"
+        },
+        "shortNameTranslation": {
+          "ar": "ر. مورا",
+          "bn": "আর. মোরা",
+          "hi": "आर. मोरा"
+        }
+      }
+    },
+    "team": {
+      "name": "FC Porto",
+      "slug": "fc-porto",
+      "shortName": "Porto",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 697033,
+      "nameCode": "FCP",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 3002,
+      "teamColors": {
+        "primary": "#194f93",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "اف سي بورتو",
+          "hi": "ऍफ़सी पोर्टो",
+          "ru": "Порту"
+        },
+        "shortNameTranslation": {
+          "ar": "بورتو",
+          "bn": "পোর্তো",
+          "hi": "पोर्तो"
+        }
+      }
+    },
+    "statistics": {
+      "totalShots": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14288822/player/1410240/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T20:37:08.095210Z"
+  }
+}

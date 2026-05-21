@@ -12,19 +12,10 @@ V3 / action-ready rewrite:
 - Keeps raw action payloads out of the final card by default so the JSON stays UI-friendly.
 - Produces compact summaries, zone shares, and map-ready point arrays.
 
-Recommended run:
-  python Player_Card_Builder.py \
-    --player-id 978838 \
-    --season 2025-26 \
-    --season-totals data/processed/player_season_totals_arbitrated.csv \
-    --roles data/processed/player_roles.csv \
-    --similarity cards/similarities/similar_978838_all_leagues.json \
-    --event-data "Michael Olise_978838_2025-26.json" \
-    --heatmap "Michael_Olise_978838_2025-26_heatmap_position.json" \
-    --actions "cards/actions/Michael_Olise_978838_2025-26_actions_flat.csv"
-
-Output:
-  player_card_PlayerName_playerID_season.json
+Updated with custom advanced progressive action metrics:
+- Passes: Opta-defined completed passes originating in the attacking two-thirds
+  that move the ball at least 25% closer to the center of the opponent's goal.
+- Carries: Ball carries moving the ball > 5 meters (~4.76 coordinate units) upfield.
 """
 
 from __future__ import annotations
@@ -125,7 +116,7 @@ ROLE_METRIC_WEIGHTS = {
 
 GRADE_CATEGORIES = {
     "progression": ["progressive", "carry", "progression", "passes_opposition_half", "long_balls", "pass_value"],
-    "defense": ["tackle", "interception", "recover", "duel", "clearance", "block", "challenge"],
+    "defense": ["tackle_won", "interception", "blocked_shots", "clearance", "aerial_duels_won"],
     "creation": ["key_pass", "xa", "assist", "cross", "big_chances_created"],
     "scoring": ["goal", "xg", "xgot", "shot", "touches_opp_box", "big_chance_missed"],
     "possession": ["passes", "pass_accuracy", "touches", "dribble", "dispossessed", "possession_lost"],
@@ -202,7 +193,7 @@ def value(row: pd.Series | dict[str, Any] | None, names: Iterable[str | None], d
                 if pd.notna(v):
                     return v
     else:
-        lower = {str(c).lower(): c for c in row.keys()}
+        lower = {str(c).lower(): k for k, v in row.items()}
         for name in names:
             col = lower.get(str(name).lower())
             if col is not None:
@@ -375,7 +366,7 @@ def percentile(series: pd.Series, x: Any) -> float | None:
 
 
 def prettify_metric(metric: str) -> str:
-    s = re.sub(r"_(per90|p90)$", "/90", metric)
+    s = re.sub(r"_(per90|p90)$", " per 90", metric)
     return s.replace("_", " ").title().replace("Xg", "xG").replace("Xa", "xA").replace("Xgot", "xGOT")
 
 
@@ -431,16 +422,18 @@ def build_stat_block(row: pd.Series, aliases: dict[str, list[str]], per90: bool)
 
 
 def letter_grade(score: float | None) -> str | None:
-    if score is None: return None
-    if score >= 90: return "A+"
-    if score >= 82: return "A"
-    if score >= 75: return "A-"
-    if score >= 68: return "B+"
-    if score >= 60: return "B"
-    if score >= 52: return "B-"
-    if score >= 45: return "C+"
-    if score >= 38: return "C"
-    if score >= 30: return "C-"
+    if score is None:
+        return None
+
+    if score >= 97: return "A+"
+    if score >= 92: return "A"
+    if score >= 85: return "A-"
+    if score >= 77: return "B+"
+    if score >= 68: return "B"
+    if score >= 58: return "B-"
+    if score >= 48: return "C+"
+    if score >= 40: return "C"
+    if score >= 32: return "C-"
     return "D"
 
 
@@ -453,7 +446,7 @@ def numeric_category_score(percentiles: list[dict[str, Any]], tokens: list[str])
             if pct is not None:
                 vals.append(pct)
                 weights.append(num(p.get("weight")) or 1.0)
-    return None if not vals else float(np.average(vals, weights=weights))
+    return None if not vals else float(np.median(vals))
 
 
 def build_grades(percentiles: list[dict[str, Any]], role_row: dict[str, Any], family: str | None = None) -> dict[str, Any]:
@@ -624,12 +617,65 @@ def infer_action_success(row: dict[str, Any]) -> bool | None:
     return None
 
 
-def infer_progressive(row: dict[str, Any]) -> bool | None:
+def infer_progressive_pass(row: dict[str, Any]) -> bool | None:
+    """
+    Opta Definition: A completed pass in the attacking two-thirds
+    that moves the ball at least 25% closer to the center of the opponent's goal.
+    """
+    success = infer_action_success(row)
+    if success is False or row.get("outcome") in ["failed", "incomplete"]:
+        return False
+
+    x = num(row.get("x"))
+    y = num(row.get("y"))
+    end_x = num(row.get("end_x") or row.get("endX") or row.get("passEndCoordinates_x"))
+    end_y = num(row.get("end_y") or row.get("endY") or row.get("passEndCoordinates_y"))
+
+    if None in (x, y, end_x, end_y):
+        return None
+
+    # Check if inside attacking two-thirds of the field (assuming standard normalized 0-100 scale)
+    if x < 33.333:
+        return False
+
+    # Calculate straight line distance to opponent's center goal mouth (100, 50)
+    start_dist_to_goal = math.sqrt((100 - x)**2 + (50 - y)**2)
+    end_dist_to_goal = math.sqrt((100 - end_x)**2 + (50 - end_y)**2)
+
+    if start_dist_to_goal == 0:
+        return False
+
+    pct_closer = (start_dist_to_goal - end_dist_to_goal) / start_dist_to_goal
+    return pct_closer >= 0.25
+
+
+def infer_progressive_carry(row: dict[str, Any]) -> bool | None:
+    """
+    Definition: A ball carry that moves the ball more than 5 meters upfield
+    (equivalent to ~4.76 coordinate distance units on a 100-scale pitch length axis).
+    """
+    x = num(row.get("x"))
+    end_x = num(row.get("end_x") or row.get("endX"))
+
+    if x is None or end_x is None:
+        return None
+
+    return (end_x - x) > 4.7619
+
+
+def infer_progressive(row: dict[str, Any], category: str) -> bool | None:
     for key in ["progressive", "is_progressive", "isProgressive"]:
         if key in row:
             b = action_bool(row.get(key))
             if b is not None:
                 return b
+
+    if category == "passes":
+        return infer_progressive_pass(row)
+    elif category == "carries":
+        return infer_progressive_carry(row)
+
+    # Default metric tracking fallback for other types
     x = num(row.get("x"))
     end_x = num(row.get("end_x") or row.get("endX") or row.get("passEndCoordinates_x"))
     if x is None or end_x is None:
@@ -683,6 +729,15 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
     end_y = get_any(row, ["end_y", "endY", "passEndCoordinates_y", "endCoordinates_y", "to_y"])
 
     z = zone_from_xy(x, y)
+
+    # Bundle row variables temporarily to compute progression types properly
+    eval_row = {
+        "x": x, "y": y, "end_x": end_x, "end_y": end_y,
+        "success": row.get("success"), "successful": row.get("successful"),
+        "accurate": row.get("accurate"), "won": row.get("won"),
+        "isSuccessful": row.get("isSuccessful"), "outcome": row.get("outcome")
+    }
+
     out = {
         "event_id": int(num(get_any(row, ["event_id", "match_id"])) or 0) or None,
         "match_date": get_any(row, ["match_date", "date"]),
@@ -696,14 +751,14 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
         "end_x": round_or_none(end_x, 3),
         "end_y": round_or_none(end_y, 3),
         "success": infer_action_success(row),
-        "progressive": infer_progressive(row),
+        "progressive": infer_progressive(eval_row, category),
         "outcome": get_any(row, ["outcome", "result"]),
         "third": z["third"],
         "lane": z["lane"],
         "zone": z["zone"],
     }
 
-    # Preserve a few useful optional raw fields if they exist.
+    # Preserve useful optional raw fields if they exist.
     for key in ["rating", "value", "body_part", "situation", "endpoint", "_endpoint", "_source_path"]:
         v = get_any(row, [key])
         if v not in (None, ""):

@@ -3,7 +3,7 @@
     "player_id": 1109771,
     "season": "2025-26",
     "league": null,
-    "generated_at_utc": "2026-05-18T12:12:45.438088Z",
+    "generated_at_utc": "2026-05-21T21:58:29.755358Z",
     "schema_version": "player-card-v3-actions",
     "input_files": {
       "season_totals": "data/processed/player_season_totals_arbitrated.csv",
@@ -42,20 +42,20 @@
     "position_conflict_flag": "True",
     "arbitration_reason": "V12 used season-collapsed spatial evidence because it was coherent with role-score evidence.",
     "season_spatial": {
-      "season_avg_x": 49.7711,
-      "season_avg_y": 40.2255,
+      "season_avg_x": 49.8034,
+      "season_avg_y": 40.3814,
       "season_median_x": 49.5521,
-      "season_median_y": 40.2263,
-      "season_std_x": 4.9707,
-      "season_std_y": 3.9216,
+      "season_median_y": 40.3089,
+      "season_std_x": 5.1001,
+      "season_std_y": 3.8482,
       "season_position_zone": "mid_central",
-      "spatial_matches_used": 31.0,
+      "spatial_matches_used": 33.0,
       "spatial_wide_pct": 0.0,
       "spatial_right_pct": 0.0,
       "spatial_left_pct": 0.0,
       "spatial_central_pct": 1.0,
-      "spatial_high_pct": 0.0323,
-      "spatial_mid_pct": 0.9677,
+      "spatial_high_pct": 0.0303,
+      "spatial_mid_pct": 0.9697,
       "spatial_deep_pct": 0.0,
       "spatial_high_wide_pct": 0.0,
       "spatial_mid_wide_pct": 0.0,
@@ -68,24 +68,24 @@
     "heatmap_confidence": null,
     "heatmap_position_note": "Visual heatmap only. Tactical position is intentionally not estimated here; use Position_Arbitrator output.",
     "heatmap_visual_summary": {
-      "centroid_x": 49.9281,
-      "centroid_y": 39.4845,
-      "spread_x": 20.0564,
-      "spread_y": 20.6244,
-      "point_count": 1519,
-      "total_weight": 1778.1555,
+      "centroid_x": 50.1615,
+      "centroid_y": 39.6288,
+      "spread_x": 20.0527,
+      "spread_y": 20.6694,
+      "point_count": 1581,
+      "total_weight": 1866.8222,
       "zone_shares": {
-        "defensive_third": 0.2332,
+        "defensive_third": 0.2306,
         "middle_third": 0.5425,
-        "attacking_third": 0.2242,
-        "left_lane": 0.4344,
-        "central_lane": 0.4401,
-        "right_lane": 0.1256,
-        "wide_lane": 0.5599,
-        "high_wide_share": 0.1818,
-        "deep_wide_share": 0.248,
-        "central_high_share": 0.1319,
-        "deep_central_share": 0.3437
+        "attacking_third": 0.227,
+        "left_lane": 0.4309,
+        "central_lane": 0.4415,
+        "right_lane": 0.1277,
+        "wide_lane": 0.5585,
+        "high_wide_share": 0.1819,
+        "deep_wide_share": 0.2471,
+        "central_high_share": 0.1397,
+        "deep_central_share": 0.3376
       },
       "note": "Visual/action-density summary only. Do not use this as a tactical position estimate; use Position_Arbitrator output for position."
     }
@@ -93,8 +93,8 @@
   "role": {
     "primary": "Advanced Playmaker",
     "secondary": "Pressing Central Midfielder",
-    "role_score": 75.2,
-    "role_bvalue": 0.5039,
+    "role_score": 77.7,
+    "role_bvalue": 0.5541,
     "confidence": 0.708,
     "role_source_column": "arbitrated_role_group",
     "role_model_family": "CM",
@@ -103,301 +103,303 @@
     "unmeasured_traits": "first touch, technique, vision, flair, decisions, composure"
   },
   "grades": {
-    "role_fit": "A-",
-    "role_output": "B+",
-    "progression": "B",
-    "defense": "A-",
-    "creation": "A",
+    "role_fit": "B+",
+    "role_output": "B",
+    "progression": "B-",
+    "defense": null,
+    "creation": "B+",
     "scoring": null,
-    "possession": "B"
+    "possession": "B-"
   },
   "season_stats": {
-    "minutes": 2425.0,
-    "matches": 31.0,
+    "minutes": 2545.0,
+    "matches": 33.0,
+    "goals": 1.0,
     "assists": 5.0,
-    "xg": 1.392,
-    "xgot": 0.375,
-    "xa": 7.192,
-    "shots": 28.0,
-    "shots_on_target": 4.0,
+    "xg": 1.521,
+    "xgot": 0.402,
+    "xa": 7.358,
+    "shots": 32.0,
+    "shots_on_target": 6.0,
     "big_chances_created": 14.0,
-    "touches": 1605.0,
-    "passes_total": 1165.0,
-    "passes_accurate": 922.0,
-    "pass_accuracy_pct": 79.142,
-    "passes_opposition_half_total": 709.0,
-    "long_balls_total": 132.0,
-    "long_balls_accurate": 64.0,
-    "crosses_total": 85.0,
-    "crosses_accurate": 26.0,
+    "touches": 1693.0,
+    "passes_total": 1227.0,
+    "passes_accurate": 972.0,
+    "pass_accuracy_pct": 79.218,
+    "passes_opposition_half_total": 750.0,
+    "long_balls_total": 141.0,
+    "long_balls_accurate": 68.0,
+    "crosses_total": 89.0,
+    "crosses_accurate": 28.0,
     "dribbles_attempted": 29.0,
     "dribbles_won": 15.0,
-    "carries": 306.0,
-    "carry_distance": 2312.611,
-    "progressive_carries": 16.0,
-    "progressive_carry_distance": 368.542,
-    "total_progression": 788.532,
-    "tackles_total": 67.0,
-    "tackles_won": 35.0,
-    "interceptions": 25.0,
-    "clearances": 41.0,
-    "blocked_shots": 16.0,
-    "recoveries": 150.0,
-    "duels_total": 270.0,
-    "duels_won": 133.0,
+    "carries": 327.0,
+    "carry_distance": 2502.935,
+    "progressive_carries": 17.0,
+    "progressive_carry_distance": 382.877,
+    "total_progression": 847.7,
+    "tackles_total": 70.0,
+    "tackles_won": 37.0,
+    "interceptions": 27.0,
+    "clearances": 42.0,
+    "blocked_shots": 17.0,
+    "recoveries": 164.0,
+    "duels_total": 282.0,
+    "duels_won": 139.0,
     "aerial_duels_total": 31.0,
-    "aerial_duels_won": 23.0,
-    "fouls_drawn": 28.0,
-    "fouls_committed": 34.0,
-    "possession_lost": 378.0,
-    "dispossessed": 24.0
+    "aerial_duels_won": 24.0,
+    "fouls_drawn": 30.0,
+    "fouls_committed": 35.0,
+    "possession_lost": 398.0,
+    "dispossessed": 27.0
   },
   "per90": {
-    "minutes": 2425.0,
-    "matches": 31.0,
-    "assists": 0.186,
-    "xg": 0.052,
+    "minutes": 2545.0,
+    "matches": 33.0,
+    "goals": 0.035,
+    "assists": 0.177,
+    "xg": 0.054,
     "xgot": 0.014,
-    "xa": 0.267,
-    "shots": 1.039,
-    "shots_on_target": 0.148,
-    "big_chances_created": 0.52,
-    "touches": 59.567,
-    "passes_total": 43.237,
-    "passes_accurate": 34.219,
-    "pass_accuracy_pct": 79.142,
-    "passes_opposition_half_total": 26.313,
-    "long_balls_total": 4.899,
-    "long_balls_accurate": 2.375,
-    "crosses_total": 3.155,
-    "crosses_accurate": 0.965,
-    "dribbles_attempted": 1.076,
-    "dribbles_won": 0.557,
-    "carries": 11.357,
-    "carry_distance": 85.829,
-    "progressive_carries": 0.594,
-    "progressive_carry_distance": 13.678,
-    "total_progression": 29.265,
-    "tackles_total": 2.487,
-    "tackles_won": 1.299,
-    "interceptions": 0.928,
-    "clearances": 1.522,
-    "blocked_shots": 0.594,
-    "recoveries": 5.567,
-    "duels_total": 10.021,
-    "duels_won": 4.936,
-    "aerial_duels_total": 1.151,
-    "aerial_duels_won": 0.854,
-    "fouls_drawn": 1.039,
-    "fouls_committed": 1.262,
-    "possession_lost": 14.029,
-    "dispossessed": 0.891
+    "xa": 0.26,
+    "shots": 1.132,
+    "shots_on_target": 0.212,
+    "big_chances_created": 0.495,
+    "touches": 59.87,
+    "passes_total": 43.391,
+    "passes_accurate": 34.373,
+    "pass_accuracy_pct": 79.218,
+    "passes_opposition_half_total": 26.523,
+    "long_balls_total": 4.986,
+    "long_balls_accurate": 2.405,
+    "crosses_total": 3.147,
+    "crosses_accurate": 0.99,
+    "dribbles_attempted": 1.026,
+    "dribbles_won": 0.53,
+    "carries": 11.564,
+    "carry_distance": 88.512,
+    "progressive_carries": 0.601,
+    "progressive_carry_distance": 13.54,
+    "total_progression": 29.978,
+    "tackles_total": 2.475,
+    "tackles_won": 1.308,
+    "interceptions": 0.955,
+    "clearances": 1.485,
+    "blocked_shots": 0.601,
+    "recoveries": 5.8,
+    "duels_total": 9.972,
+    "duels_won": 4.916,
+    "aerial_duels_total": 1.096,
+    "aerial_duels_won": 0.849,
+    "fouls_drawn": 1.061,
+    "fouls_committed": 1.238,
+    "possession_lost": 14.075,
+    "dispossessed": 0.955
   },
   "percentiles": [
     {
-      "metric": "xa_per90",
-      "label": "xA/90",
-      "value": 0.2669,
-      "percentile": 98.13,
-      "weighted_percentile": 98.13,
-      "weight": 1.0,
-      "bvalue": 0.9626,
-      "cohort": "CM",
-      "cohort_size": 481
-    },
-    {
       "metric": "key_passes_per90",
-      "label": "Key Passes/90",
-      "value": 1.4103,
-      "percentile": 74.11,
-      "weighted_percentile": 96.34,
+      "label": "Key Passes Per 90",
+      "value": 1.556,
+      "percentile": 81.15,
+      "weighted_percentile": 105.5,
       "weight": 1.3,
-      "bvalue": 0.4822,
+      "bvalue": 0.623,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "big_chances_created_per90",
-      "label": "Big Chances Created/90",
-      "value": 0.5196,
-      "percentile": 94.42,
-      "weighted_percentile": 94.42,
+      "metric": "xa_per90",
+      "label": "xA Per 90",
+      "value": 0.2602,
+      "percentile": 96.77,
+      "weighted_percentile": 96.77,
       "weight": 1.0,
-      "bvalue": 0.8884,
+      "bvalue": 0.9354,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
       "metric": "challenges_lost_per90",
-      "label": "Challenges Lost/90",
-      "value": 1.5216,
-      "percentile": 93.14,
-      "weighted_percentile": 93.14,
+      "label": "Challenges Lost Per 90",
+      "value": 1.5206,
+      "percentile": 95.08,
+      "weighted_percentile": 95.08,
       "weight": 1.0,
-      "bvalue": 0.8628,
+      "bvalue": 0.9016,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "possession_lost_per90",
-      "label": "Possession Lost/90",
-      "value": 14.0289,
-      "percentile": 84.2,
-      "weighted_percentile": 84.2,
+      "metric": "big_chances_created_per90",
+      "label": "Big Chances Created Per 90",
+      "value": 0.4951,
+      "percentile": 94.8,
+      "weighted_percentile": 94.8,
       "weight": 1.0,
-      "bvalue": 0.684,
+      "bvalue": 0.896,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
       "metric": "recoveries_per90",
-      "label": "Recoveries/90",
-      "value": 5.567,
-      "percentile": 83.99,
-      "weighted_percentile": 83.99,
+      "label": "Recoveries Per 90",
+      "value": 5.7996,
+      "percentile": 87.95,
+      "weighted_percentile": 87.95,
       "weight": 1.0,
-      "bvalue": 0.6798,
+      "bvalue": 0.759,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "crosses_total_per90",
-      "label": "Crosses Total/90",
-      "value": 3.1546,
-      "percentile": 83.16,
-      "weighted_percentile": 83.16,
+      "metric": "possession_lost_per90",
+      "label": "Possession Lost Per 90",
+      "value": 14.0747,
+      "percentile": 85.4,
+      "weighted_percentile": 85.4,
       "weight": 1.0,
-      "bvalue": 0.6632,
+      "bvalue": 0.708,
       "cohort": "CM",
-      "cohort_size": 481
-    },
-    {
-      "metric": "long_balls_total_per90",
-      "label": "Long Balls Total/90",
-      "value": 4.899,
-      "percentile": 82.95,
-      "weighted_percentile": 82.95,
-      "weight": 1.0,
-      "bvalue": 0.659,
-      "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
       "metric": "crosses_accurate_per90",
-      "label": "Crosses Accurate/90",
-      "value": 0.9649,
-      "percentile": 82.81,
-      "weighted_percentile": 82.81,
+      "label": "Crosses Accurate Per 90",
+      "value": 0.9902,
+      "percentile": 83.52,
+      "weighted_percentile": 83.52,
       "weight": 1.0,
-      "bvalue": 0.6562,
+      "bvalue": 0.6704,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "assists_per90",
-      "label": "Assists/90",
-      "value": 0.1856,
-      "percentile": 81.5,
-      "weighted_percentile": 81.5,
+      "metric": "long_balls_total_per90",
+      "label": "Long Balls Total Per 90",
+      "value": 4.9862,
+      "percentile": 83.36,
+      "weighted_percentile": 83.36,
       "weight": 1.0,
-      "bvalue": 0.63,
+      "bvalue": 0.6672,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "tackles_total_per90",
-      "label": "Tackles Total/90",
-      "value": 2.4866,
-      "percentile": 81.29,
-      "weighted_percentile": 81.29,
+      "metric": "crosses_total_per90",
+      "label": "Crosses Total Per 90",
+      "value": 3.1473,
+      "percentile": 82.56,
+      "weighted_percentile": 82.56,
       "weight": 1.0,
-      "bvalue": 0.6258,
+      "bvalue": 0.6512,
       "cohort": "CM",
-      "cohort_size": 481
-    },
-    {
-      "metric": "passes_opposition_half_total_per90",
-      "label": "Passes Opposition Half Total/90",
-      "value": 26.3134,
-      "percentile": 57.59,
-      "weighted_percentile": 74.87,
-      "weight": 1.3,
-      "bvalue": 0.1518,
-      "cohort": "CM",
-      "cohort_size": 481
-    },
-    {
-      "metric": "long_balls_accurate_per90",
-      "label": "Long Balls Accurate/90",
-      "value": 2.3753,
-      "percentile": 74.01,
-      "weighted_percentile": 74.01,
-      "weight": 1.0,
-      "bvalue": 0.4802,
-      "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
       "metric": "total_progression_per90",
-      "label": "Total Progression/90",
-      "value": 29.2651,
-      "percentile": 54.68,
-      "weighted_percentile": 71.08,
+      "label": "Total Progression Per 90",
+      "value": 29.9776,
+      "percentile": 63.33,
+      "weighted_percentile": 82.33,
       "weight": 1.3,
-      "bvalue": 0.0936,
+      "bvalue": 0.2666,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "tackles_won_per90",
-      "label": "Tackles Won/90",
-      "value": 1.299,
-      "percentile": 69.65,
-      "weighted_percentile": 69.65,
-      "weight": 1.0,
-      "bvalue": 0.393,
+      "metric": "passes_opposition_half_total_per90",
+      "label": "Passes Opposition Half Total Per 90",
+      "value": 26.5226,
+      "percentile": 62.82,
+      "weighted_percentile": 81.67,
+      "weight": 1.3,
+      "bvalue": 0.2564,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
+    },
+    {
+      "metric": "tackles_total_per90",
+      "label": "Tackles Total Per 90",
+      "value": 2.4754,
+      "percentile": 80.31,
+      "weighted_percentile": 80.31,
+      "weight": 1.0,
+      "bvalue": 0.6062,
+      "cohort": "CM",
+      "cohort_size": 589
+    },
+    {
+      "metric": "assists_per90",
+      "label": "Assists Per 90",
+      "value": 0.1768,
+      "percentile": 78.78,
+      "weighted_percentile": 78.78,
+      "weight": 1.0,
+      "bvalue": 0.5756,
+      "cohort": "CM",
+      "cohort_size": 589
+    },
+    {
+      "metric": "long_balls_accurate_per90",
+      "label": "Long Balls Accurate Per 90",
+      "value": 2.4047,
+      "percentile": 75.04,
+      "weighted_percentile": 75.04,
+      "weight": 1.0,
+      "bvalue": 0.5008,
+      "cohort": "CM",
+      "cohort_size": 589
     },
     {
       "metric": "passes_total_per90",
-      "label": "Passes Total/90",
-      "value": 43.2371,
-      "percentile": 51.35,
-      "weighted_percentile": 66.76,
+      "label": "Passes Total Per 90",
+      "value": 43.391,
+      "percentile": 55.69,
+      "weighted_percentile": 72.4,
       "weight": 1.3,
-      "bvalue": 0.027,
+      "bvalue": 0.1138,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
-      "metric": "duels_total_per90",
-      "label": "Duels Total/90",
-      "value": 10.0206,
-      "percentile": 65.9,
-      "weighted_percentile": 65.9,
-      "weight": 1.0,
-      "bvalue": 0.318,
+      "metric": "passes_opposition_half_accurate_per90",
+      "label": "Passes Opposition Half Accurate Per 90",
+      "value": 19.6267,
+      "percentile": 54.5,
+      "weighted_percentile": 70.85,
+      "weight": 1.3,
+      "bvalue": 0.09,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
     },
     {
       "metric": "progressive_carry_distance_per90",
-      "label": "Progressive Carry Distance/90",
-      "value": 13.6778,
-      "percentile": 50.21,
-      "weighted_percentile": 65.27,
+      "label": "Progressive Carry Distance Per 90",
+      "value": 13.5398,
+      "percentile": 53.18,
+      "weighted_percentile": 69.13,
       "weight": 1.3,
-      "bvalue": 0.0042,
+      "bvalue": 0.0636,
       "cohort": "CM",
-      "cohort_size": 481
+      "cohort_size": 589
+    },
+    {
+      "metric": "tackles_won_per90",
+      "label": "Tackles Won Per 90",
+      "value": 1.3084,
+      "percentile": 69.1,
+      "weighted_percentile": 69.1,
+      "weight": 1.0,
+      "bvalue": 0.382,
+      "cohort": "CM",
+      "cohort_size": 589
     }
   ],
   "similarity_meta": {
     "target_family": "CM",
     "target_side": "Central",
     "cohort_strategy": "family=CM",
-    "cohort_size": 481,
+    "cohort_size": 589,
     "feature_count": 185,
     "core_feature_count": 58,
     "broad_feature_count": 127,
@@ -418,11 +420,37 @@
       "team": "Getafe",
       "league": "La Liga",
       "age": 31.0,
-      "similarity": 0.9346,
-      "similarity_raw": 0.8025,
-      "similarity_core": 0.8084,
-      "similarity_broad": 0.6874,
-      "similarity_spatial": 0.9744,
+      "similarity": 0.9197,
+      "similarity_raw": 0.7584,
+      "similarity_core": 0.7628,
+      "similarity_broad": 0.6233,
+      "similarity_spatial": 0.967,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Advanced Playmaker",
+      "secondary_role": "Midfield Playmaker",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Advanced Playmaker",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 846087,
+      "name": "Doğucan Haspolat",
+      "team": "KVC Westerlo",
+      "league": "Pro League",
+      "age": 26.0,
+      "similarity": 0.9177,
+      "similarity_raw": 0.7524,
+      "similarity_core": 0.7525,
+      "similarity_broad": 0.6214,
+      "similarity_spatial": 0.9687,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -444,11 +472,11 @@
       "team": "Sunderland",
       "league": "Premier League",
       "age": 33.0,
-      "similarity": 0.9205,
-      "similarity_raw": 0.7608,
-      "similarity_core": 0.7586,
-      "similarity_broad": 0.6324,
-      "similarity_spatial": 0.9875,
+      "similarity": 0.9131,
+      "similarity_raw": 0.7389,
+      "similarity_core": 0.7266,
+      "similarity_broad": 0.6169,
+      "similarity_spatial": 0.9878,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -465,16 +493,16 @@
       "color_key": "Midfielder"
     },
     {
-      "player_id": 916946,
-      "name": "Wouter Burger",
-      "team": "TSG Hoffenheim",
-      "league": "Bundesliga",
-      "age": 25.0,
-      "similarity": 0.9185,
-      "similarity_raw": 0.7548,
-      "similarity_core": 0.8376,
-      "similarity_broad": 0.4708,
-      "similarity_spatial": 0.971,
+      "player_id": 1184054,
+      "name": "Kodai Sano",
+      "team": "NEC Nijmegen",
+      "league": "VriendenLoterij Eredivisie",
+      "age": 22.0,
+      "similarity": 0.913,
+      "similarity_raw": 0.7388,
+      "similarity_core": 0.7985,
+      "similarity_broad": 0.4858,
+      "similarity_spatial": 0.9791,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -483,12 +511,12 @@
       "closest_metrics": null,
       "largest_metric_gaps": null,
       "primary_role": "Advanced Playmaker",
-      "secondary_role": "Pressing Central Midfielder",
-      "archetype": "Midfielder",
+      "secondary_role": "Central Midfielder",
+      "archetype": "Ball Winner",
       "family": "CM",
       "side": "Central",
       "display_role": "Advanced Playmaker",
-      "color_key": "Midfielder"
+      "color_key": "Ball Winner"
     },
     {
       "player_id": 878938,
@@ -496,11 +524,11 @@
       "team": "Toulouse",
       "league": "Ligue 1",
       "age": 26.0,
-      "similarity": 0.9174,
-      "similarity_raw": 0.7516,
-      "similarity_core": 0.7959,
-      "similarity_broad": 0.5334,
-      "similarity_spatial": 0.9828,
+      "similarity": 0.9087,
+      "similarity_raw": 0.726,
+      "similarity_core": 0.761,
+      "similarity_broad": 0.51,
+      "similarity_spatial": 0.9834,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -517,16 +545,16 @@
       "color_key": "Ball Winner"
     },
     {
-      "player_id": 866469,
-      "name": "Bruno Guimarães",
-      "team": "Newcastle United",
-      "league": "Premier League",
-      "age": 28.0,
-      "similarity": 0.914,
-      "similarity_raw": 0.7415,
-      "similarity_core": 0.832,
-      "similarity_broad": 0.4286,
-      "similarity_spatial": 0.9915,
+      "player_id": 916946,
+      "name": "Wouter Burger",
+      "team": "TSG Hoffenheim",
+      "league": "Bundesliga",
+      "age": 25.0,
+      "similarity": 0.905,
+      "similarity_raw": 0.7152,
+      "similarity_core": 0.8061,
+      "similarity_broad": 0.3938,
+      "similarity_spatial": 0.9708,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -548,10 +576,10 @@
       "team": "Athletic Club",
       "league": "La Liga",
       "age": 32.0,
-      "similarity": 0.9114,
-      "similarity_raw": 0.734,
-      "similarity_core": 0.8055,
-      "similarity_broad": 0.4544,
+      "similarity": 0.9026,
+      "similarity_raw": 0.7082,
+      "similarity_core": 0.791,
+      "similarity_broad": 0.3929,
       "similarity_spatial": 0.9847,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
@@ -569,94 +597,16 @@
       "color_key": "Ball Winner"
     },
     {
-      "player_id": 1151803,
-      "name": "Kévin Danois",
-      "team": "Auxerre",
-      "league": "Ligue 1",
-      "age": 21.0,
-      "similarity": 0.9061,
-      "similarity_raw": 0.7186,
-      "similarity_core": 0.7429,
-      "similarity_broad": 0.5175,
-      "similarity_spatial": 0.9854,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Advanced Playmaker",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 1048650,
-      "name": "Rocco Reitz",
-      "team": "Borussia M'gladbach",
-      "league": "Bundesliga",
-      "age": 23.0,
-      "similarity": 0.9023,
-      "similarity_raw": 0.7075,
-      "similarity_core": 0.7362,
-      "similarity_broad": 0.5124,
-      "similarity_spatial": 0.926,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Advanced Playmaker",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 1142562,
-      "name": "Mateus Fernandes",
-      "team": "West Ham United",
+      "player_id": 866469,
+      "name": "Bruno Guimarães",
+      "team": "Newcastle United",
       "league": "Premier League",
-      "age": 21.0,
-      "similarity": 0.8989,
-      "similarity_raw": 0.6975,
-      "similarity_core": 0.7449,
-      "similarity_broad": 0.4409,
-      "similarity_spatial": 0.9871,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Central Midfielder",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 105734,
-      "name": "Christian Eriksen",
-      "team": "VfL Wolfsburg",
-      "league": "Bundesliga",
-      "age": 34.0,
-      "similarity": 0.8967,
-      "similarity_raw": 0.6912,
-      "similarity_core": 0.695,
-      "similarity_broad": 0.5263,
-      "similarity_spatial": 0.9459,
+      "age": 28.0,
+      "similarity": 0.902,
+      "similarity_raw": 0.7065,
+      "similarity_core": 0.805,
+      "similarity_broad": 0.3589,
+      "similarity_spatial": 0.9913,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -673,16 +623,172 @@
       "color_key": "Midfielder"
     },
     {
+      "player_id": 1151803,
+      "name": "Kévin Danois",
+      "team": "Auxerre",
+      "league": "Ligue 1",
+      "age": 21.0,
+      "similarity": 0.9,
+      "similarity_raw": 0.7006,
+      "similarity_core": 0.737,
+      "similarity_broad": 0.4671,
+      "similarity_spatial": 0.9855,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Pressing Central Midfielder",
+      "secondary_role": "Advanced Playmaker",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Pressing Central Midfielder",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 920684,
+      "name": "Jordan Holsgrove",
+      "team": "Estoril Praia",
+      "league": "Liga Portugal Betclic",
+      "age": 26.0,
+      "similarity": 0.8999,
+      "similarity_raw": 0.7004,
+      "similarity_core": 0.6618,
+      "similarity_broad": 0.6057,
+      "similarity_spatial": 0.9858,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Midfield Playmaker",
+      "secondary_role": "Advanced Playmaker",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Midfield Playmaker",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 1000472,
+      "name": "Adem Zorgane",
+      "team": "Royale Union Saint-Gilloise",
+      "league": "Pro League",
+      "age": 26.0,
+      "similarity": 0.8891,
+      "similarity_raw": 0.6693,
+      "similarity_core": 0.6949,
+      "similarity_broad": 0.4437,
+      "similarity_spatial": 0.9679,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Central Midfielder",
+      "secondary_role": "Midfield Playmaker",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Central Midfielder",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 1142562,
+      "name": "Mateus Fernandes",
+      "team": "West Ham United",
+      "league": "Premier League",
+      "age": 21.0,
+      "similarity": 0.8886,
+      "similarity_raw": 0.6678,
+      "similarity_core": 0.7088,
+      "similarity_broad": 0.406,
+      "similarity_spatial": 0.9876,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Pressing Central Midfielder",
+      "secondary_role": "Central Midfielder",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Pressing Central Midfielder",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 1064697,
+      "name": "Mamadou Sangare",
+      "team": "RC Lens",
+      "league": "Ligue 1",
+      "age": 23.0,
+      "similarity": 0.8886,
+      "similarity_raw": 0.6677,
+      "similarity_core": 0.7765,
+      "similarity_broad": 0.2776,
+      "similarity_spatial": 0.9947,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Pressing Central Midfielder",
+      "secondary_role": "Central Midfielder",
+      "archetype": "Ball Winner",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Pressing Central Midfielder",
+      "color_key": "Ball Winner"
+    },
+    {
+      "player_id": 138842,
+      "name": "Joris van Overeem",
+      "team": "SC Heerenveen",
+      "league": "VriendenLoterij Eredivisie",
+      "age": 31.0,
+      "similarity": 0.8883,
+      "similarity_raw": 0.6669,
+      "similarity_core": 0.6405,
+      "similarity_broad": 0.5354,
+      "similarity_spatial": 0.9719,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Midfield Playmaker",
+      "secondary_role": "Advanced Playmaker",
+      "archetype": "Ball Winner",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Midfield Playmaker",
+      "color_key": "Ball Winner"
+    },
+    {
       "player_id": 850891,
       "name": "Michel Aebischer",
       "team": "Pisa",
       "league": "Serie A",
       "age": 29.0,
-      "similarity": 0.896,
-      "similarity_raw": 0.689,
-      "similarity_core": 0.7047,
-      "similarity_broad": 0.4911,
-      "similarity_spatial": 0.9743,
+      "similarity": 0.8881,
+      "similarity_raw": 0.6661,
+      "similarity_core": 0.6722,
+      "similarity_broad": 0.4726,
+      "similarity_spatial": 0.975,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -699,16 +805,42 @@
       "color_key": "Midfielder"
     },
     {
+      "player_id": 994546,
+      "name": "Elliot Anderson",
+      "team": "Nottingham Forest",
+      "league": "Premier League",
+      "age": 23.0,
+      "similarity": 0.8874,
+      "similarity_raw": 0.6642,
+      "similarity_core": 0.6492,
+      "similarity_broad": 0.5145,
+      "similarity_spatial": 0.9584,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Central Midfielder",
+      "secondary_role": "Midfield Playmaker",
+      "archetype": "Ball Winner",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Central Midfielder",
+      "color_key": "Ball Winner"
+    },
+    {
       "player_id": 231946,
       "name": "Adrien Thomasson",
       "team": "RC Lens",
       "league": "Ligue 1",
       "age": 32.0,
-      "similarity": 0.8944,
-      "similarity_raw": 0.6844,
-      "similarity_core": 0.6912,
-      "similarity_broad": 0.4984,
-      "similarity_spatial": 0.9799,
+      "similarity": 0.8838,
+      "similarity_raw": 0.6539,
+      "similarity_core": 0.6485,
+      "similarity_broad": 0.473,
+      "similarity_spatial": 0.9804,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -725,16 +857,68 @@
       "color_key": "Ball Winner"
     },
     {
-      "player_id": 288205,
-      "name": "Bruno Fernandes",
-      "team": "Manchester United",
+      "player_id": 847097,
+      "name": "Ethan Ampadu",
+      "team": "Leeds United",
       "league": "Premier League",
-      "age": 31.0,
-      "similarity": 0.8942,
-      "similarity_raw": 0.684,
-      "similarity_core": 0.7268,
-      "similarity_broad": 0.4335,
-      "similarity_spatial": 0.9717,
+      "age": 25.0,
+      "similarity": 0.8822,
+      "similarity_raw": 0.6492,
+      "similarity_core": 0.6385,
+      "similarity_broad": 0.4733,
+      "similarity_spatial": 0.9866,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Central Midfielder",
+      "secondary_role": "Pressing Central Midfielder",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Central Midfielder",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 1048650,
+      "name": "Rocco Reitz",
+      "team": "Borussia M'gladbach",
+      "league": "Bundesliga",
+      "age": 23.0,
+      "similarity": 0.8814,
+      "similarity_raw": 0.647,
+      "similarity_core": 0.6519,
+      "similarity_broad": 0.4614,
+      "similarity_spatial": 0.9262,
+      "similarity_role_bonus": 1.0,
+      "similarity_pct": null,
+      "role": "CM",
+      "position": "CM",
+      "lane": "Central Midfield",
+      "closest_metrics": null,
+      "largest_metric_gaps": null,
+      "primary_role": "Pressing Central Midfielder",
+      "secondary_role": "Advanced Playmaker",
+      "archetype": "Midfielder",
+      "family": "CM",
+      "side": "Central",
+      "display_role": "Pressing Central Midfielder",
+      "color_key": "Midfielder"
+    },
+    {
+      "player_id": 816763,
+      "name": "Pablo Fornals",
+      "team": "Real Betis",
+      "league": "La Liga",
+      "age": 30.0,
+      "similarity": 0.8797,
+      "similarity_raw": 0.642,
+      "similarity_core": 0.6516,
+      "similarity_broad": 0.434,
+      "similarity_spatial": 0.9578,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -751,16 +935,16 @@
       "color_key": "Midfielder"
     },
     {
-      "player_id": 816763,
-      "name": "Pablo Fornals",
-      "team": "Real Betis",
-      "league": "La Liga",
-      "age": 30.0,
-      "similarity": 0.8927,
-      "similarity_raw": 0.6795,
-      "similarity_core": 0.6856,
-      "similarity_broad": 0.4993,
-      "similarity_spatial": 0.958,
+      "player_id": 288205,
+      "name": "Bruno Fernandes",
+      "team": "Manchester United",
+      "league": "Premier League",
+      "age": 31.0,
+      "similarity": 0.8791,
+      "similarity_raw": 0.6403,
+      "similarity_core": 0.6917,
+      "similarity_broad": 0.3504,
+      "similarity_spatial": 0.9676,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -782,11 +966,11 @@
       "team": "Deportivo Alavés",
       "league": "La Liga",
       "age": 25.0,
-      "similarity": 0.8893,
-      "similarity_raw": 0.6697,
-      "similarity_core": 0.6775,
-      "similarity_broad": 0.472,
-      "similarity_spatial": 0.9833,
+      "similarity": 0.879,
+      "similarity_raw": 0.6401,
+      "similarity_core": 0.6329,
+      "similarity_broad": 0.4537,
+      "similarity_spatial": 0.9836,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -803,16 +987,16 @@
       "color_key": "Ball Winner"
     },
     {
-      "player_id": 994546,
-      "name": "Elliot Anderson",
-      "team": "Nottingham Forest",
+      "player_id": 122951,
+      "name": "Casemiro",
+      "team": "Manchester United",
       "league": "Premier League",
-      "age": 23.0,
-      "similarity": 0.889,
-      "similarity_raw": 0.6688,
-      "similarity_core": 0.6439,
-      "similarity_broad": 0.5403,
-      "similarity_spatial": 0.9575,
+      "age": 34.0,
+      "similarity": 0.8787,
+      "similarity_raw": 0.6393,
+      "similarity_core": 0.7253,
+      "similarity_broad": 0.2789,
+      "similarity_spatial": 0.9847,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -821,63 +1005,11 @@
       "closest_metrics": null,
       "largest_metric_gaps": null,
       "primary_role": "Midfield Playmaker",
-      "secondary_role": "Central Midfielder",
-      "archetype": "Ball Winner",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Midfield Playmaker",
-      "color_key": "Ball Winner"
-    },
-    {
-      "player_id": 1064697,
-      "name": "Mamadou Sangare",
-      "team": "RC Lens",
-      "league": "Ligue 1",
-      "age": 23.0,
-      "similarity": 0.8883,
-      "similarity_raw": 0.6667,
-      "similarity_core": 0.763,
-      "similarity_broad": 0.2995,
-      "similarity_spatial": 0.9942,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Central Midfielder",
-      "archetype": "Ball Winner",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Ball Winner"
-    },
-    {
-      "player_id": 976141,
-      "name": "Jon Moncayola",
-      "team": "Osasuna",
-      "league": "La Liga",
-      "age": 28.0,
-      "similarity": 0.888,
-      "similarity_raw": 0.6661,
-      "similarity_core": 0.6126,
-      "similarity_broad": 0.5982,
-      "similarity_spatial": 0.9305,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Advanced Playmaker",
-      "secondary_role": "Midfield Playmaker",
+      "secondary_role": "Pressing Central Midfielder",
       "archetype": "Midfielder",
       "family": "CM",
       "side": "Central",
-      "display_role": "Advanced Playmaker",
+      "display_role": "Midfield Playmaker",
       "color_key": "Midfielder"
     },
     {
@@ -886,11 +1018,11 @@
       "team": "AS Monaco",
       "league": "Ligue 1",
       "age": 22.0,
-      "similarity": 0.8879,
-      "similarity_raw": 0.6655,
-      "similarity_core": 0.692,
-      "similarity_broad": 0.4381,
-      "similarity_spatial": 0.9625,
+      "similarity": 0.8768,
+      "similarity_raw": 0.6337,
+      "similarity_core": 0.6573,
+      "similarity_broad": 0.3935,
+      "similarity_spatial": 0.9627,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
       "role": "CM",
@@ -898,154 +1030,24 @@
       "lane": "Central Midfield",
       "closest_metrics": null,
       "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Central Midfielder",
+      "primary_role": "Central Midfielder",
+      "secondary_role": "Pressing Central Midfielder",
       "archetype": "Ball Winner",
       "family": "CM",
       "side": "Central",
-      "display_role": "Pressing Central Midfielder",
+      "display_role": "Central Midfielder",
       "color_key": "Ball Winner"
     },
     {
-      "player_id": 841977,
-      "name": "Ylber Ramadani",
-      "team": "Lecce",
-      "league": "Serie A",
-      "age": 30.0,
-      "similarity": 0.887,
-      "similarity_raw": 0.6631,
-      "similarity_core": 0.6822,
-      "similarity_broad": 0.4387,
-      "similarity_spatial": 0.9893,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Central Midfielder",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 1002461,
-      "name": "Joel Chima Fujita",
-      "team": "FC St. Pauli",
-      "league": "Bundesliga",
-      "age": 24.0,
-      "similarity": 0.8865,
-      "similarity_raw": 0.6615,
-      "similarity_core": 0.7339,
-      "similarity_broad": 0.3463,
-      "similarity_spatial": 0.963,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Advanced Playmaker",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 877262,
-      "name": "Edu Expósito",
-      "team": "Espanyol",
-      "league": "La Liga",
-      "age": 29.0,
-      "similarity": 0.8862,
-      "similarity_raw": 0.6608,
-      "similarity_core": 0.6281,
-      "similarity_broad": 0.5495,
-      "similarity_spatial": 0.9361,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Advanced Playmaker",
-      "secondary_role": "Pressing Central Midfielder",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Advanced Playmaker",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 195850,
-      "name": "Ruslan Malinovskyi",
-      "team": "Genoa",
-      "league": "Serie A",
-      "age": 33.0,
-      "similarity": 0.8835,
-      "similarity_raw": 0.653,
-      "similarity_core": 0.6646,
-      "similarity_broad": 0.4404,
-      "similarity_spatial": 0.9792,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Midfield Playmaker",
-      "secondary_role": "Advanced Playmaker",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Midfield Playmaker",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 122951,
-      "name": "Casemiro",
-      "team": "Manchester United",
-      "league": "Premier League",
-      "age": 34.0,
-      "similarity": 0.883,
-      "similarity_raw": 0.6517,
-      "similarity_core": 0.7589,
-      "similarity_broad": 0.259,
-      "similarity_spatial": 0.9841,
-      "similarity_role_bonus": 1.0,
-      "similarity_pct": null,
-      "role": "CM",
-      "position": "CM",
-      "lane": "Central Midfield",
-      "closest_metrics": null,
-      "largest_metric_gaps": null,
-      "primary_role": "Pressing Central Midfielder",
-      "secondary_role": "Central Midfielder",
-      "archetype": "Midfielder",
-      "family": "CM",
-      "side": "Central",
-      "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
-    },
-    {
-      "player_id": 847097,
-      "name": "Ethan Ampadu",
-      "team": "Leeds United",
-      "league": "Premier League",
-      "age": 25.0,
-      "similarity": 0.8829,
-      "similarity_raw": 0.6514,
-      "similarity_core": 0.6871,
-      "similarity_broad": 0.3904,
+      "player_id": 897603,
+      "name": "Darko Nejašmić",
+      "team": "NEC Nijmegen",
+      "league": "VriendenLoterij Eredivisie",
+      "age": 27.0,
+      "similarity": 0.8759,
+      "similarity_raw": 0.6312,
+      "similarity_core": 0.7176,
+      "similarity_broad": 0.2649,
       "similarity_spatial": 0.9864,
       "similarity_role_bonus": 1.0,
       "similarity_pct": null,
@@ -1056,39 +1058,40 @@
       "largest_metric_gaps": null,
       "primary_role": "Pressing Central Midfielder",
       "secondary_role": "Central Midfielder",
-      "archetype": "Midfielder",
+      "archetype": "Ball Winner",
       "family": "CM",
       "side": "Central",
       "display_role": "Pressing Central Midfielder",
-      "color_key": "Midfielder"
+      "color_key": "Ball Winner"
     }
   ],
   "shotmap": {
-    "count": 28,
+    "count": 32,
     "summary": {
-      "total_shots": 28,
-      "goals": 0,
+      "total_shots": 32,
+      "goals": 1,
       "on_target": 0,
-      "total_xg": 1.3933,
-      "total_xgot": 0.4272,
+      "total_xg": 1.5229,
+      "total_xgot": 0.4628,
       "by_body_part": {
-        "left-foot": 20,
+        "left-foot": 24,
         "right-foot": 7,
         "head": 1
       },
       "by_situation": {
-        "assisted": 8,
+        "assisted": 11,
         "regular": 6,
         "throw-in-set-piece": 5,
-        "corner": 5,
+        "corner": 6,
         "fast-break": 1,
         "set-piece": 3
       },
       "by_shot_type": {
-        "block": 14,
-        "miss": 8,
-        "save": 4,
-        "post": 2
+        "block": 15,
+        "miss": 9,
+        "save": 5,
+        "post": 2,
+        "goal": 1
       }
     },
     "shots": [
@@ -1427,12 +1430,60 @@
         "body_part": "right-foot",
         "situation": "set-piece",
         "minute": 7
+      },
+      {
+        "event_id": 14023953,
+        "x": 21.3,
+        "y": 51.2,
+        "xg": 0.0296,
+        "xgot": null,
+        "result": "block",
+        "is_goal": false,
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 90
+      },
+      {
+        "event_id": 14023953,
+        "x": 22.1,
+        "y": 49.1,
+        "xg": 0.0475,
+        "xgot": 0.0265,
+        "result": "goal",
+        "is_goal": true,
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 52
+      },
+      {
+        "event_id": 14023953,
+        "x": 27.8,
+        "y": 63.6,
+        "xg": 0.0149,
+        "xgot": 0.0091,
+        "result": "save",
+        "is_goal": false,
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 45
+      },
+      {
+        "event_id": 14023953,
+        "x": 14.5,
+        "y": 39.3,
+        "xg": 0.0377,
+        "xgot": null,
+        "result": "miss",
+        "is_goal": false,
+        "body_part": "left-foot",
+        "situation": "corner",
+        "minute": 14
       }
     ]
   },
   "heatmap": {
-    "cell_count": 1519,
-    "raw_point_count": 1947,
+    "cell_count": 1581,
+    "raw_point_count": 2059,
     "precision": 2,
     "points": [
       {
@@ -1653,7 +1704,7 @@
       {
         "x": 12.0,
         "y": 57.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 13.0,
@@ -1733,7 +1784,7 @@
       {
         "x": 14.0,
         "y": 45.0,
-        "value": 0.28889
+        "value": 0.62222
       },
       {
         "x": 14.0,
@@ -1763,6 +1814,11 @@
       {
         "x": 15.0,
         "y": 9.0,
+        "value": 1.0
+      },
+      {
+        "x": 15.0,
+        "y": 11.0,
         "value": 1.0
       },
       {
@@ -1847,6 +1903,11 @@
       },
       {
         "x": 17.0,
+        "y": 54.0,
+        "value": 0.33333
+      },
+      {
+        "x": 17.0,
         "y": 70.0,
         "value": 0.75556
       },
@@ -1864,6 +1925,11 @@
         "x": 18.0,
         "y": 48.0,
         "value": 2.0
+      },
+      {
+        "x": 18.0,
+        "y": 54.0,
+        "value": 0.33333
       },
       {
         "x": 18.0,
@@ -1964,6 +2030,11 @@
         "x": 21.0,
         "y": 38.0,
         "value": 0.62222
+      },
+      {
+        "x": 21.0,
+        "y": 40.0,
+        "value": 0.33333
       },
       {
         "x": 21.0,
@@ -2167,6 +2238,11 @@
       },
       {
         "x": 24.0,
+        "y": 40.0,
+        "value": 0.33333
+      },
+      {
+        "x": 24.0,
         "y": 48.0,
         "value": 1.0
       },
@@ -2247,8 +2323,18 @@
       },
       {
         "x": 25.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 25.0,
         "y": 49.0,
         "value": 0.91111
+      },
+      {
+        "x": 25.0,
+        "y": 59.0,
+        "value": 1.0
       },
       {
         "x": 25.0,
@@ -2269,6 +2355,11 @@
         "x": 25.0,
         "y": 79.0,
         "value": 0.98889
+      },
+      {
+        "x": 26.0,
+        "y": 3.0,
+        "value": 1.0
       },
       {
         "x": 26.0,
@@ -2379,6 +2470,11 @@
         "x": 27.0,
         "y": 14.0,
         "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 17.0,
+        "value": 0.33333
       },
       {
         "x": 27.0,
@@ -2597,6 +2693,11 @@
       },
       {
         "x": 29.0,
+        "y": 12.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
         "y": 13.0,
         "value": 1.0
       },
@@ -2688,7 +2789,7 @@
       {
         "x": 29.0,
         "y": 54.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 29.0,
@@ -2714,6 +2815,11 @@
         "x": 29.0,
         "y": 71.0,
         "value": 0.98889
+      },
+      {
+        "x": 29.0,
+        "y": 72.0,
+        "value": 2.0
       },
       {
         "x": 29.0,
@@ -2792,6 +2898,11 @@
       },
       {
         "x": 30.0,
+        "y": 32.0,
+        "value": 0.33333
+      },
+      {
+        "x": 30.0,
         "y": 33.0,
         "value": 1.0
       },
@@ -2856,6 +2967,11 @@
         "value": 1.0
       },
       {
+        "x": 30.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
         "x": 31.0,
         "y": 4.0,
         "value": 0.92222
@@ -2864,6 +2980,11 @@
         "x": 31.0,
         "y": 7.0,
         "value": 0.75556
+      },
+      {
+        "x": 31.0,
+        "y": 14.0,
+        "value": 1.0
       },
       {
         "x": 31.0,
@@ -2927,6 +3048,11 @@
       },
       {
         "x": 31.0,
+        "y": 40.0,
+        "value": 0.33333
+      },
+      {
+        "x": 31.0,
         "y": 44.0,
         "value": 1.8
       },
@@ -2954,6 +3080,11 @@
         "x": 31.0,
         "y": 53.0,
         "value": 0.86667
+      },
+      {
+        "x": 31.0,
+        "y": 54.0,
+        "value": 0.33333
       },
       {
         "x": 31.0,
@@ -3073,7 +3204,7 @@
       {
         "x": 32.0,
         "y": 39.0,
-        "value": 1.0
+        "value": 1.33333
       },
       {
         "x": 32.0,
@@ -3133,7 +3264,7 @@
       {
         "x": 33.0,
         "y": 13.0,
-        "value": 1.0
+        "value": 1.33333
       },
       {
         "x": 33.0,
@@ -3276,6 +3407,11 @@
         "value": 1.0
       },
       {
+        "x": 33.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
         "x": 34.0,
         "y": 14.0,
         "value": 0.91111
@@ -3358,7 +3494,7 @@
       {
         "x": 34.0,
         "y": 54.0,
-        "value": 1.0
+        "value": 1.33333
       },
       {
         "x": 34.0,
@@ -3393,6 +3529,11 @@
       {
         "x": 34.0,
         "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 90.0,
         "value": 1.0
       },
       {
@@ -3433,7 +3574,7 @@
       {
         "x": 35.0,
         "y": 25.0,
-        "value": 0.68889
+        "value": 1.68889
       },
       {
         "x": 35.0,
@@ -3488,7 +3629,7 @@
       {
         "x": 35.0,
         "y": 42.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 35.0,
@@ -3548,6 +3689,11 @@
       {
         "x": 35.0,
         "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 11.0,
         "value": 1.0
       },
       {
@@ -3634,6 +3780,11 @@
         "x": 36.0,
         "y": 42.0,
         "value": 1.28889
+      },
+      {
+        "x": 36.0,
+        "y": 45.0,
+        "value": 0.33333
       },
       {
         "x": 36.0,
@@ -3727,8 +3878,18 @@
       },
       {
         "x": 37.0,
+        "y": 16.0,
+        "value": 1.0
+      },
+      {
+        "x": 37.0,
         "y": 17.0,
         "value": 1.0
+      },
+      {
+        "x": 37.0,
+        "y": 21.0,
+        "value": 0.33333
       },
       {
         "x": 37.0,
@@ -3837,6 +3998,11 @@
       },
       {
         "x": 38.0,
+        "y": 17.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
         "y": 18.0,
         "value": 1.0
       },
@@ -3893,7 +4059,7 @@
       {
         "x": 38.0,
         "y": 47.0,
-        "value": 0.96667
+        "value": 1.96667
       },
       {
         "x": 38.0,
@@ -4007,8 +4173,13 @@
       },
       {
         "x": 39.0,
+        "y": 40.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
         "y": 41.0,
-        "value": 0.62222
+        "value": 0.95556
       },
       {
         "x": 39.0,
@@ -4088,7 +4259,7 @@
       {
         "x": 40.0,
         "y": 24.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 40.0,
@@ -4098,7 +4269,7 @@
       {
         "x": 40.0,
         "y": 26.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 40.0,
@@ -4267,6 +4438,11 @@
       },
       {
         "x": 41.0,
+        "y": 33.0,
+        "value": 0.33333
+      },
+      {
+        "x": 41.0,
         "y": 34.0,
         "value": 1.68889
       },
@@ -4387,6 +4563,11 @@
       },
       {
         "x": 42.0,
+        "y": 32.0,
+        "value": 0.33333
+      },
+      {
+        "x": 42.0,
         "y": 33.0,
         "value": 0.9
       },
@@ -4434,6 +4615,11 @@
         "x": 42.0,
         "y": 65.0,
         "value": 0.84444
+      },
+      {
+        "x": 42.0,
+        "y": 69.0,
+        "value": 1.0
       },
       {
         "x": 42.0,
@@ -4598,7 +4784,7 @@
       {
         "x": 44.0,
         "y": 28.0,
-        "value": 3.75556
+        "value": 4.08889
       },
       {
         "x": 44.0,
@@ -4804,6 +4990,11 @@
         "x": 45.0,
         "y": 51.0,
         "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 53.0,
+        "value": 2.0
       },
       {
         "x": 45.0,
@@ -5042,6 +5233,11 @@
       },
       {
         "x": 47.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
         "y": 54.0,
         "value": 1.0
       },
@@ -5149,6 +5345,11 @@
         "x": 48.0,
         "y": 52.0,
         "value": 0.91111
+      },
+      {
+        "x": 48.0,
+        "y": 65.0,
+        "value": 0.33333
       },
       {
         "x": 48.0,
@@ -5287,6 +5488,11 @@
       },
       {
         "x": 51.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
         "y": 48.0,
         "value": 2.33333
       },
@@ -5333,7 +5539,7 @@
       {
         "x": 52.0,
         "y": 19.0,
-        "value": 0.84444
+        "value": 1.17778
       },
       {
         "x": 52.0,
@@ -5567,6 +5773,11 @@
       },
       {
         "x": 53.0,
+        "y": 45.0,
+        "value": 0.33333
+      },
+      {
+        "x": 53.0,
         "y": 46.0,
         "value": 2.66667
       },
@@ -5578,7 +5789,7 @@
       {
         "x": 53.0,
         "y": 55.0,
-        "value": 1.0
+        "value": 1.66667
       },
       {
         "x": 53.0,
@@ -5594,6 +5805,11 @@
         "x": 53.0,
         "y": 64.0,
         "value": 1.84444
+      },
+      {
+        "x": 53.0,
+        "y": 65.0,
+        "value": 1.0
       },
       {
         "x": 53.0,
@@ -5628,7 +5844,7 @@
       {
         "x": 54.0,
         "y": 22.0,
-        "value": 1.33333
+        "value": 2.33333
       },
       {
         "x": 54.0,
@@ -5638,7 +5854,7 @@
       {
         "x": 54.0,
         "y": 25.0,
-        "value": 1.98889
+        "value": 2.32222
       },
       {
         "x": 54.0,
@@ -5758,7 +5974,7 @@
       {
         "x": 54.0,
         "y": 68.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 54.0,
@@ -5908,7 +6124,7 @@
       {
         "x": 55.0,
         "y": 75.0,
-        "value": 0.96667
+        "value": 1.3
       },
       {
         "x": 56.0,
@@ -5948,7 +6164,7 @@
       {
         "x": 56.0,
         "y": 33.0,
-        "value": 1.0
+        "value": 1.33333
       },
       {
         "x": 56.0,
@@ -6007,6 +6223,11 @@
       },
       {
         "x": 56.0,
+        "y": 74.0,
+        "value": 0.33333
+      },
+      {
+        "x": 56.0,
         "y": 75.0,
         "value": 1.0
       },
@@ -6029,6 +6250,11 @@
         "x": 57.0,
         "y": 24.0,
         "value": 0.91111
+      },
+      {
+        "x": 57.0,
+        "y": 26.0,
+        "value": 1.0
       },
       {
         "x": 57.0,
@@ -6113,7 +6339,7 @@
       {
         "x": 57.0,
         "y": 66.0,
-        "value": 0.84444
+        "value": 1.17778
       },
       {
         "x": 57.0,
@@ -6197,6 +6423,11 @@
       },
       {
         "x": 58.0,
+        "y": 33.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
         "y": 34.0,
         "value": 1.0
       },
@@ -6237,6 +6468,11 @@
       },
       {
         "x": 58.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
         "y": 70.0,
         "value": 1.0
       },
@@ -6264,6 +6500,11 @@
         "x": 59.0,
         "y": 9.0,
         "value": 0.8
+      },
+      {
+        "x": 59.0,
+        "y": 11.0,
+        "value": 0.66667
       },
       {
         "x": 59.0,
@@ -6432,6 +6673,11 @@
       },
       {
         "x": 60.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
         "y": 36.0,
         "value": 1.0
       },
@@ -6443,7 +6689,7 @@
       {
         "x": 60.0,
         "y": 39.0,
-        "value": 1.0
+        "value": 1.33333
       },
       {
         "x": 60.0,
@@ -6453,7 +6699,7 @@
       {
         "x": 60.0,
         "y": 43.0,
-        "value": 1.0
+        "value": 1.33333
       },
       {
         "x": 60.0,
@@ -6487,6 +6733,11 @@
       },
       {
         "x": 60.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
         "y": 69.0,
         "value": 0.96667
       },
@@ -6499,6 +6750,11 @@
         "x": 60.0,
         "y": 73.0,
         "value": 0.68889
+      },
+      {
+        "x": 60.0,
+        "y": 75.0,
+        "value": 0.33333
       },
       {
         "x": 60.0,
@@ -6572,6 +6828,11 @@
       },
       {
         "x": 61.0,
+        "y": 43.0,
+        "value": 0.33333
+      },
+      {
+        "x": 61.0,
         "y": 51.0,
         "value": 1.84444
       },
@@ -6579,6 +6840,11 @@
         "x": 61.0,
         "y": 57.0,
         "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 58.0,
+        "value": 0.33333
       },
       {
         "x": 61.0,
@@ -6777,13 +7043,23 @@
       },
       {
         "x": 63.0,
+        "y": 29.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
         "y": 36.0,
-        "value": 2.8
+        "value": 4.8
+      },
+      {
+        "x": 63.0,
+        "y": 37.0,
+        "value": 1.0
       },
       {
         "x": 63.0,
         "y": 40.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 63.0,
@@ -6802,6 +7078,11 @@
       },
       {
         "x": 63.0,
+        "y": 45.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
         "y": 46.0,
         "value": 0.92222
       },
@@ -6813,7 +7094,7 @@
       {
         "x": 63.0,
         "y": 54.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 63.0,
@@ -6898,7 +7179,7 @@
       {
         "x": 64.0,
         "y": 21.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 64.0,
@@ -6947,6 +7228,11 @@
       },
       {
         "x": 64.0,
+        "y": 37.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
         "y": 39.0,
         "value": 0.5
       },
@@ -6969,6 +7255,11 @@
         "x": 64.0,
         "y": 44.0,
         "value": 0.75556
+      },
+      {
+        "x": 64.0,
+        "y": 46.0,
+        "value": 1.0
       },
       {
         "x": 64.0,
@@ -7013,7 +7304,7 @@
       {
         "x": 64.0,
         "y": 64.0,
-        "value": 1.75556
+        "value": 2.75556
       },
       {
         "x": 64.0,
@@ -7033,7 +7324,7 @@
       {
         "x": 64.0,
         "y": 74.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 64.0,
@@ -7088,7 +7379,7 @@
       {
         "x": 65.0,
         "y": 23.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 65.0,
@@ -7098,7 +7389,7 @@
       {
         "x": 65.0,
         "y": 27.0,
-        "value": 1.66667
+        "value": 3.66667
       },
       {
         "x": 65.0,
@@ -7163,7 +7454,7 @@
       {
         "x": 65.0,
         "y": 66.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 65.0,
@@ -7278,7 +7569,7 @@
       {
         "x": 66.0,
         "y": 50.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 66.0,
@@ -7388,7 +7679,7 @@
       {
         "x": 67.0,
         "y": 37.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 67.0,
@@ -7428,7 +7719,7 @@
       {
         "x": 67.0,
         "y": 53.0,
-        "value": 0.9
+        "value": 1.9
       },
       {
         "x": 67.0,
@@ -7444,6 +7735,11 @@
         "x": 67.0,
         "y": 61.0,
         "value": 0.5
+      },
+      {
+        "x": 67.0,
+        "y": 63.0,
+        "value": 1.0
       },
       {
         "x": 67.0,
@@ -7513,7 +7809,7 @@
       {
         "x": 68.0,
         "y": 25.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 68.0,
@@ -7657,6 +7953,11 @@
       },
       {
         "x": 69.0,
+        "y": 24.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
         "y": 26.0,
         "value": 0.9
       },
@@ -7668,6 +7969,11 @@
       {
         "x": 69.0,
         "y": 28.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 29.0,
         "value": 1.0
       },
       {
@@ -7703,7 +8009,7 @@
       {
         "x": 69.0,
         "y": 47.0,
-        "value": 1.93333
+        "value": 2.93333
       },
       {
         "x": 69.0,
@@ -7733,7 +8039,7 @@
       {
         "x": 69.0,
         "y": 71.0,
-        "value": 0.96667
+        "value": 1.96667
       },
       {
         "x": 69.0,
@@ -7872,6 +8178,11 @@
       },
       {
         "x": 70.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
         "y": 72.0,
         "value": 1.0
       },
@@ -7904,6 +8215,11 @@
         "x": 71.0,
         "y": 18.0,
         "value": 3.0
+      },
+      {
+        "x": 71.0,
+        "y": 21.0,
+        "value": 1.0
       },
       {
         "x": 71.0,
@@ -8062,6 +8378,11 @@
       },
       {
         "x": 72.0,
+        "y": 31.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
         "y": 32.0,
         "value": 2.0
       },
@@ -8069,6 +8390,11 @@
         "x": 72.0,
         "y": 33.0,
         "value": 1.5
+      },
+      {
+        "x": 72.0,
+        "y": 36.0,
+        "value": 1.0
       },
       {
         "x": 72.0,
@@ -8108,6 +8434,11 @@
       {
         "x": 72.0,
         "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 78.0,
         "value": 1.0
       },
       {
@@ -8208,7 +8539,7 @@
       {
         "x": 73.0,
         "y": 67.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 73.0,
@@ -8252,6 +8583,11 @@
       },
       {
         "x": 74.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
         "y": 34.0,
         "value": 0.8
       },
@@ -8273,6 +8609,11 @@
       {
         "x": 74.0,
         "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 46.0,
         "value": 1.0
       },
       {
@@ -8432,6 +8773,11 @@
       },
       {
         "x": 76.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
         "y": 81.0,
         "value": 1.0
       },
@@ -8489,6 +8835,11 @@
         "x": 77.0,
         "y": 46.0,
         "value": 0.68889
+      },
+      {
+        "x": 77.0,
+        "y": 50.0,
+        "value": 1.0
       },
       {
         "x": 77.0,
@@ -8563,7 +8914,7 @@
       {
         "x": 78.0,
         "y": 48.0,
-        "value": 0.98889
+        "value": 1.98889
       },
       {
         "x": 78.0,
@@ -8659,6 +9010,11 @@
         "x": 80.0,
         "y": 43.0,
         "value": 1.9
+      },
+      {
+        "x": 80.0,
+        "y": 48.0,
+        "value": 1.0
       },
       {
         "x": 80.0,
@@ -8833,7 +9189,7 @@
       {
         "x": 85.0,
         "y": 60.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 85.0,
@@ -8888,6 +9244,11 @@
       {
         "x": 87.0,
         "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 11.0,
         "value": 1.0
       },
       {
@@ -9028,28 +9389,28 @@
       {
         "x": 99.0,
         "y": 0.0,
-        "value": 35.8
+        "value": 38.8
       }
     ],
     "visual_summary": {
-      "centroid_x": 49.9281,
-      "centroid_y": 39.4845,
-      "spread_x": 20.0564,
-      "spread_y": 20.6244,
-      "point_count": 1519,
-      "total_weight": 1778.1555,
+      "centroid_x": 50.1615,
+      "centroid_y": 39.6288,
+      "spread_x": 20.0527,
+      "spread_y": 20.6694,
+      "point_count": 1581,
+      "total_weight": 1866.8222,
       "zone_shares": {
-        "defensive_third": 0.2332,
+        "defensive_third": 0.2306,
         "middle_third": 0.5425,
-        "attacking_third": 0.2242,
-        "left_lane": 0.4344,
-        "central_lane": 0.4401,
-        "right_lane": 0.1256,
-        "wide_lane": 0.5599,
-        "high_wide_share": 0.1818,
-        "deep_wide_share": 0.248,
-        "central_high_share": 0.1319,
-        "deep_central_share": 0.3437
+        "attacking_third": 0.227,
+        "left_lane": 0.4309,
+        "central_lane": 0.4415,
+        "right_lane": 0.1277,
+        "wide_lane": 0.5585,
+        "high_wide_share": 0.1819,
+        "deep_wide_share": 0.2471,
+        "central_high_share": 0.1397,
+        "deep_central_share": 0.3376
       },
       "note": "Visual/action-density summary only. Do not use this as a tactical position estimate; use Position_Arbitrator output for position."
     },
@@ -9058,22 +9419,22 @@
     "source_position_labels": {
       "role_position_mode": "AM",
       "role_position_minutes": {
-        "AM": 1588.0,
+        "AM": 1708.0,
         "DM": 647.0,
         "WM": 96.0,
         "M": 94.0
       },
       "player_position_mode": "M",
       "player_position_minutes": {
-        "M": 2425.0
+        "M": 2545.0
       },
       "base_position_mode": "M",
       "base_position_minutes": {
-        "M": 2425.0
+        "M": 2545.0
       },
       "role_family_mode": "midfield",
       "role_family_minutes": {
-        "midfield": 2329.0,
+        "midfield": 2449.0,
         "wide_midfield": 96.0
       },
       "profile_position_mode": null,
@@ -9081,78 +9442,78 @@
     }
   },
   "actions": {
-    "count": 1741,
-    "raw_count": 1741,
+    "count": 1848,
+    "raw_count": 1848,
     "categories": {
       "passes": {
-        "count": 1250,
-        "success_count": 948,
+        "count": 1316,
+        "success_count": 1000,
         "success_rate": 1.0,
-        "progressive_count": 433,
-        "progressive_rate": 0.3464,
+        "progressive_count": 454,
+        "progressive_rate": 0.345,
         "zone_counts": {
-          "middle_third:right_halfspace": 121,
-          "middle_third:left_halfspace": 295,
-          "attacking_third:central": 59,
+          "middle_third:right_halfspace": 128,
+          "middle_third:left_halfspace": 311,
+          "attacking_third:central": 62,
           "attacking_third:right_wide": 8,
-          "defensive_third:left_halfspace": 77,
-          "middle_third:central": 217,
-          "defensive_third:central": 55,
-          "defensive_third:right_halfspace": 42,
-          "defensive_third:left_wide": 26,
-          "attacking_third:left_halfspace": 89,
-          "middle_third:left_wide": 95,
-          "attacking_third:left_wide": 100,
-          "attacking_third:right_halfspace": 36,
-          "defensive_third:right_wide": 11,
+          "defensive_third:left_halfspace": 79,
+          "middle_third:central": 230,
+          "defensive_third:central": 60,
+          "defensive_third:right_halfspace": 43,
+          "defensive_third:left_wide": 29,
+          "attacking_third:left_halfspace": 92,
+          "middle_third:left_wide": 98,
+          "attacking_third:left_wide": 104,
+          "attacking_third:right_halfspace": 41,
+          "defensive_third:right_wide": 12,
           "middle_third:right_wide": 19
         },
         "third_counts": {
-          "middle_third": 747,
-          "attacking_third": 292,
-          "defensive_third": 211
+          "middle_third": 786,
+          "attacking_third": 307,
+          "defensive_third": 223
         },
         "lane_counts": {
-          "right_halfspace": 199,
-          "left_halfspace": 461,
-          "central": 331,
-          "right_wide": 38,
-          "left_wide": 221
+          "right_halfspace": 212,
+          "left_halfspace": 482,
+          "central": 352,
+          "right_wide": 39,
+          "left_wide": 231
         },
         "points_truncated": true
       },
       "carries": {
-        "count": 176,
+        "count": 197,
         "success_count": 0,
         "success_rate": null,
-        "progressive_count": 10,
-        "progressive_rate": 0.0568,
+        "progressive_count": 14,
+        "progressive_rate": 0.0711,
         "zone_counts": {
-          "defensive_third:left_wide": 4,
-          "middle_third:right_halfspace": 14,
-          "middle_third:central": 30,
-          "middle_third:left_halfspace": 54,
+          "defensive_third:left_wide": 6,
+          "middle_third:right_halfspace": 18,
+          "middle_third:central": 34,
+          "middle_third:left_halfspace": 58,
           "defensive_third:right_halfspace": 6,
-          "attacking_third:left_halfspace": 14,
-          "attacking_third:central": 6,
+          "attacking_third:left_halfspace": 16,
+          "attacking_third:central": 7,
           "middle_third:left_wide": 14,
-          "attacking_third:left_wide": 8,
-          "defensive_third:central": 10,
+          "attacking_third:left_wide": 9,
+          "defensive_third:central": 13,
           "defensive_third:left_halfspace": 13,
           "middle_third:right_wide": 1,
           "attacking_third:right_halfspace": 1,
           "defensive_third:right_wide": 1
         },
         "third_counts": {
-          "defensive_third": 34,
-          "middle_third": 113,
-          "attacking_third": 29
+          "defensive_third": 39,
+          "middle_third": 125,
+          "attacking_third": 33
         },
         "lane_counts": {
-          "left_wide": 26,
-          "right_halfspace": 21,
-          "central": 46,
-          "left_halfspace": 81,
+          "left_wide": 29,
+          "right_halfspace": 25,
+          "central": 54,
+          "left_halfspace": 87,
           "right_wide": 2
         },
         "points_truncated": false
@@ -9192,38 +9553,38 @@
         "points_truncated": false
       },
       "defensive": {
-        "count": 286,
-        "success_count": 254,
+        "count": 306,
+        "success_count": 273,
         "success_rate": 1.0,
-        "progressive_count": 23,
-        "progressive_rate": 0.561,
+        "progressive_count": 24,
+        "progressive_rate": 0.5714,
         "zone_counts": {
-          "defensive_third:central": 38,
-          "defensive_third:right_halfspace": 28,
-          "middle_third:left_wide": 25,
+          "defensive_third:central": 42,
+          "defensive_third:right_halfspace": 29,
+          "middle_third:left_wide": 27,
           "defensive_third:left_halfspace": 48,
           "defensive_third:left_wide": 14,
-          "middle_third:central": 33,
+          "middle_third:central": 37,
           "attacking_third:left_wide": 8,
-          "middle_third:right_halfspace": 26,
-          "middle_third:left_halfspace": 44,
+          "middle_third:right_halfspace": 28,
+          "middle_third:left_halfspace": 47,
           "attacking_third:central": 4,
-          "attacking_third:left_halfspace": 11,
+          "attacking_third:left_halfspace": 15,
           "middle_third:right_wide": 1,
           "attacking_third:right_wide": 2,
           "defensive_third:right_wide": 2,
           "attacking_third:right_halfspace": 2
         },
         "third_counts": {
-          "defensive_third": 130,
-          "middle_third": 129,
-          "attacking_third": 27
+          "defensive_third": 135,
+          "middle_third": 140,
+          "attacking_third": 31
         },
         "lane_counts": {
-          "central": 75,
-          "right_halfspace": 56,
-          "left_wide": 47,
-          "left_halfspace": 103,
+          "central": 83,
+          "right_halfspace": 59,
+          "left_wide": 49,
+          "left_halfspace": 110,
           "right_wide": 5
         },
         "points_truncated": false
@@ -9233,12 +9594,12 @@
       {
         "key": "passes",
         "label": "Passes",
-        "count": 1250
+        "count": 1316
       },
       {
         "key": "carries",
         "label": "Carries",
-        "count": 176
+        "count": 197
       },
       {
         "key": "dribbles",
@@ -9248,24 +9609,24 @@
       {
         "key": "defensive",
         "label": "Defensive",
-        "count": 286
+        "count": 306
       }
     ],
     "zone_counts": {
-      "middle_third:right_halfspace": 164,
-      "middle_third:left_halfspace": 398,
-      "attacking_third:central": 70,
+      "middle_third:right_halfspace": 177,
+      "middle_third:left_halfspace": 421,
+      "attacking_third:central": 74,
       "attacking_third:right_wide": 15,
-      "defensive_third:left_halfspace": 139,
-      "middle_third:central": 281,
-      "defensive_third:central": 104,
-      "defensive_third:right_halfspace": 76,
-      "defensive_third:left_wide": 46,
-      "attacking_third:left_halfspace": 118,
-      "middle_third:left_wide": 135,
-      "attacking_third:left_wide": 120,
-      "attacking_third:right_halfspace": 40,
-      "defensive_third:right_wide": 14,
+      "defensive_third:left_halfspace": 141,
+      "middle_third:central": 302,
+      "defensive_third:central": 116,
+      "defensive_third:right_halfspace": 78,
+      "defensive_third:left_wide": 51,
+      "attacking_third:left_halfspace": 127,
+      "middle_third:left_wide": 140,
+      "attacking_third:left_wide": 125,
+      "attacking_third:right_halfspace": 45,
+      "defensive_third:right_wide": 15,
       "middle_third:right_wide": 21
     },
     "points_by_category": {
@@ -28717,6 +29078,447 @@
           "zone": "middle_third:left_halfspace",
           "endpoint": "rating-breakdown",
           "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 57.0,
+          "y": 66.9,
+          "end_x": 60.1,
+          "end_y": 75.0,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "right_halfspace",
+          "zone": "middle_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 25.9,
+          "y": 47.1,
+          "end_x": 36.6,
+          "end_y": 45.7,
+          "success": null,
+          "progressive": true,
+          "outcome": null,
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 57.6,
+          "y": 42.3,
+          "end_x": 61.7,
+          "end_y": 43.0,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 61.7,
+          "y": 43.0,
+          "end_x": 40.0,
+          "end_y": 56.8,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 32.7,
+          "y": 43.6,
+          "end_x": 34.9,
+          "end_y": 54.1,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 48.3,
+          "y": 65.8,
+          "end_x": 61.2,
+          "end_y": 58.9,
+          "success": null,
+          "progressive": true,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "right_halfspace",
+          "zone": "middle_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 62.8,
+          "y": 34.3,
+          "end_x": 67.8,
+          "end_y": 37.9,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 33.8,
+          "y": 59.4,
+          "end_x": 38.3,
+          "end_y": 47.3,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 64.6,
+          "y": 24.0,
+          "end_x": 69.2,
+          "end_y": 29.4,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 26.6,
+          "y": 15.0,
+          "end_x": 29.5,
+          "end_y": 12.3,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "defensive_third",
+          "lane": "left_wide",
+          "zone": "defensive_third:left_wide",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 21.6,
+          "y": 7.4,
+          "end_x": 38.4,
+          "end_y": 17.6,
+          "success": null,
+          "progressive": true,
+          "outcome": null,
+          "third": "defensive_third",
+          "lane": "left_wide",
+          "zone": "defensive_third:left_wide",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 29.3,
+          "y": 54.0,
+          "end_x": 25.5,
+          "end_y": 59.9,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 34.1,
+          "y": 31.9,
+          "end_x": 35.9,
+          "end_y": 42.8,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 34.1,
+          "y": 66.0,
+          "end_x": 32.7,
+          "end_y": 76.4,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "right_halfspace",
+          "zone": "middle_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 77.2,
+          "y": 41.9,
+          "end_x": 74.8,
+          "end_y": 46.7,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "attacking_third",
+          "lane": "central",
+          "zone": "attacking_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 66.3,
+          "y": 53.9,
+          "end_x": 69.0,
+          "end_y": 71.6,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 70.1,
+          "y": 17.9,
+          "end_x": 71.4,
+          "end_y": 21.9,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "attacking_third",
+          "lane": "left_wide",
+          "zone": "attacking_third:left_wide",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 71.4,
+          "y": 21.9,
+          "end_x": 71.7,
+          "end_y": 37.9,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "attacking_third",
+          "lane": "left_halfspace",
+          "zone": "attacking_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 56.9,
+          "y": 66.1,
+          "end_x": 67.1,
+          "end_y": 63.6,
+          "success": null,
+          "progressive": true,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "right_halfspace",
+          "zone": "middle_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 61.3,
+          "y": 29.2,
+          "end_x": 69.5,
+          "end_y": 24.4,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "carries",
+          "raw_category": "ball-carries",
+          "type": "ball-carries",
+          "x": 69.5,
+          "y": 24.4,
+          "end_x": 63.2,
+          "end_y": 29.1,
+          "success": null,
+          "progressive": false,
+          "outcome": null,
+          "third": "attacking_third",
+          "lane": "left_halfspace",
+          "zone": "attacking_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
         }
       ],
       "dribbles": [
@@ -35334,6 +36136,426 @@
           "third": "defensive_third",
           "lane": "central",
           "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 59.1,
+          "y": 11.7,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "left_wide",
+          "zone": "middle_third:left_wide",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 57.0,
+          "y": 66.9,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "right_halfspace",
+          "zone": "middle_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 53.6,
+          "y": 55.2,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 61.7,
+          "y": 43.0,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 17.9,
+          "y": 54.4,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 21.4,
+          "y": 40.3,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 15999228,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 48.3,
+          "y": 65.8,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "right_halfspace",
+          "zone": "middle_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 63.7,
+          "y": 45.8,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 29.3,
+          "y": 54.0,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 47.4,
+          "y": 47.0,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "central",
+          "zone": "middle_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 29.5,
+          "y": 72.4,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "defensive_third",
+          "lane": "right_halfspace",
+          "zone": "defensive_third:right_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 68.1,
+          "y": 25.5,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "attacking_third",
+          "lane": "left_halfspace",
+          "zone": "attacking_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 72.5,
+          "y": 31.3,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "attacking_third",
+          "lane": "left_halfspace",
+          "zone": "attacking_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 60.6,
+          "y": 35.1,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 63.8,
+          "y": 37.1,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 71.4,
+          "y": 21.9,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "attacking_third",
+          "lane": "left_halfspace",
+          "zone": "attacking_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 12.4,
+          "y": 57.0,
+          "end_x": 31.2,
+          "end_y": 26.0,
+          "success": true,
+          "progressive": true,
+          "outcome": "True",
+          "third": "defensive_third",
+          "lane": "central",
+          "zone": "defensive_third:central",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 65.8,
+          "y": 27.7,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "middle_third",
+          "lane": "left_halfspace",
+          "zone": "middle_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 69.5,
+          "y": 24.4,
+          "end_x": null,
+          "end_y": null,
+          "success": true,
+          "progressive": null,
+          "outcome": "True",
+          "third": "attacking_third",
+          "lane": "left_halfspace",
+          "zone": "attacking_third:left_halfspace",
+          "endpoint": "rating-breakdown",
+          "_endpoint": "rating-breakdown"
+        },
+        {
+          "event_id": 14023953,
+          "match_date": null,
+          "minute": null,
+          "second": null,
+          "category": "defensive",
+          "raw_category": "defensive",
+          "type": "defensive",
+          "x": 37.8,
+          "y": 16.6,
+          "end_x": null,
+          "end_y": null,
+          "success": null,
+          "progressive": null,
+          "outcome": null,
+          "third": "middle_third",
+          "lane": "left_wide",
+          "zone": "middle_third:left_wide",
           "endpoint": "rating-breakdown",
           "_endpoint": "rating-breakdown"
         }
@@ -51095,13 +52317,13 @@
     "note": "Action rows are normalized for Observable maps. Use points_by_category for layered pass/carry/dribble/defensive plots."
   },
   "summary": {
-    "headline": "Adam Wharton profiles as a CM with strongest value in xa/90, key passes/90.",
-    "one_liner": "Adam Wharton: Advanced Playmaker profile with B progression and A- defensive indicators with 1,741 mapped non-shot actions.",
+    "headline": "Adam Wharton profiles as a CM with strongest value in key passes per 90, xa per 90.",
+    "one_liner": "Adam Wharton: Advanced Playmaker profile with B- progression and N/A defensive indicators with 1,848 mapped non-shot actions.",
     "strengths": [
-      "xA/90",
-      "Key Passes/90",
-      "Big Chances Created/90",
-      "Challenges Lost/90"
+      "Key Passes Per 90",
+      "xA Per 90",
+      "Challenges Lost Per 90",
+      "Big Chances Created Per 90"
     ],
     "watchpoints": [],
     "model_caveat": "Role, similarity, and position labels are model outputs. Season average-position distribution is the primary spatial source; heatmaps and actions are visual/action-density layers only."

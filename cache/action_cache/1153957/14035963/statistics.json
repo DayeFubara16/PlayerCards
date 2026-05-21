@@ -1,0 +1,133 @@
+{
+  "player_id": 1153957,
+  "event_id": 14035963,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Aleksandar Stanković",
+      "slug": "aleksandar-stankovic",
+      "shortName": "A. Stanković",
+      "position": "M",
+      "jerseyNumber": "25",
+      "height": 187,
+      "userCount": 3171,
+      "gender": "M",
+      "id": 1153957,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1123027200,
+      "proposedMarketValueRaw": {
+        "value": 24000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أرينتش ك / لازاروف ج",
+          "bn": "আলেকসান্ডার স্ট্যানকোভিচ",
+          "hi": "एलेक्ज़ेंडर स्टैनकोविक"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. ج",
+          "bn": "এ. স্ট্যানকোভিচ",
+          "hi": "ए. स्टैनकोविक"
+        }
+      }
+    },
+    "team": {
+      "name": "Club Brugge KV",
+      "slug": "club-brugge-kv",
+      "shortName": "Club Brugge",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 306123,
+      "nameCode": "BRU",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2888,
+      "teamColors": {
+        "primary": "#0080ff",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كلوب بروج كي في",
+          "ru": "Брюгге"
+        },
+        "shortNameTranslation": {
+          "ar": "كلوب بروج",
+          "bn": "ব্রুগ কেভি",
+          "hi": "क्लब ब्रुग"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 68,
+      "accuratePass": 59,
+      "totalLongBalls": 8,
+      "accurateLongBalls": 5,
+      "goalAssist": 1,
+      "accurateOwnHalfPasses": 21,
+      "totalOwnHalfPasses": 26,
+      "accurateOppositionHalfPasses": 38,
+      "totalOppositionHalfPasses": 42,
+      "totalCross": 1,
+      "aerialWon": 2,
+      "duelLost": 1,
+      "duelWon": 5,
+      "totalContest": 1,
+      "bigChanceCreated": 1,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 3,
+      "blockedScoringAttempt": 1,
+      "goals": 1,
+      "totalClearance": 4,
+      "interceptionWon": 4,
+      "ballRecovery": 8,
+      "totalTackle": 2,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "wasFouled": 1,
+      "minutesPlayed": 90,
+      "touches": 89,
+      "rating": 9.3,
+      "possessionLostCtrl": 12,
+      "expectedGoals": 0.5338,
+      "expectedGoalsOnTarget": 1.473,
+      "expectedAssists": 0.788907,
+      "totalBallCarriesDistance": 58.198997856531,
+      "ballCarriesCount": 9,
+      "totalProgression": -26.355,
+      "bestBallCarryProgression": 7.77,
+      "keyPass": 3,
+      "ratingVersions": {
+        "original": 9.3,
+        "alternative": 9.5
+      },
+      "totalShots": 5,
+      "shotValueNormalized": 0.56,
+      "passValueNormalized": 0.76,
+      "dribbleValueNormalized": 0.34,
+      "defensiveValueNormalized": 0.24,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14035963/player/1153957/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T22:11:09.305048Z"
+  }
+}

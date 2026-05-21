@@ -1,0 +1,124 @@
+{
+  "player_id": 1006069,
+  "event_id": 14131901,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "António Silva",
+      "firstName": "",
+      "lastName": "",
+      "slug": "antonio-silva",
+      "shortName": "A. Silva",
+      "position": "D",
+      "jerseyNumber": "4",
+      "height": 187,
+      "userCount": 8660,
+      "gender": "M",
+      "sofascoreId": "antoniosilva.66",
+      "id": 1006069,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1067472000,
+      "proposedMarketValueRaw": {
+        "value": 30000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أنطونيو سيلفا",
+          "bn": "আন্তোনিও সিলভা",
+          "hi": "एंटोनियो सिल्वा"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. سيلفا",
+          "bn": "এ. সিলভা",
+          "hi": "ए. सिल्वा"
+        }
+      }
+    },
+    "team": {
+      "name": "Benfica",
+      "slug": "benfica",
+      "shortName": "Benfica",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 880274,
+      "nameCode": "SLB",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 3006,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بنفيكا",
+          "bn": "বেনফিকা",
+          "hi": "बेनफिका",
+          "ru": "Бенфика"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 87,
+      "accuratePass": 76,
+      "totalLongBalls": 8,
+      "accurateLongBalls": 4,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 20,
+      "totalOwnHalfPasses": 25,
+      "accurateOppositionHalfPasses": 56,
+      "totalOppositionHalfPasses": 62,
+      "totalCross": 3,
+      "accurateCross": 1,
+      "aerialLost": 4,
+      "aerialWon": 5,
+      "duelLost": 6,
+      "duelWon": 6,
+      "challengeLost": 1,
+      "totalClearance": 3,
+      "outfielderBlock": 1,
+      "interceptionWon": 1,
+      "ballRecovery": 5,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "fouls": 1,
+      "minutesPlayed": 90,
+      "touches": 99,
+      "rating": 7.2,
+      "possessionLostCtrl": 13,
+      "expectedAssists": 0.149116,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 7.2,
+        "alternative": 7.5
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.31,
+      "dribbleValueNormalized": 0.41,
+      "defensiveValueNormalized": -0.14,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14131901/player/1006069/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T21:05:14.662058Z"
+  }
+}

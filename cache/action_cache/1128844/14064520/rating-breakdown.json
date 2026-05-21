@@ -1,0 +1,86 @@
+{
+  "player_id": 1128844,
+  "event_id": 14064520,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 96.7,
+          "y": 27
+        },
+        "passEndCoordinates": {
+          "x": 96.8,
+          "y": 28.2
+        },
+        "eventActionType": "cross",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 63.8,
+          "y": 29.1
+        },
+        "passEndCoordinates": {
+          "x": 58.7,
+          "y": 28.8
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 86.9,
+          "y": 62
+        },
+        "passEndCoordinates": {
+          "x": 79.1,
+          "y": 57.5
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 86.5,
+          "y": 76.3
+        },
+        "passEndCoordinates": {
+          "x": 72.9,
+          "y": 48.1
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [
+      {
+        "playerCoordinates": {
+          "x": 81.2,
+          "y": 13.2
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "keypass": false
+      }
+    ],
+    "defensive": [],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14064520/player/1128844/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T19:40:39.271770Z"
+  }
+}

@@ -51,7 +51,7 @@ Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=1100952
+$PLAYER_ID=1153957
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
@@ -72,7 +72,6 @@ python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $S
 # 9. Build final player card
 # Pass explicit paths so the builder does not accidentally auto-load old root files.
 python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json
-
 
 Housekeeping rules
 ------------------

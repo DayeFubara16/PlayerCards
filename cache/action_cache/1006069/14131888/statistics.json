@@ -1,0 +1,100 @@
+{
+  "player_id": 1006069,
+  "event_id": 14131888,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "António Silva",
+      "firstName": "",
+      "lastName": "",
+      "slug": "antonio-silva",
+      "shortName": "A. Silva",
+      "position": "D",
+      "jerseyNumber": "4",
+      "height": 187,
+      "userCount": 8660,
+      "gender": "M",
+      "sofascoreId": "antoniosilva.66",
+      "id": 1006069,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1067472000,
+      "proposedMarketValueRaw": {
+        "value": 30000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أنطونيو سيلفا",
+          "bn": "আন্তোনিও সিলভা",
+          "hi": "एंटोनियो सिल्वा"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. سيلفا",
+          "bn": "এ. সিলভা",
+          "hi": "ए. सिल्वा"
+        }
+      }
+    },
+    "team": {
+      "name": "Benfica",
+      "slug": "benfica",
+      "shortName": "Benfica",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 880274,
+      "nameCode": "SLB",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 3006,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بنفيكا",
+          "bn": "বেনফিকা",
+          "hi": "बेनफिका",
+          "ru": "Бенфика"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "goalAssist": 0,
+      "duelWon": 1,
+      "totalClearance": 2,
+      "wasFouled": 1,
+      "minutesPlayed": 11,
+      "touches": 3,
+      "rating": 6.4,
+      "ratingVersions": {
+        "original": 6.4,
+        "alternative": 6.4
+      },
+      "totalShots": 0,
+      "defensiveValueNormalized": -0.15,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14131888/player/1006069/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T21:05:12.080397Z"
+  }
+}

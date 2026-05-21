@@ -5,35 +5,36 @@
     "season": "2025-26",
     "league": null,
     "match_log": "data/raw/player_match_logs.csv",
-    "events_found": 30,
-    "events_with_heatmap": 30,
+    "events_found": 33,
+    "events_with_heatmap": 33,
     "cache_dir": ".heatmap_cache",
     "no_fetch": false,
     "refresh_cache": false,
     "flip_axes": false,
-    "generated_at_utc": "2026-04-27T02:59:43.224863Z"
+    "generated_at_utc": "2026-05-21T21:40:52.360620Z"
   },
   "source_position_labels": {
     "role_position_mode": "ST",
     "role_position_minutes": {
-      "ST": 1399.0,
-      "SS": 480.0,
+      "ST": 1479.0,
+      "SS": 570.0,
       "AM": 269.0,
+      "W": 90.0,
       "F": 68.0
     },
     "player_position_mode": "F",
     "player_position_minutes": {
-      "F": 1947.0,
+      "F": 2207.0,
       "M": 269.0
     },
     "base_position_mode": "F",
     "base_position_minutes": {
-      "F": 1947.0,
+      "F": 2207.0,
       "M": 269.0
     },
     "role_family_mode": "attack",
     "role_family_minutes": {
-      "attack": 1947.0,
+      "attack": 2207.0,
       "midfield": 269.0
     },
     "profile_position_mode": null,
@@ -42,24 +43,24 @@
   "position_estimate": null,
   "position_note": "Visual heatmap only. Tactical position is intentionally not estimated here; use Position_Arbitrator output.",
   "visual_summary": {
-    "centroid_x": 61.3484,
-    "centroid_y": 36.6659,
-    "spread_x": 22.4701,
-    "spread_y": 31.4123,
-    "point_count": 1505,
-    "total_weight": 1691.7557,
+    "centroid_x": 61.9009,
+    "centroid_y": 38.8505,
+    "spread_x": 22.4638,
+    "spread_y": 32.2408,
+    "point_count": 1638,
+    "total_weight": 1856.089,
     "zone_shares": {
-      "defensive_third": 0.1519,
-      "middle_third": 0.3696,
-      "attacking_third": 0.4785,
-      "left_lane": 0.583,
-      "central_lane": 0.1648,
-      "right_lane": 0.2522,
-      "wide_lane": 0.8352,
-      "high_wide_share": 0.461,
-      "deep_wide_share": 0.3159,
-      "central_high_share": 0.1092,
-      "deep_central_share": 0.0665
+      "defensive_third": 0.1462,
+      "middle_third": 0.3666,
+      "attacking_third": 0.4873,
+      "left_lane": 0.5557,
+      "central_lane": 0.1631,
+      "right_lane": 0.2813,
+      "wide_lane": 0.8369,
+      "high_wide_share": 0.4743,
+      "deep_wide_share": 0.3058,
+      "central_high_share": 0.1072,
+      "deep_central_share": 0.0679
     },
     "note": "Visual/action-density summary only. Do not use this as a tactical position estimate; use Position_Arbitrator output for position."
   },
@@ -72,7 +73,7 @@
       "minutes": 45.0,
       "role_position": "F",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 23,
       "parsed_points": 23,
       "minutes_weight": 0.5
@@ -85,7 +86,7 @@
       "minutes": 23.0,
       "role_position": "F",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 32,
       "parsed_points": 32,
       "minutes_weight": 0.2556
@@ -98,7 +99,7 @@
       "minutes": 24.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 33,
       "parsed_points": 33,
       "minutes_weight": 0.2667
@@ -111,7 +112,7 @@
       "minutes": 89.0,
       "role_position": "AM",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 66,
       "parsed_points": 66,
       "minutes_weight": 0.9889
@@ -124,7 +125,7 @@
       "minutes": 79.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 59,
       "parsed_points": 59,
       "minutes_weight": 0.8778
@@ -137,7 +138,7 @@
       "minutes": 23.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 26,
       "parsed_points": 26,
       "minutes_weight": 0.2556
@@ -150,7 +151,7 @@
       "minutes": 29.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 25,
       "parsed_points": 25,
       "minutes_weight": 0.3222
@@ -163,7 +164,7 @@
       "minutes": 63.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 51,
       "parsed_points": 51,
       "minutes_weight": 0.7
@@ -176,7 +177,7 @@
       "minutes": 90.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 60,
       "parsed_points": 60,
       "minutes_weight": 1.0
@@ -189,7 +190,7 @@
       "minutes": 67.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 61,
       "parsed_points": 61,
       "minutes_weight": 0.7444
@@ -202,7 +203,7 @@
       "minutes": 89.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 88,
       "parsed_points": 88,
       "minutes_weight": 0.9889
@@ -215,7 +216,7 @@
       "minutes": 90.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 60,
       "parsed_points": 60,
       "minutes_weight": 1.0
@@ -228,7 +229,7 @@
       "minutes": 87.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 60,
       "parsed_points": 60,
       "minutes_weight": 0.9667
@@ -241,7 +242,7 @@
       "minutes": 90.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 89,
       "parsed_points": 89,
       "minutes_weight": 1.0
@@ -254,7 +255,7 @@
       "minutes": 89.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 71,
       "parsed_points": 71,
       "minutes_weight": 0.9889
@@ -267,7 +268,7 @@
       "minutes": 30.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 30,
       "parsed_points": 30,
       "minutes_weight": 0.3333
@@ -280,7 +281,7 @@
       "minutes": 90.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 67,
       "parsed_points": 67,
       "minutes_weight": 1.0
@@ -293,7 +294,7 @@
       "minutes": 90.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 101,
       "parsed_points": 101,
       "minutes_weight": 1.0
@@ -306,7 +307,7 @@
       "minutes": 90.0,
       "role_position": "AM",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 100,
       "parsed_points": 100,
       "minutes_weight": 1.0
@@ -319,7 +320,7 @@
       "minutes": 82.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 49,
       "parsed_points": 49,
       "minutes_weight": 0.9111
@@ -332,7 +333,7 @@
       "minutes": 90.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 104,
       "parsed_points": 104,
       "minutes_weight": 1.0
@@ -345,7 +346,7 @@
       "minutes": 89.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 71,
       "parsed_points": 71,
       "minutes_weight": 0.9889
@@ -358,7 +359,7 @@
       "minutes": 89.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 69,
       "parsed_points": 69,
       "minutes_weight": 0.9889
@@ -371,7 +372,7 @@
       "minutes": 89.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 87,
       "parsed_points": 87,
       "minutes_weight": 0.9889
@@ -384,7 +385,7 @@
       "minutes": 90.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 62,
       "parsed_points": 62,
       "minutes_weight": 1.0
@@ -397,7 +398,7 @@
       "minutes": 66.0,
       "role_position": "SS",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 36,
       "parsed_points": 36,
       "minutes_weight": 0.7333
@@ -410,7 +411,7 @@
       "minutes": 86.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 67,
       "parsed_points": 67,
       "minutes_weight": 0.9556
@@ -423,7 +424,7 @@
       "minutes": 89.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 95,
       "parsed_points": 95,
       "minutes_weight": 0.9889
@@ -436,7 +437,7 @@
       "minutes": 90.0,
       "role_position": "AM",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 69,
       "parsed_points": 69,
       "minutes_weight": 1.0
@@ -449,15 +450,54 @@
       "minutes": 79.0,
       "role_position": "ST",
       "player_name": "Yan Diomande",
-      "heatmap_source": "fetch",
+      "heatmap_source": "cache",
       "raw_points": 68,
       "parsed_points": 68,
       "minutes_weight": 0.8778
+    },
+    {
+      "event_id": 14065236,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 90.0,
+      "role_position": "W",
+      "player_name": "Yan Diomande",
+      "heatmap_source": "fetch",
+      "raw_points": 49,
+      "parsed_points": 49,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14065250,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 90.0,
+      "role_position": "SS",
+      "player_name": "Yan Diomande",
+      "heatmap_source": "fetch",
+      "raw_points": 70,
+      "parsed_points": 70,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14065555,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 80.0,
+      "role_position": "ST",
+      "player_name": "Yan Diomande",
+      "heatmap_source": "fetch",
+      "raw_points": 51,
+      "parsed_points": 51,
+      "minutes_weight": 0.8889
     }
   ],
   "heatmap": {
-    "cell_count": 1505,
-    "raw_point_count": 1879,
+    "cell_count": 1638,
+    "raw_point_count": 2049,
     "precision": 2,
     "points": [
       {
@@ -522,6 +562,16 @@
       },
       {
         "x": 4.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 4.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 4.0,
         "y": 84.0,
         "value": 0.988889
       },
@@ -579,6 +629,11 @@
         "x": 7.0,
         "y": 91.0,
         "value": 0.988889
+      },
+      {
+        "x": 8.0,
+        "y": 71.0,
+        "value": 0.888889
       },
       {
         "x": 8.0,
@@ -649,6 +704,11 @@
         "x": 12.0,
         "y": 87.0,
         "value": 0.322222
+      },
+      {
+        "x": 12.0,
+        "y": 88.0,
+        "value": 1.0
       },
       {
         "x": 13.0,
@@ -922,6 +982,11 @@
       },
       {
         "x": 22.0,
+        "y": 61.0,
+        "value": 0.888889
+      },
+      {
+        "x": 22.0,
         "y": 67.0,
         "value": 0.877778
       },
@@ -929,6 +994,11 @@
         "x": 22.0,
         "y": 75.0,
         "value": 1.0
+      },
+      {
+        "x": 22.0,
+        "y": 79.0,
+        "value": 0.888889
       },
       {
         "x": 22.0,
@@ -984,6 +1054,16 @@
         "x": 23.0,
         "y": 61.0,
         "value": 0.988889
+      },
+      {
+        "x": 23.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 68.0,
+        "value": 1.0
       },
       {
         "x": 23.0,
@@ -1132,6 +1212,11 @@
       },
       {
         "x": 26.0,
+        "y": 76.0,
+        "value": 0.888889
+      },
+      {
+        "x": 26.0,
         "y": 84.0,
         "value": 0.988889
       },
@@ -1164,6 +1249,11 @@
         "x": 27.0,
         "y": 38.0,
         "value": 0.988889
+      },
+      {
+        "x": 27.0,
+        "y": 58.0,
+        "value": 1.0
       },
       {
         "x": 27.0,
@@ -1387,6 +1477,11 @@
       },
       {
         "x": 30.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
         "y": 64.0,
         "value": 1.0
       },
@@ -1474,6 +1569,11 @@
         "x": 31.0,
         "y": 63.0,
         "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 77.0,
+        "value": 0.888889
       },
       {
         "x": 31.0,
@@ -1582,6 +1682,11 @@
       },
       {
         "x": 32.0,
+        "y": 45.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
         "y": 56.0,
         "value": 1.0
       },
@@ -1612,6 +1717,11 @@
       },
       {
         "x": 32.0,
+        "y": 94.0,
+        "value": 0.888889
+      },
+      {
+        "x": 32.0,
         "y": 96.0,
         "value": 0.988889
       },
@@ -1629,6 +1739,11 @@
         "x": 33.0,
         "y": 5.0,
         "value": 1.922222
+      },
+      {
+        "x": 33.0,
+        "y": 8.0,
+        "value": 1.0
       },
       {
         "x": 33.0,
@@ -1768,7 +1883,7 @@
       {
         "x": 34.0,
         "y": 72.0,
-        "value": 1.0
+        "value": 1.888889
       },
       {
         "x": 34.0,
@@ -1957,6 +2072,11 @@
       },
       {
         "x": 36.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
         "y": 92.0,
         "value": 0.755556
       },
@@ -2027,6 +2147,11 @@
       },
       {
         "x": 37.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 37.0,
         "y": 81.0,
         "value": 0.988889
       },
@@ -2034,6 +2159,11 @@
         "x": 37.0,
         "y": 85.0,
         "value": 0.988889
+      },
+      {
+        "x": 37.0,
+        "y": 86.0,
+        "value": 1.0
       },
       {
         "x": 37.0,
@@ -2063,7 +2193,7 @@
       {
         "x": 38.0,
         "y": 6.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 38.0,
@@ -2083,6 +2213,11 @@
       {
         "x": 38.0,
         "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 67.0,
         "value": 1.0
       },
       {
@@ -2109,6 +2244,11 @@
         "x": 39.0,
         "y": 3.0,
         "value": 1.966667
+      },
+      {
+        "x": 39.0,
+        "y": 9.0,
+        "value": 1.0
       },
       {
         "x": 39.0,
@@ -2152,6 +2292,16 @@
       },
       {
         "x": 39.0,
+        "y": 33.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
         "y": 42.0,
         "value": 1.0
       },
@@ -2187,8 +2337,23 @@
       },
       {
         "x": 40.0,
+        "y": 16.0,
+        "value": 0.888889
+      },
+      {
+        "x": 40.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
         "y": 72.0,
         "value": 0.988889
+      },
+      {
+        "x": 40.0,
+        "y": 77.0,
+        "value": 1.0
       },
       {
         "x": 40.0,
@@ -2219,6 +2384,11 @@
         "x": 41.0,
         "y": 4.0,
         "value": 0.988889
+      },
+      {
+        "x": 41.0,
+        "y": 8.0,
+        "value": 1.0
       },
       {
         "x": 41.0,
@@ -2259,6 +2429,11 @@
         "x": 41.0,
         "y": 87.0,
         "value": 0.988889
+      },
+      {
+        "x": 41.0,
+        "y": 89.0,
+        "value": 0.888889
       },
       {
         "x": 41.0,
@@ -2362,6 +2537,11 @@
       },
       {
         "x": 42.0,
+        "y": 91.0,
+        "value": 0.888889
+      },
+      {
+        "x": 42.0,
         "y": 92.0,
         "value": 0.255556
       },
@@ -2417,6 +2597,11 @@
       },
       {
         "x": 43.0,
+        "y": 23.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
         "y": 37.0,
         "value": 1.0
       },
@@ -2449,6 +2634,11 @@
         "x": 43.0,
         "y": 84.0,
         "value": 0.5
+      },
+      {
+        "x": 43.0,
+        "y": 91.0,
+        "value": 1.0
       },
       {
         "x": 43.0,
@@ -2646,6 +2836,11 @@
         "value": 1.0
       },
       {
+        "x": 45.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
         "x": 46.0,
         "y": 3.0,
         "value": 1.0
@@ -2684,6 +2879,11 @@
         "x": 46.0,
         "y": 57.0,
         "value": 0.266667
+      },
+      {
+        "x": 46.0,
+        "y": 60.0,
+        "value": 0.888889
       },
       {
         "x": 46.0,
@@ -2932,8 +3132,18 @@
       },
       {
         "x": 52.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
         "y": 81.0,
         "value": 0.988889
+      },
+      {
+        "x": 52.0,
+        "y": 90.0,
+        "value": 0.888889
       },
       {
         "x": 52.0,
@@ -2953,7 +3163,7 @@
       {
         "x": 53.0,
         "y": 9.0,
-        "value": 1.0
+        "value": 1.888889
       },
       {
         "x": 53.0,
@@ -2998,7 +3208,7 @@
       {
         "x": 53.0,
         "y": 92.0,
-        "value": 0.988889
+        "value": 1.877778
       },
       {
         "x": 53.0,
@@ -3082,6 +3292,11 @@
       },
       {
         "x": 54.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
         "y": 85.0,
         "value": 1.0
       },
@@ -3119,6 +3334,11 @@
         "x": 55.0,
         "y": 7.0,
         "value": 1.988889
+      },
+      {
+        "x": 55.0,
+        "y": 8.0,
+        "value": 1.0
       },
       {
         "x": 55.0,
@@ -3192,6 +3412,11 @@
       },
       {
         "x": 55.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
         "y": 93.0,
         "value": 1.0
       },
@@ -3199,6 +3424,11 @@
         "x": 55.0,
         "y": 95.0,
         "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 96.0,
+        "value": 0.888889
       },
       {
         "x": 56.0,
@@ -3228,7 +3458,12 @@
       {
         "x": 56.0,
         "y": 19.0,
-        "value": 1.944444
+        "value": 2.944444
+      },
+      {
+        "x": 56.0,
+        "y": 21.0,
+        "value": 0.888889
       },
       {
         "x": 56.0,
@@ -3259,6 +3494,11 @@
         "x": 56.0,
         "y": 71.0,
         "value": 0.7
+      },
+      {
+        "x": 56.0,
+        "y": 73.0,
+        "value": 0.888889
       },
       {
         "x": 56.0,
@@ -3362,6 +3602,11 @@
       },
       {
         "x": 57.0,
+        "y": 83.0,
+        "value": 0.888889
+      },
+      {
+        "x": 57.0,
         "y": 86.0,
         "value": 0.988889
       },
@@ -3412,6 +3657,16 @@
       },
       {
         "x": 58.0,
+        "y": 58.0,
+        "value": 0.888889
+      },
+      {
+        "x": 58.0,
+        "y": 59.0,
+        "value": 0.888889
+      },
+      {
+        "x": 58.0,
         "y": 60.0,
         "value": 1.0
       },
@@ -3439,6 +3694,11 @@
         "x": 58.0,
         "y": 88.0,
         "value": 0.733333
+      },
+      {
+        "x": 58.0,
+        "y": 94.0,
+        "value": 1.0
       },
       {
         "x": 58.0,
@@ -3537,7 +3797,17 @@
       },
       {
         "x": 59.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
         "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 95.0,
         "value": 1.0
       },
       {
@@ -3707,8 +3977,18 @@
       },
       {
         "x": 61.0,
+        "y": 90.0,
+        "value": 0.888889
+      },
+      {
+        "x": 61.0,
         "y": 91.0,
         "value": 0.733333
+      },
+      {
+        "x": 61.0,
+        "y": 92.0,
+        "value": 1.0
       },
       {
         "x": 61.0,
@@ -3822,6 +4102,16 @@
       },
       {
         "x": 62.0,
+        "y": 71.0,
+        "value": 0.888889
+      },
+      {
+        "x": 62.0,
+        "y": 80.0,
+        "value": 0.888889
+      },
+      {
+        "x": 62.0,
         "y": 85.0,
         "value": 0.877778
       },
@@ -3932,8 +4222,18 @@
       },
       {
         "x": 63.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
         "y": 84.0,
         "value": 0.988889
+      },
+      {
+        "x": 63.0,
+        "y": 93.0,
+        "value": 1.0
       },
       {
         "x": 63.0,
@@ -3943,7 +4243,7 @@
       {
         "x": 63.0,
         "y": 95.0,
-        "value": 0.255556
+        "value": 1.255556
       },
       {
         "x": 63.0,
@@ -3973,7 +4273,7 @@
       {
         "x": 64.0,
         "y": 7.0,
-        "value": 0.266667
+        "value": 1.266667
       },
       {
         "x": 64.0,
@@ -4078,7 +4378,7 @@
       {
         "x": 65.0,
         "y": 4.0,
-        "value": 1.988889
+        "value": 2.988889
       },
       {
         "x": 65.0,
@@ -4108,7 +4408,7 @@
       {
         "x": 65.0,
         "y": 11.0,
-        "value": 0.255556
+        "value": 1.255556
       },
       {
         "x": 65.0,
@@ -4202,6 +4502,21 @@
       },
       {
         "x": 65.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
         "y": 97.0,
         "value": 0.988889
       },
@@ -4223,7 +4538,7 @@
       {
         "x": 66.0,
         "y": 4.0,
-        "value": 3.955556
+        "value": 4.955556
       },
       {
         "x": 66.0,
@@ -4247,12 +4562,22 @@
       },
       {
         "x": 66.0,
+        "y": 10.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
         "y": 11.0,
-        "value": 1.988889
+        "value": 2.988889
       },
       {
         "x": 66.0,
         "y": 12.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 13.0,
         "value": 1.0
       },
       {
@@ -4342,8 +4667,18 @@
       },
       {
         "x": 66.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
         "y": 92.0,
-        "value": 0.733333
+        "value": 2.733333
       },
       {
         "x": 66.0,
@@ -4498,7 +4833,7 @@
       {
         "x": 67.0,
         "y": 88.0,
-        "value": 0.733333
+        "value": 1.622222
       },
       {
         "x": 67.0,
@@ -4511,6 +4846,21 @@
         "value": 1.5
       },
       {
+        "x": 67.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
         "x": 68.0,
         "y": 2.0,
         "value": 3.0
@@ -4519,6 +4869,11 @@
         "x": 68.0,
         "y": 3.0,
         "value": 1.988889
+      },
+      {
+        "x": 68.0,
+        "y": 5.0,
+        "value": 1.0
       },
       {
         "x": 68.0,
@@ -4703,7 +5058,7 @@
       {
         "x": 69.0,
         "y": 12.0,
-        "value": 1.0
+        "value": 3.0
       },
       {
         "x": 69.0,
@@ -4868,7 +5223,7 @@
       {
         "x": 70.0,
         "y": 25.0,
-        "value": 0.988889
+        "value": 1.988889
       },
       {
         "x": 70.0,
@@ -4894,6 +5249,11 @@
         "x": 70.0,
         "y": 54.0,
         "value": 0.955556
+      },
+      {
+        "x": 70.0,
+        "y": 76.0,
+        "value": 0.888889
       },
       {
         "x": 70.0,
@@ -4939,6 +5299,11 @@
         "x": 71.0,
         "y": 2.0,
         "value": 0.988889
+      },
+      {
+        "x": 71.0,
+        "y": 3.0,
+        "value": 1.0
       },
       {
         "x": 71.0,
@@ -4992,6 +5357,16 @@
       },
       {
         "x": 71.0,
+        "y": 21.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 22.0,
+        "value": 0.888889
+      },
+      {
+        "x": 71.0,
         "y": 24.0,
         "value": 0.988889
       },
@@ -5034,6 +5409,16 @@
         "x": 71.0,
         "y": 55.0,
         "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 61.0,
+        "value": 0.888889
       },
       {
         "x": 71.0,
@@ -5327,6 +5712,16 @@
       },
       {
         "x": 73.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
         "y": 93.0,
         "value": 2.988889
       },
@@ -5472,6 +5867,11 @@
       },
       {
         "x": 74.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
         "y": 82.0,
         "value": 0.988889
       },
@@ -5479,6 +5879,11 @@
         "x": 74.0,
         "y": 86.0,
         "value": 0.7
+      },
+      {
+        "x": 74.0,
+        "y": 87.0,
+        "value": 0.888889
       },
       {
         "x": 74.0,
@@ -5572,6 +5977,11 @@
       },
       {
         "x": 75.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
         "y": 42.0,
         "value": 0.955556
       },
@@ -5627,7 +6037,17 @@
       },
       {
         "x": 75.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
         "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 88.0,
         "value": 1.0
       },
       {
@@ -5648,7 +6068,7 @@
       {
         "x": 75.0,
         "y": 96.0,
-        "value": 0.988889
+        "value": 1.988889
       },
       {
         "x": 75.0,
@@ -5693,7 +6113,7 @@
       {
         "x": 76.0,
         "y": 17.0,
-        "value": 1.988889
+        "value": 2.988889
       },
       {
         "x": 76.0,
@@ -5728,7 +6148,7 @@
       {
         "x": 76.0,
         "y": 31.0,
-        "value": 0.966667
+        "value": 1.966667
       },
       {
         "x": 76.0,
@@ -5753,7 +6173,7 @@
       {
         "x": 76.0,
         "y": 39.0,
-        "value": 0.877778
+        "value": 1.877778
       },
       {
         "x": 76.0,
@@ -5772,8 +6192,18 @@
       },
       {
         "x": 76.0,
+        "y": 58.0,
+        "value": 0.888889
+      },
+      {
+        "x": 76.0,
         "y": 60.0,
         "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 81.0,
+        "value": 0.888889
       },
       {
         "x": 76.0,
@@ -5788,7 +6218,7 @@
       {
         "x": 76.0,
         "y": 95.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 76.0,
@@ -5902,6 +6332,11 @@
       },
       {
         "x": 77.0,
+        "y": 88.0,
+        "value": 0.888889
+      },
+      {
+        "x": 77.0,
         "y": 89.0,
         "value": 1.333333
       },
@@ -5933,7 +6368,7 @@
       {
         "x": 78.0,
         "y": 7.0,
-        "value": 0.988889
+        "value": 1.988889
       },
       {
         "x": 78.0,
@@ -5954,6 +6389,11 @@
         "x": 78.0,
         "y": 17.0,
         "value": 1.955556
+      },
+      {
+        "x": 78.0,
+        "y": 18.0,
+        "value": 1.0
       },
       {
         "x": 78.0,
@@ -5979,6 +6419,11 @@
         "x": 78.0,
         "y": 43.0,
         "value": 0.988889
+      },
+      {
+        "x": 78.0,
+        "y": 58.0,
+        "value": 1.0
       },
       {
         "x": 78.0,
@@ -6008,12 +6453,22 @@
       {
         "x": 78.0,
         "y": 87.0,
-        "value": 0.988889
+        "value": 1.988889
+      },
+      {
+        "x": 78.0,
+        "y": 90.0,
+        "value": 1.0
       },
       {
         "x": 78.0,
         "y": 91.0,
         "value": 0.988889
+      },
+      {
+        "x": 78.0,
+        "y": 93.0,
+        "value": 0.888889
       },
       {
         "x": 78.0,
@@ -6063,7 +6518,7 @@
       {
         "x": 79.0,
         "y": 14.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 79.0,
@@ -6098,7 +6553,7 @@
       {
         "x": 79.0,
         "y": 25.0,
-        "value": 0.988889
+        "value": 1.988889
       },
       {
         "x": 79.0,
@@ -6124,6 +6579,11 @@
         "x": 79.0,
         "y": 48.0,
         "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 60.0,
+        "value": 0.888889
       },
       {
         "x": 79.0,
@@ -6198,6 +6658,11 @@
       {
         "x": 80.0,
         "y": 14.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 15.0,
         "value": 1.0
       },
       {
@@ -6288,17 +6753,32 @@
       {
         "x": 81.0,
         "y": 7.0,
-        "value": 0.966667
+        "value": 1.966667
       },
       {
         "x": 81.0,
         "y": 8.0,
-        "value": 1.988889
+        "value": 2.988889
+      },
+      {
+        "x": 81.0,
+        "y": 9.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 14.0,
+        "value": 1.0
       },
       {
         "x": 81.0,
         "y": 33.0,
         "value": 0.955556
+      },
+      {
+        "x": 81.0,
+        "y": 35.0,
+        "value": 1.0
       },
       {
         "x": 81.0,
@@ -6342,8 +6822,18 @@
       },
       {
         "x": 81.0,
-        "y": 91.0,
+        "y": 84.0,
         "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 91.0,
+        "value": 2.0
       },
       {
         "x": 81.0,
@@ -6352,8 +6842,18 @@
       },
       {
         "x": 81.0,
+        "y": 93.0,
+        "value": 0.888889
+      },
+      {
+        "x": 81.0,
         "y": 94.0,
         "value": 0.988889
+      },
+      {
+        "x": 81.0,
+        "y": 95.0,
+        "value": 1.0
       },
       {
         "x": 82.0,
@@ -6372,6 +6872,11 @@
       },
       {
         "x": 82.0,
+        "y": 9.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
         "y": 10.0,
         "value": 0.266667
       },
@@ -6379,6 +6884,11 @@
         "x": 82.0,
         "y": 11.0,
         "value": 1.744444
+      },
+      {
+        "x": 82.0,
+        "y": 16.0,
+        "value": 1.0
       },
       {
         "x": 82.0,
@@ -6429,6 +6939,11 @@
         "x": 82.0,
         "y": 93.0,
         "value": 0.733333
+      },
+      {
+        "x": 82.0,
+        "y": 95.0,
+        "value": 1.0
       },
       {
         "x": 83.0,
@@ -6492,6 +7007,11 @@
       },
       {
         "x": 83.0,
+        "y": 94.0,
+        "value": 0.888889
+      },
+      {
+        "x": 83.0,
         "y": 100.0,
         "value": 1.0
       },
@@ -6512,6 +7032,11 @@
       },
       {
         "x": 84.0,
+        "y": 13.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
         "y": 14.0,
         "value": 0.911111
       },
@@ -6519,6 +7044,11 @@
         "x": 84.0,
         "y": 16.0,
         "value": 0.911111
+      },
+      {
+        "x": 84.0,
+        "y": 17.0,
+        "value": 1.0
       },
       {
         "x": 84.0,
@@ -6727,6 +7257,11 @@
       },
       {
         "x": 85.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
         "y": 86.0,
         "value": 0.877778
       },
@@ -6739,6 +7274,16 @@
         "x": 85.0,
         "y": 89.0,
         "value": 0.322222
+      },
+      {
+        "x": 85.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 93.0,
+        "value": 0.888889
       },
       {
         "x": 86.0,
@@ -6822,6 +7367,11 @@
       },
       {
         "x": 86.0,
+        "y": 33.0,
+        "value": 0.888889
+      },
+      {
+        "x": 86.0,
         "y": 34.0,
         "value": 1.688889
       },
@@ -6853,7 +7403,17 @@
       {
         "x": 86.0,
         "y": 73.0,
-        "value": 0.988889
+        "value": 1.988889
+      },
+      {
+        "x": 86.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 78.0,
+        "value": 1.0
       },
       {
         "x": 86.0,
@@ -6871,9 +7431,24 @@
         "value": 0.877778
       },
       {
+        "x": 86.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
         "x": 87.0,
         "y": 6.0,
         "value": 0.988889
+      },
+      {
+        "x": 87.0,
+        "y": 10.0,
+        "value": 1.0
       },
       {
         "x": 87.0,
@@ -6954,6 +7529,11 @@
         "x": 87.0,
         "y": 66.0,
         "value": 0.988889
+      },
+      {
+        "x": 87.0,
+        "y": 74.0,
+        "value": 1.0
       },
       {
         "x": 87.0,
@@ -7088,6 +7668,11 @@
       {
         "x": 88.0,
         "y": 89.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 92.0,
         "value": 1.0
       },
       {
@@ -7198,7 +7783,7 @@
       {
         "x": 89.0,
         "y": 74.0,
-        "value": 1.311111
+        "value": 2.311111
       },
       {
         "x": 89.0,
@@ -7272,8 +7857,23 @@
       },
       {
         "x": 90.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
         "y": 76.0,
         "value": 0.255556
+      },
+      {
+        "x": 90.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 86.0,
+        "value": 1.0
       },
       {
         "x": 90.0,
@@ -7382,6 +7982,11 @@
       },
       {
         "x": 91.0,
+        "y": 76.0,
+        "value": 0.888889
+      },
+      {
+        "x": 91.0,
         "y": 77.0,
         "value": 0.877778
       },
@@ -7398,7 +8003,12 @@
       {
         "x": 91.0,
         "y": 85.0,
-        "value": 0.988889
+        "value": 1.988889
+      },
+      {
+        "x": 91.0,
+        "y": 86.0,
+        "value": 1.777778
       },
       {
         "x": 91.0,
@@ -7414,6 +8024,11 @@
         "x": 92.0,
         "y": 11.0,
         "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 15.0,
+        "value": 0.888889
       },
       {
         "x": 92.0,
@@ -7438,12 +8053,22 @@
       {
         "x": 92.0,
         "y": 29.0,
-        "value": 0.988889
+        "value": 1.988889
       },
       {
         "x": 92.0,
         "y": 34.0,
         "value": 0.7
+      },
+      {
+        "x": 92.0,
+        "y": 37.0,
+        "value": 0.888889
+      },
+      {
+        "x": 92.0,
+        "y": 38.0,
+        "value": 0.888889
       },
       {
         "x": 92.0,
@@ -7472,6 +8097,11 @@
       },
       {
         "x": 92.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
         "y": 73.0,
         "value": 0.988889
       },
@@ -7484,6 +8114,16 @@
         "x": 92.0,
         "y": 76.0,
         "value": 0.988889
+      },
+      {
+        "x": 92.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 96.0,
+        "value": 1.0
       },
       {
         "x": 93.0,
@@ -7537,8 +8177,18 @@
       },
       {
         "x": 93.0,
+        "y": 49.0,
+        "value": 0.888889
+      },
+      {
+        "x": 93.0,
         "y": 63.0,
         "value": 0.911111
+      },
+      {
+        "x": 93.0,
+        "y": 78.0,
+        "value": 1.0
       },
       {
         "x": 93.0,
@@ -7547,8 +8197,18 @@
       },
       {
         "x": 93.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
         "y": 89.0,
         "value": 0.988889
+      },
+      {
+        "x": 93.0,
+        "y": 91.0,
+        "value": 1.0
       },
       {
         "x": 94.0,
@@ -7573,7 +8233,12 @@
       {
         "x": 94.0,
         "y": 19.0,
-        "value": 0.988889
+        "value": 1.877778
+      },
+      {
+        "x": 94.0,
+        "y": 20.0,
+        "value": 0.888889
       },
       {
         "x": 94.0,
@@ -7604,6 +8269,11 @@
         "x": 94.0,
         "y": 47.0,
         "value": 0.911111
+      },
+      {
+        "x": 94.0,
+        "y": 64.0,
+        "value": 0.888889
       },
       {
         "x": 94.0,
@@ -7697,6 +8367,11 @@
       },
       {
         "x": 95.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
         "y": 72.0,
         "value": 2.711111
       },
@@ -7783,7 +8458,12 @@
       {
         "x": 96.0,
         "y": 73.0,
-        "value": 0.988889
+        "value": 1.877778
+      },
+      {
+        "x": 96.0,
+        "y": 74.0,
+        "value": 1.0
       },
       {
         "x": 96.0,
@@ -7792,8 +8472,23 @@
       },
       {
         "x": 96.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
         "y": 77.0,
         "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 85.0,
+        "value": 0.888889
+      },
+      {
+        "x": 96.0,
+        "y": 90.0,
+        "value": 0.888889
       },
       {
         "x": 96.0,
@@ -7879,6 +8574,11 @@
         "x": 97.0,
         "y": 76.0,
         "value": 0.988889
+      },
+      {
+        "x": 97.0,
+        "y": 82.0,
+        "value": 0.888889
       },
       {
         "x": 98.0,
@@ -7984,6 +8684,11 @@
         "x": 99.0,
         "y": 72.0,
         "value": 1.977778
+      },
+      {
+        "x": 99.0,
+        "y": 92.0,
+        "value": 1.0
       }
     ],
     "note": "Aggregated from /event/{event_id}/player/{player_id}/heatmap, weighted by match minutes when available."

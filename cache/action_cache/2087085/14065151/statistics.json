@@ -1,0 +1,131 @@
+{
+  "player_id": 2087085,
+  "event_id": 14065151,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Yan Diomande",
+      "firstName": "Yan Diomande",
+      "slug": "yan-diomande",
+      "shortName": "Y. Diomande",
+      "position": "F",
+      "jerseyNumber": "49",
+      "height": 180,
+      "userCount": 29831,
+      "gender": "M",
+      "id": 2087085,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1163462400,
+      "proposedMarketValueRaw": {
+        "value": 82000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "يان ديوماند"
+        },
+        "shortNameTranslation": {
+          "ar": "ي. ديوماند"
+        }
+      }
+    },
+    "team": {
+      "name": "RB Leipzig",
+      "slug": "rb-leipzig",
+      "shortName": "Leipzig",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 406399,
+      "nameCode": "RBL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 36360,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#dd0000",
+        "text": "#dd0000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "آر بي لايبزيغ",
+          "hi": "RB लैपज़िग",
+          "ru": "РБ Лейпциг"
+        },
+        "shortNameTranslation": {
+          "ar": "لايبزيغ",
+          "bn": "লিপজিগ",
+          "hi": "लीपज़िग"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 52,
+      "accuratePass": 47,
+      "totalLongBalls": 1,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 14,
+      "totalOwnHalfPasses": 15,
+      "accurateOppositionHalfPasses": 33,
+      "totalOppositionHalfPasses": 37,
+      "totalCross": 1,
+      "duelLost": 6,
+      "duelWon": 5,
+      "challengeLost": 1,
+      "dispossessed": 2,
+      "totalContest": 5,
+      "wonContest": 2,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 2,
+      "blockedScoringAttempt": 1,
+      "totalClearance": 1,
+      "interceptionWon": 1,
+      "ballRecovery": 4,
+      "lastManTackle": 1,
+      "totalTackle": 2,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 3,
+      "wasFouled": 1,
+      "minutesPlayed": 89,
+      "touches": 77,
+      "rating": 8.4,
+      "possessionLostCtrl": 14,
+      "expectedGoals": 0.1903,
+      "expectedGoalsOnTarget": 0.5148,
+      "expectedAssists": 0.21962,
+      "totalBallCarriesDistance": 281.42262316012,
+      "ballCarriesCount": 25,
+      "totalProgression": 149.625,
+      "bestBallCarryProgression": 25.41,
+      "ratingVersions": {
+        "original": 8.4,
+        "alternative": 7.1
+      },
+      "totalShots": 4,
+      "shotValueNormalized": 0.2,
+      "passValueNormalized": 0.57,
+      "dribbleValueNormalized": 0.5,
+      "defensiveValueNormalized": 0.6,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14065151/player/2087085/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T21:41:40.689889Z"
+  }
+}

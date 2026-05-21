@@ -1,0 +1,121 @@
+{
+  "player_id": 1128844,
+  "event_id": 14064434,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Emersonn",
+      "firstName": "Emersonn",
+      "slug": "emersonn",
+      "shortName": "Emersonn",
+      "position": "F",
+      "jerseyNumber": "20",
+      "height": 186,
+      "userCount": 702,
+      "gender": "M",
+      "id": 1128844,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1089936000,
+      "proposedMarketValueRaw": {
+        "value": 4800000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "Emerson"
+        },
+        "shortNameTranslation": {
+          "ar": "Emerson"
+        }
+      }
+    },
+    "team": {
+      "name": "Toulouse",
+      "slug": "toulouse",
+      "shortName": "Toulouse",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 88778,
+      "nameCode": "TFC",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 1681,
+      "teamColors": {
+        "primary": "#660099",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "تولوز",
+          "bn": "টুলুজ",
+          "hi": "टूलूज़",
+          "ru": "Тулуза"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 11,
+      "accuratePass": 7,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 1,
+      "totalOwnHalfPasses": 2,
+      "accurateOppositionHalfPasses": 6,
+      "totalOppositionHalfPasses": 9,
+      "totalCross": 1,
+      "aerialLost": 6,
+      "aerialWon": 3,
+      "duelLost": 8,
+      "duelWon": 4,
+      "challengeLost": 1,
+      "onTargetScoringAttempt": 3,
+      "goals": 1,
+      "ballRecovery": 4,
+      "totalTackle": 1,
+      "unsuccessfulTouch": 6,
+      "fouls": 3,
+      "totalOffside": 1,
+      "minutesPlayed": 78,
+      "touches": 23,
+      "rating": 6.8,
+      "possessionLostCtrl": 11,
+      "expectedGoals": 0.3448,
+      "expectedGoalsOnTarget": 1.1343,
+      "expectedAssists": 0.00398144,
+      "totalBallCarriesDistance": 61.979077418795,
+      "ballCarriesCount": 7,
+      "totalProgression": 42.84,
+      "bestBallCarryProgression": 20.16,
+      "ratingVersions": {
+        "original": 6.8,
+        "alternative": 7.5
+      },
+      "totalShots": 3,
+      "shotValueNormalized": 0.27,
+      "passValueNormalized": -0.18,
+      "dribbleValueNormalized": 0.45,
+      "defensiveValueNormalized": -0.07,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14064434/player/1128844/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-21T19:40:50.981605Z"
+  }
+}
