@@ -958,6 +958,12 @@ def build_summary(profile: dict[str, Any], position: dict[str, Any], role: dict[
 
 def build_card(args: argparse.Namespace) -> dict[str, Any]:
     season_df = pd.read_csv(args.season_totals)
+
+    # --- ADD THIS LINE TO FILTER THE ENTIRE DATAFRAME ---
+    if "minutes_played" in season_df.columns:
+        season_df = season_df.loc[
+            pd.to_numeric(season_df["minutes_played"], errors="coerce") >= args.min_minutes].copy()
+
     row = find_player_row(season_df, args.player_id, args.season, args.league)
 
     event_path = args.event_data or auto_find_json(args.player_id, args.season, "event", args.search_dir)
@@ -1062,6 +1068,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--out", "-o", default=None)
     ap.add_argument("--max-percentiles", type=int, default=18)
     ap.add_argument("--max-action-points-per-category", type=int, default=750)
+    ap.add_argument("--min-minutes", type=int, default=900, help="Minimum minutes played threshold")
     return ap.parse_args()
 
 

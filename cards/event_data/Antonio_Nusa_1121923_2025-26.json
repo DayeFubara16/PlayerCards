@@ -5,10 +5,10 @@
     "league": null,
     "source": "player_match_logs.csv + per-event Sofascore endpoints",
     "match_log": "data\\raw\\player_match_logs.csv",
-    "events_found": 28,
-    "events_with_shots": 23,
-    "events_with_heatmap": 28,
-    "fetched_at_utc": "2026-04-30T15:15:29.822396Z"
+    "events_found": 31,
+    "events_with_shots": 26,
+    "events_with_heatmap": 31,
+    "fetched_at_utc": "2026-05-21T22:55:39.086510Z"
   },
   "profile": {
     "player_id": 1121923,
@@ -27,7 +27,7 @@
   },
   "season_stats": {},
   "shotmap": {
-    "count": 57,
+    "count": 61,
     "shots": [
       {
         "event_id": 14056037,
@@ -1624,29 +1624,141 @@
         "goal_mouth_x": 0,
         "goal_mouth_y": 51.2,
         "goal_mouth_z": 2.5
+      },
+      {
+        "event_id": 14065236,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 1121923,
+        "player_name": "Antonio Nusa",
+        "x": 23.8,
+        "y": 47.2,
+        "xg": 0.049098841845989,
+        "xgot": 0.0076821935363114,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 9,
+        "added_time": null,
+        "period": null,
+        "id": 7182233,
+        "block_x": 1.5,
+        "block_y": 50,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.3,
+        "goal_mouth_z": 19.6
+      },
+      {
+        "event_id": 14065250,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 1121923,
+        "player_name": "Antonio Nusa",
+        "x": 19.8,
+        "y": 48.1,
+        "xg": 0.05751010030508,
+        "xgot": 0.020132202655077,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 90,
+        "added_time": 1,
+        "period": null,
+        "id": 7225377,
+        "block_x": 1.6,
+        "block_y": 49.6,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.1,
+        "goal_mouth_z": 5.7
+      },
+      {
+        "event_id": 14065250,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 1121923,
+        "player_name": "Antonio Nusa",
+        "x": 21.3,
+        "y": 34.8,
+        "xg": 0.028760932385921,
+        "xgot": 0.14243337512016,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 89,
+        "added_time": null,
+        "period": null,
+        "id": 7225349,
+        "block_x": 1.9,
+        "block_y": 49.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 53.3,
+        "goal_mouth_z": 13.9
+      },
+      {
+        "event_id": 14065555,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 1121923,
+        "player_name": "Antonio Nusa",
+        "x": 14.8,
+        "y": 49.2,
+        "xg": 0.068382754921913,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 64,
+        "added_time": null,
+        "period": null,
+        "id": 7313878,
+        "block_x": 10.7,
+        "block_y": 48.7,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 52.5,
+        "goal_mouth_z": 19
       }
     ],
     "summary": {
-      "total_shots": 57,
+      "total_shots": 61,
       "goals": 4,
       "on_target": 0,
-      "total_xg": 4.2894,
-      "total_xgot": 2.7833,
+      "total_xg": 4.4931,
+      "total_xgot": 2.9535,
       "by_body_part": {
-        "right-foot": 50,
+        "right-foot": 54,
         "left-foot": 7
       },
       "by_situation": {
         "corner": 7,
-        "assisted": 41,
+        "assisted": 45,
         "fast-break": 5,
         "regular": 2,
         "free-kick": 2
       },
       "by_shot_type": {
-        "block": 18,
+        "block": 19,
         "miss": 20,
-        "save": 13,
+        "save": 16,
         "goal": 4,
         "post": 2
       }
@@ -1742,6 +1854,11 @@
       },
       {
         "x": 13.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 13.0,
         "y": 97.0,
         "value": 1.0
       },
@@ -1813,6 +1930,11 @@
       {
         "x": 18.0,
         "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 18.0,
+        "y": 92.0,
         "value": 1.0
       },
       {
@@ -1997,6 +2119,11 @@
       },
       {
         "x": 27.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
         "y": 73.0,
         "value": 1.0
       },
@@ -2028,6 +2155,11 @@
       {
         "x": 28.0,
         "y": 45.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 73.0,
         "value": 1.0
       },
       {
@@ -2092,6 +2224,11 @@
       },
       {
         "x": 29.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
         "y": 82.0,
         "value": 1.0
       },
@@ -2128,6 +2265,11 @@
       {
         "x": 30.0,
         "y": 34.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
+        "y": 43.0,
         "value": 1.0
       },
       {
@@ -2347,6 +2489,11 @@
       },
       {
         "x": 34.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
         "y": 83.0,
         "value": 1.0
       },
@@ -2447,6 +2594,11 @@
       },
       {
         "x": 36.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
         "y": 82.0,
         "value": 1.0
       },
@@ -2528,12 +2680,12 @@
       {
         "x": 37.0,
         "y": 94.0,
-        "value": 2.0
+        "value": 3.0
       },
       {
         "x": 37.0,
         "y": 95.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 37.0,
@@ -2563,6 +2715,11 @@
       {
         "x": 38.0,
         "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 78.0,
         "value": 1.0
       },
       {
@@ -2637,6 +2794,11 @@
       },
       {
         "x": 39.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
         "y": 97.0,
         "value": 3.0
       },
@@ -2673,7 +2835,7 @@
       {
         "x": 40.0,
         "y": 66.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 40.0,
@@ -2689,6 +2851,11 @@
         "x": 40.0,
         "y": 77.0,
         "value": 2.0
+      },
+      {
+        "x": 40.0,
+        "y": 82.0,
+        "value": 1.0
       },
       {
         "x": 40.0,
@@ -3097,6 +3264,11 @@
       },
       {
         "x": 46.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
         "y": 75.0,
         "value": 1.0
       },
@@ -3148,6 +3320,11 @@
       {
         "x": 47.0,
         "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 77.0,
         "value": 1.0
       },
       {
@@ -3313,6 +3490,11 @@
       {
         "x": 52.0,
         "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 95.0,
         "value": 1.0
       },
       {
@@ -3523,7 +3705,7 @@
       {
         "x": 55.0,
         "y": 92.0,
-        "value": 3.0
+        "value": 4.0
       },
       {
         "x": 55.0,
@@ -3568,7 +3750,7 @@
       {
         "x": 56.0,
         "y": 67.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 56.0,
@@ -3647,6 +3829,11 @@
       },
       {
         "x": 57.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
         "y": 69.0,
         "value": 1.0
       },
@@ -3714,6 +3901,11 @@
         "x": 58.0,
         "y": 73.0,
         "value": 3.0
+      },
+      {
+        "x": 58.0,
+        "y": 74.0,
+        "value": 1.0
       },
       {
         "x": 58.0,
@@ -3867,6 +4059,11 @@
       },
       {
         "x": 60.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
         "y": 83.0,
         "value": 1.0
       },
@@ -3953,6 +4150,11 @@
       {
         "x": 61.0,
         "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 89.0,
         "value": 1.0
       },
       {
@@ -4157,6 +4359,11 @@
       },
       {
         "x": 63.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
         "y": 92.0,
         "value": 2.0
       },
@@ -4178,7 +4385,7 @@
       {
         "x": 63.0,
         "y": 96.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 63.0,
@@ -4243,7 +4450,7 @@
       {
         "x": 64.0,
         "y": 94.0,
-        "value": 2.0
+        "value": 3.0
       },
       {
         "x": 64.0,
@@ -4323,6 +4530,11 @@
       {
         "x": 65.0,
         "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 93.0,
         "value": 1.0
       },
       {
@@ -4413,7 +4625,7 @@
       {
         "x": 66.0,
         "y": 84.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 66.0,
@@ -4543,7 +4755,7 @@
       {
         "x": 67.0,
         "y": 88.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 67.0,
@@ -4608,6 +4820,11 @@
       {
         "x": 68.0,
         "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 87.0,
         "value": 1.0
       },
       {
@@ -4778,11 +4995,16 @@
       {
         "x": 70.0,
         "y": 84.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 70.0,
         "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 88.0,
         "value": 1.0
       },
       {
@@ -4913,6 +5135,11 @@
       {
         "x": 72.0,
         "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 68.0,
         "value": 1.0
       },
       {
@@ -5058,7 +5285,7 @@
       {
         "x": 73.0,
         "y": 88.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 73.0,
@@ -5127,8 +5354,13 @@
       },
       {
         "x": 74.0,
-        "y": 75.0,
+        "y": 74.0,
         "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 75.0,
+        "value": 2.0
       },
       {
         "x": 74.0,
@@ -5138,6 +5370,16 @@
       {
         "x": 74.0,
         "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 83.0,
         "value": 1.0
       },
       {
@@ -5277,8 +5519,13 @@
       },
       {
         "x": 76.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
         "y": 57.0,
-        "value": 2.0
+        "value": 3.0
       },
       {
         "x": 76.0,
@@ -5467,6 +5714,11 @@
       },
       {
         "x": 77.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
         "y": 79.0,
         "value": 2.0
       },
@@ -5478,7 +5730,7 @@
       {
         "x": 77.0,
         "y": 82.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 77.0,
@@ -5553,7 +5805,7 @@
       {
         "x": 78.0,
         "y": 65.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 78.0,
@@ -5707,6 +5959,11 @@
       },
       {
         "x": 79.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
         "y": 91.0,
         "value": 1.0
       },
@@ -5714,6 +5971,11 @@
         "x": 79.0,
         "y": 92.0,
         "value": 3.0
+      },
+      {
+        "x": 79.0,
+        "y": 95.0,
+        "value": 1.0
       },
       {
         "x": 80.0,
@@ -5733,6 +5995,11 @@
       {
         "x": 80.0,
         "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 51.0,
         "value": 1.0
       },
       {
@@ -5927,6 +6194,16 @@
       },
       {
         "x": 82.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
         "y": 72.0,
         "value": 1.0
       },
@@ -6003,7 +6280,7 @@
       {
         "x": 84.0,
         "y": 70.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 84.0,
@@ -6047,6 +6324,11 @@
       },
       {
         "x": 85.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
         "y": 61.0,
         "value": 1.0
       },
@@ -6058,6 +6340,11 @@
       {
         "x": 85.0,
         "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 69.0,
         "value": 1.0
       },
       {
@@ -6423,7 +6710,7 @@
       {
         "x": 89.0,
         "y": 76.0,
-        "value": 1.0
+        "value": 2.0
       },
       {
         "x": 89.0,
@@ -6607,6 +6894,11 @@
       },
       {
         "x": 92.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
         "y": 88.0,
         "value": 2.0
       },
@@ -6688,6 +6980,11 @@
       {
         "x": 95.0,
         "y": 51.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 56.0,
         "value": 1.0
       },
       {
@@ -6842,6 +7139,11 @@
       },
       {
         "x": 99.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 99.0,
         "y": 58.0,
         "value": 1.0
       },
@@ -6871,9 +7173,9 @@
         "value": 1.0
       }
     ],
-    "raw_points_count": 1315,
-    "cell_count": 1043,
-    "total_weight": 1315.0,
+    "raw_points_count": 1370,
+    "cell_count": 1081,
+    "total_weight": 1370.0,
     "note": "Aggregated from /event/{event_id}/player/{player_id}/heatmap; x/y on Sofascore 0-100 pitch scale."
   },
   "touch_positions": {
@@ -6882,7 +7184,7 @@
     "note": "Sofascore public per-event raw touch positions were not used; heatmap is available per event instead."
   },
   "recent_form": {
-    "matches_fetched": 28,
+    "matches_fetched": 31,
     "events": [
       {
         "event_id": 14056037,
@@ -7163,6 +7465,36 @@
         "player_name_from_csv": "Antonio Nusa",
         "shots": 4,
         "heatmap_points": 66
+      },
+      {
+        "event_id": 14065236,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Antonio Nusa",
+        "shots": 1,
+        "heatmap_points": 21
+      },
+      {
+        "event_id": 14065250,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Antonio Nusa",
+        "shots": 2,
+        "heatmap_points": 9
+      },
+      {
+        "event_id": 14065555,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Antonio Nusa",
+        "shots": 1,
+        "heatmap_points": 25
       }
     ],
     "note": "Derived from player_match_logs.csv, not /player/{id}/last-matches/{n}."
