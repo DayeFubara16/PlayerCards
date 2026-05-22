@@ -1,0 +1,125 @@
+{
+  "player_id": 1464966,
+  "event_id": 14023988,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Rayan",
+      "firstName": "Rayan",
+      "slug": "rayan",
+      "shortName": "Rayan",
+      "position": "M",
+      "jerseyNumber": "37",
+      "height": 185,
+      "userCount": 42029,
+      "gender": "M",
+      "id": 1464966,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1154563200,
+      "proposedMarketValueRaw": {
+        "value": 39000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريان",
+          "bn": "রায়ান",
+          "hi": "रायन"
+        },
+        "shortNameTranslation": {
+          "ar": "ريان",
+          "bn": "রায়ান",
+          "hi": "रायन"
+        }
+      }
+    },
+    "team": {
+      "name": "Bournemouth",
+      "slug": "bournemouth",
+      "shortName": "Bournemouth",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 325386,
+      "nameCode": "BOU",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 60,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#cc0000",
+        "text": "#cc0000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بورنموث",
+          "bn": "বোর্নেমাউথ",
+          "hi": "बोर्नमाउथ",
+          "ru": "Борнмут"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 30,
+      "accuratePass": 22,
+      "totalLongBalls": 4,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 7,
+      "totalOwnHalfPasses": 8,
+      "accurateOppositionHalfPasses": 15,
+      "totalOppositionHalfPasses": 22,
+      "totalCross": 5,
+      "aerialLost": 1,
+      "aerialWon": 1,
+      "duelLost": 2,
+      "duelWon": 2,
+      "blockedScoringAttempt": 1,
+      "totalClearance": 2,
+      "ballRecovery": 4,
+      "wasFouled": 1,
+      "fouls": 1,
+      "minutesPlayed": 87,
+      "touches": 41,
+      "rating": 6.5,
+      "possessionLostCtrl": 13,
+      "expectedGoals": 0.0159,
+      "expectedAssists": 0.04017,
+      "totalBallCarriesDistance": 192.33388784399,
+      "ballCarriesCount": 13,
+      "totalProgression": 143.31312765392,
+      "bestBallCarryProgression": 36.92107115196,
+      "totalProgressiveBallCarriesDistance": 126.75772301452,
+      "progressiveBallCarriesCount": 5,
+      "ratingVersions": {
+        "original": 6.5,
+        "alternative": 6.9
+      },
+      "totalShots": 1,
+      "shotValueNormalized": -0.06,
+      "passValueNormalized": -0.26,
+      "dribbleValueNormalized": 0.31,
+      "defensiveValueNormalized": -0.05,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023988/player/1464966/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-22T20:56:15.260381Z"
+  }
+}

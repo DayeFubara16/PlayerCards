@@ -379,7 +379,7 @@ def spatial_role_from_xy(base_code: str | None, x: float | None, y: float | None
     # Defenders
     if position_group(base) in {"CB", "FB", "WB"} or base in {"D", "DEFENDER"}:
         if wide:
-            if x >= 54:
+            if x >= 58:
                 role = f"{side_code}WB"
                 group = "WB"
                 lane = f"{side} Wing Back"
@@ -1176,7 +1176,12 @@ def wide_defender_gate_v8(row: pd.Series, scores: dict[str, float]) -> tuple[boo
     # - do not steal true CMs/DMs when midfield score clearly dominates fullback/wingback score
     # - require the defender-side model to be at least competitive with the midfield model
     defender_competitive = def_score >= mid_score - 0.35
-    not_obvious_winger = winger_score <= def_score + 0.90
+
+    # NEW: Shield for high-volume dribblers/attackers (Saves players like Abde)
+    # Ensure variables match your exact column names (e.g., dribbles_attempted vs takeons)
+    is_high_touch_winger = touches_box >= 3.5 and takeons >= 4.0
+
+    not_obvious_winger = (winger_score <= def_score + 0.90) and not is_high_touch_winger
 
     evidence = (
         evidence
@@ -1309,7 +1314,12 @@ def family_first_arbitration_v6(
         # catches creative wingbacks like Grimaldo even when their attacking style
         # gives them a high W score.
         creative_wb_exception = wide_pct >= 0.85 and 0.12 <= high_wide_pct <= 0.45 and wide_def_score >= 1.90
-        if wide_def_score >= mid_score - 1.15 and (winger_score <= wide_def_score + 0.65 or creative_wb_exception):
+
+        # NEW: Spatial shield for deep-defending wingers (Saves players like Rayan)
+        winger_spatial_immunity = high_wide_pct >= 0.35 and winger_score >= wide_def_score - 0.10
+
+        if wide_def_score >= mid_score - 1.15 and (
+                winger_score <= wide_def_score + 0.65 or creative_wb_exception) and not winger_spatial_immunity:
             # Fullback vs wingback:
             # - True defender-source players default to FB unless WB evidence is clearly stronger.
             # - Midfield/wide-defender rescues can become WB when they are repeatedly wide/inverted.

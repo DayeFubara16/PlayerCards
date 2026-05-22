@@ -1,0 +1,133 @@
+{
+  "player_id": 1171451,
+  "event_id": 13981482,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Nico Paz",
+      "firstName": "",
+      "lastName": "",
+      "slug": "nico-paz",
+      "shortName": "N. Paz",
+      "position": "M",
+      "jerseyNumber": "10",
+      "height": 185,
+      "userCount": 110950,
+      "gender": "M",
+      "sofascoreId": "nicopaz1o",
+      "id": 1171451,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1094688000,
+      "proposedMarketValueRaw": {
+        "value": 70000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نيكو باز",
+          "bn": "নিকো পাজ",
+          "hi": "निको पाज़"
+        },
+        "shortNameTranslation": {
+          "ar": "ن. باز",
+          "bn": "এন. পাজ",
+          "hi": "एन. पाज़"
+        }
+      }
+    },
+    "team": {
+      "name": "Como",
+      "slug": "como",
+      "shortName": "Como",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 272289,
+      "nameCode": "COM",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2704,
+      "teamColors": {
+        "primary": "#09436b",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كومو 1907"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 30,
+      "accuratePass": 22,
+      "goalAssist": 1,
+      "accurateOwnHalfPasses": 8,
+      "totalOwnHalfPasses": 12,
+      "accurateOppositionHalfPasses": 14,
+      "totalOppositionHalfPasses": 18,
+      "totalCross": 1,
+      "accurateCross": 1,
+      "aerialLost": 2,
+      "duelLost": 11,
+      "duelWon": 7,
+      "challengeLost": 3,
+      "dispossessed": 1,
+      "totalContest": 4,
+      "wonContest": 2,
+      "bigChanceCreated": 1,
+      "onTargetScoringAttempt": 1,
+      "blockedScoringAttempt": 1,
+      "goals": 1,
+      "totalClearance": 1,
+      "ballRecovery": 3,
+      "totalTackle": 2,
+      "unsuccessfulTouch": 4,
+      "wasFouled": 3,
+      "fouls": 3,
+      "minutesPlayed": 90,
+      "touches": 55,
+      "rating": 8.6,
+      "possessionLostCtrl": 15,
+      "expectedGoals": 0.0964,
+      "expectedGoalsOnTarget": 0.7784,
+      "expectedAssists": 0.363262,
+      "totalBallCarriesDistance": 156.12863789797,
+      "ballCarriesCount": 19,
+      "totalProgression": 95.765055150239,
+      "bestBallCarryProgression": 30.415915989177,
+      "totalProgressiveBallCarriesDistance": 82.782069570022,
+      "progressiveBallCarriesCount": 5,
+      "keyPass": 5,
+      "ratingVersions": {
+        "original": 8.6,
+        "alternative": 8.2
+      },
+      "totalShots": 2,
+      "shotValueNormalized": 0.51,
+      "passValueNormalized": 0.58,
+      "dribbleValueNormalized": 0.51,
+      "defensiveValueNormalized": -0.15,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13981482/player/1171451/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-22T21:50:40.358575Z"
+  }
+}

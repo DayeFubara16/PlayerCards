@@ -1,0 +1,122 @@
+{
+  "player_id": 2029648,
+  "event_id": 14062206,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Christian Kofane",
+      "firstName": "Christian",
+      "lastName": "Kofane",
+      "slug": "christian-kofane",
+      "shortName": "C. Kofane",
+      "position": "F",
+      "jerseyNumber": "35",
+      "height": 189,
+      "userCount": 13273,
+      "gender": "M",
+      "id": 2029648,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1153872000,
+      "proposedMarketValueRaw": {
+        "value": 41000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كريستيان كوفاني"
+        },
+        "shortNameTranslation": {
+          "ar": "ك. كوفاني"
+        }
+      }
+    },
+    "team": {
+      "name": "Bayer 04 Leverkusen",
+      "slug": "bayer-04-leverkusen",
+      "shortName": "Leverkusen",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1061609,
+      "nameCode": "B04",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2681,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#ff2222",
+        "text": "#ff2222"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باير 04 ليفركوزن",
+          "ru": "Байер Леверкузен"
+        },
+        "shortNameTranslation": {
+          "ar": "ليفركوزن",
+          "bn": "লেভারকুসেন",
+          "hi": "लेवरकुसेन"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 4,
+      "accuratePass": 3,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 1,
+      "totalOwnHalfPasses": 1,
+      "accurateOppositionHalfPasses": 2,
+      "totalOppositionHalfPasses": 3,
+      "aerialLost": 1,
+      "duelLost": 1,
+      "duelWon": 2,
+      "bigChanceMissed": 1,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 2,
+      "ballRecovery": 2,
+      "totalTackle": 1,
+      "wasFouled": 1,
+      "minutesPlayed": 31,
+      "touches": 10,
+      "rating": 6.6,
+      "possessionLostCtrl": 1,
+      "expectedGoals": 0.2292,
+      "expectedGoalsOnTarget": 0.0438,
+      "expectedAssists": 0.00318456,
+      "totalBallCarriesDistance": 54.558270031193,
+      "ballCarriesCount": 5,
+      "totalProgression": 31.998795679148,
+      "bestBallCarryProgression": 23.375202543444,
+      "totalProgressiveBallCarriesDistance": 39.169866385506,
+      "progressiveBallCarriesCount": 2,
+      "ratingVersions": {
+        "original": 6.6,
+        "alternative": 6.6
+      },
+      "totalShots": 3,
+      "shotValueNormalized": -0.55,
+      "passValueNormalized": 0,
+      "dribbleValueNormalized": 0.28,
+      "defensiveValueNormalized": -0.01,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14062206/player/2029648/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-22T18:39:40.436025Z"
+  }
+}

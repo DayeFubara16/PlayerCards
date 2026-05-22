@@ -1,0 +1,77 @@
+{
+  "player_id": 2029648,
+  "event_id": 14062009,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 59.6,
+          "y": 79.7
+        },
+        "passEndCoordinates": {
+          "x": 45.1,
+          "y": 87.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 60.5,
+          "y": 83.7
+        },
+        "passEndCoordinates": {
+          "x": 57,
+          "y": 93.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 96.7,
+          "y": 28.1
+        },
+        "passEndCoordinates": {
+          "x": 85.8,
+          "y": 14.4
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 81.5,
+          "y": 11.4
+        },
+        "passEndCoordinates": {
+          "x": 75,
+          "y": 5.3
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [],
+    "defensive": [],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14062009/player/2029648/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-22T18:38:52.119849Z"
+  }
+}
