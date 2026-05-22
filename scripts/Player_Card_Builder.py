@@ -608,13 +608,54 @@ def action_bool(value_: Any) -> bool | None:
     return None
 
 
-def infer_action_success(row: dict[str, Any]) -> bool | None:
-    for key in ["successful", "success", "accurate", "won", "isSuccessful", "outcome", "result"]:
-        if key in row:
-            b = action_bool(row.get(key))
-            if b is not None:
-                return b
+def infer_action_success(row: dict[str, Any], category: str | None = None) -> bool | None:
+    """
+    Determine whether an action was successful.
+
+    Resolution order
+    ────────────────
+    1. Explicit boolean / mapped-string columns written by the scraper
+       (checked in priority order: successful → success → accurate → won →
+       isSuccessful → outcome → result).
+    2. Return None if no conclusive evidence exists — never fabricate a False
+       verdict just because a field is absent.
+
+    The old code defaulted passes and dribbles to False when no outcome field
+    was present.  That was wrong: a missing field means we don't know, not that
+    the action failed.  The card builder's summarize_action_rows already handles
+    None correctly (it excludes those rows from the success_rate denominator).
+    """
+    POSITIVE = frozenset({"true", "1", "yes", "success", "successful", "won", "accurate", "complete", "completed"})
+    NEGATIVE = frozenset({"false", "0", "no", "failed", "lost", "unsuccessful", "incomplete", "inaccurate"})
+
+    PRIORITY_KEYS = ["successful", "success", "accurate", "won", "isSuccessful", "outcome", "result"]
+
+    for key in PRIORITY_KEYS:
+        raw = row.get(key)
+        if raw in (None, "", "null", "None", "NaN", "nan"):
+            continue
+        val = str(raw).lower().strip()
+        if val in POSITIVE:
+            return True
+        if val in NEGATIVE:
+            return False
+
+    # No conclusive outcome found — return None (unknown), not False.
     return None
+
+def infer_dribble_success(row: dict[str, Any]) -> bool | None:
+    """
+    Explicit helper to determine if a dribble / contest was successful.
+    """
+    # Check if there's a specific column indicating a won contest/dribble
+    for key in ["dribbles_won", "contests_won"]:
+        if key in row:
+            v = num(row.get(key))
+            if v is not None:
+                return v > 0
+
+    # Fall back to standard success/outcome fields if specific ones aren't found
+    return infer_action_success(row)
 
 
 def infer_progressive_pass(row: dict[str, Any]) -> bool | None:
@@ -622,7 +663,7 @@ def infer_progressive_pass(row: dict[str, Any]) -> bool | None:
     Opta Definition: A completed pass in the attacking two-thirds
     that moves the ball at least 25% closer to the center of the opponent's goal.
     """
-    success = infer_action_success(row)
+    success = infer_action_success(row, category=row.get("category", ""))
     if success is False or row.get("outcome") in ["failed", "incomplete"]:
         return False
 
@@ -730,13 +771,17 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
 
     z = zone_from_xy(x, y)
 
-    # Bundle row variables temporarily to compute progression types properly
-    eval_row = {
-        "x": x, "y": y, "end_x": end_x, "end_y": end_y,
-        "success": row.get("success"), "successful": row.get("successful"),
-        "accurate": row.get("accurate"), "won": row.get("won"),
-        "isSuccessful": row.get("isSuccessful"), "outcome": row.get("outcome")
-    }
+    # Bundle row variables for progression inference — use the full original
+    # row so passEndCoordinates_x / passEndCoordinates_y and other scraper
+    # fields are available, not just the handful we've explicitly extracted.
+    eval_row = dict(row)
+    eval_row.update({"x": x, "y": y, "end_x": end_x, "end_y": end_y})
+
+    # Check if the action is a dribble to use our explicit marking logic
+    if category == "dribbles":
+        success_flag = infer_dribble_success(row)
+    else:
+        success_flag = infer_action_success(row, category=category)
 
     out = {
         "event_id": int(num(get_any(row, ["event_id", "match_id"])) or 0) or None,
@@ -750,7 +795,7 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
         "y": round_or_none(y, 3),
         "end_x": round_or_none(end_x, 3),
         "end_y": round_or_none(end_y, 3),
-        "success": infer_action_success(row),
+        "success": success_flag,
         "progressive": infer_progressive(eval_row, category),
         "outcome": get_any(row, ["outcome", "result"]),
         "third": z["third"],
@@ -759,7 +804,8 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
     }
 
     # Preserve useful optional raw fields if they exist.
-    for key in ["rating", "value", "body_part", "situation", "endpoint", "_endpoint", "_source_path"]:
+    for key in ["rating", "value", "body_part", "situation", "endpoint", "_endpoint", "_source_path",
+                "success_flag", "success_source"]:
         v = get_any(row, [key])
         if v not in (None, ""):
             out[key] = round_or_none(v, 4) if num(v) is not None and key in {"rating", "value"} else v

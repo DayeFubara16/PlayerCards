@@ -465,6 +465,122 @@ def get_nested(d: dict[str, Any], *paths: str) -> Any:
             return cur
     return None
 
+def parse_action_success(item: dict[str, Any], category: str) -> tuple[bool | None, str | None]:
+    """
+    Normalize Sofascore action outcomes into:
+        success: bool | None
+        outcome_label: str | None
+
+    None means the action has no success/failure dimension (e.g. carries).
+
+    Resolution order
+    ────────────────
+    1. Direct boolean on any known candidate field.
+    2. String value on any known candidate field that maps to a success/fail term.
+    3. Category-specific field (accurate for passes, won for dribbles/defensive).
+    4. Carries → None (no inherent success dimension on Sofascore).
+    5. Final sweep of *all* item keys for any truthy boolean we may have missed.
+    """
+
+    SUCCESS_TERMS: frozenset[str] = frozenset({
+        "won", "success", "successful", "complete", "completed", "accurate",
+    })
+    FAIL_TERMS: frozenset[str] = frozenset({
+        "lost", "failed", "unsuccessful", "incomplete", "blocked", "inaccurate",
+    })
+
+    # Priority-ordered candidate fields — check these before anything else.
+    CANDIDATE_FIELDS = [
+        "successful",
+        "isSuccessful",
+        "accurate",
+        "won",
+        "success",
+        "outcome",
+        "result",
+    ]
+
+    # ─────────────────────────────────────────────────────
+    # 1 + 2. Sweep candidate fields for bool OR mapped string
+    # ─────────────────────────────────────────────────────
+    for field in CANDIDATE_FIELDS:
+        raw = item.get(field)
+        if raw is None:
+            continue
+
+        # Direct boolean — most reliable
+        if isinstance(raw, bool):
+            label = "success" if raw else "failed"
+            return raw, label
+
+        # Numeric 1 / 0 treated as boolean
+        if isinstance(raw, (int, float)) and raw in (0, 1):
+            result = bool(raw)
+            return result, "success" if result else "failed"
+
+        # String mapped to success/fail term
+        if isinstance(raw, str):
+            val = raw.strip().lower()
+            if val in SUCCESS_TERMS:
+                return True, val
+            if val in FAIL_TERMS:
+                return False, val
+
+    # ─────────────────────────────────────────────────────
+    # 3. Category-specific interpretation (field may exist
+    #    under a name not in CANDIDATE_FIELDS above)
+    # ─────────────────────────────────────────────────────
+
+    # Passes
+    if category == "passes":
+        if "accurate" in item:
+            val = item["accurate"]
+            result = bool(val)
+            return result, "accurate" if result else "inaccurate"
+
+    # Dribbles / contests
+    if category == "dribbles":
+        if "won" in item:
+            val = item["won"]
+            result = bool(val)
+            return result, "won" if result else "lost"
+
+    # Tackles / duels / defensive
+    if category == "defensive":
+        if "won" in item:
+            val = item["won"]
+            result = bool(val)
+            return result, "won" if result else "lost"
+
+    # ─────────────────────────────────────────────────────
+    # 4. Ball carries — Sofascore does not carry outcome data
+    # ─────────────────────────────────────────────────────
+    if category in ("ball-carries", "ballCarries"):
+        return None, None
+
+    # ─────────────────────────────────────────────────────
+    # 5. Final sweep of ALL item keys — catches any
+    #    non-standard Sofascore field we haven't listed.
+    # ─────────────────────────────────────────────────────
+    for key, raw in item.items():
+        if key in CANDIDATE_FIELDS:
+            continue  # already tried above
+
+        if isinstance(raw, bool):
+            key_lower = key.lower()
+            # Only trust keys whose name suggests an outcome dimension
+            if any(t in key_lower for t in ("success", "accurate", "won", "complete", "outcome", "result")):
+                return raw, "success" if raw else "failed"
+
+        if isinstance(raw, str):
+            val = raw.strip().lower()
+            if val in SUCCESS_TERMS:
+                return True, val
+            if val in FAIL_TERMS:
+                return False, val
+
+    return None, None
+
 
 def normalize_action_item(item: dict[str, Any], category: str, endpoint: str) -> dict[str, Any]:
     row = flatten_value(item, max_depth=4)
@@ -473,16 +589,55 @@ def normalize_action_item(item: dict[str, Any], category: str, endpoint: str) ->
     row["endpoint"] = endpoint
     row["_endpoint"] = endpoint
 
-    # Sofascore rating-breakdown commonly uses nested coordinate dicts.
+    # Extract coordinates
     row["x"] = get_nested(item, "playerCoordinates.x", "coordinates.x", "startCoordinates.x", "from.x")
     row["y"] = get_nested(item, "playerCoordinates.y", "coordinates.y", "startCoordinates.y", "from.y")
     row["end_x"] = get_nested(item, "passEndCoordinates.x", "endCoordinates.x", "to.x")
     row["end_y"] = get_nested(item, "passEndCoordinates.y", "endCoordinates.y", "to.y")
 
-    # Normalize common labels without deleting original columns.
     row["minute"] = get_nested(item, "time", "minute") or row.get("minute")
     row["action_type"] = item.get("type") or item.get("name") or item.get("eventType") or category
-    row["outcome"] = item.get("outcome") or item.get("result")
+
+    # ─────────────────────────────────────────────────────────
+    # Standardized success / failure parsing
+    # ─────────────────────────────────────────────────────────
+
+    success, outcome_label = parse_action_success(item, category)
+
+    row["success"] = success
+    row["outcome"] = outcome_label
+
+    # Explicit numeric flag for downstream plotting / modeling
+    if success is True:
+        row["success_flag"] = 1
+    elif success is False:
+        row["success_flag"] = 0
+    else:
+        row["success_flag"] = None
+
+    # ── Mirror the verdict onto the canonical field names the card builder
+    #    checks first (infer_action_success sweeps "successful", "accurate",
+    #    "won" before it ever reaches the "success" column).
+    #    Only write if the raw flatten didn't already produce a concrete value,
+    #    so we never silently overwrite a real Sofascore field.
+    if success is not None:
+        # "successful" is the highest-priority key in the card builder sweep
+        if row.get("successful") is None:
+            row["successful"] = success
+        # Category-specific aliases
+        if category == "passes" and row.get("accurate") is None:
+            row["accurate"] = success
+        if category in ("dribbles", "defensive") and row.get("won") is None:
+            row["won"] = success
+
+    # ── Provenance: record which step produced the verdict so you can audit
+    #    or re-classify later without re-fetching from Sofascore.
+    if success is None:
+        row["success_source"] = "unresolvable"
+    elif outcome_label in (None, "success", "failed"):
+        row["success_source"] = "boolean_field"
+    else:
+        row["success_source"] = f"outcome:{outcome_label}"
 
     return row
 
@@ -688,9 +843,14 @@ def write_flat_csv(path: str | Path, rows: list[dict[str, Any]]) -> None:
         "y",
         "end_x",
         "end_y",
+        "success",
+        "successful",
+        "success_flag",
+        "success_source",
         "outcome",
         "result",
-        "successful",
+        "accurate",
+        "won",
         "value",
         "rating",
         "_endpoint",

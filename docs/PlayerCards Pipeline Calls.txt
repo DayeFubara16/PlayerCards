@@ -29,40 +29,33 @@ Global dataset build
 --------------------
 
 # 1. Scrape all leagues for matchweek
-python scripts/Player_Scraper.py --season 2025-26 --matchweek 37 --all-leagues
---csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
+python scripts/Player_Scraper.py --season 2025-26 --matchweek 37 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
 
 # 1b. Build positional context
-python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv
---output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
+python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
 
 # 2. Add ages / DOBs
 # Uses previous enriched CSV/cache so it does not refetch everyone.
-python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv
---output data/processed/player_match_logs_with_ages.csv --cache cache/player_profile_cache.json --seed-from data/processed/player_match_logs_with_ages.csv --delay 1.2
+python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv --output data/processed/player_match_logs_with_ages.csv --cache cache/player_profile_cache.json --seed-from data/processed/player_match_logs_with_ages.csv --delay 1.2
 
 # 3. Collapse to season totals
-python scripts/Player_Collapse.py --input data/processed/player_match_logs_with_ages.csv
---output data/processed/player_season_totals.csv
+python scripts/Player_Collapse.py --input data/processed/player_match_logs_with_ages.csv --output data/processed/player_season_totals.csv
 
 # 4. Arbitrate positions
-python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv
---output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 900 --position-context data/context/position_context_by_event.json
+python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 900 --position-context data/context/position_context_by_event.json
 
 # 5. Classify roles
-python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv
---output data/processed/player_roles.csv --season 2025-26 --min-minutes 900
+python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 900
 
 Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=1121923
+$PLAYER_ID=1149146
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
-python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv
---player-id $PLAYER_ID --season $SEASON --top 25 --min-minutes 900 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
+python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 25 --min-minutes 900 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
 
 # 7. Fetch player event/card data
 # IMPORTANT: output should live in cards/event_data, not project root.
@@ -74,14 +67,11 @@ python scripts/Player_Action_Scraper.py --player-id $PLAYER_ID --season $SEASON 
 
 # 8. Build visual-only heatmap
 # IMPORTANT: output should live in cards/heatmaps, not project root.
-python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv
---out-dir cards/heatmaps --delay 1.2 --format both
+python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv --out-dir cards/heatmaps --delay 1.2 --format both
 
 # 9. Build final player card
 # Pass explicit paths so the builder does not accidentally auto-load old root files.
-python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv
- --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards
-  --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes 900
+python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes 900
 
 Housekeeping rules
 ------------------

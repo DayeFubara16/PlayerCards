@@ -1,0 +1,133 @@
+{
+  "player_id": 1149146,
+  "event_id": 14053678,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Mika Godts",
+      "firstName": "Mika Godts",
+      "lastName": "",
+      "slug": "mika-godts",
+      "shortName": "M. Godts",
+      "position": "F",
+      "jerseyNumber": "11",
+      "height": 176,
+      "userCount": 7749,
+      "gender": "M",
+      "id": 1149146,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1118102400,
+      "proposedMarketValueRaw": {
+        "value": 23000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ميكا غودتس",
+          "bn": "মিকা গডটস",
+          "hi": "मिका गोडट्स"
+        },
+        "shortNameTranslation": {
+          "ar": "م. غودتس",
+          "bn": "এম. গডস",
+          "hi": "एम. गोडट्स"
+        }
+      }
+    },
+    "team": {
+      "name": "AFC Ajax",
+      "slug": "ajax",
+      "shortName": "Ajax",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 504186,
+      "nameCode": "AJA",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2953,
+      "teamColors": {
+        "primary": "#bb002b",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أياكس أمستردام",
+          "bn": "আয়াক্স",
+          "hi": "अजाक्स",
+          "ru": "Аякс"
+        },
+        "shortNameTranslation": {
+          "ar": "أياكس"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 49,
+      "accuratePass": 39,
+      "totalLongBalls": 8,
+      "accurateLongBalls": 2,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 11,
+      "totalOwnHalfPasses": 12,
+      "accurateOppositionHalfPasses": 28,
+      "totalOppositionHalfPasses": 37,
+      "totalCross": 4,
+      "aerialLost": 2,
+      "aerialWon": 3,
+      "duelLost": 10,
+      "duelWon": 7,
+      "dispossessed": 3,
+      "totalContest": 8,
+      "wonContest": 4,
+      "bigChanceMissed": 1,
+      "shotOffTarget": 1,
+      "ballRecovery": 3,
+      "unsuccessfulTouch": 3,
+      "fouls": 1,
+      "totalOffside": 1,
+      "minutesPlayed": 90,
+      "touches": 71,
+      "rating": 6.6,
+      "possessionLostCtrl": 25,
+      "expectedGoals": 0.311,
+      "expectedAssists": 0.115594,
+      "totalBallCarriesDistance": 232.30600337004,
+      "ballCarriesCount": 26,
+      "totalProgression": 44.839380221327,
+      "bestBallCarryProgression": 19.254321161917,
+      "totalProgressiveBallCarriesDistance": 52.46443612473,
+      "progressiveBallCarriesCount": 3,
+      "keyPass": 4,
+      "ratingVersions": {
+        "original": 6.6,
+        "alternative": 6.5
+      },
+      "totalShots": 1,
+      "shotValueNormalized": -0.43,
+      "passValueNormalized": 0.3,
+      "dribbleValueNormalized": 0.03,
+      "defensiveValueNormalized": -0.03,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14053678/player/1149146/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-22T02:01:01.149603Z"
+  }
+}

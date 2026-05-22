@@ -1,0 +1,134 @@
+{
+  "player_id": 288205,
+  "event_id": 14025106,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Bruno Fernandes",
+      "firstName": "Bruno",
+      "lastName": "Fernandes",
+      "slug": "bruno-fernandes",
+      "shortName": "B. Fernandes",
+      "position": "M",
+      "jerseyNumber": "8",
+      "height": 179,
+      "userCount": 300790,
+      "gender": "M",
+      "sofascoreId": "BrunoFernandes",
+      "id": 288205,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 778982400,
+      "proposedMarketValueRaw": {
+        "value": 37000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "برونو فيرنانديز",
+          "bn": "ব্রুনো ফার্নান্দেস",
+          "hi": "ब्रूनो फर्नांडीस"
+        },
+        "shortNameTranslation": {
+          "ar": "ب. فرنانديز",
+          "bn": "বি. ফার্নান্দেস",
+          "hi": "बी. फर्नांडीस"
+        }
+      }
+    },
+    "team": {
+      "name": "Manchester United",
+      "slug": "manchester-united",
+      "shortName": "Man Utd",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 3630228,
+      "nameCode": "MUN",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 35,
+      "teamColors": {
+        "primary": "#ff0000",
+        "secondary": "#373737",
+        "text": "#373737"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مانتشستر يونايتد",
+          "hi": "मेनचेस्टर यूनाइटेड ऍफ़सी",
+          "ru": "Манчестер Юнайтед"
+        },
+        "shortNameTranslation": {
+          "ar": "مان يونايتد",
+          "bn": "ম্যান ইউনাইটেড",
+          "hi": "मैन यूनाइटेड"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 84,
+      "accuratePass": 70,
+      "totalLongBalls": 12,
+      "accurateLongBalls": 8,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 34,
+      "totalOwnHalfPasses": 39,
+      "accurateOppositionHalfPasses": 36,
+      "totalOppositionHalfPasses": 45,
+      "totalCross": 5,
+      "accurateCross": 3,
+      "aerialLost": 2,
+      "aerialWon": 2,
+      "duelLost": 9,
+      "duelWon": 7,
+      "challengeLost": 2,
+      "dispossessed": 2,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 1,
+      "blockedScoringAttempt": 2,
+      "goals": 1,
+      "totalClearance": 4,
+      "ballRecovery": 10,
+      "totalTackle": 3,
+      "wonTackle": 1,
+      "wasFouled": 2,
+      "fouls": 3,
+      "minutesPlayed": 90,
+      "touches": 108,
+      "rating": 7.9,
+      "possessionLostCtrl": 19,
+      "expectedGoals": 0.9233,
+      "expectedGoalsOnTarget": 0.7595,
+      "expectedAssists": 0.246039,
+      "keyPass": 6,
+      "ratingVersions": {
+        "original": 7.9,
+        "alternative": 8
+      },
+      "totalShots": 4,
+      "shotValueNormalized": 0.3,
+      "passValueNormalized": 0.61,
+      "dribbleValueNormalized": 0.31,
+      "defensiveValueNormalized": -0.12,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025106/player/288205/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-22T01:27:14.860083Z"
+  }
+}
