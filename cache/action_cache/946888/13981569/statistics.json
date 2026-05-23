@@ -1,0 +1,127 @@
+{
+  "player_id": 946888,
+  "event_id": 13981569,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Éderson",
+      "firstName": "",
+      "lastName": "",
+      "slug": "ederson",
+      "shortName": "Éderson",
+      "position": "M",
+      "jerseyNumber": "13",
+      "height": 183,
+      "userCount": 8347,
+      "gender": "M",
+      "sofascoreId": "ederson99",
+      "id": 946888,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 931305600,
+      "proposedMarketValueRaw": {
+        "value": 38000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إيدرسون",
+          "bn": "এডারসন",
+          "hi": "एडरसन"
+        },
+        "shortNameTranslation": {
+          "ar": "إيدرسون",
+          "bn": "এডারসন",
+          "hi": "एडरसन"
+        }
+      }
+    },
+    "team": {
+      "name": "Atalanta",
+      "slug": "atalanta",
+      "shortName": "Atalanta",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 652763,
+      "nameCode": "ATA",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2686,
+      "teamColors": {
+        "primary": "#0000cc",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أتالانتا",
+          "bn": "আটলান্টা",
+          "hi": "अटलांटा",
+          "ru": "Аталанта"
+        },
+        "shortNameTranslation": {
+          "ar": "أتالانتا"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 69,
+      "accuratePass": 61,
+      "totalLongBalls": 3,
+      "accurateLongBalls": 3,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 34,
+      "totalOwnHalfPasses": 36,
+      "accurateOppositionHalfPasses": 27,
+      "totalOppositionHalfPasses": 33,
+      "totalCross": 2,
+      "aerialLost": 2,
+      "aerialWon": 1,
+      "duelLost": 3,
+      "duelWon": 6,
+      "challengeLost": 1,
+      "interceptionWon": 2,
+      "ballRecovery": 8,
+      "totalTackle": 3,
+      "wonTackle": 2,
+      "wasFouled": 2,
+      "minutesPlayed": 66,
+      "touches": 80,
+      "rating": 7.4,
+      "possessionLostCtrl": 10,
+      "expectedAssists": 0.0866379,
+      "totalBallCarriesDistance": 233.57919100159,
+      "ballCarriesCount": 33,
+      "totalProgression": 76.755,
+      "bestBallCarryProgression": 22.47,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 7.4,
+        "alternative": 7.4
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.29,
+      "dribbleValueNormalized": 0.22,
+      "defensiveValueNormalized": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13981569/player/946888/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-23T01:24:06.315763Z"
+  }
+}

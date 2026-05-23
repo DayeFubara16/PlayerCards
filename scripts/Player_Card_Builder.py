@@ -804,11 +804,62 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
     }
 
     # Preserve useful optional raw fields if they exist.
-    for key in ["rating", "value", "body_part", "situation", "endpoint", "_endpoint", "_source_path",
-                "success_flag", "success_source"]:
+    PRESERVE_OPTIONAL_FIELDS = [
+        # Existing
+        "rating",
+        "value",
+        "body_part",
+        "situation",
+        "endpoint",
+        "_endpoint",
+        "_source_path",
+        "success_flag",
+        "success_source",
+
+        # New pass metadata
+        "keypass",
+        "isAssist",
+        "assist",
+        "bigChanceCreated",
+        "cross",
+        "throughBall",
+        "longBall",
+        "setPiece",
+
+        # Additional action metadata
+        "isShotAssist",
+        "isGoalAssist",
+        "expected_assist",
+        "xA",
+
+        # Debug / source references
+        "passEndCoordinates",
+        "playerCoordinates",
+    ]
+
+    # Fields that must be stored as proper Python booleans (not strings).
+    BOOL_FIELDS = {
+        "keypass", "isAssist", "assist", "bigChanceCreated", "cross",
+        "throughBall", "longBall", "setPiece", "isShotAssist", "isGoalAssist",
+    }
+
+    for key in PRESERVE_OPTIONAL_FIELDS:
         v = get_any(row, [key])
-        if v not in (None, ""):
-            out[key] = round_or_none(v, 4) if num(v) is not None and key in {"rating", "value"} else v
+        if v in (None, ""):
+            continue
+        if isinstance(v, (dict, list)):
+            out[key] = clean_json(v)
+        elif key in BOOL_FIELDS:
+            # Coerce to real bool regardless of whether the value arrived as
+            # a Python bool, the integer 1/0, or the strings "True"/"False"
+            # (which is what happens when rows are round-tripped through CSV).
+            b = action_bool(v)
+            if b is not None:
+                out[key] = b
+        elif num(v) is not None and key in {"rating", "value", "xA", "expected_assist"}:
+            out[key] = round_or_none(v, 4)
+        else:
+            out[key] = v
 
     return out
 
@@ -849,6 +900,8 @@ def flatten_raw_action_json(raw: Any) -> list[dict[str, Any]]:
                         "y": pc.get("y", flat.get("y")),
                         "end_x": pe.get("x", flat.get("end_x")),
                         "end_y": pe.get("y", flat.get("end_y")),
+                        "passEndCoordinates": pe,
+                        "playerCoordinates": pc,
                     })
                     rows.append(compact_action_row(flat))
     return rows
@@ -878,7 +931,7 @@ def load_action_rows(actions_path: str | Path | None) -> list[dict[str, Any]]:
     return []
 
 
-def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: int = 750) -> dict[str, Any]:
+def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: int = 2000) -> dict[str, Any]:
     valid = [r for r in rows if r.get("x") is not None and r.get("y") is not None]
     by_category: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for r in valid:
@@ -896,7 +949,7 @@ def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: i
         lane_counts = Counter(r.get("lane") for r in cat_rows if r.get("lane"))
 
         points = cat_rows[:max_points_per_category]
-        categories[cat] = {
+        cat_entry: dict[str, Any] = {
             "count": len(cat_rows),
             "success_count": sum(1 for x in success_vals if x is True),
             "success_rate": round(sum(1 for x in success_vals if x is True) / len(success_vals), 4) if success_vals else None,
@@ -908,6 +961,19 @@ def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: i
             "points": points,
             "points_truncated": len(cat_rows) > len(points),
         }
+
+        # Aggregate key pass and assist counts for the passes category.
+        # Raw Sofascore data uses 'keypass' (bool) and 'isAssist' (bool).
+        if cat == "passes":
+            cat_entry["keypass_count"] = sum(
+                1 for r in cat_rows if r.get("keypass") is True
+            )
+            cat_entry["assist_count"] = sum(
+                1 for r in cat_rows
+                if r.get("isAssist") is True or r.get("assist") is True
+            )
+
+        categories[cat] = cat_entry
 
     all_zones = Counter(r.get("zone") for r in valid if r.get("zone"))
     map_layers = [
@@ -928,7 +994,7 @@ def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: i
     }
 
 
-def extract_actions(actions_path: str | Path | None, max_points_per_category: int = 750) -> dict[str, Any]:
+def extract_actions(actions_path: str | Path | None, max_points_per_category: int = 2000) -> dict[str, Any]:
     rows = load_action_rows(actions_path)
     return summarize_action_rows(rows, max_points_per_category=max_points_per_category)
 
@@ -1113,7 +1179,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--search-dir", default=".")
     ap.add_argument("--out", "-o", default=None)
     ap.add_argument("--max-percentiles", type=int, default=18)
-    ap.add_argument("--max-action-points-per-category", type=int, default=750)
+    ap.add_argument("--max-action-points-per-category", type=int, default=2000)
     ap.add_argument("--min-minutes", type=int, default=900, help="Minimum minutes played threshold")
     return ap.parse_args()
 

@@ -1,0 +1,131 @@
+{
+  "player_id": 363860,
+  "event_id": 13981678,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Manuel Locatelli",
+      "firstName": "Manuel",
+      "lastName": "Locatelli",
+      "slug": "manuel-locatelli",
+      "shortName": "M. Locatelli",
+      "position": "M",
+      "jerseyNumber": "5",
+      "height": 185,
+      "userCount": 9921,
+      "gender": "M",
+      "sofascoreId": "locamanuel73",
+      "id": 363860,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 884217600,
+      "proposedMarketValueRaw": {
+        "value": 24000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مانويل لوكاتيلي",
+          "bn": "ম্যানুয়েল লোকেটেলি",
+          "hi": "मैनुअल लोकाटेली"
+        },
+        "shortNameTranslation": {
+          "ar": "م. لوكاتيلي",
+          "bn": "এম. লোকেটেলি",
+          "hi": "एम. लोकाटेली"
+        }
+      }
+    },
+    "team": {
+      "name": "Juventus",
+      "slug": "juventus",
+      "shortName": "Juventus",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1630875,
+      "nameCode": "JUV",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2687,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "يوفنتوس",
+          "bn": "জুভেন্টাস",
+          "hi": "जुवेंटस",
+          "ru": "Ювентус"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 68,
+      "accuratePass": 55,
+      "totalLongBalls": 13,
+      "accurateLongBalls": 6,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 28,
+      "totalOwnHalfPasses": 31,
+      "accurateOppositionHalfPasses": 27,
+      "totalOppositionHalfPasses": 37,
+      "totalCross": 2,
+      "aerialWon": 1,
+      "duelLost": 5,
+      "duelWon": 9,
+      "challengeLost": 1,
+      "dispossessed": 2,
+      "totalContest": 1,
+      "wonContest": 1,
+      "totalClearance": 4,
+      "outfielderBlock": 1,
+      "ballRecovery": 2,
+      "totalTackle": 6,
+      "wonTackle": 2,
+      "wasFouled": 1,
+      "fouls": 2,
+      "minutesPlayed": 90,
+      "touches": 86,
+      "rating": 7.5,
+      "possessionLostCtrl": 17,
+      "expectedAssists": 0.035736,
+      "totalBallCarriesDistance": 157.95675096599,
+      "ballCarriesCount": 16,
+      "totalProgression": 84.204697996714,
+      "bestBallCarryProgression": 31.137323202343,
+      "totalProgressiveBallCarriesDistance": 67.864949141643,
+      "progressiveBallCarriesCount": 2,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 7.5,
+        "alternative": 7.1
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.35,
+      "dribbleValueNormalized": 0.12,
+      "defensiveValueNormalized": 0.24,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13981678/player/363860/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-23T10:30:54.286363Z"
+  }
+}

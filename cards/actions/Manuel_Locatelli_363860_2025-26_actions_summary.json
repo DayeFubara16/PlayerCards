@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "player_id": 363860,
+    "player_name": "Manuel Locatelli",
+    "season": "2025-26",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 36,
+    "endpoints": [
+      "rating-breakdown",
+      "statistics"
+    ],
+    "generated_at_utc": "2026-05-23T10:31:21.329456Z",
+    "cache_dir": "cache/action_cache",
+    "no_fetch": false,
+    "refresh_cache": true
+  },
+  "events": 36,
+  "events_with_any_available_endpoint": 36,
+  "flat_rows": 3605,
+  "endpoint_summary": {
+    "rating-breakdown": {
+      "available_events": 35,
+      "missing_events": 1,
+      "flat_rows": 3605
+    },
+    "statistics": {
+      "available_events": 36,
+      "missing_events": 0,
+      "flat_rows": 0
+    }
+  },
+  "category_counts": {
+    "rating-breakdown:passes": 2739,
+    "rating-breakdown:dribbles": 18,
+    "rating-breakdown:defensive": 404,
+    "rating-breakdown:ball-carries": 444
+  },
+  "endpoint_debug_sample": {
+    "rating-breakdown": [
+      {
+        "event_id": 13981424,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 59,
+            "dribbles": 1,
+            "defensive": 4,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 13981448,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 44,
+            "dribbles": 0,
+            "defensive": 6,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 13981435,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 38,
+            "dribbles": 0,
+            "defensive": 13,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 13981452,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 57,
+            "dribbles": 1,
+            "defensive": 7,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 13981465,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      }
+    ],
+    "statistics": [
+      {
+        "event_id": 13981424,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 13981448,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 13981435,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 13981452,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 13981465,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      }
+    ]
+  },
+  "note": "For player action maps, rating-breakdown is the key endpoint. Statistics rows are usually aggregate stats, not raw actions. Raw JSON remains the source of truth because Sofascore schemas can vary."
+}

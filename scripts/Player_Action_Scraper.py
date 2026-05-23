@@ -585,9 +585,56 @@ def parse_action_success(item: dict[str, Any], category: str) -> tuple[bool | No
 def normalize_action_item(item: dict[str, Any], category: str, endpoint: str) -> dict[str, Any]:
     row = flatten_value(item, max_depth=4)
 
+    row["_raw_action"] = json.dumps(clean_json(item), ensure_ascii=False)
+
     row["category"] = category
     row["endpoint"] = endpoint
     row["_endpoint"] = endpoint
+
+    # ─────────────────────────────────────────────────────────
+    # Pass creation / assist metadata
+    # ─────────────────────────────────────────────────────────
+
+    ASSIST_FIELDS = [
+        "isAssist",
+        "isassist",
+        "assist",
+        "goalAssist",
+        "goalassist"
+    ]
+
+    KEY_PASS_FIELDS = [
+        "isKeyPass",
+        "keyPass",
+        "keypass",
+        "chanceCreated",
+        "bigChanceCreated",
+    ]
+
+    lower_item = {
+        str(k).lower(): v
+        for k, v in item.items()
+    }
+
+    row["is_assist"] = any(
+        bool(lower_item.get(f.lower()))
+        for f in ASSIST_FIELDS
+    )
+
+    row["is_key_pass"] = any(
+        bool(lower_item.get(f.lower()))
+        for f in KEY_PASS_FIELDS
+    )
+
+    # Canonical pass subtype for downstream plotting
+    if row["is_assist"]:
+        row["pass_subtype"] = "assist"
+    elif row["is_key_pass"]:
+        row["pass_subtype"] = "key_pass"
+    elif category == "passes":
+        row["pass_subtype"] = "pass"
+    else:
+        row["pass_subtype"] = None
 
     # Extract coordinates
     row["x"] = get_nested(item, "playerCoordinates.x", "coordinates.x", "startCoordinates.x", "from.x")
@@ -669,15 +716,44 @@ def flatten_rating_breakdown(data: Any, endpoint: str) -> list[dict[str, Any]]:
         return []
 
     rows: list[dict[str, Any]] = []
+
     for category in rating_breakdown_categories(data):
         items = data.get(category)
+
         if not isinstance(items, list):
             continue
 
         for item in items:
+
             if not isinstance(item, dict):
                 continue
-            rows.append(normalize_action_item(item, category=category, endpoint=endpoint))
+
+            # ─────────────────────────────────────────────
+            # DEBUG PASS METADATA
+            # ─────────────────────────────────────────────
+            if category == "passes":
+
+                interesting = {
+                    k: v for k, v in item.items()
+                    if (
+                        "assist" in k.lower()
+                        or "key" in k.lower()
+                        or "chance" in k.lower()
+                        or "pass" in k.lower()
+                    )
+                }
+
+                if interesting:
+                    print("\nPASS DEBUG:")
+                    print(json.dumps(interesting, indent=2, ensure_ascii=False))
+
+            rows.append(
+                normalize_action_item(
+                    item,
+                    category=category,
+                    endpoint=endpoint
+                )
+            )
 
     return rows
 
@@ -852,6 +928,9 @@ def write_flat_csv(path: str | Path, rows: list[dict[str, Any]]) -> None:
         "accurate",
         "won",
         "value",
+        "is_assist",
+        "is_key_pass",
+        "pass_subtype",
         "rating",
         "_endpoint",
         "_source_path",
