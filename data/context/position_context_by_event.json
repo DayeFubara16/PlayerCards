@@ -1,13 +1,34 @@
 {
   "meta": {
-    "schema": "position_context_by_event.v1",
+    "schema": "position_context_by_event.v2",
     "sources": [
       "event_average_positions"
     ],
     "input_csv": "data/raw/player_match_logs.csv",
     "season_filter": "2025-26",
     "league_filter": null,
-    "use_heatmaps_for_missing": false
+    "use_heatmaps_for_missing": false,
+    "enrich_csv": "data/raw/player_match_logs.csv",
+    "skip_possession": false,
+    "padj_defensive_stats": [
+      "tackles_total",
+      "tackles_won",
+      "last_man_tackles",
+      "interceptions",
+      "clearances",
+      "clearance_off_line",
+      "blocked_shots",
+      "recoveries",
+      "duels_total",
+      "duels_won",
+      "duels_lost",
+      "aerial_duels_total",
+      "aerial_duels_won",
+      "aerial_duels_lost",
+      "challenges_lost",
+      "errors_leading_to_shot",
+      "errors_leading_to_goal"
+    ]
   },
   "events": {
     "13980098": {
@@ -183,8 +204,15 @@
           "records_seen": 96,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980098,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980099": {
       "event_id": 13980099,
@@ -354,8 +382,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980099,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980100": {
       "event_id": 13980100,
@@ -530,8 +565,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980100,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980101": {
       "event_id": 13980101,
@@ -706,8 +748,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980101,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980102": {
       "event_id": 13980102,
@@ -882,8 +931,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980102,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980103": {
       "event_id": 13980103,
@@ -1048,8 +1104,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980103,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980108": {
       "event_id": 13980108,
@@ -1224,8 +1287,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980108,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980115": {
       "event_id": 13980115,
@@ -1395,8 +1465,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980115,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981421": {
       "event_id": 13981421,
@@ -1571,8 +1648,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981421,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981422": {
       "event_id": 13981422,
@@ -1747,8 +1831,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981422,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981423": {
       "event_id": 13981423,
@@ -1918,8 +2009,15 @@
           "records_seen": 92,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981423,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981424": {
       "event_id": 13981424,
@@ -2089,8 +2187,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981424,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981425": {
       "event_id": 13981425,
@@ -2265,8 +2370,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981425,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981426": {
       "event_id": 13981426,
@@ -2431,8 +2543,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981426,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981427": {
       "event_id": 13981427,
@@ -2607,8 +2726,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981427,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981428": {
       "event_id": 13981428,
@@ -2778,8 +2904,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981428,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981429": {
       "event_id": 13981429,
@@ -2954,8 +3087,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981429,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981430": {
       "event_id": 13981430,
@@ -3125,8 +3265,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981430,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981431": {
       "event_id": 13981431,
@@ -3301,8 +3448,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981431,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981432": {
       "event_id": 13981432,
@@ -3477,8 +3631,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981432,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981433": {
       "event_id": 13981433,
@@ -3653,8 +3814,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981433,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981434": {
       "event_id": 13981434,
@@ -3829,8 +3997,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981434,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981435": {
       "event_id": 13981435,
@@ -4005,8 +4180,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981435,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981436": {
       "event_id": 13981436,
@@ -4176,8 +4358,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981436,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981437": {
       "event_id": 13981437,
@@ -4352,8 +4541,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981437,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981438": {
       "event_id": 13981438,
@@ -4523,8 +4719,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981438,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981439": {
       "event_id": 13981439,
@@ -4689,8 +4892,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981439,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981441": {
       "event_id": 13981441,
@@ -4865,8 +5075,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981441,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981442": {
       "event_id": 13981442,
@@ -5041,8 +5258,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981442,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981443": {
       "event_id": 13981443,
@@ -5217,8 +5441,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981443,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981444": {
       "event_id": 13981444,
@@ -5393,8 +5624,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981444,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981445": {
       "event_id": 13981445,
@@ -5569,8 +5807,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981445,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981446": {
       "event_id": 13981446,
@@ -5745,8 +5990,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981446,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981447": {
       "event_id": 13981447,
@@ -5911,8 +6163,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981447,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981448": {
       "event_id": 13981448,
@@ -6087,8 +6346,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981448,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981449": {
       "event_id": 13981449,
@@ -6263,8 +6529,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981449,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981450": {
       "event_id": 13981450,
@@ -6439,8 +6712,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981450,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981451": {
       "event_id": 13981451,
@@ -6615,8 +6895,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981451,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981452": {
       "event_id": 13981452,
@@ -6791,8 +7078,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981452,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981453": {
       "event_id": 13981453,
@@ -6967,8 +7261,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13981453,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981454": {
       "event_id": 13981454,
@@ -256381,8 +256682,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980105,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980107": {
       "event_id": 13980107,
@@ -256557,8 +256865,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980107,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980109": {
       "event_id": 13980109,
@@ -256733,8 +257048,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980109,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980110": {
       "event_id": 13980110,
@@ -256899,8 +257221,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980110,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980113": {
       "event_id": 13980113,
@@ -257070,8 +257399,15 @@
           "records_seen": 92,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980113,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980114": {
       "event_id": 13980114,
@@ -257241,8 +257577,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980114,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "14023932": {
       "event_id": 14023932,
@@ -262381,8 +262724,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980104,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980106": {
       "event_id": 13980106,
@@ -262557,8 +262907,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980106,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980111": {
       "event_id": 13980111,
@@ -262733,8 +263090,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980111,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980112": {
       "event_id": 13980112,
@@ -262909,8 +263273,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980112,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "14023926": {
       "event_id": 14023926,
@@ -264951,8 +265322,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980059,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980062": {
       "event_id": 13980062,
@@ -265127,8 +265505,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980062,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980073": {
       "event_id": 13980073,
@@ -265303,8 +265688,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980073,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980081": {
       "event_id": 13980081,
@@ -265464,8 +265856,15 @@
           "records_seen": 79,
           "players_with_xy": 29
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980081,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980082": {
       "event_id": 13980082,
@@ -265630,8 +266029,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980082,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980083": {
       "event_id": 13980083,
@@ -265806,8 +266212,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980083,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980084": {
       "event_id": 13980084,
@@ -265982,8 +266395,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980084,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980085": {
       "event_id": 13980085,
@@ -266153,8 +266573,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980085,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980086": {
       "event_id": 13980086,
@@ -266329,8 +266756,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980086,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980087": {
       "event_id": 13980087,
@@ -266505,8 +266939,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980087,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980088": {
       "event_id": 13980088,
@@ -266676,8 +267117,15 @@
           "records_seen": 92,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980088,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980089": {
       "event_id": 13980089,
@@ -266847,8 +267295,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980089,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980090": {
       "event_id": 13980090,
@@ -267023,8 +267478,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980090,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980091": {
       "event_id": 13980091,
@@ -267189,8 +267651,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980091,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980092": {
       "event_id": 13980092,
@@ -267360,8 +267829,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980092,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980093": {
       "event_id": 13980093,
@@ -267536,8 +268012,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980093,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980094": {
       "event_id": 13980094,
@@ -267712,8 +268195,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980094,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980095": {
       "event_id": 13980095,
@@ -267883,8 +268373,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980095,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980096": {
       "event_id": 13980096,
@@ -268054,8 +268551,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980096,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980097": {
       "event_id": 13980097,
@@ -268220,8 +268724,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980097,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "14023925": {
       "event_id": 14023925,
@@ -285929,8 +286440,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980058,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980060": {
       "event_id": 13980060,
@@ -286100,8 +286618,15 @@
           "records_seen": 89,
           "players_with_xy": 31
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980060,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980063": {
       "event_id": 13980063,
@@ -286276,8 +286801,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980063,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980065": {
       "event_id": 13980065,
@@ -286452,8 +286984,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980065,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980067": {
       "event_id": 13980067,
@@ -286628,8 +287167,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980067,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980068": {
       "event_id": 13980068,
@@ -286794,8 +287340,15 @@
           "records_seen": 84,
           "players_with_xy": 30
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980068,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980069": {
       "event_id": 13980069,
@@ -286970,8 +287523,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980069,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980075": {
       "event_id": 13980075,
@@ -287146,8 +287706,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980075,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980076": {
       "event_id": 13980076,
@@ -287322,8 +287889,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980076,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980078": {
       "event_id": 13980078,
@@ -287498,8 +288072,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980078,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13981663": {
       "event_id": 13981663,
@@ -449409,8 +449990,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980072,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980079": {
       "event_id": 13980079,
@@ -449585,8 +450173,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980079,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "13980080": {
       "event_id": 13980080,
@@ -449761,8 +450356,15 @@
           "records_seen": 94,
           "players_with_xy": 32
         },
-        "heatmaps": {}
-      }
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980080,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     },
     "14083706": {
       "event_id": 14083706,
@@ -451312,6 +451914,1282 @@
         },
         "heatmaps": {}
       }
+    },
+    "13980061": {
+      "event_id": 13980061,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "1122835": {
+          "avg_x": 61.4333,
+          "avg_y": 75.5167,
+          "source": "average-positions"
+        },
+        "1086417": {
+          "avg_x": 71.3348,
+          "avg_y": 47.087,
+          "source": "average-positions"
+        },
+        "592794": {
+          "avg_x": 10.7659,
+          "avg_y": 55.6136,
+          "source": "average-positions"
+        },
+        "108484": {
+          "avg_x": 38.8933,
+          "avg_y": 70.875,
+          "source": "average-positions"
+        },
+        "377512": {
+          "avg_x": 63.0,
+          "avg_y": 8.0,
+          "source": "average-positions"
+        },
+        "838232": {
+          "avg_x": 60.9358,
+          "avg_y": 71.1849,
+          "source": "average-positions"
+        },
+        "352728": {
+          "avg_x": 7.8125,
+          "avg_y": 46.7125,
+          "source": "average-positions"
+        },
+        "332155": {
+          "avg_x": 35.5788,
+          "avg_y": 40.1124,
+          "source": "average-positions"
+        },
+        "235672": {
+          "avg_x": 56.4129,
+          "avg_y": 14.5226,
+          "source": "average-positions"
+        },
+        "150383": {
+          "avg_x": 39.2535,
+          "avg_y": 39.214,
+          "source": "average-positions"
+        },
+        "907668": {
+          "avg_x": 52.2457,
+          "avg_y": 48.534,
+          "source": "average-positions"
+        },
+        "70996": {
+          "avg_x": 59.5405,
+          "avg_y": 51.0905,
+          "source": "average-positions"
+        },
+        "153257": {
+          "avg_x": 42.7218,
+          "avg_y": 20.1109,
+          "source": "average-positions"
+        },
+        "908716": {
+          "avg_x": 49.306,
+          "avg_y": 81.147,
+          "source": "average-positions"
+        },
+        "879346": {
+          "avg_x": 49.4578,
+          "avg_y": 50.1578,
+          "source": "average-positions"
+        },
+        "805078": {
+          "avg_x": 34.478,
+          "avg_y": 70.1644,
+          "source": "average-positions"
+        },
+        "609206": {
+          "avg_x": 43.3205,
+          "avg_y": 13.8636,
+          "source": "average-positions"
+        },
+        "58351": {
+          "avg_x": 25.7857,
+          "avg_y": 53.7321,
+          "source": "average-positions"
+        },
+        "1063373": {
+          "avg_x": 35.9634,
+          "avg_y": 26.6317,
+          "source": "average-positions"
+        },
+        "1136399": {
+          "avg_x": 42.3235,
+          "avg_y": 32.6294,
+          "source": "average-positions"
+        },
+        "1154894": {
+          "avg_x": 46.7667,
+          "avg_y": 53.2222,
+          "source": "average-positions"
+        },
+        "825271": {
+          "avg_x": 47.5739,
+          "avg_y": 45.4913,
+          "source": "average-positions"
+        },
+        "1536811": {
+          "avg_x": 75.775,
+          "avg_y": 60.1833,
+          "source": "average-positions"
+        },
+        "1831525": {
+          "avg_x": 50.175,
+          "avg_y": 70.75,
+          "source": "average-positions"
+        },
+        "1009661": {
+          "avg_x": 59.3,
+          "avg_y": 75.05,
+          "source": "average-positions"
+        },
+        "1138856": {
+          "avg_x": 54.0364,
+          "avg_y": 29.2818,
+          "source": "average-positions"
+        },
+        "227894": {
+          "avg_x": 46.0537,
+          "avg_y": 47.061,
+          "source": "average-positions"
+        },
+        "964119": {
+          "avg_x": 48.6333,
+          "avg_y": 80.6282,
+          "source": "average-positions"
+        },
+        "891656": {
+          "avg_x": 8.9273,
+          "avg_y": 47.9491,
+          "source": "average-positions"
+        },
+        "1444690": {
+          "avg_x": 56.3604,
+          "avg_y": 74.6547,
+          "source": "average-positions"
+        },
+        "830858": {
+          "avg_x": 57.55,
+          "avg_y": 55.1974,
+          "source": "average-positions"
+        },
+        "892979": {
+          "avg_x": 40.6489,
+          "avg_y": 63.9966,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 94,
+          "players_with_xy": 32
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980061,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
+    },
+    "13980064": {
+      "event_id": 13980064,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "575852": {
+          "avg_x": 41.9235,
+          "avg_y": 45.2235,
+          "source": "average-positions"
+        },
+        "906963": {
+          "avg_x": 40.049,
+          "avg_y": 47.4755,
+          "source": "average-positions"
+        },
+        "915812": {
+          "avg_x": 43.4333,
+          "avg_y": 62.4528,
+          "source": "average-positions"
+        },
+        "874812": {
+          "avg_x": 36.7533,
+          "avg_y": 78.6467,
+          "source": "average-positions"
+        },
+        "1116570": {
+          "avg_x": 30.5047,
+          "avg_y": 71.8233,
+          "source": "average-positions"
+        },
+        "253391": {
+          "avg_x": 12.8653,
+          "avg_y": 49.1857,
+          "source": "average-positions"
+        },
+        "1103488": {
+          "avg_x": 55.8,
+          "avg_y": 36.8395,
+          "source": "average-positions"
+        },
+        "964154": {
+          "avg_x": 53.22,
+          "avg_y": 50.168,
+          "source": "average-positions"
+        },
+        "983601": {
+          "avg_x": 63.6542,
+          "avg_y": 49.4146,
+          "source": "average-positions"
+        },
+        "868958": {
+          "avg_x": 48.0059,
+          "avg_y": 52.1294,
+          "source": "average-positions"
+        },
+        "1022204": {
+          "avg_x": 68.7687,
+          "avg_y": 55.9,
+          "source": "average-positions"
+        },
+        "897594": {
+          "avg_x": 66.6667,
+          "avg_y": 42.8792,
+          "source": "average-positions"
+        },
+        "1152477": {
+          "avg_x": 66.64,
+          "avg_y": 40.92,
+          "source": "average-positions"
+        },
+        "846148": {
+          "avg_x": 50.0644,
+          "avg_y": 22.0667,
+          "source": "average-positions"
+        },
+        "976025": {
+          "avg_x": 37.1774,
+          "avg_y": 51.4968,
+          "source": "average-positions"
+        },
+        "164511": {
+          "avg_x": 52.4037,
+          "avg_y": 36.0241,
+          "source": "average-positions"
+        },
+        "803039": {
+          "avg_x": 70.4244,
+          "avg_y": 60.5489,
+          "source": "average-positions"
+        },
+        "1384847": {
+          "avg_x": 33.1848,
+          "avg_y": 43.7803,
+          "source": "average-positions"
+        },
+        "256219": {
+          "avg_x": 63.9837,
+          "avg_y": 46.3288,
+          "source": "average-positions"
+        },
+        "1175821": {
+          "avg_x": 55.5641,
+          "avg_y": 33.3422,
+          "source": "average-positions"
+        },
+        "1128530": {
+          "avg_x": 43.9605,
+          "avg_y": 40.007,
+          "source": "average-positions"
+        },
+        "1499991": {
+          "avg_x": 29.5294,
+          "avg_y": 60.9824,
+          "source": "average-positions"
+        },
+        "793986": {
+          "avg_x": 11.0122,
+          "avg_y": 51.4146,
+          "source": "average-positions"
+        },
+        "974087": {
+          "avg_x": 41.375,
+          "avg_y": 47.4813,
+          "source": "average-positions"
+        },
+        "45925": {
+          "avg_x": 53.9333,
+          "avg_y": 77.1444,
+          "source": "average-positions"
+        },
+        "353130": {
+          "avg_x": 42.0422,
+          "avg_y": 75.8118,
+          "source": "average-positions"
+        },
+        "893008": {
+          "avg_x": 56.8433,
+          "avg_y": 12.6687,
+          "source": "average-positions"
+        },
+        "611210": {
+          "avg_x": 38.5408,
+          "avg_y": 29.9092,
+          "source": "average-positions"
+        },
+        "1514800": {
+          "avg_x": 65.72,
+          "avg_y": 73.87,
+          "source": "average-positions"
+        },
+        "982778": {
+          "avg_x": 49.3466,
+          "avg_y": 85.2959,
+          "source": "average-positions"
+        },
+        "186855": {
+          "avg_x": 51.2633,
+          "avg_y": 46.6327,
+          "source": "average-positions"
+        },
+        "1082406": {
+          "avg_x": 61.6789,
+          "avg_y": 58.6772,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 94,
+          "players_with_xy": 32
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980064,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
+    },
+    "13980066": {
+      "event_id": 13980066,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "1392819": {
+          "avg_x": 32.5,
+          "avg_y": 69.1,
+          "source": "average-positions"
+        },
+        "256667": {
+          "avg_x": 9.4051,
+          "avg_y": 47.641,
+          "source": "average-positions"
+        },
+        "917485": {
+          "avg_x": 63.4536,
+          "avg_y": 35.2429,
+          "source": "average-positions"
+        },
+        "911350": {
+          "avg_x": 78.4231,
+          "avg_y": 77.8615,
+          "source": "average-positions"
+        },
+        "841977": {
+          "avg_x": 51.8216,
+          "avg_y": 34.9804,
+          "source": "average-positions"
+        },
+        "984998": {
+          "avg_x": 59.013,
+          "avg_y": 19.7239,
+          "source": "average-positions"
+        },
+        "804621": {
+          "avg_x": 52.4429,
+          "avg_y": 64.4607,
+          "source": "average-positions"
+        },
+        "1019125": {
+          "avg_x": 61.8429,
+          "avg_y": 35.5429,
+          "source": "average-positions"
+        },
+        "1175854": {
+          "avg_x": 51.83,
+          "avg_y": 65.815,
+          "source": "average-positions"
+        },
+        "978327": {
+          "avg_x": 86.43,
+          "avg_y": 44.28,
+          "source": "average-positions"
+        },
+        "1014287": {
+          "avg_x": 31.868,
+          "avg_y": 32.912,
+          "source": "average-positions"
+        },
+        "1029748": {
+          "avg_x": 72.4,
+          "avg_y": 80.4857,
+          "source": "average-positions"
+        },
+        "1002045": {
+          "avg_x": 47.6197,
+          "avg_y": 9.7724,
+          "source": "average-positions"
+        },
+        "1651825": {
+          "avg_x": 29.7451,
+          "avg_y": 67.9686,
+          "source": "average-positions"
+        },
+        "1090374": {
+          "avg_x": 52.3,
+          "avg_y": 24.7,
+          "source": "average-positions"
+        },
+        "945616": {
+          "avg_x": 45.8212,
+          "avg_y": 81.6327,
+          "source": "average-positions"
+        },
+        "933203": {
+          "avg_x": 62.7871,
+          "avg_y": 48.371,
+          "source": "average-positions"
+        },
+        "1511706": {
+          "avg_x": 41.2864,
+          "avg_y": 56.9045,
+          "source": "average-positions"
+        },
+        "184421": {
+          "avg_x": 52.2381,
+          "avg_y": 12.3952,
+          "source": "average-positions"
+        },
+        "930191": {
+          "avg_x": 59.7143,
+          "avg_y": 58.969,
+          "source": "average-positions"
+        },
+        "2246841": {
+          "avg_x": 45.1806,
+          "avg_y": 89.6889,
+          "source": "average-positions"
+        },
+        "1087514": {
+          "avg_x": 56.5217,
+          "avg_y": 18.2783,
+          "source": "average-positions"
+        },
+        "1643838": {
+          "avg_x": 60.1952,
+          "avg_y": 51.1333,
+          "source": "average-positions"
+        },
+        "1403204": {
+          "avg_x": 47.4562,
+          "avg_y": 35.0187,
+          "source": "average-positions"
+        },
+        "1643836": {
+          "avg_x": 31.8375,
+          "avg_y": 68.3625,
+          "source": "average-positions"
+        },
+        "1404639": {
+          "avg_x": 30.6709,
+          "avg_y": 39.8291,
+          "source": "average-positions"
+        },
+        "98059": {
+          "avg_x": 11.7355,
+          "avg_y": 48.8081,
+          "source": "average-positions"
+        },
+        "970998": {
+          "avg_x": 50.3926,
+          "avg_y": 68.6279,
+          "source": "average-positions"
+        },
+        "1068885": {
+          "avg_x": 35.8378,
+          "avg_y": 21.211,
+          "source": "average-positions"
+        },
+        "918440": {
+          "avg_x": 46.158,
+          "avg_y": 42.9309,
+          "source": "average-positions"
+        },
+        "797286": {
+          "avg_x": 57.116,
+          "avg_y": 86.652,
+          "source": "average-positions"
+        },
+        "1435226": {
+          "avg_x": 33.2024,
+          "avg_y": 77.2282,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 94,
+          "players_with_xy": 32
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980066,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
+    },
+    "13980070": {
+      "event_id": 13980070,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "849274": {
+          "avg_x": 44.3667,
+          "avg_y": 75.4,
+          "source": "average-positions"
+        },
+        "1034303": {
+          "avg_x": 30.1675,
+          "avg_y": 17.0225,
+          "source": "average-positions"
+        },
+        "318645": {
+          "avg_x": 57.7471,
+          "avg_y": 68.8735,
+          "source": "average-positions"
+        },
+        "173827": {
+          "avg_x": 64.59,
+          "avg_y": 54.71,
+          "source": "average-positions"
+        },
+        "814589": {
+          "avg_x": 38.6295,
+          "avg_y": 84.2045,
+          "source": "average-positions"
+        },
+        "284363": {
+          "avg_x": 55.9043,
+          "avg_y": 36.1609,
+          "source": "average-positions"
+        },
+        "280991": {
+          "avg_x": 39.881,
+          "avg_y": 21.2571,
+          "source": "average-positions"
+        },
+        "1100354": {
+          "avg_x": 56.2158,
+          "avg_y": 31.1263,
+          "source": "average-positions"
+        },
+        "839925": {
+          "avg_x": 40.3222,
+          "avg_y": 45.9444,
+          "source": "average-positions"
+        },
+        "186845": {
+          "avg_x": 38.7943,
+          "avg_y": 61.8229,
+          "source": "average-positions"
+        },
+        "1618552": {
+          "avg_x": 66.775,
+          "avg_y": 68.025,
+          "source": "average-positions"
+        },
+        "869888": {
+          "avg_x": 46.2542,
+          "avg_y": 15.85,
+          "source": "average-positions"
+        },
+        "318603": {
+          "avg_x": 8.848,
+          "avg_y": 48.798,
+          "source": "average-positions"
+        },
+        "158037": {
+          "avg_x": 28.1568,
+          "avg_y": 42.0795,
+          "source": "average-positions"
+        },
+        "993389": {
+          "avg_x": 55.9857,
+          "avg_y": 30.3857,
+          "source": "average-positions"
+        },
+        "352736": {
+          "avg_x": 28.558,
+          "avg_y": 70.914,
+          "source": "average-positions"
+        },
+        "894863": {
+          "avg_x": 71.6188,
+          "avg_y": 40.2687,
+          "source": "average-positions"
+        },
+        "1493689": {
+          "avg_x": 68.2533,
+          "avg_y": 55.0178,
+          "source": "average-positions"
+        },
+        "859027": {
+          "avg_x": 50.3885,
+          "avg_y": 30.8192,
+          "source": "average-positions"
+        },
+        "229740": {
+          "avg_x": 52.3283,
+          "avg_y": 81.1696,
+          "source": "average-positions"
+        },
+        "1403348": {
+          "avg_x": 35.2718,
+          "avg_y": 33.2864,
+          "source": "average-positions"
+        },
+        "989186": {
+          "avg_x": 44.6846,
+          "avg_y": 11.1615,
+          "source": "average-positions"
+        },
+        "1800245": {
+          "avg_x": 72.1522,
+          "avg_y": 40.3913,
+          "source": "average-positions"
+        },
+        "125407": {
+          "avg_x": 43.32,
+          "avg_y": 55.56,
+          "source": "average-positions"
+        },
+        "798147": {
+          "avg_x": 56.45,
+          "avg_y": 82.05,
+          "source": "average-positions"
+        },
+        "123976": {
+          "avg_x": 38.475,
+          "avg_y": 56.5583,
+          "source": "average-positions"
+        },
+        "911848": {
+          "avg_x": 58.2579,
+          "avg_y": 43.4632,
+          "source": "average-positions"
+        },
+        "599114": {
+          "avg_x": 16.8196,
+          "avg_y": 51.1946,
+          "source": "average-positions"
+        },
+        "226974": {
+          "avg_x": 39.5393,
+          "avg_y": 70.1157,
+          "source": "average-positions"
+        },
+        "1086286": {
+          "avg_x": 51.063,
+          "avg_y": 51.6534,
+          "source": "average-positions"
+        },
+        "974581": {
+          "avg_x": 46.2928,
+          "avg_y": 28.8797,
+          "source": "average-positions"
+        },
+        "1090019": {
+          "avg_x": 62.7852,
+          "avg_y": 62.7131,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 94,
+          "players_with_xy": 32
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980070,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
+    },
+    "13980071": {
+      "event_id": 13980071,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "1409700": {
+          "avg_x": 56.4853,
+          "avg_y": 24.0324,
+          "source": "average-positions"
+        },
+        "892141": {
+          "avg_x": 64.5167,
+          "avg_y": 37.3167,
+          "source": "average-positions"
+        },
+        "769333": {
+          "avg_x": 62.7214,
+          "avg_y": 62.5536,
+          "source": "average-positions"
+        },
+        "191210": {
+          "avg_x": 10.2122,
+          "avg_y": 52.1959,
+          "source": "average-positions"
+        },
+        "817957": {
+          "avg_x": 68.4721,
+          "avg_y": 44.9163,
+          "source": "average-positions"
+        },
+        "15466": {
+          "avg_x": 52.875,
+          "avg_y": 60.6125,
+          "source": "average-positions"
+        },
+        "851284": {
+          "avg_x": 74.0294,
+          "avg_y": 82.0471,
+          "source": "average-positions"
+        },
+        "132645": {
+          "avg_x": 59.1882,
+          "avg_y": 50.1176,
+          "source": "average-positions"
+        },
+        "1034082": {
+          "avg_x": 48.6844,
+          "avg_y": 64.2311,
+          "source": "average-positions"
+        },
+        "945062": {
+          "avg_x": 60.28,
+          "avg_y": 32.3143,
+          "source": "average-positions"
+        },
+        "788255": {
+          "avg_x": 46.1051,
+          "avg_y": 17.2305,
+          "source": "average-positions"
+        },
+        "1390489": {
+          "avg_x": 50.004,
+          "avg_y": 84.724,
+          "source": "average-positions"
+        },
+        "965893": {
+          "avg_x": 44.2711,
+          "avg_y": 69.0157,
+          "source": "average-positions"
+        },
+        "250737": {
+          "avg_x": 53.9989,
+          "avg_y": 68.5489,
+          "source": "average-positions"
+        },
+        "826195": {
+          "avg_x": 37.3269,
+          "avg_y": 37.6859,
+          "source": "average-positions"
+        },
+        "901891": {
+          "avg_x": 64.1446,
+          "avg_y": 23.7908,
+          "source": "average-positions"
+        },
+        "328109": {
+          "avg_x": 48.1163,
+          "avg_y": 57.7265,
+          "source": "average-positions"
+        },
+        "979479": {
+          "avg_x": 57.5867,
+          "avg_y": 52.3933,
+          "source": "average-positions"
+        },
+        "947954": {
+          "avg_x": 10.9019,
+          "avg_y": 49.7907,
+          "source": "average-positions"
+        },
+        "964153": {
+          "avg_x": 46.825,
+          "avg_y": 79.5846,
+          "source": "average-positions"
+        },
+        "870211": {
+          "avg_x": 21.8333,
+          "avg_y": 60.0767,
+          "source": "average-positions"
+        },
+        "1397736": {
+          "avg_x": 56.0125,
+          "avg_y": 21.9625,
+          "source": "average-positions"
+        },
+        "902019": {
+          "avg_x": 44.2422,
+          "avg_y": 46.5394,
+          "source": "average-positions"
+        },
+        "2049928": {
+          "avg_x": 64.2467,
+          "avg_y": 70.1467,
+          "source": "average-positions"
+        },
+        "105905": {
+          "avg_x": 47.0375,
+          "avg_y": 72.7438,
+          "source": "average-positions"
+        },
+        "360396": {
+          "avg_x": 33.6875,
+          "avg_y": 41.795,
+          "source": "average-positions"
+        },
+        "928777": {
+          "avg_x": 49.783,
+          "avg_y": 23.6962,
+          "source": "average-positions"
+        },
+        "927304": {
+          "avg_x": 56.2685,
+          "avg_y": 12.5704,
+          "source": "average-positions"
+        },
+        "1485391": {
+          "avg_x": 34.4953,
+          "avg_y": 71.8438,
+          "source": "average-positions"
+        },
+        "945448": {
+          "avg_x": 43.3,
+          "avg_y": 19.4315,
+          "source": "average-positions"
+        },
+        "965008": {
+          "avg_x": 54.6149,
+          "avg_y": 49.2309,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 92,
+          "players_with_xy": 31
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980071,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
+    },
+    "13980074": {
+      "event_id": 13980074,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "891346": {
+          "avg_x": 59.2756,
+          "avg_y": 84.5537,
+          "source": "average-positions"
+        },
+        "1423452": {
+          "avg_x": 62.9562,
+          "avg_y": 68.4813,
+          "source": "average-positions"
+        },
+        "856065": {
+          "avg_x": 62.2176,
+          "avg_y": 25.6412,
+          "source": "average-positions"
+        },
+        "2158647": {
+          "avg_x": 59.7588,
+          "avg_y": 78.4529,
+          "source": "average-positions"
+        },
+        "984527": {
+          "avg_x": 32.1909,
+          "avg_y": 72.3364,
+          "source": "average-positions"
+        },
+        "958517": {
+          "avg_x": 39.2827,
+          "avg_y": 78.3692,
+          "source": "average-positions"
+        },
+        "957921": {
+          "avg_x": 71.24,
+          "avg_y": 31.29,
+          "source": "average-positions"
+        },
+        "1086199": {
+          "avg_x": 41.6583,
+          "avg_y": 88.9833,
+          "source": "average-positions"
+        },
+        "1963449": {
+          "avg_x": 50.363,
+          "avg_y": 14.5891,
+          "source": "average-positions"
+        },
+        "876259": {
+          "avg_x": 52.6081,
+          "avg_y": 49.9905,
+          "source": "average-positions"
+        },
+        "1099296": {
+          "avg_x": 64.6034,
+          "avg_y": 42.3881,
+          "source": "average-positions"
+        },
+        "990411": {
+          "avg_x": 10.1762,
+          "avg_y": 52.4714,
+          "source": "average-positions"
+        },
+        "1110136": {
+          "avg_x": 51.9933,
+          "avg_y": 62.7356,
+          "source": "average-positions"
+        },
+        "1516324": {
+          "avg_x": 37.0813,
+          "avg_y": 46.3267,
+          "source": "average-positions"
+        },
+        "1201388": {
+          "avg_x": 56.5662,
+          "avg_y": 36.6954,
+          "source": "average-positions"
+        },
+        "1155423": {
+          "avg_x": 39.2855,
+          "avg_y": 19.2333,
+          "source": "average-positions"
+        },
+        "932643": {
+          "avg_x": 67.693,
+          "avg_y": 76.1651,
+          "source": "average-positions"
+        },
+        "253367": {
+          "avg_x": 59.1562,
+          "avg_y": 35.1896,
+          "source": "average-positions"
+        },
+        "826198": {
+          "avg_x": 60.3036,
+          "avg_y": 43.4821,
+          "source": "average-positions"
+        },
+        "1485292": {
+          "avg_x": 32.1483,
+          "avg_y": 64.3034,
+          "source": "average-positions"
+        },
+        "924973": {
+          "avg_x": 56.5294,
+          "avg_y": 39.9686,
+          "source": "average-positions"
+        },
+        "893752": {
+          "avg_x": 9.935,
+          "avg_y": 47.055,
+          "source": "average-positions"
+        },
+        "788061": {
+          "avg_x": 64.4263,
+          "avg_y": 35.3474,
+          "source": "average-positions"
+        },
+        "44241": {
+          "avg_x": 38.2071,
+          "avg_y": 68.1857,
+          "source": "average-positions"
+        },
+        "1012165": {
+          "avg_x": 7.04,
+          "avg_y": 49.36,
+          "source": "average-positions"
+        },
+        "1134351": {
+          "avg_x": 51.4479,
+          "avg_y": 72.1021,
+          "source": "average-positions"
+        },
+        "1910444": {
+          "avg_x": 33.8667,
+          "avg_y": 37.5741,
+          "source": "average-positions"
+        },
+        "1155625": {
+          "avg_x": 60.5,
+          "avg_y": 80.2143,
+          "source": "average-positions"
+        },
+        "989894": {
+          "avg_x": 47.0825,
+          "avg_y": 14.7632,
+          "source": "average-positions"
+        },
+        "933641": {
+          "avg_x": 35.3414,
+          "avg_y": 67.1931,
+          "source": "average-positions"
+        },
+        "558320": {
+          "avg_x": 48.2934,
+          "avg_y": 83.8492,
+          "source": "average-positions"
+        },
+        "1154898": {
+          "avg_x": 44.1449,
+          "avg_y": 48.8949,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 96,
+          "players_with_xy": 32
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980074,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
+    },
+    "13980077": {
+      "event_id": 13980077,
+      "source": "average-positions",
+      "average_positions_available": true,
+      "players": {
+        "1030829": {
+          "avg_x": 51.0704,
+          "avg_y": 62.737,
+          "source": "average-positions"
+        },
+        "1142612": {
+          "avg_x": 55.1816,
+          "avg_y": 47.1579,
+          "source": "average-positions"
+        },
+        "38162": {
+          "avg_x": 59.5783,
+          "avg_y": 61.2913,
+          "source": "average-positions"
+        },
+        "341143": {
+          "avg_x": 57.6552,
+          "avg_y": 46.3172,
+          "source": "average-positions"
+        },
+        "773409": {
+          "avg_x": 60.2158,
+          "avg_y": 39.2105,
+          "source": "average-positions"
+        },
+        "1016788": {
+          "avg_x": 55.0594,
+          "avg_y": 44.0469,
+          "source": "average-positions"
+        },
+        "1111640": {
+          "avg_x": 47.0824,
+          "avg_y": 62.2706,
+          "source": "average-positions"
+        },
+        "1493157": {
+          "avg_x": 62.54,
+          "avg_y": 30.005,
+          "source": "average-positions"
+        },
+        "1142692": {
+          "avg_x": 51.7143,
+          "avg_y": 79.1929,
+          "source": "average-positions"
+        },
+        "934409": {
+          "avg_x": 59.3103,
+          "avg_y": 15.4923,
+          "source": "average-positions"
+        },
+        "848279": {
+          "avg_x": 33.5871,
+          "avg_y": 70.6935,
+          "source": "average-positions"
+        },
+        "259281": {
+          "avg_x": 8.6453,
+          "avg_y": 47.9887,
+          "source": "average-positions"
+        },
+        "1089453": {
+          "avg_x": 35.5768,
+          "avg_y": 20.9536,
+          "source": "average-positions"
+        },
+        "840414": {
+          "avg_x": 29.5559,
+          "avg_y": 46.478,
+          "source": "average-positions"
+        },
+        "941179": {
+          "avg_x": 49.105,
+          "avg_y": 84.05,
+          "source": "average-positions"
+        },
+        "357596": {
+          "avg_x": 55.2351,
+          "avg_y": 51.1035,
+          "source": "average-positions"
+        },
+        "881931": {
+          "avg_x": 46.8886,
+          "avg_y": 46.7432,
+          "source": "average-positions"
+        },
+        "367056": {
+          "avg_x": 64.8311,
+          "avg_y": 81.3289,
+          "source": "average-positions"
+        },
+        "917048": {
+          "avg_x": 44.0593,
+          "avg_y": 83.0373,
+          "source": "average-positions"
+        },
+        "887766": {
+          "avg_x": 72.3182,
+          "avg_y": 14.5545,
+          "source": "average-positions"
+        },
+        "965264": {
+          "avg_x": 64.4286,
+          "avg_y": 33.0381,
+          "source": "average-positions"
+        },
+        "935564": {
+          "avg_x": 58.1222,
+          "avg_y": 60.35,
+          "source": "average-positions"
+        },
+        "832208": {
+          "avg_x": 71.1966,
+          "avg_y": 54.1517,
+          "source": "average-positions"
+        },
+        "865167": {
+          "avg_x": 40.5459,
+          "avg_y": 65.7328,
+          "source": "average-positions"
+        },
+        "904832": {
+          "avg_x": 52.4333,
+          "avg_y": 59.4667,
+          "source": "average-positions"
+        },
+        "979222": {
+          "avg_x": 64.9741,
+          "avg_y": 30.2517,
+          "source": "average-positions"
+        },
+        "363860": {
+          "avg_x": 49.6153,
+          "avg_y": 45.8252,
+          "source": "average-positions"
+        },
+        "79645": {
+          "avg_x": 8.5588,
+          "avg_y": 50.9137,
+          "source": "average-positions"
+        },
+        "965330": {
+          "avg_x": 51.2409,
+          "avg_y": 18.475,
+          "source": "average-positions"
+        },
+        "1128063": {
+          "avg_x": 34.2939,
+          "avg_y": 39.4182,
+          "source": "average-positions"
+        },
+        "1010223": {
+          "avg_x": 59.2,
+          "avg_y": 45.5182,
+          "source": "average-positions"
+        },
+        "803033": {
+          "avg_x": 57.6222,
+          "avg_y": 75.3778,
+          "source": "average-positions"
+        }
+      },
+      "diagnostics": {
+        "average_positions": {
+          "endpoint": "average-positions",
+          "available": true,
+          "records_seen": 94,
+          "players_with_xy": 32
+        },
+        "heatmaps": {},
+        "match_statistics": {
+          "endpoint": "match-statistics",
+          "event_id": 13980077,
+          "available": true,
+          "possession_found": false
+        }
+      },
+      "possession": null
     }
   }
 }

@@ -1,13 +1,30 @@
 {
   "summary": {
-    "unique_unmapped_keys": 2,
-    "total_unmapped_values": 3
+    "unique_unmapped_keys": 4,
+    "total_unmapped_values": 6
   },
   "by_key": {
     "owngoals": {
-      "count": 2,
+      "count": 3,
       "example": 1,
       "sample_records": [
+        {
+          "league": "Premier League",
+          "season": "2025-26",
+          "MW": 38,
+          "event_id": 14023966,
+          "match_id": "38|Chelsea|Sunderland",
+          "team": "Chelsea",
+          "opponent": "Sunderland",
+          "venue": "away",
+          "player_id": 996958,
+          "player_name": "Malo Gusto",
+          "player_position": "M",
+          "raw_key": "ownGoals",
+          "normalized_key": "owngoals",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        },
         {
           "league": "Serie A",
           "season": "2025-26",
@@ -66,9 +83,72 @@
           "parsed_value": 1.0
         }
       ]
+    },
+    "penaltysave": {
+      "count": 1,
+      "example": 1,
+      "sample_records": [
+        {
+          "league": "Serie A",
+          "season": "2025-26",
+          "MW": 38,
+          "event_id": 13980064,
+          "match_id": "38|AS Roma|Hellas Verona",
+          "team": "Hellas Verona",
+          "opponent": "AS Roma",
+          "venue": "home",
+          "player_id": 253391,
+          "player_name": "Lorenzo Montipò",
+          "player_position": "G",
+          "raw_key": "penaltySave",
+          "normalized_key": "penaltysave",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        }
+      ]
+    },
+    "penaltymiss": {
+      "count": 1,
+      "example": 1,
+      "sample_records": [
+        {
+          "league": "Serie A",
+          "season": "2025-26",
+          "MW": 38,
+          "event_id": 13980064,
+          "match_id": "38|AS Roma|Hellas Verona",
+          "team": "AS Roma",
+          "opponent": "Hellas Verona",
+          "venue": "away",
+          "player_id": 803039,
+          "player_name": "Donyell Malen",
+          "player_position": "F",
+          "raw_key": "penaltyMiss",
+          "normalized_key": "penaltymiss",
+          "raw_value": 1,
+          "parsed_value": 1.0
+        }
+      ]
     }
   },
   "records": [
+    {
+      "league": "Premier League",
+      "season": "2025-26",
+      "MW": 38,
+      "event_id": 14023966,
+      "match_id": "38|Chelsea|Sunderland",
+      "team": "Chelsea",
+      "opponent": "Sunderland",
+      "venue": "away",
+      "player_id": 996958,
+      "player_name": "Malo Gusto",
+      "player_position": "M",
+      "raw_key": "ownGoals",
+      "normalized_key": "owngoals",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    },
     {
       "league": "Serie A",
       "season": "2025-26",
@@ -117,6 +197,40 @@
       "player_position": "M",
       "raw_key": "ownGoals",
       "normalized_key": "owngoals",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    },
+    {
+      "league": "Serie A",
+      "season": "2025-26",
+      "MW": 38,
+      "event_id": 13980064,
+      "match_id": "38|AS Roma|Hellas Verona",
+      "team": "Hellas Verona",
+      "opponent": "AS Roma",
+      "venue": "home",
+      "player_id": 253391,
+      "player_name": "Lorenzo Montipò",
+      "player_position": "G",
+      "raw_key": "penaltySave",
+      "normalized_key": "penaltysave",
+      "raw_value": 1,
+      "parsed_value": 1.0
+    },
+    {
+      "league": "Serie A",
+      "season": "2025-26",
+      "MW": 38,
+      "event_id": 13980064,
+      "match_id": "38|AS Roma|Hellas Verona",
+      "team": "AS Roma",
+      "opponent": "Hellas Verona",
+      "venue": "away",
+      "player_id": 803039,
+      "player_name": "Donyell Malen",
+      "player_position": "F",
+      "raw_key": "penaltyMiss",
+      "normalized_key": "penaltymiss",
       "raw_value": 1,
       "parsed_value": 1.0
     }

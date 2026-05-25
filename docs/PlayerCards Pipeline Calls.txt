@@ -33,6 +33,7 @@ python scripts/Player_Scraper.py --season 2025-26 --matchweek 38 --all-leagues -
 
 # 1b. Build positional context
 python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
+python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --enrich-csv data/raw/player_match_logs.csv --season 2025-26 --delay 1.2
 
 # 2. Add ages / DOBs
 # Uses previous enriched CSV/cache so it does not refetch everyone.
