@@ -32,7 +32,6 @@ Global dataset build
 python scripts/Player_Scraper.py --season 2025-26 --matchweek 38 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
 
 # 1b. Build positional context
-python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --season 2025-26 --delay 1.2
 python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --enrich-csv data/raw/player_match_logs.csv --season 2025-26 --delay 1.2
 
 # 2. Add ages / DOBs
@@ -73,6 +72,29 @@ python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $S
 # 9. Build final player card
 # Pass explicit paths so the builder does not accidentally auto-load old root files.
 python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes 900
+
+Player Finder
+---------------------
+# 10. Find players within parameters
+How it works:
+Every filter is an optional CLI flag — use as many or as few as you want. There are three filter types:
+Categorical — substring match (case-insensitive) unless noted:
+--name, --team, --league, --nationality
+--position   (exact: CB, ST, CM, GK, LB, RB, DM, AM, SS, LW, RW, …)
+--role_group, --lane, --preferred_foot, --season_position_zone
+Numeric — every stat gets a _min and _max variant:
+--goals_min 10 --xg_per90_min 0.5 --minutes_played_min 900
+--aerial_win_pct_min 60 --pass_accuracy_pct_max 70
+--gk_goals_prevented_min 2 ...and ~140 more stats
+Output controls:
+--sort goals --desc          # rank results
+--limit 20                   # top N only
+--show player_name,team,goals,xg,xa   # custom columns (or 'all')
+--list_columns               # print every available column name
+--no_truncate                # disable column width capping
+When using percentage stats like --aerial_win_pct_min or --dribble_success_pct_min, pair them with a volume filter (e.g. --aerial_duels_total_min 30) to avoid small-sample noise.
+--key_passes_per90_min 5 returned no results because no player in this dataset quite reaches that threshold — the column is definitely there and queryable at a lower bound.
+Run python Player_Finder.py --list_columns to see all 251 column names you can filter or display.
 
 Housekeeping rules
 ------------------

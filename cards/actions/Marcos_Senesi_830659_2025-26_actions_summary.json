@@ -5,35 +5,35 @@
     "season": "2025-26",
     "league": null,
     "match_log": "data/raw/player_match_logs.csv",
-    "events_found": 36,
+    "events_found": 37,
     "endpoints": [
       "rating-breakdown",
       "statistics"
     ],
-    "generated_at_utc": "2026-05-24T19:04:53.641090Z",
+    "generated_at_utc": "2026-05-25T15:29:25.098640Z",
     "cache_dir": "cache/action_cache",
     "no_fetch": false,
     "refresh_cache": true
   },
-  "events": 36,
-  "events_with_any_available_endpoint": 36,
-  "flat_rows": 3307,
+  "events": 37,
+  "events_with_any_available_endpoint": 37,
+  "flat_rows": 3424,
   "endpoint_summary": {
     "rating-breakdown": {
-      "available_events": 36,
+      "available_events": 37,
       "missing_events": 0,
-      "flat_rows": 3307
+      "flat_rows": 3424
     },
     "statistics": {
-      "available_events": 36,
+      "available_events": 37,
       "missing_events": 0,
       "flat_rows": 0
     }
   },
   "category_counts": {
-    "rating-breakdown:passes": 2270,
-    "rating-breakdown:ball-carries": 468,
-    "rating-breakdown:defensive": 560,
+    "rating-breakdown:passes": 2346,
+    "rating-breakdown:ball-carries": 497,
+    "rating-breakdown:defensive": 572,
     "rating-breakdown:dribbles": 9
   },
   "endpoint_debug_sample": {

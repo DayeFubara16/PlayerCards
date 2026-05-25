@@ -176,9 +176,12 @@ KNOWN_SUM_COLS = {
     "key_passes", "long_balls_total", "long_balls_accurate", "crosses_total", "crosses_accurate",
     "touches", "unsuccessful_touches", "dribbles_attempted", "carries", "carry_distance",
     "progressive_carries", "progressive_carry_distance", "best_carry_progression", "total_progression",
-    "dispossessed", "possession_lost", "tackles_total", "tackles_won", "last_man_tackles",
-    "interceptions", "clearances", "clearance_off_line", "blocked_shots", "duels_total", "duels_won",
-    "duels_lost", "aerial_duels_total", "aerial_duels_won", "aerial_duels_lost", "recoveries",
+    "dispossessed", "possession_lost",
+    # P-Adj defensive stats (raw versions are dropped before collapsing; only these land in the output)
+    "P-Adj_tackles_total", "P-Adj_tackles_won", "P-Adj_interceptions", "P-Adj_clearances", "P-Adj_recoveries",
+    # Non-adjusted defensive stats that are NOT possession-driven
+    "last_man_tackles", "clearance_off_line", "blocked_shots", "duels_total", "duels_won",
+    "duels_lost", "aerial_duels_total", "aerial_duels_won", "aerial_duels_lost",
     "dribbles_won", "challenges_lost", "errors_leading_to_shot",
     "errors_leading_to_goal", "fouls_committed", "fouls_drawn", "yellow_cards", "red_cards",
     "penalties_won", "penalties_conceded", "penalties_faced", "distance_walking_km",
@@ -186,6 +189,70 @@ KNOWN_SUM_COLS = {
     "gk_saves", "gk_saves_inside_box", "gk_xgot_faced", "gk_goals_prevented", "gk_goals_prevented_raw",
     "gk_save_value", "gk_high_claims", "gk_punches", "gk_sweeper_total", "gk_sweeper_accurate",
 }
+
+
+# ── Possession-adjusted defensive stats ───────────────────────────────────────
+# These are the defensive counting stats that all major providers (StatsBomb,
+# FBref/Opta) possession-adjust: actions whose frequency is directly suppressed
+# when the opponent has less of the ball.
+#
+# Formula (per match row, before collapsing):
+#   P-Adj stat = raw_stat * (oppo_poss_pct / 50)
+#
+# oppo_poss_pct is the share of possession held by the *opponent* in that match.
+# Dividing by 50 re-centres around a neutral 50/50 game, so a player who faces
+# an opponent on 60% possession gets their defensive numbers scaled UP (x1.20),
+# while one who faces a 40%-possession side is scaled DOWN (x0.80).
+#
+# Columns NOT included here (by design, consistent with StatsBomb/Opta/FBref):
+#   - duels_total/won/lost     (include offensive duels; not purely defensive)
+#   - aerial_duels_*           (contested 50/50s; not possession-driven)
+#   - errors_leading_to_*      (errors are not frequency-suppressed by possession)
+#   - fouls_committed          (tactical fouls; not linearly possession-driven)
+#   - blocked_shots            (reactionary; depends on shots faced, not possession)
+#   - last_man_tackles         (too rare and context-specific)
+#   - clearance_off_line       (GK/set-piece context; not general possession-driven)
+P_ADJ_COLS = [
+    "tackles_total",
+    "tackles_won",
+    "interceptions",
+    "clearances",
+    "recoveries",
+]
+
+
+def compute_padj_stats(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Compute possession-adjusted versions of P_ADJ_COLS at the match-log level,
+    then drop the original raw columns so they do not flow through to season totals.
+
+    Requires 'oppo_poss_pct' in df (opponent possession %, 0-100).
+    If the column is absent the function returns df unchanged with a warning.
+    """
+    if "oppo_poss_pct" not in df.columns:
+        print("[P-Adj] WARNING: 'oppo_poss_pct' not found -- skipping possession adjustment.")
+        return df
+
+    out = df.copy()
+    poss = pd.to_numeric(out["oppo_poss_pct"], errors="coerce")
+    multiplier = poss / 50.0  # 1.0 at neutral; >1 when opponent dominated possession
+
+    created = []
+    for col in P_ADJ_COLS:
+        if col not in out.columns:
+            continue
+        raw = pd.to_numeric(out[col], errors="coerce")
+        padj_col = f"P-Adj_{col}"
+        out[padj_col] = raw * multiplier
+        created.append(padj_col)
+
+    # Drop raw columns that were adjusted so they don't appear as season totals.
+    cols_to_drop = [c for c in P_ADJ_COLS if c in out.columns]
+    out = out.drop(columns=cols_to_drop)
+
+    print(f"[P-Adj] Created:  {created}")
+    print(f"[P-Adj] Dropped:  {cols_to_drop}")
+    return out
 
 
 def looks_like_total_col(col: str) -> bool:
@@ -197,7 +264,7 @@ def looks_like_total_col(col: str) -> bool:
         return False
     if c.endswith(("_total", "_accurate", "_won", "_lost", "_km")):
         return True
-    if c.startswith(("gk_",)):
+    if c.startswith(("gk_", "p-adj_")):
         return True
     count_words = (
         "goals", "assists", "shots", "passes", "touches", "carries", "tackles", "interceptions",
@@ -279,6 +346,7 @@ def main():
         raise ValueError("Input must contain player_id and season columns.")
 
     df = normalize_dribble_columns(df)
+    df = compute_padj_stats(df)
 
     sum_cols, mean_cols, dropped_model_cols = classify_columns(df)
 
@@ -366,6 +434,7 @@ def main():
     out.to_csv(args.output, index=False)
     print(f"Input rows:     {len(df)}")
     print(f"Output rows:    {len(out)}")
+    print(f"P-Adj columns:  {[c for c in out.columns if c.startswith('P-Adj_')]}")
     print(f"Summed columns: {len(sum_cols)}")
     print(f"Mean columns:   {len(mean_cols)}")
     print(f"Dropped model columns: {len(dropped_model_cols)}")

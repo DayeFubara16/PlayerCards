@@ -182,6 +182,82 @@ CENTRAL_ATTACK_CODES = {"AMC", "AM", "SS"}
 STRIKER_CODES = {"ST", "CF"}
 
 
+def enforce_cb_hard_gate(row, current_arbitrated_group):
+    """
+    Prevent pure CBs from drifting into FB/WB labels purely from:
+    - spatial averages
+    - progressive carrying
+    - buildup width
+
+    Only allow FB/WB/CB-FB labels when there is REAL deployment evidence.
+    """
+
+    wide_defensive_groups = {
+        'LB', 'RB', 'FB', 'WB', 'LWB', 'RWB', 'CB-FB'
+    }
+
+    if current_arbitrated_group not in wide_defensive_groups:
+        return current_arbitrated_group
+
+    player_pos = str(row.get('player_position', '')).upper()
+    base_pos = str(row.get('base_position', '')).upper()
+    primary_role = str(row.get('primary_role_position', '')).upper()
+    profile_pos = str(row.get('profile_position', '')).upper()
+
+    defender_sources = [player_pos, base_pos, primary_role, profile_pos]
+
+    is_centre_back_profile = any(
+        x in ['CB', 'DC', 'CENTRE BACK', 'CENTER BACK']
+        for x in defender_sources
+    )
+
+    # If not fundamentally a CB, allow normal logic.
+    if not is_centre_back_profile:
+        return current_arbitrated_group
+
+    pos_played = (
+        str(row.get('positions_played_list', '')) + ' ' +
+        str(row.get('match_positions_played', ''))
+    ).upper()
+
+    genuine_wide_roles = [
+        'LB', 'RB', 'LWB', 'RWB',
+        'LEFT BACK', 'RIGHT BACK',
+        'FULLBACK', 'WINGBACK'
+    ]
+
+    has_true_wide_deployment = any(
+        role in pos_played for role in genuine_wide_roles
+    )
+
+    crosses = metric_value(row, ['crosses_total'])
+    prog_carries = metric_value(row, ['progressive_carries'])
+    takeons = metric_value(row, ['dribbles_attempted', 'contests_total'])
+
+    # Modern progressive CBs should STILL remain CBs.
+    progressive_cb_profile = (
+        prog_carries >= 1.5
+        or crosses >= 1.0
+    )
+
+    # REAL hybrid threshold.
+    genuine_hybrid_profile = (
+        has_true_wide_deployment
+        and (
+            crosses >= 1.8
+            or takeons >= 2.0
+            or prog_carries >= 2.2
+        )
+    )
+
+    # Only permit CB-FB style outputs if there is strong deployment evidence.
+    if not genuine_hybrid_profile:
+        return 'CB'
+
+    return current_arbitrated_group
+
+
+
 def normalize_position(value: Any) -> str | None:
     if pd.isna(value):
         return None
@@ -1085,7 +1161,12 @@ def defender_refinement_v7(row: pd.Series, scores: dict[str, float]) -> tuple[st
     )
 
     # Modern hybrid defender: enough CB defending plus enough wide/fullback work.
-    if cb_signal >= 2.45 and wide_def_signal >= 2.15:
+    if (
+            cb_signal >= 2.45
+            and wide_def_signal >= 2.15
+            and crosses >= 1.8
+            and prog_carries >= 1.8
+    ):
         return (
             "CB-FB",
             "CB-FB",
@@ -2019,33 +2100,75 @@ def arbitrate_dataset(df: pd.DataFrame, season: str | None, league: str | None, 
         work["position_conflict_flag"] = work["position_conflict_flag"].astype("object")
 
     json_rows = []
+
     for idx in target_index:
         row = work.loc[idx]
+
+        # Main arbitration
         arb = arbitrate_row(row, work)
+
+        # -----------------------------------
+        # FINAL CB PRESERVATION HARD GATE
+        # -----------------------------------
+
+        original_group = arb.get("arbitrated_role_group")
+
+        final_group = enforce_cb_hard_gate(
+            row,
+            original_group
+        )
+
+        # If gate overrides the arbitration result,
+        # normalize ALL downstream fields.
+        if final_group == "CB" and original_group != "CB":
+            arb["arbitrated_role_group"] = "CB"
+            arb["arbitrated_position"] = "CB"
+            arb["arbitrated_lane"] = "Central Defence"
+
+            # Optional confidence normalization
+            arb["arbitrated_confidence"] = max(
+                float(arb.get("arbitrated_confidence", 0.70)),
+                0.70
+            )
+
+            current_reason = str(
+                arb.get("arbitration_reason", "")
+            ).strip()
+
+            gate_reason = (
+                "Final CB hard gate override "
+                "(insufficient genuine wide deployment evidence)"
+            )
+
+            arb["arbitration_reason"] = (
+                f"{current_reason} | {gate_reason}"
+            ).strip(" | ")
+
+        # -----------------------------------
+
         for key, value in arb.items():
             work.at[idx, key] = value
 
         record = {
             "player_id": row.get("player_id"),
-            "player_name": row.get("player_name") if pd.notna(row.get("player_name")) else row.get("profile_name"),
+            "player_name": (
+                row.get("player_name")
+                if pd.notna(row.get("player_name"))
+                else row.get("profile_name")
+            ),
             "season": row.get("season"),
             "league": row.get("league"),
-            "team": row.get("team"),
-            "minutes_played": row.get("minutes_played"),
-            "profile_position_raw": row.get("profile_position_raw"),
-            "profile_positions_played": row.get("profile_positions_played"),
-            "match_position_mode": row.get("match_position_mode"),
-            "match_positions_played": row.get("match_positions_played"),
-            "match_role_mode": row.get("match_role_mode"),
-            "match_roles_played": row.get("match_roles_played"),
-            "avg_x": row.get("avg_x"),
-            "avg_y": row.get("avg_y"),
+
+            # existing fields...
             "spatial_matches_used": row.get("spatial_matches_used"),
+
             **arb,
         }
+
         json_rows.append(record)
 
     work = work.drop(columns=["_base_group"], errors="ignore")
+
     return work, json_rows
 
 
