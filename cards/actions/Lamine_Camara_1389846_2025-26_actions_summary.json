@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "player_id": 1389846,
+    "player_name": "Lamine Camara",
+    "season": "2025-26",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 24,
+    "endpoints": [
+      "rating-breakdown",
+      "statistics",
+      "incidents",
+      "touches"
+    ],
+    "generated_at_utc": "2026-05-23T13:47:20.417621Z",
+    "cache_dir": "cache/action_cache",
+    "no_fetch": false,
+    "refresh_cache": true
+  },
+  "events": 24,
+  "events_with_any_available_endpoint": 24,
+  "flat_rows": 1946,
+  "endpoint_summary": {
+    "rating-breakdown": {
+      "available_events": 24,
+      "missing_events": 0,
+      "flat_rows": 1946
+    },
+    "statistics": {
+      "available_events": 24,
+      "missing_events": 0,
+      "flat_rows": 0
+    },
+    "incidents": {
+      "available_events": 0,
+      "missing_events": 24,
+      "flat_rows": 0
+    },
+    "touches": {
+      "available_events": 0,
+      "missing_events": 24,
+      "flat_rows": 0
+    }
+  },
+  "category_counts": {
+    "rating-breakdown:passes": 1318,
+    "rating-breakdown:dribbles": 30,
+    "rating-breakdown:defensive": 275,
+    "rating-breakdown:ball-carries": 323
+  },
+  "endpoint_debug_sample": {
+    "rating-breakdown": [
+      {
+        "event_id": 14061187,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 87,
+            "dribbles": 2,
+            "defensive": 8,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14065697,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 44,
+            "dribbles": 2,
+            "defensive": 11,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14065706,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 39,
+            "dribbles": 4,
+            "defensive": 5,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14065719,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 13,
+            "dribbles": 0,
+            "defensive": 3,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14065733,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 55,
+            "dribbles": 4,
+            "defensive": 16,
+            "ball-carries": 0
+          }
+        }
+      }
+    ],
+    "statistics": [
+      {
+        "event_id": 14061187,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14065697,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14065706,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14065719,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14065733,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      }
+    ],
+    "incidents": [
+      {
+        "event_id": 14061187,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065697,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065706,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065719,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065733,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      }
+    ],
+    "touches": [
+      {
+        "event_id": 14061187,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065697,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065706,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065719,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065733,
+        "available": false,
+        "source": "fetch",
+        "status_code": 404,
+        "debug": {
+          "type": "NoneType"
+        }
+      }
+    ]
+  },
+  "note": "For player action maps, rating-breakdown is the key endpoint. Statistics rows are usually aggregate stats, not raw actions. Raw JSON remains the source of truth because Sofascore schemas can vary."
+}

@@ -1,0 +1,4474 @@
+{
+  "meta": {
+    "player_id": 1048888,
+    "player_name": "Mathys Tel",
+    "season": "2025-26",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 37,
+    "events_with_heatmap": 29,
+    "cache_dir": ".heatmap_cache",
+    "no_fetch": false,
+    "refresh_cache": false,
+    "flip_axes": false,
+    "generated_at_utc": "2026-05-24T16:33:53.355541Z"
+  },
+  "source_position_labels": {
+    "role_position_mode": "AM",
+    "role_position_minutes": {
+      "AM": 383.0,
+      "F": 367.0,
+      "CM": 263.0,
+      "ST": 190.0,
+      "W": 61.0,
+      "SS": 21.0
+    },
+    "player_position_mode": "M",
+    "player_position_minutes": {
+      "M": 646.0,
+      "F": 639.0
+    },
+    "base_position_mode": "M",
+    "base_position_minutes": {
+      "M": 646.0,
+      "F": 639.0
+    },
+    "role_family_mode": "midfield",
+    "role_family_minutes": {
+      "midfield": 646.0,
+      "attack": 639.0
+    },
+    "profile_position_mode": null,
+    "profile_position_minutes": {}
+  },
+  "position_estimate": null,
+  "position_note": "Visual heatmap only. Tactical position is intentionally not estimated here; use Position_Arbitrator output.",
+  "visual_summary": {
+    "centroid_x": 63.8225,
+    "centroid_y": 68.1263,
+    "spread_x": 24.8333,
+    "spread_y": 29.781,
+    "point_count": 783,
+    "total_weight": 655.6777,
+    "zone_shares": {
+      "defensive_third": 0.1381,
+      "middle_third": 0.3532,
+      "attacking_third": 0.5087,
+      "left_lane": 0.1734,
+      "central_lane": 0.1567,
+      "right_lane": 0.6699,
+      "wide_lane": 0.8433,
+      "high_wide_share": 0.4864,
+      "deep_wide_share": 0.2894,
+      "central_high_share": 0.1019,
+      "deep_central_share": 0.0762
+    },
+    "note": "Visual/action-density summary only. Do not use this as a tactical position estimate; use Position_Arbitrator output for position."
+  },
+  "event_results": [
+    {
+      "event_id": 14025047,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 9.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 9,
+      "parsed_points": 9,
+      "minutes_weight": 0.1
+    },
+    {
+      "event_id": 14025083,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025115,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 14.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 14,
+      "parsed_points": 14,
+      "minutes_weight": 0.1556
+    },
+    {
+      "event_id": 14025148,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 79.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 29,
+      "parsed_points": 29,
+      "minutes_weight": 0.8778
+    },
+    {
+      "event_id": 14025157,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025208,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 13.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 7,
+      "parsed_points": 7,
+      "minutes_weight": 0.1444
+    },
+    {
+      "event_id": 14025225,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 73.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 20,
+      "parsed_points": 20,
+      "minutes_weight": 0.8111
+    },
+    {
+      "event_id": 14025249,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 60.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 28,
+      "parsed_points": 28,
+      "minutes_weight": 0.6667
+    },
+    {
+      "event_id": 14025263,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 1.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 0.05
+    },
+    {
+      "event_id": 14025289,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025057,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 11.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 12,
+      "parsed_points": 12,
+      "minutes_weight": 0.1222
+    },
+    {
+      "event_id": 14025066,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025117,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 10.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 2,
+      "parsed_points": 2,
+      "minutes_weight": 0.1111
+    },
+    {
+      "event_id": 14025141,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 13.0,
+      "role_position": "SS",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 14,
+      "parsed_points": 14,
+      "minutes_weight": 0.1444
+    },
+    {
+      "event_id": 14025177,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025204,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 10.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 15,
+      "parsed_points": 15,
+      "minutes_weight": 0.1111
+    },
+    {
+      "event_id": 14025230,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025242,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 0.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch-empty",
+      "raw_points": 0,
+      "parsed_points": 0,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025256,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 10.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 5,
+      "parsed_points": 5,
+      "minutes_weight": 0.1111
+    },
+    {
+      "event_id": 14025290,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 88.0,
+      "role_position": "CM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 51,
+      "parsed_points": 51,
+      "minutes_weight": 0.9778
+    },
+    {
+      "event_id": 14025015,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 90.0,
+      "role_position": "AM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 78,
+      "parsed_points": 78,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14025089,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 62.0,
+      "role_position": "AM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 49,
+      "parsed_points": 49,
+      "minutes_weight": 0.6889
+    },
+    {
+      "event_id": 14025104,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 12.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 22,
+      "parsed_points": 22,
+      "minutes_weight": 0.1333
+    },
+    {
+      "event_id": 14025149,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 22.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 19,
+      "parsed_points": 19,
+      "minutes_weight": 0.2444
+    },
+    {
+      "event_id": 14025176,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 10.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 10,
+      "parsed_points": 10,
+      "minutes_weight": 0.1111
+    },
+    {
+      "event_id": 14025200,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 55.0,
+      "role_position": "ST",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 53,
+      "parsed_points": 53,
+      "minutes_weight": 0.6111
+    },
+    {
+      "event_id": 14024012,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 8.0,
+      "role_position": "SS",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 13,
+      "parsed_points": 13,
+      "minutes_weight": 0.0889
+    },
+    {
+      "event_id": 14023973,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 32.0,
+      "role_position": "W",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 27,
+      "parsed_points": 27,
+      "minutes_weight": 0.3556
+    },
+    {
+      "event_id": 14023981,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 90.0,
+      "role_position": "ST",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 60,
+      "parsed_points": 60,
+      "minutes_weight": 1.0
+    },
+    {
+      "event_id": 14023992,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 75.0,
+      "role_position": "AM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 55,
+      "parsed_points": 55,
+      "minutes_weight": 0.8333
+    },
+    {
+      "event_id": 14024020,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 67.0,
+      "role_position": "AM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 69,
+      "parsed_points": 69,
+      "minutes_weight": 0.7444
+    },
+    {
+      "event_id": 14025026,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 29.0,
+      "role_position": "W",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 26,
+      "parsed_points": 26,
+      "minutes_weight": 0.3222
+    },
+    {
+      "event_id": 14025042,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 33.0,
+      "role_position": "F",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 20,
+      "parsed_points": 20,
+      "minutes_weight": 0.3667
+    },
+    {
+      "event_id": 14024022,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 45.0,
+      "role_position": "ST",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 47,
+      "parsed_points": 47,
+      "minutes_weight": 0.5
+    },
+    {
+      "event_id": 14023927,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 89.0,
+      "role_position": "AM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 65,
+      "parsed_points": 65,
+      "minutes_weight": 0.9889
+    },
+    {
+      "event_id": 14023944,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 85.0,
+      "role_position": "CM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 51,
+      "parsed_points": 51,
+      "minutes_weight": 0.9444
+    },
+    {
+      "event_id": 16087727,
+      "date": null,
+      "home_team": null,
+      "away_team": null,
+      "minutes": 90.0,
+      "role_position": "CM",
+      "player_name": "Mathys Tel",
+      "heatmap_source": "fetch",
+      "raw_points": 63,
+      "parsed_points": 63,
+      "minutes_weight": 1.0
+    }
+  ],
+  "heatmap": {
+    "cell_count": 783,
+    "raw_point_count": 933,
+    "precision": 2,
+    "points": [
+      {
+        "x": 0.0,
+        "y": 29.0,
+        "value": 0.366667
+      },
+      {
+        "x": 2.0,
+        "y": 15.0,
+        "value": 0.977778
+      },
+      {
+        "x": 2.0,
+        "y": 31.0,
+        "value": 0.366667
+      },
+      {
+        "x": 2.0,
+        "y": 74.0,
+        "value": 0.944444
+      },
+      {
+        "x": 2.0,
+        "y": 76.0,
+        "value": 0.111111
+      },
+      {
+        "x": 3.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 4.0,
+        "y": 93.0,
+        "value": 1.955556
+      },
+      {
+        "x": 5.0,
+        "y": 11.0,
+        "value": 0.244444
+      },
+      {
+        "x": 5.0,
+        "y": 59.0,
+        "value": 0.811111
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "value": 0.311111
+      },
+      {
+        "x": 6.0,
+        "y": 16.0,
+        "value": 0.977778
+      },
+      {
+        "x": 7.0,
+        "y": 89.0,
+        "value": 1.222222
+      },
+      {
+        "x": 7.0,
+        "y": 92.0,
+        "value": 0.944444
+      },
+      {
+        "x": 8.0,
+        "y": 8.0,
+        "value": 0.244444
+      },
+      {
+        "x": 8.0,
+        "y": 82.0,
+        "value": 0.744444
+      },
+      {
+        "x": 8.0,
+        "y": 93.0,
+        "value": 0.944444
+      },
+      {
+        "x": 9.0,
+        "y": 16.0,
+        "value": 0.366667
+      },
+      {
+        "x": 9.0,
+        "y": 67.0,
+        "value": 0.355556
+      },
+      {
+        "x": 9.0,
+        "y": 86.0,
+        "value": 0.355556
+      },
+      {
+        "x": 9.0,
+        "y": 96.0,
+        "value": 0.088889
+      },
+      {
+        "x": 9.0,
+        "y": 100.0,
+        "value": 0.088889
+      },
+      {
+        "x": 10.0,
+        "y": 12.0,
+        "value": 0.244444
+      },
+      {
+        "x": 10.0,
+        "y": 58.0,
+        "value": 0.811111
+      },
+      {
+        "x": 10.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 10.0,
+        "y": 92.0,
+        "value": 0.355556
+      },
+      {
+        "x": 10.0,
+        "y": 94.0,
+        "value": 0.111111
+      },
+      {
+        "x": 11.0,
+        "y": 3.0,
+        "value": 0.366667
+      },
+      {
+        "x": 11.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 11.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 11.0,
+        "y": 83.0,
+        "value": 0.088889
+      },
+      {
+        "x": 11.0,
+        "y": 87.0,
+        "value": 0.977778
+      },
+      {
+        "x": 12.0,
+        "y": 2.0,
+        "value": 0.122222
+      },
+      {
+        "x": 12.0,
+        "y": 3.0,
+        "value": 0.122222
+      },
+      {
+        "x": 12.0,
+        "y": 5.0,
+        "value": 0.311111
+      },
+      {
+        "x": 12.0,
+        "y": 60.0,
+        "value": 0.611111
+      },
+      {
+        "x": 12.0,
+        "y": 90.0,
+        "value": 0.355556
+      },
+      {
+        "x": 13.0,
+        "y": 45.0,
+        "value": 0.833333
+      },
+      {
+        "x": 13.0,
+        "y": 62.0,
+        "value": 0.088889
+      },
+      {
+        "x": 13.0,
+        "y": 68.0,
+        "value": 0.944444
+      },
+      {
+        "x": 13.0,
+        "y": 96.0,
+        "value": 0.088889
+      },
+      {
+        "x": 14.0,
+        "y": 52.0,
+        "value": 0.5
+      },
+      {
+        "x": 14.0,
+        "y": 58.0,
+        "value": 0.111111
+      },
+      {
+        "x": 14.0,
+        "y": 82.0,
+        "value": 0.133333
+      },
+      {
+        "x": 14.0,
+        "y": 85.0,
+        "value": 0.088889
+      },
+      {
+        "x": 14.0,
+        "y": 86.0,
+        "value": 0.977778
+      },
+      {
+        "x": 15.0,
+        "y": 69.0,
+        "value": 0.688889
+      },
+      {
+        "x": 16.0,
+        "y": 64.0,
+        "value": 0.833333
+      },
+      {
+        "x": 16.0,
+        "y": 73.0,
+        "value": 0.111111
+      },
+      {
+        "x": 16.0,
+        "y": 95.0,
+        "value": 0.088889
+      },
+      {
+        "x": 18.0,
+        "y": 20.0,
+        "value": 0.5
+      },
+      {
+        "x": 18.0,
+        "y": 51.0,
+        "value": 0.5
+      },
+      {
+        "x": 18.0,
+        "y": 63.0,
+        "value": 0.988889
+      },
+      {
+        "x": 18.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 18.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 18.0,
+        "y": 93.0,
+        "value": 0.977778
+      },
+      {
+        "x": 19.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 19.0,
+        "y": 72.0,
+        "value": 0.688889
+      },
+      {
+        "x": 20.0,
+        "y": 7.0,
+        "value": 0.366667
+      },
+      {
+        "x": 20.0,
+        "y": 10.0,
+        "value": 0.833333
+      },
+      {
+        "x": 20.0,
+        "y": 57.0,
+        "value": 0.111111
+      },
+      {
+        "x": 20.0,
+        "y": 78.0,
+        "value": 0.688889
+      },
+      {
+        "x": 21.0,
+        "y": 4.0,
+        "value": 0.366667
+      },
+      {
+        "x": 21.0,
+        "y": 16.0,
+        "value": 0.5
+      },
+      {
+        "x": 21.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 83.0,
+        "value": 0.744444
+      },
+      {
+        "x": 21.0,
+        "y": 92.0,
+        "value": 0.744444
+      },
+      {
+        "x": 21.0,
+        "y": 100.0,
+        "value": 0.088889
+      },
+      {
+        "x": 22.0,
+        "y": 87.0,
+        "value": 0.322222
+      },
+      {
+        "x": 22.0,
+        "y": 95.0,
+        "value": 0.133333
+      },
+      {
+        "x": 23.0,
+        "y": 8.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 34.0,
+        "value": 1.955556
+      },
+      {
+        "x": 23.0,
+        "y": 88.0,
+        "value": 0.988889
+      },
+      {
+        "x": 23.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 95.0,
+        "value": 0.111111
+      },
+      {
+        "x": 24.0,
+        "y": 6.0,
+        "value": 0.366667
+      },
+      {
+        "x": 24.0,
+        "y": 49.0,
+        "value": 0.611111
+      },
+      {
+        "x": 24.0,
+        "y": 81.0,
+        "value": 0.111111
+      },
+      {
+        "x": 24.0,
+        "y": 88.0,
+        "value": 0.944444
+      },
+      {
+        "x": 24.0,
+        "y": 93.0,
+        "value": 0.988889
+      },
+      {
+        "x": 24.0,
+        "y": 100.0,
+        "value": 0.088889
+      },
+      {
+        "x": 25.0,
+        "y": 81.0,
+        "value": 0.111111
+      },
+      {
+        "x": 25.0,
+        "y": 85.0,
+        "value": 0.977778
+      },
+      {
+        "x": 25.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 37.0,
+        "value": 0.133333
+      },
+      {
+        "x": 26.0,
+        "y": 44.0,
+        "value": 0.833333
+      },
+      {
+        "x": 26.0,
+        "y": 59.0,
+        "value": 0.611111
+      },
+      {
+        "x": 26.0,
+        "y": 67.0,
+        "value": 1.977778
+      },
+      {
+        "x": 26.0,
+        "y": 75.0,
+        "value": 0.244444
+      },
+      {
+        "x": 26.0,
+        "y": 87.0,
+        "value": 0.977778
+      },
+      {
+        "x": 27.0,
+        "y": 38.0,
+        "value": 0.133333
+      },
+      {
+        "x": 27.0,
+        "y": 73.0,
+        "value": 0.322222
+      },
+      {
+        "x": 27.0,
+        "y": 74.0,
+        "value": 0.611111
+      },
+      {
+        "x": 27.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 82.0,
+        "value": 0.944444
+      },
+      {
+        "x": 27.0,
+        "y": 89.0,
+        "value": 0.833333
+      },
+      {
+        "x": 27.0,
+        "y": 94.0,
+        "value": 0.977778
+      },
+      {
+        "x": 28.0,
+        "y": 7.0,
+        "value": 0.5
+      },
+      {
+        "x": 28.0,
+        "y": 8.0,
+        "value": 0.833333
+      },
+      {
+        "x": 28.0,
+        "y": 75.0,
+        "value": 0.244444
+      },
+      {
+        "x": 28.0,
+        "y": 85.0,
+        "value": 0.611111
+      },
+      {
+        "x": 28.0,
+        "y": 92.0,
+        "value": 0.744444
+      },
+      {
+        "x": 28.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 94.0,
+        "value": 0.688889
+      },
+      {
+        "x": 29.0,
+        "y": 22.0,
+        "value": 0.366667
+      },
+      {
+        "x": 29.0,
+        "y": 51.0,
+        "value": 0.266667
+      },
+      {
+        "x": 29.0,
+        "y": 55.0,
+        "value": 1.622222
+      },
+      {
+        "x": 29.0,
+        "y": 76.0,
+        "value": 0.977778
+      },
+      {
+        "x": 29.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
+        "y": 90.0,
+        "value": 0.744444
+      },
+      {
+        "x": 29.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 30.0,
+        "y": 25.0,
+        "value": 0.122222
+      },
+      {
+        "x": 30.0,
+        "y": 40.0,
+        "value": 0.355556
+      },
+      {
+        "x": 30.0,
+        "y": 75.0,
+        "value": 0.877778
+      },
+      {
+        "x": 30.0,
+        "y": 92.0,
+        "value": 0.322222
+      },
+      {
+        "x": 31.0,
+        "y": 9.0,
+        "value": 0.811111
+      },
+      {
+        "x": 31.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 91.0,
+        "value": 0.988889
+      },
+      {
+        "x": 31.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 8.0,
+        "value": 1.333333
+      },
+      {
+        "x": 32.0,
+        "y": 35.0,
+        "value": 0.5
+      },
+      {
+        "x": 32.0,
+        "y": 49.0,
+        "value": 0.355556
+      },
+      {
+        "x": 32.0,
+        "y": 81.0,
+        "value": 0.688889
+      },
+      {
+        "x": 32.0,
+        "y": 82.0,
+        "value": 1.222222
+      },
+      {
+        "x": 32.0,
+        "y": 87.0,
+        "value": 0.944444
+      },
+      {
+        "x": 32.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 93.0,
+        "value": 0.977778
+      },
+      {
+        "x": 32.0,
+        "y": 95.0,
+        "value": 0.977778
+      },
+      {
+        "x": 33.0,
+        "y": 8.0,
+        "value": 0.366667
+      },
+      {
+        "x": 33.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 69.0,
+        "value": 0.666667
+      },
+      {
+        "x": 33.0,
+        "y": 73.0,
+        "value": 0.355556
+      },
+      {
+        "x": 33.0,
+        "y": 77.0,
+        "value": 0.977778
+      },
+      {
+        "x": 33.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 90.0,
+        "value": 0.322222
+      },
+      {
+        "x": 34.0,
+        "y": 2.0,
+        "value": 0.144444
+      },
+      {
+        "x": 34.0,
+        "y": 15.0,
+        "value": 0.877778
+      },
+      {
+        "x": 34.0,
+        "y": 23.0,
+        "value": 0.5
+      },
+      {
+        "x": 34.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 70.0,
+        "value": 0.977778
+      },
+      {
+        "x": 34.0,
+        "y": 72.0,
+        "value": 0.977778
+      },
+      {
+        "x": 34.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 90.0,
+        "value": 0.111111
+      },
+      {
+        "x": 34.0,
+        "y": 91.0,
+        "value": 1.355556
+      },
+      {
+        "x": 34.0,
+        "y": 94.0,
+        "value": 1.866667
+      },
+      {
+        "x": 34.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 40.0,
+        "value": 0.977778
+      },
+      {
+        "x": 35.0,
+        "y": 41.0,
+        "value": 0.977778
+      },
+      {
+        "x": 35.0,
+        "y": 43.0,
+        "value": 0.322222
+      },
+      {
+        "x": 35.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 67.0,
+        "value": 2.0
+      },
+      {
+        "x": 35.0,
+        "y": 73.0,
+        "value": 0.111111
+      },
+      {
+        "x": 35.0,
+        "y": 74.0,
+        "value": 0.666667
+      },
+      {
+        "x": 35.0,
+        "y": 81.0,
+        "value": 0.355556
+      },
+      {
+        "x": 35.0,
+        "y": 82.0,
+        "value": 0.988889
+      },
+      {
+        "x": 35.0,
+        "y": 83.0,
+        "value": 0.322222
+      },
+      {
+        "x": 35.0,
+        "y": 90.0,
+        "value": 0.988889
+      },
+      {
+        "x": 35.0,
+        "y": 91.0,
+        "value": 0.322222
+      },
+      {
+        "x": 35.0,
+        "y": 93.0,
+        "value": 1.755556
+      },
+      {
+        "x": 35.0,
+        "y": 100.0,
+        "value": 0.322222
+      },
+      {
+        "x": 36.0,
+        "y": 4.0,
+        "value": 0.5
+      },
+      {
+        "x": 36.0,
+        "y": 20.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 51.0,
+        "value": 0.811111
+      },
+      {
+        "x": 36.0,
+        "y": 68.0,
+        "value": 0.611111
+      },
+      {
+        "x": 36.0,
+        "y": 73.0,
+        "value": 0.744444
+      },
+      {
+        "x": 36.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 88.0,
+        "value": 0.611111
+      },
+      {
+        "x": 36.0,
+        "y": 94.0,
+        "value": 0.888889
+      },
+      {
+        "x": 36.0,
+        "y": 95.0,
+        "value": 1.333333
+      },
+      {
+        "x": 36.0,
+        "y": 100.0,
+        "value": 0.833333
+      },
+      {
+        "x": 37.0,
+        "y": 43.0,
+        "value": 1.0
+      },
+      {
+        "x": 37.0,
+        "y": 79.0,
+        "value": 0.611111
+      },
+      {
+        "x": 37.0,
+        "y": 94.0,
+        "value": 0.244444
+      },
+      {
+        "x": 38.0,
+        "y": 9.0,
+        "value": 0.833333
+      },
+      {
+        "x": 38.0,
+        "y": 19.0,
+        "value": 0.122222
+      },
+      {
+        "x": 38.0,
+        "y": 20.0,
+        "value": 0.5
+      },
+      {
+        "x": 38.0,
+        "y": 25.0,
+        "value": 0.877778
+      },
+      {
+        "x": 38.0,
+        "y": 78.0,
+        "value": 0.111111
+      },
+      {
+        "x": 38.0,
+        "y": 92.0,
+        "value": 0.355556
+      },
+      {
+        "x": 38.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 38.0,
+        "y": 97.0,
+        "value": 0.833333
+      },
+      {
+        "x": 39.0,
+        "y": 33.0,
+        "value": 0.977778
+      },
+      {
+        "x": 39.0,
+        "y": 48.0,
+        "value": 0.811111
+      },
+      {
+        "x": 39.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 78.0,
+        "value": 0.666667
+      },
+      {
+        "x": 39.0,
+        "y": 79.0,
+        "value": 0.833333
+      },
+      {
+        "x": 39.0,
+        "y": 80.0,
+        "value": 1.611111
+      },
+      {
+        "x": 39.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 85.0,
+        "value": 0.744444
+      },
+      {
+        "x": 39.0,
+        "y": 86.0,
+        "value": 0.744444
+      },
+      {
+        "x": 39.0,
+        "y": 89.0,
+        "value": 0.355556
+      },
+      {
+        "x": 39.0,
+        "y": 92.0,
+        "value": 0.944444
+      },
+      {
+        "x": 39.0,
+        "y": 93.0,
+        "value": 0.833333
+      },
+      {
+        "x": 39.0,
+        "y": 94.0,
+        "value": 0.944444
+      },
+      {
+        "x": 39.0,
+        "y": 95.0,
+        "value": 0.144444
+      },
+      {
+        "x": 40.0,
+        "y": 18.0,
+        "value": 0.122222
+      },
+      {
+        "x": 40.0,
+        "y": 44.0,
+        "value": 0.155556
+      },
+      {
+        "x": 40.0,
+        "y": 63.0,
+        "value": 0.744444
+      },
+      {
+        "x": 40.0,
+        "y": 74.0,
+        "value": 1.133333
+      },
+      {
+        "x": 40.0,
+        "y": 78.0,
+        "value": 0.1
+      },
+      {
+        "x": 40.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 83.0,
+        "value": 0.611111
+      },
+      {
+        "x": 40.0,
+        "y": 92.0,
+        "value": 0.611111
+      },
+      {
+        "x": 40.0,
+        "y": 94.0,
+        "value": 1.911111
+      },
+      {
+        "x": 41.0,
+        "y": 7.0,
+        "value": 0.366667
+      },
+      {
+        "x": 41.0,
+        "y": 8.0,
+        "value": 0.5
+      },
+      {
+        "x": 41.0,
+        "y": 81.0,
+        "value": 1.3
+      },
+      {
+        "x": 41.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 95.0,
+        "value": 0.1
+      },
+      {
+        "x": 42.0,
+        "y": 4.0,
+        "value": 0.5
+      },
+      {
+        "x": 42.0,
+        "y": 5.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 31.0,
+        "value": 0.244444
+      },
+      {
+        "x": 42.0,
+        "y": 40.0,
+        "value": 0.811111
+      },
+      {
+        "x": 42.0,
+        "y": 91.0,
+        "value": 0.744444
+      },
+      {
+        "x": 42.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 43.0,
+        "y": 44.0,
+        "value": 0.977778
+      },
+      {
+        "x": 43.0,
+        "y": 51.0,
+        "value": 1.333333
+      },
+      {
+        "x": 43.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 60.0,
+        "value": 0.133333
+      },
+      {
+        "x": 43.0,
+        "y": 69.0,
+        "value": 0.744444
+      },
+      {
+        "x": 43.0,
+        "y": 73.0,
+        "value": 0.666667
+      },
+      {
+        "x": 43.0,
+        "y": 74.0,
+        "value": 0.877778
+      },
+      {
+        "x": 43.0,
+        "y": 76.0,
+        "value": 0.833333
+      },
+      {
+        "x": 43.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 90.0,
+        "value": 0.322222
+      },
+      {
+        "x": 43.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 96.0,
+        "value": 0.877778
+      },
+      {
+        "x": 44.0,
+        "y": 3.0,
+        "value": 0.877778
+      },
+      {
+        "x": 44.0,
+        "y": 6.0,
+        "value": 0.5
+      },
+      {
+        "x": 44.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 71.0,
+        "value": 0.111111
+      },
+      {
+        "x": 44.0,
+        "y": 72.0,
+        "value": 0.666667
+      },
+      {
+        "x": 44.0,
+        "y": 82.0,
+        "value": 0.155556
+      },
+      {
+        "x": 44.0,
+        "y": 90.0,
+        "value": 0.944444
+      },
+      {
+        "x": 44.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 79.0,
+        "value": 0.611111
+      },
+      {
+        "x": 45.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 66.0,
+        "value": 0.144444
+      },
+      {
+        "x": 46.0,
+        "y": 82.0,
+        "value": 0.688889
+      },
+      {
+        "x": 46.0,
+        "y": 93.0,
+        "value": 0.977778
+      },
+      {
+        "x": 46.0,
+        "y": 94.0,
+        "value": 0.988889
+      },
+      {
+        "x": 47.0,
+        "y": 75.0,
+        "value": 0.688889
+      },
+      {
+        "x": 47.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 85.0,
+        "value": 0.688889
+      },
+      {
+        "x": 48.0,
+        "y": 59.0,
+        "value": 0.833333
+      },
+      {
+        "x": 48.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 92.0,
+        "value": 0.944444
+      },
+      {
+        "x": 48.0,
+        "y": 95.0,
+        "value": 0.988889
+      },
+      {
+        "x": 48.0,
+        "y": 100.0,
+        "value": 0.322222
+      },
+      {
+        "x": 49.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 50.0,
+        "y": 14.0,
+        "value": 0.811111
+      },
+      {
+        "x": 50.0,
+        "y": 81.0,
+        "value": 0.877778
+      },
+      {
+        "x": 50.0,
+        "y": 89.0,
+        "value": 0.833333
+      },
+      {
+        "x": 51.0,
+        "y": 67.0,
+        "value": 0.988889
+      },
+      {
+        "x": 51.0,
+        "y": 76.0,
+        "value": 0.688889
+      },
+      {
+        "x": 51.0,
+        "y": 89.0,
+        "value": 0.944444
+      },
+      {
+        "x": 52.0,
+        "y": 8.0,
+        "value": 0.122222
+      },
+      {
+        "x": 52.0,
+        "y": 56.0,
+        "value": 0.988889
+      },
+      {
+        "x": 52.0,
+        "y": 65.0,
+        "value": 0.355556
+      },
+      {
+        "x": 52.0,
+        "y": 89.0,
+        "value": 0.833333
+      },
+      {
+        "x": 52.0,
+        "y": 92.0,
+        "value": 0.944444
+      },
+      {
+        "x": 52.0,
+        "y": 93.0,
+        "value": 1.677778
+      },
+      {
+        "x": 52.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 53.0,
+        "y": 41.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 55.0,
+        "value": 0.988889
+      },
+      {
+        "x": 53.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 72.0,
+        "value": 0.877778
+      },
+      {
+        "x": 53.0,
+        "y": 89.0,
+        "value": 0.744444
+      },
+      {
+        "x": 53.0,
+        "y": 94.0,
+        "value": 0.744444
+      },
+      {
+        "x": 53.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 4.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 45.0,
+        "value": 0.833333
+      },
+      {
+        "x": 54.0,
+        "y": 54.0,
+        "value": 0.688889
+      },
+      {
+        "x": 54.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 84.0,
+        "value": 1.988889
+      },
+      {
+        "x": 54.0,
+        "y": 88.0,
+        "value": 0.111111
+      },
+      {
+        "x": 54.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 91.0,
+        "value": 0.988889
+      },
+      {
+        "x": 54.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 13.0,
+        "value": 0.133333
+      },
+      {
+        "x": 55.0,
+        "y": 36.0,
+        "value": 0.877778
+      },
+      {
+        "x": 55.0,
+        "y": 64.0,
+        "value": 0.644444
+      },
+      {
+        "x": 55.0,
+        "y": 88.0,
+        "value": 0.244444
+      },
+      {
+        "x": 55.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 4.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 17.0,
+        "value": 1.5
+      },
+      {
+        "x": 56.0,
+        "y": 22.0,
+        "value": 0.133333
+      },
+      {
+        "x": 56.0,
+        "y": 65.0,
+        "value": 0.688889
+      },
+      {
+        "x": 56.0,
+        "y": 71.0,
+        "value": 1.244444
+      },
+      {
+        "x": 56.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 93.0,
+        "value": 0.666667
+      },
+      {
+        "x": 56.0,
+        "y": 95.0,
+        "value": 0.611111
+      },
+      {
+        "x": 56.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 56.0,
+        "y": 97.0,
+        "value": 0.144444
+      },
+      {
+        "x": 57.0,
+        "y": 2.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 90.0,
+        "value": 0.877778
+      },
+      {
+        "x": 57.0,
+        "y": 91.0,
+        "value": 1.866667
+      },
+      {
+        "x": 57.0,
+        "y": 93.0,
+        "value": 1.666667
+      },
+      {
+        "x": 57.0,
+        "y": 95.0,
+        "value": 0.111111
+      },
+      {
+        "x": 57.0,
+        "y": 96.0,
+        "value": 1.755556
+      },
+      {
+        "x": 58.0,
+        "y": 0.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 6.0,
+        "value": 0.366667
+      },
+      {
+        "x": 58.0,
+        "y": 7.0,
+        "value": 0.866667
+      },
+      {
+        "x": 58.0,
+        "y": 9.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 92.0,
+        "value": 0.688889
+      },
+      {
+        "x": 58.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 94.0,
+        "value": 0.833333
+      },
+      {
+        "x": 58.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 3.0,
+        "value": 0.5
+      },
+      {
+        "x": 59.0,
+        "y": 13.0,
+        "value": 0.133333
+      },
+      {
+        "x": 59.0,
+        "y": 27.0,
+        "value": 0.833333
+      },
+      {
+        "x": 59.0,
+        "y": 28.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 77.0,
+        "value": 0.744444
+      },
+      {
+        "x": 59.0,
+        "y": 86.0,
+        "value": 0.611111
+      },
+      {
+        "x": 59.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 90.0,
+        "value": 1.6
+      },
+      {
+        "x": 59.0,
+        "y": 95.0,
+        "value": 0.855556
+      },
+      {
+        "x": 60.0,
+        "y": 2.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 12.0,
+        "value": 0.811111
+      },
+      {
+        "x": 60.0,
+        "y": 22.0,
+        "value": 0.877778
+      },
+      {
+        "x": 60.0,
+        "y": 67.0,
+        "value": 0.488889
+      },
+      {
+        "x": 60.0,
+        "y": 71.0,
+        "value": 0.666667
+      },
+      {
+        "x": 60.0,
+        "y": 72.0,
+        "value": 0.988889
+      },
+      {
+        "x": 60.0,
+        "y": 76.0,
+        "value": 0.977778
+      },
+      {
+        "x": 60.0,
+        "y": 81.0,
+        "value": 0.944444
+      },
+      {
+        "x": 60.0,
+        "y": 84.0,
+        "value": 0.322222
+      },
+      {
+        "x": 60.0,
+        "y": 92.0,
+        "value": 0.988889
+      },
+      {
+        "x": 60.0,
+        "y": 95.0,
+        "value": 1.722222
+      },
+      {
+        "x": 60.0,
+        "y": 96.0,
+        "value": 0.111111
+      },
+      {
+        "x": 61.0,
+        "y": 5.0,
+        "value": 0.5
+      },
+      {
+        "x": 61.0,
+        "y": 7.0,
+        "value": 2.0
+      },
+      {
+        "x": 61.0,
+        "y": 9.0,
+        "value": 0.5
+      },
+      {
+        "x": 61.0,
+        "y": 19.0,
+        "value": 0.877778
+      },
+      {
+        "x": 61.0,
+        "y": 21.0,
+        "value": 0.833333
+      },
+      {
+        "x": 61.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 95.0,
+        "value": 0.155556
+      },
+      {
+        "x": 62.0,
+        "y": 23.0,
+        "value": 0.833333
+      },
+      {
+        "x": 62.0,
+        "y": 31.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 72.0,
+        "value": 0.244444
+      },
+      {
+        "x": 62.0,
+        "y": 74.0,
+        "value": 0.611111
+      },
+      {
+        "x": 62.0,
+        "y": 81.0,
+        "value": 0.355556
+      },
+      {
+        "x": 62.0,
+        "y": 84.0,
+        "value": 0.988889
+      },
+      {
+        "x": 62.0,
+        "y": 85.0,
+        "value": 0.244444
+      },
+      {
+        "x": 62.0,
+        "y": 87.0,
+        "value": 0.111111
+      },
+      {
+        "x": 62.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 92.0,
+        "value": 0.088889
+      },
+      {
+        "x": 62.0,
+        "y": 94.0,
+        "value": 0.688889
+      },
+      {
+        "x": 62.0,
+        "y": 95.0,
+        "value": 1.744444
+      },
+      {
+        "x": 62.0,
+        "y": 96.0,
+        "value": 1.688889
+      },
+      {
+        "x": 63.0,
+        "y": 6.0,
+        "value": 0.5
+      },
+      {
+        "x": 63.0,
+        "y": 28.0,
+        "value": 0.366667
+      },
+      {
+        "x": 63.0,
+        "y": 30.0,
+        "value": 0.833333
+      },
+      {
+        "x": 63.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 48.0,
+        "value": 2.0
+      },
+      {
+        "x": 63.0,
+        "y": 75.0,
+        "value": 0.144444
+      },
+      {
+        "x": 63.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 79.0,
+        "value": 0.877778
+      },
+      {
+        "x": 63.0,
+        "y": 82.0,
+        "value": 0.611111
+      },
+      {
+        "x": 63.0,
+        "y": 83.0,
+        "value": 0.244444
+      },
+      {
+        "x": 63.0,
+        "y": 84.0,
+        "value": 0.766667
+      },
+      {
+        "x": 63.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 88.0,
+        "value": 0.833333
+      },
+      {
+        "x": 63.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 94.0,
+        "value": 0.988889
+      },
+      {
+        "x": 63.0,
+        "y": 95.0,
+        "value": 0.988889
+      },
+      {
+        "x": 63.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 64.0,
+        "y": 54.0,
+        "value": 0.611111
+      },
+      {
+        "x": 64.0,
+        "y": 64.0,
+        "value": 0.988889
+      },
+      {
+        "x": 64.0,
+        "y": 74.0,
+        "value": 0.944444
+      },
+      {
+        "x": 64.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 82.0,
+        "value": 0.155556
+      },
+      {
+        "x": 64.0,
+        "y": 86.0,
+        "value": 0.833333
+      },
+      {
+        "x": 64.0,
+        "y": 87.0,
+        "value": 1.133333
+      },
+      {
+        "x": 64.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 95.0,
+        "value": 0.855556
+      },
+      {
+        "x": 64.0,
+        "y": 100.0,
+        "value": 0.144444
+      },
+      {
+        "x": 65.0,
+        "y": 4.0,
+        "value": 0.5
+      },
+      {
+        "x": 65.0,
+        "y": 13.0,
+        "value": 0.833333
+      },
+      {
+        "x": 65.0,
+        "y": 14.0,
+        "value": 0.877778
+      },
+      {
+        "x": 65.0,
+        "y": 45.0,
+        "value": 0.155556
+      },
+      {
+        "x": 65.0,
+        "y": 59.0,
+        "value": 0.666667
+      },
+      {
+        "x": 65.0,
+        "y": 64.0,
+        "value": 0.244444
+      },
+      {
+        "x": 65.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 71.0,
+        "value": 0.811111
+      },
+      {
+        "x": 65.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 80.0,
+        "value": 0.611111
+      },
+      {
+        "x": 65.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 93.0,
+        "value": 1.977778
+      },
+      {
+        "x": 65.0,
+        "y": 96.0,
+        "value": 0.744444
+      },
+      {
+        "x": 65.0,
+        "y": 97.0,
+        "value": 0.144444
+      },
+      {
+        "x": 65.0,
+        "y": 100.0,
+        "value": 1.088889
+      },
+      {
+        "x": 66.0,
+        "y": 3.0,
+        "value": 0.977778
+      },
+      {
+        "x": 66.0,
+        "y": 5.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 26.0,
+        "value": 0.611111
+      },
+      {
+        "x": 66.0,
+        "y": 47.0,
+        "value": 0.133333
+      },
+      {
+        "x": 66.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 88.0,
+        "value": 0.722222
+      },
+      {
+        "x": 66.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 92.0,
+        "value": 0.611111
+      },
+      {
+        "x": 66.0,
+        "y": 94.0,
+        "value": 1.988889
+      },
+      {
+        "x": 66.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 96.0,
+        "value": 0.944444
+      },
+      {
+        "x": 66.0,
+        "y": 100.0,
+        "value": 1.333333
+      },
+      {
+        "x": 67.0,
+        "y": 11.0,
+        "value": 0.144444
+      },
+      {
+        "x": 67.0,
+        "y": 15.0,
+        "value": 0.833333
+      },
+      {
+        "x": 67.0,
+        "y": 57.0,
+        "value": 0.133333
+      },
+      {
+        "x": 67.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 81.0,
+        "value": 1.777778
+      },
+      {
+        "x": 67.0,
+        "y": 82.0,
+        "value": 0.944444
+      },
+      {
+        "x": 67.0,
+        "y": 89.0,
+        "value": 0.144444
+      },
+      {
+        "x": 67.0,
+        "y": 94.0,
+        "value": 0.988889
+      },
+      {
+        "x": 67.0,
+        "y": 95.0,
+        "value": 1.744444
+      },
+      {
+        "x": 67.0,
+        "y": 96.0,
+        "value": 0.744444
+      },
+      {
+        "x": 67.0,
+        "y": 98.0,
+        "value": 0.111111
+      },
+      {
+        "x": 68.0,
+        "y": 17.0,
+        "value": 0.666667
+      },
+      {
+        "x": 68.0,
+        "y": 38.0,
+        "value": 0.833333
+      },
+      {
+        "x": 68.0,
+        "y": 46.0,
+        "value": 0.833333
+      },
+      {
+        "x": 68.0,
+        "y": 51.0,
+        "value": 0.611111
+      },
+      {
+        "x": 68.0,
+        "y": 54.0,
+        "value": 0.833333
+      },
+      {
+        "x": 68.0,
+        "y": 72.0,
+        "value": 0.833333
+      },
+      {
+        "x": 68.0,
+        "y": 73.0,
+        "value": 0.988889
+      },
+      {
+        "x": 68.0,
+        "y": 81.0,
+        "value": 0.977778
+      },
+      {
+        "x": 68.0,
+        "y": 87.0,
+        "value": 0.988889
+      },
+      {
+        "x": 68.0,
+        "y": 91.0,
+        "value": 0.111111
+      },
+      {
+        "x": 68.0,
+        "y": 96.0,
+        "value": 1.333333
+      },
+      {
+        "x": 68.0,
+        "y": 100.0,
+        "value": 1.988889
+      },
+      {
+        "x": 69.0,
+        "y": 47.0,
+        "value": 0.877778
+      },
+      {
+        "x": 69.0,
+        "y": 49.0,
+        "value": 0.133333
+      },
+      {
+        "x": 69.0,
+        "y": 52.0,
+        "value": 0.5
+      },
+      {
+        "x": 69.0,
+        "y": 64.0,
+        "value": 0.744444
+      },
+      {
+        "x": 69.0,
+        "y": 67.0,
+        "value": 0.666667
+      },
+      {
+        "x": 69.0,
+        "y": 68.0,
+        "value": 1.144444
+      },
+      {
+        "x": 69.0,
+        "y": 69.0,
+        "value": 0.611111
+      },
+      {
+        "x": 69.0,
+        "y": 75.0,
+        "value": 0.611111
+      },
+      {
+        "x": 69.0,
+        "y": 81.0,
+        "value": 0.988889
+      },
+      {
+        "x": 69.0,
+        "y": 86.0,
+        "value": 0.944444
+      },
+      {
+        "x": 69.0,
+        "y": 90.0,
+        "value": 1.188889
+      },
+      {
+        "x": 69.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 17.0,
+        "value": 0.811111
+      },
+      {
+        "x": 70.0,
+        "y": 24.0,
+        "value": 0.122222
+      },
+      {
+        "x": 70.0,
+        "y": 26.0,
+        "value": 0.611111
+      },
+      {
+        "x": 70.0,
+        "y": 32.0,
+        "value": 0.666667
+      },
+      {
+        "x": 70.0,
+        "y": 38.0,
+        "value": 0.244444
+      },
+      {
+        "x": 70.0,
+        "y": 42.0,
+        "value": 0.833333
+      },
+      {
+        "x": 70.0,
+        "y": 44.0,
+        "value": 0.144444
+      },
+      {
+        "x": 70.0,
+        "y": 49.0,
+        "value": 0.977778
+      },
+      {
+        "x": 70.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 70.0,
+        "value": 0.322222
+      },
+      {
+        "x": 70.0,
+        "y": 74.0,
+        "value": 0.355556
+      },
+      {
+        "x": 70.0,
+        "y": 79.0,
+        "value": 0.088889
+      },
+      {
+        "x": 70.0,
+        "y": 88.0,
+        "value": 2.0
+      },
+      {
+        "x": 70.0,
+        "y": 95.0,
+        "value": 2.988889
+      },
+      {
+        "x": 71.0,
+        "y": 4.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 10.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 15.0,
+        "value": 0.877778
+      },
+      {
+        "x": 71.0,
+        "y": 28.0,
+        "value": 0.366667
+      },
+      {
+        "x": 71.0,
+        "y": 36.0,
+        "value": 0.5
+      },
+      {
+        "x": 71.0,
+        "y": 54.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 74.0,
+        "value": 2.144444
+      },
+      {
+        "x": 71.0,
+        "y": 75.0,
+        "value": 0.244444
+      },
+      {
+        "x": 71.0,
+        "y": 81.0,
+        "value": 0.988889
+      },
+      {
+        "x": 71.0,
+        "y": 90.0,
+        "value": 0.1
+      },
+      {
+        "x": 71.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 93.0,
+        "value": 0.088889
+      },
+      {
+        "x": 71.0,
+        "y": 95.0,
+        "value": 0.1
+      },
+      {
+        "x": 72.0,
+        "y": 2.0,
+        "value": 0.5
+      },
+      {
+        "x": 72.0,
+        "y": 8.0,
+        "value": 0.5
+      },
+      {
+        "x": 72.0,
+        "y": 24.0,
+        "value": 0.688889
+      },
+      {
+        "x": 72.0,
+        "y": 48.0,
+        "value": 0.5
+      },
+      {
+        "x": 72.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 70.0,
+        "value": 0.944444
+      },
+      {
+        "x": 72.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 93.0,
+        "value": 0.744444
+      },
+      {
+        "x": 72.0,
+        "y": 97.0,
+        "value": 0.111111
+      },
+      {
+        "x": 73.0,
+        "y": 4.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 9.0,
+        "value": 0.133333
+      },
+      {
+        "x": 73.0,
+        "y": 13.0,
+        "value": 0.977778
+      },
+      {
+        "x": 73.0,
+        "y": 18.0,
+        "value": 0.133333
+      },
+      {
+        "x": 73.0,
+        "y": 27.0,
+        "value": 0.611111
+      },
+      {
+        "x": 73.0,
+        "y": 33.0,
+        "value": 0.811111
+      },
+      {
+        "x": 73.0,
+        "y": 40.0,
+        "value": 0.5
+      },
+      {
+        "x": 73.0,
+        "y": 51.0,
+        "value": 0.944444
+      },
+      {
+        "x": 73.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 58.0,
+        "value": 0.611111
+      },
+      {
+        "x": 73.0,
+        "y": 72.0,
+        "value": 0.688889
+      },
+      {
+        "x": 73.0,
+        "y": 73.0,
+        "value": 2.355556
+      },
+      {
+        "x": 73.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 91.0,
+        "value": 1.777778
+      },
+      {
+        "x": 73.0,
+        "y": 93.0,
+        "value": 0.744444
+      },
+      {
+        "x": 73.0,
+        "y": 94.0,
+        "value": 0.988889
+      },
+      {
+        "x": 74.0,
+        "y": 14.0,
+        "value": 0.833333
+      },
+      {
+        "x": 74.0,
+        "y": 43.0,
+        "value": 0.744444
+      },
+      {
+        "x": 74.0,
+        "y": 56.0,
+        "value": 0.611111
+      },
+      {
+        "x": 74.0,
+        "y": 61.0,
+        "value": 0.744444
+      },
+      {
+        "x": 74.0,
+        "y": 65.0,
+        "value": 0.688889
+      },
+      {
+        "x": 74.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 76.0,
+        "value": 0.988889
+      },
+      {
+        "x": 74.0,
+        "y": 80.0,
+        "value": 1.3
+      },
+      {
+        "x": 74.0,
+        "y": 88.0,
+        "value": 0.833333
+      },
+      {
+        "x": 74.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 94.0,
+        "value": 1.744444
+      },
+      {
+        "x": 74.0,
+        "y": 96.0,
+        "value": 0.988889
+      },
+      {
+        "x": 74.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 8.0,
+        "value": 0.133333
+      },
+      {
+        "x": 75.0,
+        "y": 10.0,
+        "value": 0.5
+      },
+      {
+        "x": 75.0,
+        "y": 13.0,
+        "value": 0.744444
+      },
+      {
+        "x": 75.0,
+        "y": 23.0,
+        "value": 0.366667
+      },
+      {
+        "x": 75.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 49.0,
+        "value": 0.611111
+      },
+      {
+        "x": 75.0,
+        "y": 57.0,
+        "value": 0.977778
+      },
+      {
+        "x": 75.0,
+        "y": 61.0,
+        "value": 0.977778
+      },
+      {
+        "x": 75.0,
+        "y": 63.0,
+        "value": 0.944444
+      },
+      {
+        "x": 75.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 81.0,
+        "value": 0.611111
+      },
+      {
+        "x": 75.0,
+        "y": 82.0,
+        "value": 0.988889
+      },
+      {
+        "x": 75.0,
+        "y": 84.0,
+        "value": 0.611111
+      },
+      {
+        "x": 75.0,
+        "y": 90.0,
+        "value": 0.977778
+      },
+      {
+        "x": 75.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 94.0,
+        "value": 0.833333
+      },
+      {
+        "x": 75.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 96.0,
+        "value": 1.733333
+      },
+      {
+        "x": 76.0,
+        "y": 10.0,
+        "value": 0.833333
+      },
+      {
+        "x": 76.0,
+        "y": 31.0,
+        "value": 0.811111
+      },
+      {
+        "x": 76.0,
+        "y": 38.0,
+        "value": 0.5
+      },
+      {
+        "x": 76.0,
+        "y": 55.0,
+        "value": 0.611111
+      },
+      {
+        "x": 76.0,
+        "y": 60.0,
+        "value": 0.611111
+      },
+      {
+        "x": 76.0,
+        "y": 70.0,
+        "value": 0.322222
+      },
+      {
+        "x": 76.0,
+        "y": 78.0,
+        "value": 0.611111
+      },
+      {
+        "x": 76.0,
+        "y": 85.0,
+        "value": 0.355556
+      },
+      {
+        "x": 76.0,
+        "y": 87.0,
+        "value": 0.144444
+      },
+      {
+        "x": 76.0,
+        "y": 89.0,
+        "value": 0.744444
+      },
+      {
+        "x": 76.0,
+        "y": 90.0,
+        "value": 0.833333
+      },
+      {
+        "x": 76.0,
+        "y": 92.0,
+        "value": 0.944444
+      },
+      {
+        "x": 76.0,
+        "y": 95.0,
+        "value": 0.144444
+      },
+      {
+        "x": 77.0,
+        "y": 2.0,
+        "value": 0.5
+      },
+      {
+        "x": 77.0,
+        "y": 7.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 37.0,
+        "value": 0.833333
+      },
+      {
+        "x": 77.0,
+        "y": 69.0,
+        "value": 0.688889
+      },
+      {
+        "x": 77.0,
+        "y": 73.0,
+        "value": 0.322222
+      },
+      {
+        "x": 77.0,
+        "y": 87.0,
+        "value": 0.988889
+      },
+      {
+        "x": 77.0,
+        "y": 89.0,
+        "value": 0.322222
+      },
+      {
+        "x": 77.0,
+        "y": 93.0,
+        "value": 0.744444
+      },
+      {
+        "x": 78.0,
+        "y": 3.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 4.0,
+        "value": 2.0
+      },
+      {
+        "x": 78.0,
+        "y": 8.0,
+        "value": 0.611111
+      },
+      {
+        "x": 78.0,
+        "y": 24.0,
+        "value": 0.155556
+      },
+      {
+        "x": 78.0,
+        "y": 29.0,
+        "value": 0.5
+      },
+      {
+        "x": 78.0,
+        "y": 61.0,
+        "value": 0.811111
+      },
+      {
+        "x": 78.0,
+        "y": 69.0,
+        "value": 0.877778
+      },
+      {
+        "x": 78.0,
+        "y": 77.0,
+        "value": 0.877778
+      },
+      {
+        "x": 78.0,
+        "y": 82.0,
+        "value": 0.111111
+      },
+      {
+        "x": 78.0,
+        "y": 83.0,
+        "value": 0.988889
+      },
+      {
+        "x": 78.0,
+        "y": 88.0,
+        "value": 1.888889
+      },
+      {
+        "x": 78.0,
+        "y": 91.0,
+        "value": 0.855556
+      },
+      {
+        "x": 78.0,
+        "y": 94.0,
+        "value": 0.877778
+      },
+      {
+        "x": 78.0,
+        "y": 95.0,
+        "value": 0.977778
+      },
+      {
+        "x": 78.0,
+        "y": 96.0,
+        "value": 0.977778
+      },
+      {
+        "x": 79.0,
+        "y": 3.0,
+        "value": 1.488889
+      },
+      {
+        "x": 79.0,
+        "y": 12.0,
+        "value": 0.988889
+      },
+      {
+        "x": 79.0,
+        "y": 28.0,
+        "value": 0.5
+      },
+      {
+        "x": 79.0,
+        "y": 73.0,
+        "value": 0.611111
+      },
+      {
+        "x": 79.0,
+        "y": 84.0,
+        "value": 0.944444
+      },
+      {
+        "x": 79.0,
+        "y": 85.0,
+        "value": 0.988889
+      },
+      {
+        "x": 79.0,
+        "y": 90.0,
+        "value": 0.144444
+      },
+      {
+        "x": 79.0,
+        "y": 95.0,
+        "value": 0.744444
+      },
+      {
+        "x": 79.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 12.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 49.0,
+        "value": 0.833333
+      },
+      {
+        "x": 80.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 84.0,
+        "value": 1.077778
+      },
+      {
+        "x": 80.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 88.0,
+        "value": 0.744444
+      },
+      {
+        "x": 80.0,
+        "y": 90.0,
+        "value": 0.944444
+      },
+      {
+        "x": 81.0,
+        "y": 53.0,
+        "value": 0.611111
+      },
+      {
+        "x": 81.0,
+        "y": 63.0,
+        "value": 0.944444
+      },
+      {
+        "x": 81.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 96.0,
+        "value": 0.944444
+      },
+      {
+        "x": 82.0,
+        "y": 3.0,
+        "value": 0.5
+      },
+      {
+        "x": 82.0,
+        "y": 4.0,
+        "value": 0.366667
+      },
+      {
+        "x": 82.0,
+        "y": 20.0,
+        "value": 0.133333
+      },
+      {
+        "x": 82.0,
+        "y": 48.0,
+        "value": 0.155556
+      },
+      {
+        "x": 82.0,
+        "y": 66.0,
+        "value": 0.977778
+      },
+      {
+        "x": 82.0,
+        "y": 67.0,
+        "value": 0.1
+      },
+      {
+        "x": 82.0,
+        "y": 94.0,
+        "value": 1.322222
+      },
+      {
+        "x": 82.0,
+        "y": 95.0,
+        "value": 0.744444
+      },
+      {
+        "x": 82.0,
+        "y": 97.0,
+        "value": 0.833333
+      },
+      {
+        "x": 82.0,
+        "y": 100.0,
+        "value": 0.744444
+      },
+      {
+        "x": 83.0,
+        "y": 71.0,
+        "value": 0.111111
+      },
+      {
+        "x": 83.0,
+        "y": 90.0,
+        "value": 0.111111
+      },
+      {
+        "x": 83.0,
+        "y": 94.0,
+        "value": 0.833333
+      },
+      {
+        "x": 84.0,
+        "y": 10.0,
+        "value": 0.833333
+      },
+      {
+        "x": 84.0,
+        "y": 12.0,
+        "value": 0.833333
+      },
+      {
+        "x": 84.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 61.0,
+        "value": 2.0
+      },
+      {
+        "x": 84.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 74.0,
+        "value": 0.977778
+      },
+      {
+        "x": 84.0,
+        "y": 75.0,
+        "value": 0.977778
+      },
+      {
+        "x": 84.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 92.0,
+        "value": 0.977778
+      },
+      {
+        "x": 84.0,
+        "y": 96.0,
+        "value": 0.111111
+      },
+      {
+        "x": 84.0,
+        "y": 100.0,
+        "value": 0.744444
+      },
+      {
+        "x": 85.0,
+        "y": 41.0,
+        "value": 0.688889
+      },
+      {
+        "x": 85.0,
+        "y": 68.0,
+        "value": 0.666667
+      },
+      {
+        "x": 85.0,
+        "y": 69.0,
+        "value": 0.988889
+      },
+      {
+        "x": 85.0,
+        "y": 71.0,
+        "value": 0.688889
+      },
+      {
+        "x": 85.0,
+        "y": 77.0,
+        "value": 0.688889
+      },
+      {
+        "x": 85.0,
+        "y": 79.0,
+        "value": 0.688889
+      },
+      {
+        "x": 85.0,
+        "y": 83.0,
+        "value": 0.944444
+      },
+      {
+        "x": 85.0,
+        "y": 84.0,
+        "value": 0.1
+      },
+      {
+        "x": 85.0,
+        "y": 85.0,
+        "value": 0.688889
+      },
+      {
+        "x": 85.0,
+        "y": 86.0,
+        "value": 1.433333
+      },
+      {
+        "x": 85.0,
+        "y": 88.0,
+        "value": 0.666667
+      },
+      {
+        "x": 85.0,
+        "y": 92.0,
+        "value": 1.577778
+      },
+      {
+        "x": 85.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 95.0,
+        "value": 1.488889
+      },
+      {
+        "x": 86.0,
+        "y": 8.0,
+        "value": 0.5
+      },
+      {
+        "x": 86.0,
+        "y": 36.0,
+        "value": 0.877778
+      },
+      {
+        "x": 86.0,
+        "y": 49.0,
+        "value": 0.877778
+      },
+      {
+        "x": 86.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 73.0,
+        "value": 1.744444
+      },
+      {
+        "x": 86.0,
+        "y": 74.0,
+        "value": 0.688889
+      },
+      {
+        "x": 86.0,
+        "y": 81.0,
+        "value": 1.9
+      },
+      {
+        "x": 86.0,
+        "y": 83.0,
+        "value": 0.988889
+      },
+      {
+        "x": 86.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 91.0,
+        "value": 0.944444
+      },
+      {
+        "x": 86.0,
+        "y": 92.0,
+        "value": 0.988889
+      },
+      {
+        "x": 86.0,
+        "y": 94.0,
+        "value": 0.1
+      },
+      {
+        "x": 86.0,
+        "y": 95.0,
+        "value": 1.744444
+      },
+      {
+        "x": 86.0,
+        "y": 96.0,
+        "value": 0.688889
+      },
+      {
+        "x": 87.0,
+        "y": 19.0,
+        "value": 0.366667
+      },
+      {
+        "x": 87.0,
+        "y": 30.0,
+        "value": 0.811111
+      },
+      {
+        "x": 87.0,
+        "y": 54.0,
+        "value": 0.122222
+      },
+      {
+        "x": 87.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 76.0,
+        "value": 0.666667
+      },
+      {
+        "x": 87.0,
+        "y": 83.0,
+        "value": 0.688889
+      },
+      {
+        "x": 87.0,
+        "y": 84.0,
+        "value": 0.688889
+      },
+      {
+        "x": 87.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 7.0,
+        "value": 0.833333
+      },
+      {
+        "x": 88.0,
+        "y": 12.0,
+        "value": 0.5
+      },
+      {
+        "x": 88.0,
+        "y": 39.0,
+        "value": 0.611111
+      },
+      {
+        "x": 88.0,
+        "y": 70.0,
+        "value": 0.611111
+      },
+      {
+        "x": 88.0,
+        "y": 75.0,
+        "value": 0.688889
+      },
+      {
+        "x": 88.0,
+        "y": 86.0,
+        "value": 0.322222
+      },
+      {
+        "x": 88.0,
+        "y": 87.0,
+        "value": 0.744444
+      },
+      {
+        "x": 88.0,
+        "y": 89.0,
+        "value": 2.244444
+      },
+      {
+        "x": 88.0,
+        "y": 93.0,
+        "value": 0.744444
+      },
+      {
+        "x": 88.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 1.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 55.0,
+        "value": 0.122222
+      },
+      {
+        "x": 89.0,
+        "y": 61.0,
+        "value": 1.011111
+      },
+      {
+        "x": 89.0,
+        "y": 71.0,
+        "value": 0.944444
+      },
+      {
+        "x": 89.0,
+        "y": 75.0,
+        "value": 1.333333
+      },
+      {
+        "x": 89.0,
+        "y": 77.0,
+        "value": 0.688889
+      },
+      {
+        "x": 89.0,
+        "y": 84.0,
+        "value": 0.677778
+      },
+      {
+        "x": 89.0,
+        "y": 90.0,
+        "value": 0.833333
+      },
+      {
+        "x": 89.0,
+        "y": 92.0,
+        "value": 0.155556
+      },
+      {
+        "x": 89.0,
+        "y": 95.0,
+        "value": 0.988889
+      },
+      {
+        "x": 90.0,
+        "y": 7.0,
+        "value": 0.366667
+      },
+      {
+        "x": 90.0,
+        "y": 24.0,
+        "value": 0.366667
+      },
+      {
+        "x": 90.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 62.0,
+        "value": 0.744444
+      },
+      {
+        "x": 90.0,
+        "y": 65.0,
+        "value": 0.944444
+      },
+      {
+        "x": 90.0,
+        "y": 66.0,
+        "value": 0.988889
+      },
+      {
+        "x": 90.0,
+        "y": 70.0,
+        "value": 0.744444
+      },
+      {
+        "x": 90.0,
+        "y": 71.0,
+        "value": 0.666667
+      },
+      {
+        "x": 90.0,
+        "y": 74.0,
+        "value": 0.744444
+      },
+      {
+        "x": 90.0,
+        "y": 78.0,
+        "value": 0.322222
+      },
+      {
+        "x": 90.0,
+        "y": 81.0,
+        "value": 0.688889
+      },
+      {
+        "x": 90.0,
+        "y": 83.0,
+        "value": 0.744444
+      },
+      {
+        "x": 90.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 88.0,
+        "value": 0.944444
+      },
+      {
+        "x": 90.0,
+        "y": 94.0,
+        "value": 0.744444
+      },
+      {
+        "x": 90.0,
+        "y": 97.0,
+        "value": 2.0
+      },
+      {
+        "x": 91.0,
+        "y": 4.0,
+        "value": 0.5
+      },
+      {
+        "x": 91.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 50.0,
+        "value": 0.611111
+      },
+      {
+        "x": 91.0,
+        "y": 54.0,
+        "value": 0.811111
+      },
+      {
+        "x": 91.0,
+        "y": 57.0,
+        "value": 0.133333
+      },
+      {
+        "x": 91.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 77.0,
+        "value": 0.877778
+      },
+      {
+        "x": 91.0,
+        "y": 84.0,
+        "value": 0.688889
+      },
+      {
+        "x": 91.0,
+        "y": 85.0,
+        "value": 0.977778
+      },
+      {
+        "x": 91.0,
+        "y": 88.0,
+        "value": 1.3
+      },
+      {
+        "x": 91.0,
+        "y": 89.0,
+        "value": 0.944444
+      },
+      {
+        "x": 91.0,
+        "y": 90.0,
+        "value": 0.688889
+      },
+      {
+        "x": 91.0,
+        "y": 91.0,
+        "value": 0.977778
+      },
+      {
+        "x": 91.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 5.0,
+        "value": 0.5
+      },
+      {
+        "x": 92.0,
+        "y": 11.0,
+        "value": 0.366667
+      },
+      {
+        "x": 92.0,
+        "y": 49.0,
+        "value": 1.688889
+      },
+      {
+        "x": 92.0,
+        "y": 52.0,
+        "value": 0.811111
+      },
+      {
+        "x": 92.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 76.0,
+        "value": 0.244444
+      },
+      {
+        "x": 92.0,
+        "y": 79.0,
+        "value": 0.355556
+      },
+      {
+        "x": 92.0,
+        "y": 85.0,
+        "value": 0.744444
+      },
+      {
+        "x": 92.0,
+        "y": 87.0,
+        "value": 0.944444
+      },
+      {
+        "x": 92.0,
+        "y": 91.0,
+        "value": 0.977778
+      },
+      {
+        "x": 92.0,
+        "y": 94.0,
+        "value": 0.744444
+      },
+      {
+        "x": 93.0,
+        "y": 11.0,
+        "value": 0.133333
+      },
+      {
+        "x": 93.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 71.0,
+        "value": 0.744444
+      },
+      {
+        "x": 93.0,
+        "y": 76.0,
+        "value": 0.988889
+      },
+      {
+        "x": 93.0,
+        "y": 84.0,
+        "value": 0.688889
+      },
+      {
+        "x": 93.0,
+        "y": 87.0,
+        "value": 1.988889
+      },
+      {
+        "x": 94.0,
+        "y": 4.0,
+        "value": 1.0
+      },
+      {
+        "x": 94.0,
+        "y": 12.0,
+        "value": 0.833333
+      },
+      {
+        "x": 94.0,
+        "y": 55.0,
+        "value": 2.0
+      },
+      {
+        "x": 94.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 94.0,
+        "y": 85.0,
+        "value": 1.888889
+      },
+      {
+        "x": 94.0,
+        "y": 86.0,
+        "value": 0.988889
+      },
+      {
+        "x": 94.0,
+        "y": 90.0,
+        "value": 0.111111
+      },
+      {
+        "x": 94.0,
+        "y": 93.0,
+        "value": 0.977778
+      },
+      {
+        "x": 94.0,
+        "y": 95.0,
+        "value": 1.888889
+      },
+      {
+        "x": 95.0,
+        "y": 4.0,
+        "value": 0.5
+      },
+      {
+        "x": 95.0,
+        "y": 8.0,
+        "value": 0.5
+      },
+      {
+        "x": 95.0,
+        "y": 15.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 50.0,
+        "value": 0.133333
+      },
+      {
+        "x": 95.0,
+        "y": 56.0,
+        "value": 1.222222
+      },
+      {
+        "x": 95.0,
+        "y": 61.0,
+        "value": 0.666667
+      },
+      {
+        "x": 95.0,
+        "y": 66.0,
+        "value": 0.355556
+      },
+      {
+        "x": 95.0,
+        "y": 80.0,
+        "value": 0.688889
+      },
+      {
+        "x": 95.0,
+        "y": 84.0,
+        "value": 0.977778
+      },
+      {
+        "x": 95.0,
+        "y": 88.0,
+        "value": 2.077778
+      },
+      {
+        "x": 95.0,
+        "y": 90.0,
+        "value": 0.833333
+      },
+      {
+        "x": 96.0,
+        "y": 60.0,
+        "value": 0.666667
+      },
+      {
+        "x": 96.0,
+        "y": 61.0,
+        "value": 0.744444
+      },
+      {
+        "x": 96.0,
+        "y": 66.0,
+        "value": 0.944444
+      },
+      {
+        "x": 96.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 73.0,
+        "value": 0.988889
+      },
+      {
+        "x": 96.0,
+        "y": 75.0,
+        "value": 0.688889
+      },
+      {
+        "x": 96.0,
+        "y": 83.0,
+        "value": 0.155556
+      },
+      {
+        "x": 96.0,
+        "y": 85.0,
+        "value": 0.611111
+      },
+      {
+        "x": 96.0,
+        "y": 89.0,
+        "value": 0.666667
+      },
+      {
+        "x": 96.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 24.0,
+        "value": 0.5
+      },
+      {
+        "x": 97.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 49.0,
+        "value": 0.133333
+      },
+      {
+        "x": 97.0,
+        "y": 67.0,
+        "value": 0.688889
+      },
+      {
+        "x": 97.0,
+        "y": 88.0,
+        "value": 0.144444
+      },
+      {
+        "x": 97.0,
+        "y": 91.0,
+        "value": 0.977778
+      },
+      {
+        "x": 97.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 94.0,
+        "value": 0.111111
+      },
+      {
+        "x": 98.0,
+        "y": 3.0,
+        "value": 2.0
+      },
+      {
+        "x": 98.0,
+        "y": 16.0,
+        "value": 0.5
+      },
+      {
+        "x": 98.0,
+        "y": 31.0,
+        "value": 0.944444
+      },
+      {
+        "x": 98.0,
+        "y": 64.0,
+        "value": 0.688889
+      },
+      {
+        "x": 98.0,
+        "y": 66.0,
+        "value": 1.244444
+      },
+      {
+        "x": 98.0,
+        "y": 75.0,
+        "value": 0.877778
+      },
+      {
+        "x": 98.0,
+        "y": 83.0,
+        "value": 0.944444
+      },
+      {
+        "x": 98.0,
+        "y": 87.0,
+        "value": 0.666667
+      },
+      {
+        "x": 98.0,
+        "y": 89.0,
+        "value": 0.988889
+      },
+      {
+        "x": 98.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 99.0,
+        "y": 0.0,
+        "value": 12.955556
+      },
+      {
+        "x": 99.0,
+        "y": 20.0,
+        "value": 0.744444
+      },
+      {
+        "x": 99.0,
+        "y": 31.0,
+        "value": 0.988889
+      },
+      {
+        "x": 99.0,
+        "y": 58.0,
+        "value": 0.744444
+      },
+      {
+        "x": 99.0,
+        "y": 66.0,
+        "value": 0.744444
+      },
+      {
+        "x": 99.0,
+        "y": 99.0,
+        "value": 23.077778
+      },
+      {
+        "x": 100.0,
+        "y": 42.0,
+        "value": 1.0
+      }
+    ],
+    "note": "Aggregated from /event/{event_id}/player/{player_id}/heatmap, weighted by match minutes when available."
+  }
+}

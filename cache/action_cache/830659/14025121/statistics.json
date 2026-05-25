@@ -1,0 +1,124 @@
+{
+  "player_id": 830659,
+  "event_id": 14025121,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Marcos Senesi",
+      "firstName": "Marcos",
+      "lastName": "Senesi",
+      "slug": "marcos-senesi",
+      "shortName": "M. Senesi",
+      "position": "D",
+      "jerseyNumber": "5",
+      "height": 184,
+      "userCount": 7307,
+      "gender": "M",
+      "id": 830659,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 863222400,
+      "proposedMarketValueRaw": {
+        "value": 20000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماركوس سينيسي",
+          "bn": "মার্কোস সেনেসি",
+          "hi": "मार्कोस सेनेसी"
+        },
+        "shortNameTranslation": {
+          "ar": "م. سينيسي",
+          "bn": "এম. সেনেসি",
+          "hi": "एम. सेनेसी"
+        }
+      }
+    },
+    "team": {
+      "name": "Bournemouth",
+      "slug": "bournemouth",
+      "shortName": "Bournemouth",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 327317,
+      "nameCode": "BOU",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 60,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#cc0000",
+        "text": "#cc0000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بورنموث",
+          "bn": "বোর্নেমাউথ",
+          "hi": "बोर्नमाउथ",
+          "ru": "Борнмут"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 54,
+      "accuratePass": 37,
+      "totalLongBalls": 10,
+      "accurateLongBalls": 4,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 25,
+      "totalOwnHalfPasses": 28,
+      "accurateOppositionHalfPasses": 12,
+      "totalOppositionHalfPasses": 26,
+      "totalCross": 2,
+      "accurateCross": 1,
+      "aerialLost": 1,
+      "aerialWon": 4,
+      "duelLost": 4,
+      "duelWon": 9,
+      "dispossessed": 1,
+      "totalContest": 1,
+      "wonContest": 1,
+      "totalClearance": 7,
+      "outfielderBlock": 2,
+      "ballRecovery": 6,
+      "totalTackle": 3,
+      "wonTackle": 2,
+      "wasFouled": 1,
+      "fouls": 2,
+      "minutesPlayed": 90,
+      "touches": 75,
+      "rating": 7.2,
+      "possessionLostCtrl": 20,
+      "expectedAssists": 0.0314451,
+      "ratingVersions": {
+        "original": 7.2,
+        "alternative": 7.2
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.3,
+      "dribbleValueNormalized": 0.15,
+      "defensiveValueNormalized": 0.23,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025121/player/830659/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-24T19:03:30.363675Z"
+  }
+}

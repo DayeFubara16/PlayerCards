@@ -1,0 +1,118 @@
+{
+  "player_id": 1389846,
+  "event_id": 14064408,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Lamine Camara",
+      "firstName": "Lamine Camara",
+      "lastName": "",
+      "slug": "camara-lamine",
+      "shortName": "L. Camara",
+      "position": "M",
+      "jerseyNumber": "15",
+      "height": 174,
+      "userCount": 21369,
+      "gender": "M",
+      "sofascoreId": "lamine_camara_5",
+      "id": 1389846,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1072915200,
+      "proposedMarketValueRaw": {
+        "value": 36000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كامارا، لامين",
+          "bn": "কামারা, লামিন",
+          "hi": "कैमारा, लैमिन"
+        },
+        "shortNameTranslation": {
+          "ar": "ل. كامارا",
+          "bn": "এল. কামারা",
+          "hi": "एल. कैमारा"
+        }
+      }
+    },
+    "team": {
+      "name": "AS Monaco",
+      "slug": "as-monaco",
+      "shortName": "AS Monaco",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 518617,
+      "nameCode": "ASM",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 1653,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#ff0000",
+        "text": "#ff0000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نادي موناكو",
+          "bn": "এএস মোনাকো",
+          "hi": "एएस मोनाको",
+          "ru": "Монако"
+        },
+        "shortNameTranslation": {
+          "ar": "موناكو"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 18,
+      "accuratePass": 18,
+      "totalLongBalls": 1,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 9,
+      "totalOwnHalfPasses": 9,
+      "accurateOppositionHalfPasses": 9,
+      "totalOppositionHalfPasses": 9,
+      "totalCross": 1,
+      "aerialLost": 1,
+      "duelLost": 2,
+      "totalContest": 1,
+      "interceptionWon": 2,
+      "ballRecovery": 2,
+      "unsuccessfulTouch": 1,
+      "minutesPlayed": 20,
+      "touches": 24,
+      "rating": 6.4,
+      "possessionLostCtrl": 3,
+      "expectedAssists": 0.0103994,
+      "ratingVersions": {
+        "original": 6.4,
+        "alternative": 6.4
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.08,
+      "dribbleValueNormalized": 0.07,
+      "defensiveValueNormalized": -0.11,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14064408/player/1389846/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-23T13:46:32.680893Z"
+  }
+}

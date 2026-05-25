@@ -1,0 +1,127 @@
+{
+  "player_id": 879674,
+  "event_id": 14023991,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Maxence Lacroix",
+      "firstName": "Maxence",
+      "lastName": "Lacroix",
+      "slug": "maxence-lacroix",
+      "shortName": "M. Lacroix",
+      "position": "D",
+      "jerseyNumber": "5",
+      "height": 192,
+      "userCount": 9409,
+      "gender": "M",
+      "id": 879674,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 954979200,
+      "proposedMarketValueRaw": {
+        "value": 43000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماكسنس لاكروآ",
+          "bn": "ম্যাক্সেন্স ল্যাক্রোইক্স",
+          "hi": "मैक्सेंस लैक्रोइक्स"
+        },
+        "shortNameTranslation": {
+          "ar": "م. لاكروآ",
+          "bn": "এম. ল্যাক্রোইক্স",
+          "hi": "एम. लैक्रोइक्स"
+        }
+      }
+    },
+    "team": {
+      "name": "Crystal Palace",
+      "slug": "crystal-palace",
+      "shortName": "Crystal Palace",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 444991,
+      "nameCode": "CRY",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 7,
+      "teamColors": {
+        "primary": "#0033ff",
+        "secondary": "#b90d2b",
+        "text": "#b90d2b"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كريستال بالاس",
+          "bn": "ক্রিস্টাল প্যালেস",
+          "hi": "क्रिस्टल पैलेस",
+          "ru": "Кристал Пэлас"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 69,
+      "accuratePass": 65,
+      "totalLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 36,
+      "totalOwnHalfPasses": 36,
+      "accurateOppositionHalfPasses": 29,
+      "totalOppositionHalfPasses": 33,
+      "aerialLost": 3,
+      "aerialWon": 11,
+      "duelLost": 4,
+      "duelWon": 12,
+      "shotOffTarget": 2,
+      "blockedScoringAttempt": 2,
+      "totalClearance": 15,
+      "ballRecovery": 2,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "wasFouled": 1,
+      "fouls": 1,
+      "minutesPlayed": 90,
+      "touches": 95,
+      "rating": 7.8,
+      "possessionLostCtrl": 5,
+      "expectedGoals": 0.272,
+      "expectedAssists": 0.0148822,
+      "totalBallCarriesDistance": 262.02333850421,
+      "ballCarriesCount": 28,
+      "totalProgression": 207.37046158264,
+      "bestBallCarryProgression": 25.902901935721,
+      "totalProgressiveBallCarriesDistance": 73.053921040286,
+      "progressiveBallCarriesCount": 3,
+      "ratingVersions": {
+        "original": 7.8,
+        "alternative": 8.1
+      },
+      "totalShots": 4,
+      "shotValueNormalized": -0.55,
+      "passValueNormalized": 0.11,
+      "dribbleValueNormalized": 0.15,
+      "defensiveValueNormalized": 0.39,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023991/player/879674/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-24T11:47:03.656186Z"
+  }
+}

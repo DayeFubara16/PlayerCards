@@ -1,0 +1,89 @@
+{
+  "player_id": 1048888,
+  "event_id": 14025242,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Mathys Tel",
+      "slug": "mathys-tel",
+      "shortName": "M. Tel",
+      "position": "F",
+      "jerseyNumber": "11",
+      "height": 183,
+      "userCount": 11802,
+      "gender": "M",
+      "sofascoreId": "m.tel14",
+      "id": 1048888,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1114560000,
+      "proposedMarketValueRaw": {
+        "value": 26000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماتيس تيل",
+          "bn": "ম্যাথিস টেল",
+          "hi": "मैथिस टेल"
+        },
+        "shortNameTranslation": {
+          "ar": "م. تيل",
+          "bn": "এম. টেল",
+          "hi": "एम. टेल"
+        }
+      }
+    },
+    "team": {
+      "name": "Tottenham Hotspur",
+      "slug": "tottenham-hotspur",
+      "shortName": "Tottenham",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1522035,
+      "nameCode": "TOT",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 33,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000066",
+        "text": "#000066"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "توتنهام هوتسبير",
+          "hi": "टोटेनहैम हॉटस्पर ऍफ़सी",
+          "ru": "Тоттенхэм Хотспур"
+        },
+        "shortNameTranslation": {
+          "ar": "توتنهام",
+          "bn": "টটেনহ্যাম",
+          "hi": "टॉटनहैम"
+        }
+      }
+    },
+    "statistics": {
+      "totalShots": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025242/player/1048888/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-24T16:32:21.464886Z"
+  }
+}

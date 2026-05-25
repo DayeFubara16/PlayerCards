@@ -1,0 +1,137 @@
+{
+  "player_id": 1048888,
+  "event_id": 14023981,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Mathys Tel",
+      "slug": "mathys-tel",
+      "shortName": "M. Tel",
+      "position": "F",
+      "jerseyNumber": "11",
+      "height": 183,
+      "userCount": 11802,
+      "gender": "M",
+      "sofascoreId": "m.tel14",
+      "id": 1048888,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1114560000,
+      "proposedMarketValueRaw": {
+        "value": 26000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماتيس تيل",
+          "bn": "ম্যাথিস টেল",
+          "hi": "मैथिस टेल"
+        },
+        "shortNameTranslation": {
+          "ar": "م. تيل",
+          "bn": "এম. টেল",
+          "hi": "एम. टेल"
+        }
+      }
+    },
+    "team": {
+      "name": "Tottenham Hotspur",
+      "slug": "tottenham-hotspur",
+      "shortName": "Tottenham",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1522035,
+      "nameCode": "TOT",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 33,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000066",
+        "text": "#000066"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "توتنهام هوتسبير",
+          "hi": "टोटेनहैम हॉटस्पर ऍफ़सी",
+          "ru": "Тоттенхэм Хотспур"
+        },
+        "shortNameTranslation": {
+          "ar": "توتنهام",
+          "bn": "টটেনহ্যাম",
+          "hi": "टॉटनहैम"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 16,
+      "accuratePass": 12,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 4,
+      "totalOwnHalfPasses": 5,
+      "accurateOppositionHalfPasses": 8,
+      "totalOppositionHalfPasses": 11,
+      "totalCross": 4,
+      "accurateCross": 3,
+      "aerialLost": 2,
+      "aerialWon": 3,
+      "duelLost": 11,
+      "duelWon": 9,
+      "challengeLost": 1,
+      "dispossessed": 3,
+      "totalContest": 8,
+      "wonContest": 4,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 1,
+      "blockedScoringAttempt": 1,
+      "interceptionWon": 1,
+      "ballRecovery": 1,
+      "errorLeadToAGoal": 1,
+      "unsuccessfulTouch": 2,
+      "wasFouled": 2,
+      "fouls": 1,
+      "minutesPlayed": 90,
+      "touches": 46,
+      "rating": 6.4,
+      "possessionLostCtrl": 15,
+      "expectedGoals": 0.2021,
+      "expectedGoalsOnTarget": 0.0227,
+      "expectedAssists": 0.170386,
+      "totalBallCarriesDistance": 114.25405252733,
+      "ballCarriesCount": 11,
+      "totalProgression": 59.931808259971,
+      "bestBallCarryProgression": 21.16894718489,
+      "totalProgressiveBallCarriesDistance": 37.030414496387,
+      "progressiveBallCarriesCount": 2,
+      "keyPass": 4,
+      "ratingVersions": {
+        "original": 6.4,
+        "alternative": 6.6
+      },
+      "totalShots": 3,
+      "shotValueNormalized": -0.46,
+      "passValueNormalized": 0.23,
+      "dribbleValueNormalized": 0.16,
+      "defensiveValueNormalized": -0.39,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023981/player/1048888/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-24T16:32:49.507099Z"
+  }
+}

@@ -931,7 +931,7 @@ def load_action_rows(actions_path: str | Path | None) -> list[dict[str, Any]]:
     return []
 
 
-def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: int = 2000) -> dict[str, Any]:
+def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: int = 5000) -> dict[str, Any]:
     valid = [r for r in rows if r.get("x") is not None and r.get("y") is not None]
     by_category: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for r in valid:
@@ -994,7 +994,7 @@ def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: i
     }
 
 
-def extract_actions(actions_path: str | Path | None, max_points_per_category: int = 2000) -> dict[str, Any]:
+def extract_actions(actions_path: str | Path | None, max_points_per_category: int = 5000) -> dict[str, Any]:
     rows = load_action_rows(actions_path)
     return summarize_action_rows(rows, max_points_per_category=max_points_per_category)
 
@@ -1179,7 +1179,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--search-dir", default=".")
     ap.add_argument("--out", "-o", default=None)
     ap.add_argument("--max-percentiles", type=int, default=18)
-    ap.add_argument("--max-action-points-per-category", type=int, default=2000)
+    ap.add_argument("--max-action-points-per-category", type=int, default=5000)
     ap.add_argument("--min-minutes", type=int, default=900, help="Minimum minutes played threshold")
     return ap.parse_args()
 

@@ -1,391 +1,253 @@
 {
-  "La Liga|MW37": {
+  "La Liga|MW38": {
     "ratings": {
-      "rows_with_value": 945,
+      "rows_with_value": 828,
       "raw_keys_seen": {
-        "rating": 315,
-        "original": 315,
-        "alternative": 315
+        "rating": 276,
+        "original": 276,
+        "alternative": 276
       }
     },
     "value": {
-      "rows_with_value": 1090,
+      "rows_with_value": 961,
       "raw_keys_seen": {
-        "passvaluenormalized": 315,
-        "defensivevaluenormalized": 315,
-        "dribblevaluenormalized": 306,
-        "shotvaluenormalized": 137,
-        "goalkeepervaluenormalized": 17
+        "defensivevaluenormalized": 276,
+        "passvaluenormalized": 274,
+        "dribblevaluenormalized": 270,
+        "shotvaluenormalized": 125,
+        "goalkeepervaluenormalized": 16
       }
     },
     "attacking": {
-      "rows_with_value": 1535,
+      "rows_with_value": 1412,
       "raw_keys_seen": {
-        "totalshots": 454,
-        "goalassist": 317,
-        "expectedassists": 316,
-        "expectedgoals": 137,
-        "shotofftarget": 85,
-        "ontargetscoringattempt": 59,
-        "expectedgoalsontarget": 58,
-        "totaloffside": 34,
-        "bigchancecreated": 29,
-        "goals": 21,
-        "bigchancemissed": 20,
-        "hitwoodwork": 5
+        "totalshots": 407,
+        "goalassist": 282,
+        "expectedassists": 278,
+        "expectedgoals": 125,
+        "ontargetscoringattempt": 73,
+        "expectedgoalsontarget": 73,
+        "shotofftarget": 62,
+        "bigchancecreated": 30,
+        "bigchancemissed": 25,
+        "goals": 25,
+        "totaloffside": 24,
+        "hitwoodwork": 8
       }
     },
     "passing": {
-      "rows_with_value": 2552,
+      "rows_with_value": 2254,
       "raw_keys_seen": {
-        "totalpass": 317,
-        "accuratepass": 316,
-        "totaloppositionhalfpasses": 310,
-        "accurateoppositionhalfpasses": 306,
-        "totalownhalfpasses": 296,
-        "accurateownhalfpasses": 288,
-        "totallongballs": 226,
-        "accuratelongballs": 174,
-        "totalcross": 132,
-        "keypass": 119,
-        "accuratecross": 68
-      }
-    },
-    "ball_contact": {
-      "rows_with_value": 482,
-      "raw_keys_seen": {
-        "touches": 317,
-        "unsuccessfultouch": 165
-      }
-    },
-    "carrying": {
-      "rows_with_value": 1508,
-      "raw_keys_seen": {
-        "ballcarriescount": 306,
-        "totalballcarriesdistance": 306,
-        "progressiveballcarriescount": 306,
-        "totalprogression": 306,
-        "totalprogressiveballcarriesdistance": 142,
-        "bestballcarryprogression": 142
-      }
-    },
-    "ball_security": {
-      "rows_with_value": 400,
-      "raw_keys_seen": {
-        "possessionlostctrl": 301,
-        "dispossessed": 99
-      }
-    },
-    "defending": {
-      "rows_with_value": 2197,
-      "raw_keys_seen": {
-        "ballrecovery": 277,
-        "duelwon": 268,
-        "duellost": 267,
-        "totalcontest": 176,
-        "totaltackle": 172,
-        "totalclearance": 162,
-        "aeriallost": 154,
-        "aerialwon": 143,
-        "wontackle": 131,
-        "woncontest": 116,
-        "interceptionwon": 108,
-        "challengelost": 104,
-        "blockedscoringattempt": 51,
-        "outfielderblock": 48,
-        "errorleadtoashot": 12,
-        "lastmantackle": 5,
-        "errorleadtoagoal": 4,
-        "clearanceoffline": 1
-      }
-    },
-    "goalkeeping": {
-      "rows_with_value": 102,
-      "raw_keys_seen": {
-        "goalsprevented": 18,
-        "saves": 17,
-        "keepersavevalue": 17,
-        "savedshotsfrominsidethebox": 14,
-        "goodhighclaim": 12,
-        "totalkeepersweeper": 9,
-        "accuratekeepersweeper": 9,
-        "punches": 6
-      }
-    },
-    "other": {
-      "rows_with_value": 317,
-      "raw_keys_seen": {
-        "minutesplayed": 317
-      }
-    },
-    "discipline": {
-      "rows_with_value": 306,
-      "raw_keys_seen": {
-        "fouls": 155,
-        "wasfouled": 146,
-        "penaltyfaced": 2,
-        "penaltyconceded": 2,
-        "penaltywon": 1
-      }
-    }
-  },
-  "Premier League|MW37": {
-    "ratings": {
-      "rows_with_value": 909,
-      "raw_keys_seen": {
-        "rating": 303,
-        "original": 303,
-        "alternative": 303
-      }
-    },
-    "value": {
-      "rows_with_value": 1066,
-      "raw_keys_seen": {
-        "defensivevaluenormalized": 303,
-        "passvaluenormalized": 302,
-        "dribblevaluenormalized": 291,
-        "shotvaluenormalized": 151,
-        "goalkeepervaluenormalized": 19
-      }
-    },
-    "attacking": {
-      "rows_with_value": 1499,
-      "raw_keys_seen": {
-        "totalshots": 400,
-        "goalassist": 306,
-        "expectedassists": 301,
-        "expectedgoals": 151,
-        "shotofftarget": 79,
-        "ontargetscoringattempt": 70,
-        "expectedgoalsontarget": 68,
-        "bigchancecreated": 32,
-        "goals": 28,
-        "totaloffside": 25,
-        "bigchancemissed": 24,
-        "hitwoodwork": 15
-      }
-    },
-    "passing": {
-      "rows_with_value": 2443,
-      "raw_keys_seen": {
-        "totalpass": 305,
-        "totaloppositionhalfpasses": 302,
-        "accuratepass": 300,
-        "accurateoppositionhalfpasses": 293,
-        "totalownhalfpasses": 290,
-        "accurateownhalfpasses": 285,
+        "totalpass": 279,
+        "accuratepass": 277,
+        "totaloppositionhalfpasses": 274,
+        "accurateoppositionhalfpasses": 267,
+        "totalownhalfpasses": 266,
+        "accurateownhalfpasses": 260,
         "totallongballs": 203,
-        "accuratelongballs": 159,
-        "totalcross": 128,
-        "keypass": 124,
+        "accuratelongballs": 157,
+        "totalcross": 117,
+        "keypass": 100,
         "accuratecross": 54
       }
     },
     "ball_contact": {
-      "rows_with_value": 471,
+      "rows_with_value": 415,
       "raw_keys_seen": {
-        "touches": 306,
-        "unsuccessfultouch": 165
+        "touches": 281,
+        "unsuccessfultouch": 134
       }
     },
     "carrying": {
-      "rows_with_value": 1440,
+      "rows_with_value": 1316,
       "raw_keys_seen": {
-        "ballcarriescount": 290,
-        "totalballcarriesdistance": 290,
-        "progressiveballcarriescount": 290,
-        "totalprogression": 290,
-        "totalprogressiveballcarriesdistance": 140,
-        "bestballcarryprogression": 140
+        "ballcarriescount": 269,
+        "totalballcarriesdistance": 269,
+        "progressiveballcarriescount": 269,
+        "totalprogression": 269,
+        "totalprogressiveballcarriesdistance": 120,
+        "bestballcarryprogression": 120
       }
     },
     "ball_security": {
-      "rows_with_value": 406,
+      "rows_with_value": 367,
       "raw_keys_seen": {
-        "possessionlostctrl": 297,
-        "dispossessed": 109
+        "possessionlostctrl": 265,
+        "dispossessed": 102
       }
     },
     "defending": {
-      "rows_with_value": 2068,
+      "rows_with_value": 1810,
       "raw_keys_seen": {
-        "duelwon": 254,
-        "ballrecovery": 254,
-        "duellost": 250,
-        "totalclearance": 194,
-        "totaltackle": 156,
-        "aeriallost": 141,
-        "aerialwon": 140,
-        "totalcontest": 136,
-        "wontackle": 122,
-        "challengelost": 103,
-        "interceptionwon": 98,
-        "woncontest": 93,
-        "blockedscoringattempt": 59,
-        "outfielderblock": 54,
-        "errorleadtoashot": 13,
-        "errorleadtoagoal": 9,
+        "duelwon": 234,
+        "ballrecovery": 232,
+        "duellost": 221,
+        "totalclearance": 160,
+        "totaltackle": 144,
+        "aerialwon": 126,
+        "aeriallost": 120,
+        "totalcontest": 120,
+        "wontackle": 111,
+        "interceptionwon": 95,
+        "challengelost": 83,
+        "woncontest": 78,
+        "blockedscoringattempt": 39,
+        "outfielderblock": 36,
+        "errorleadtoagoal": 6,
+        "errorleadtoashot": 5,
         "lastmantackle": 2,
-        "clearanceoffline": 2
-      }
-    },
-    "goalkeeping": {
-      "rows_with_value": 104,
-      "raw_keys_seen": {
-        "goalsprevented": 19,
-        "saves": 18,
-        "keepersavevalue": 18,
-        "savedshotsfrominsidethebox": 16,
-        "goodhighclaim": 10,
-        "totalkeepersweeper": 8,
-        "accuratekeepersweeper": 8,
-        "punches": 7
-      }
-    },
-    "other": {
-      "rows_with_value": 306,
-      "raw_keys_seen": {
-        "minutesplayed": 306
-      }
-    },
-    "discipline": {
-      "rows_with_value": 264,
-      "raw_keys_seen": {
-        "wasfouled": 131,
-        "fouls": 127,
-        "penaltyconceded": 2,
-        "penaltyfaced": 2,
-        "penaltywon": 2
-      }
-    }
-  },
-  "Serie A|MW37": {
-    "ratings": {
-      "rows_with_value": 936,
-      "raw_keys_seen": {
-        "rating": 312,
-        "original": 312,
-        "alternative": 312
-      }
-    },
-    "value": {
-      "rows_with_value": 1080,
-      "raw_keys_seen": {
-        "defensivevaluenormalized": 312,
-        "passvaluenormalized": 311,
-        "dribblevaluenormalized": 302,
-        "shotvaluenormalized": 134,
-        "goalkeepervaluenormalized": 21
-      }
-    },
-    "attacking": {
-      "rows_with_value": 1549,
-      "raw_keys_seen": {
-        "totalshots": 475,
-        "goalassist": 316,
-        "expectedassists": 310,
-        "expectedgoals": 135,
-        "ontargetscoringattempt": 72,
-        "expectedgoalsontarget": 70,
-        "shotofftarget": 65,
-        "totaloffside": 27,
-        "bigchancemissed": 27,
-        "bigchancecreated": 26,
-        "goals": 20,
-        "hitwoodwork": 6
-      }
-    },
-    "passing": {
-      "rows_with_value": 2544,
-      "raw_keys_seen": {
-        "totalpass": 314,
-        "totaloppositionhalfpasses": 311,
-        "accuratepass": 310,
-        "accurateoppositionhalfpasses": 303,
-        "totalownhalfpasses": 298,
-        "accurateownhalfpasses": 295,
-        "totallongballs": 226,
-        "accuratelongballs": 175,
-        "totalcross": 136,
-        "keypass": 113,
-        "accuratecross": 63
-      }
-    },
-    "ball_contact": {
-      "rows_with_value": 484,
-      "raw_keys_seen": {
-        "touches": 316,
-        "unsuccessfultouch": 168
-      }
-    },
-    "carrying": {
-      "rows_with_value": 1468,
-      "raw_keys_seen": {
-        "ballcarriescount": 302,
-        "totalballcarriesdistance": 302,
-        "progressiveballcarriescount": 302,
-        "totalprogression": 302,
-        "totalprogressiveballcarriesdistance": 130,
-        "bestballcarryprogression": 130
-      }
-    },
-    "ball_security": {
-      "rows_with_value": 412,
-      "raw_keys_seen": {
-        "possessionlostctrl": 302,
-        "dispossessed": 110
-      }
-    },
-    "defending": {
-      "rows_with_value": 2033,
-      "raw_keys_seen": {
-        "ballrecovery": 262,
-        "duellost": 261,
-        "duelwon": 256,
-        "totaltackle": 169,
-        "totalclearance": 164,
-        "aeriallost": 153,
-        "aerialwon": 139,
-        "wontackle": 128,
-        "totalcontest": 126,
-        "interceptionwon": 112,
-        "challengelost": 85,
-        "woncontest": 76,
-        "blockedscoringattempt": 46,
-        "outfielderblock": 40,
-        "errorleadtoashot": 11,
-        "lastmantackle": 3,
-        "errorleadtoagoal": 3,
         "clearanceoffline": 1
       }
     },
     "discipline": {
-      "rows_with_value": 302,
+      "rows_with_value": 275,
       "raw_keys_seen": {
-        "fouls": 157,
-        "wasfouled": 142,
-        "penaltyconceded": 1,
-        "penaltyfaced": 1,
-        "penaltywon": 1
+        "fouls": 139,
+        "wasfouled": 136
       }
     },
     "goalkeeping": {
-      "rows_with_value": 106,
+      "rows_with_value": 97,
       "raw_keys_seen": {
-        "saves": 21,
-        "goalsprevented": 21,
-        "keepersavevalue": 21,
-        "savedshotsfrominsidethebox": 18,
-        "goodhighclaim": 11,
-        "totalkeepersweeper": 6,
-        "accuratekeepersweeper": 6,
-        "punches": 2
+        "goalsprevented": 17,
+        "saves": 15,
+        "keepersavevalue": 15,
+        "savedshotsfrominsidethebox": 13,
+        "totalkeepersweeper": 10,
+        "accuratekeepersweeper": 10,
+        "goodhighclaim": 10,
+        "punches": 7
       }
     },
     "other": {
-      "rows_with_value": 316,
+      "rows_with_value": 282,
       "raw_keys_seen": {
-        "minutesplayed": 316
+        "minutesplayed": 282
+      }
+    }
+  },
+  "Serie A|MW38": {
+    "ratings": {
+      "rows_with_value": 282,
+      "raw_keys_seen": {
+        "rating": 94,
+        "original": 94,
+        "alternative": 94
+      }
+    },
+    "value": {
+      "rows_with_value": 329,
+      "raw_keys_seen": {
+        "passvaluenormalized": 94,
+        "defensivevaluenormalized": 94,
+        "dribblevaluenormalized": 92,
+        "shotvaluenormalized": 43,
+        "goalkeepervaluenormalized": 6
+      }
+    },
+    "attacking": {
+      "rows_with_value": 473,
+      "raw_keys_seen": {
+        "totalshots": 138,
+        "goalassist": 96,
+        "expectedassists": 95,
+        "expectedgoals": 43,
+        "ontargetscoringattempt": 24,
+        "expectedgoalsontarget": 24,
+        "shotofftarget": 23,
+        "goals": 9,
+        "bigchancemissed": 8,
+        "bigchancecreated": 8,
+        "totaloffside": 3,
+        "hitwoodwork": 2
+      }
+    },
+    "passing": {
+      "rows_with_value": 775,
+      "raw_keys_seen": {
+        "totalpass": 95,
+        "accuratepass": 95,
+        "totaloppositionhalfpasses": 94,
+        "totalownhalfpasses": 92,
+        "accurateownhalfpasses": 92,
+        "accurateoppositionhalfpasses": 92,
+        "totallongballs": 71,
+        "accuratelongballs": 60,
+        "keypass": 40,
+        "totalcross": 28,
+        "accuratecross": 16
+      }
+    },
+    "ball_contact": {
+      "rows_with_value": 145,
+      "raw_keys_seen": {
+        "touches": 96,
+        "unsuccessfultouch": 49
+      }
+    },
+    "carrying": {
+      "rows_with_value": 458,
+      "raw_keys_seen": {
+        "ballcarriescount": 94,
+        "totalballcarriesdistance": 94,
+        "progressiveballcarriescount": 94,
+        "totalprogression": 94,
+        "totalprogressiveballcarriesdistance": 41,
+        "bestballcarryprogression": 41
+      }
+    },
+    "ball_security": {
+      "rows_with_value": 119,
+      "raw_keys_seen": {
+        "possessionlostctrl": 93,
+        "dispossessed": 26
+      }
+    },
+    "defending": {
+      "rows_with_value": 526,
+      "raw_keys_seen": {
+        "ballrecovery": 79,
+        "duelwon": 72,
+        "duellost": 70,
+        "totalclearance": 43,
+        "totaltackle": 42,
+        "interceptionwon": 34,
+        "aerialwon": 31,
+        "totalcontest": 31,
+        "aeriallost": 29,
+        "wontackle": 29,
+        "challengelost": 23,
+        "woncontest": 20,
+        "blockedscoringattempt": 12,
+        "outfielderblock": 9,
+        "lastmantackle": 1,
+        "errorleadtoashot": 1
+      }
+    },
+    "discipline": {
+      "rows_with_value": 89,
+      "raw_keys_seen": {
+        "fouls": 46,
+        "wasfouled": 43
+      }
+    },
+    "goalkeeping": {
+      "rows_with_value": 28,
+      "raw_keys_seen": {
+        "saves": 6,
+        "goalsprevented": 6,
+        "keepersavevalue": 6,
+        "savedshotsfrominsidethebox": 5,
+        "goodhighclaim": 2,
+        "totalkeepersweeper": 1,
+        "accuratekeepersweeper": 1,
+        "punches": 1
+      }
+    },
+    "other": {
+      "rows_with_value": 96,
+      "raw_keys_seen": {
+        "minutesplayed": 96
       }
     }
   }

@@ -1,0 +1,115 @@
+{
+  "player_id": 1048888,
+  "event_id": 14025057,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 38.1,
+          "y": 19.7
+        },
+        "passEndCoordinates": {
+          "x": 56.1,
+          "y": 27.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 12,
+          "y": 2.9
+        },
+        "passEndCoordinates": {
+          "x": 39.9,
+          "y": 32.2
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false,
+        "isLongBall": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 42.6,
+          "y": 31.3
+        },
+        "passEndCoordinates": {
+          "x": 39,
+          "y": 56
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 70.6,
+          "y": 24.4
+        },
+        "passEndCoordinates": {
+          "x": 59.6,
+          "y": 53.1
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 99.5,
+          "y": 0.5
+        },
+        "passEndCoordinates": {
+          "x": 91.6,
+          "y": 41.3
+        },
+        "eventActionType": "cross",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 30.1,
+          "y": 25
+        },
+        "passEndCoordinates": {
+          "x": 36.3,
+          "y": 17
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 12.5,
+          "y": 3.5
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025057/player/1048888/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-24T16:32:06.923139Z"
+  }
+}
