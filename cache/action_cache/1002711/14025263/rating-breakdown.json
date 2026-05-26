@@ -1,0 +1,97 @@
+{
+  "player_id": 1002711,
+  "event_id": 14025263,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 41,
+          "y": 12.9
+        },
+        "passEndCoordinates": {
+          "x": 53.7,
+          "y": 2.9
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 46,
+          "y": 47.6
+        },
+        "passEndCoordinates": {
+          "x": 56.6,
+          "y": 12.3
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 32.3,
+          "y": 39.1
+        },
+        "passEndCoordinates": {
+          "x": 21.8,
+          "y": 31.3
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 69.6,
+          "y": 40.1
+        },
+        "passEndCoordinates": {
+          "x": 79.1,
+          "y": 23.4
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false
+      }
+    ],
+    "dribbles": [],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 33.3,
+          "y": 52.1
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 28.6,
+          "y": 53.5
+        },
+        "eventActionType": "interception",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025263/player/1002711/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-25T17:17:15.750295Z"
+  }
+}

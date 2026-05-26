@@ -1,0 +1,107 @@
+{
+  "player_id": 1002711,
+  "event_id": 14025249,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Pape Matar Sarr",
+      "firstName": "Pape Matar",
+      "lastName": "Sarr",
+      "slug": "pape-matar-sarr",
+      "shortName": "P. Sarr",
+      "position": "M",
+      "jerseyNumber": "29",
+      "height": 185,
+      "userCount": 33386,
+      "gender": "M",
+      "sofascoreId": "pape",
+      "id": 1002711,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1031961600,
+      "proposedMarketValueRaw": {
+        "value": 30000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باب ماتار سار",
+          "bn": "পোপ মাতার সরর",
+          "hi": "पापे मटर सर्र"
+        },
+        "shortNameTranslation": {
+          "ar": "ب. سار",
+          "bn": "পি. এম. সর",
+          "hi": "पीएम मटर"
+        }
+      }
+    },
+    "team": {
+      "name": "Tottenham Hotspur",
+      "slug": "tottenham-hotspur",
+      "shortName": "Tottenham",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1527421,
+      "nameCode": "TOT",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 33,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000066",
+        "text": "#000066"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "توتنهام هوتسبير",
+          "hi": "टोटेनहैम हॉटस्पर ऍफ़सी",
+          "ru": "Тоттенхэм Хотспур"
+        },
+        "shortNameTranslation": {
+          "ar": "توتنهام",
+          "bn": "টটেনহ্যাম",
+          "hi": "टॉटनहैम"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 1,
+      "goalAssist": 0,
+      "totalOppositionHalfPasses": 1,
+      "ballRecovery": 1,
+      "errorLeadToAShot": 1,
+      "totalOffside": 1,
+      "minutesPlayed": 12,
+      "touches": 1,
+      "rating": 6.4,
+      "possessionLostCtrl": 1,
+      "ratingVersions": {
+        "original": 6.4,
+        "alternative": 6.2
+      },
+      "totalShots": 0,
+      "passValueNormalized": -0.01,
+      "defensiveValueNormalized": -0.11,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025249/player/1002711/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-25T17:17:14.518579Z"
+  }
+}

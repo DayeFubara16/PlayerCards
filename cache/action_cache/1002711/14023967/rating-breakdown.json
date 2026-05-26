@@ -1,0 +1,173 @@
+{
+  "player_id": 1002711,
+  "event_id": 14023967,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 78.2,
+          "y": 88.2
+        },
+        "passEndCoordinates": {
+          "x": 73.8,
+          "y": 74.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 34.1,
+          "y": 89.3
+        },
+        "passEndCoordinates": {
+          "x": 34.4,
+          "y": 67.9
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 70.3,
+          "y": 13.3
+        },
+        "passEndCoordinates": {
+          "x": 76.8,
+          "y": 10.3
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 44,
+          "y": 94
+        },
+        "passEndCoordinates": {
+          "x": 41.7,
+          "y": 90.8
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 38.8,
+          "y": 13.3
+        },
+        "passEndCoordinates": {
+          "x": 82.4,
+          "y": 47.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "keypass": false,
+        "isLongBall": true
+      }
+    ],
+    "dribbles": [
+      {
+        "playerCoordinates": {
+          "x": 90.7,
+          "y": 19
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 33,
+          "y": 9.7
+        },
+        "eventActionType": "dribble",
+        "isHome": true,
+        "keypass": false
+      }
+    ],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 73.8,
+          "y": 70.9
+        },
+        "eventActionType": "interception",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 14.5,
+          "y": 71.1
+        },
+        "passEndCoordinates": {
+          "x": 44.7,
+          "y": 91.4
+        },
+        "eventActionType": "clearance",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": [
+      {
+        "playerCoordinates": {
+          "x": 35.7,
+          "y": 94
+        },
+        "passEndCoordinates": {
+          "x": 34.1,
+          "y": 89.3
+        },
+        "eventActionType": "ball-carry",
+        "isHome": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 68.1,
+          "y": 37.4
+        },
+        "passEndCoordinates": {
+          "x": 70.3,
+          "y": 13.3
+        },
+        "eventActionType": "ball-carry",
+        "isHome": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 78.9,
+          "y": 11.5
+        },
+        "passEndCoordinates": {
+          "x": 90.6,
+          "y": 19.3
+        },
+        "eventActionType": "ball-carry",
+        "isHome": true
+      }
+    ]
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023967/player/1002711/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-25T17:18:03.522739Z"
+  }
+}

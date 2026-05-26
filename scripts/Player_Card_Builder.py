@@ -99,6 +99,9 @@ EXCLUDED_METRIC_TOKENS = {
     "leagues_played", "teams_played", "positions_played", "position_confidence",
     "arbitrated_confidence", "spatial_", "season_avg", "season_median", "season_std",
     "avg_x", "avg_y", "sub_on", "sub_off", "is_substitute", "mw",
+    # Possession-context columns: match denominators, not player outputs.
+    # "poss_avaliable" was the previous misspelling and did not match — corrected below.
+    "oppo_poss_pct", "poss_available",
 }
 
 ROLE_METRIC_WEIGHTS = {
@@ -371,6 +374,9 @@ def prettify_metric(metric: str) -> str:
 
 
 def build_percentiles(df: pd.DataFrame, row: pd.Series, role_col: str | None, role_value: Any, family: str | None, max_items: int) -> list[dict[str, Any]]:
+    # max_items is retained as a parameter for CLI/API compatibility but is no longer
+    # used to truncate the output. All valid percentile metrics are returned so that
+    # the full set is available for radar chart rendering downstream.
     if role_col and role_col in df.columns and family is not None:
         cohort = df.loc[normalized_family_series(df[role_col]) == family].copy()
     elif role_col and role_col in df.columns and role_value is not None:
@@ -404,7 +410,7 @@ def build_percentiles(df: pd.DataFrame, row: pd.Series, role_col: str | None, ro
         })
         seen.add(col)
     out.sort(key=lambda d: (d["weighted_percentile"], d["percentile"]), reverse=True)
-    return out[:max_items]
+    return out  # full set returned; no cap applied (use max_items downstream if display-limiting is needed)
 
 
 def build_stat_block(row: pd.Series, aliases: dict[str, list[str]], per90: bool) -> dict[str, Any]:

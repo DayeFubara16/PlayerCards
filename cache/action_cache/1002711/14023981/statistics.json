@@ -1,0 +1,134 @@
+{
+  "player_id": 1002711,
+  "event_id": 14023981,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Pape Matar Sarr",
+      "firstName": "Pape Matar",
+      "lastName": "Sarr",
+      "slug": "pape-matar-sarr",
+      "shortName": "P. Sarr",
+      "position": "M",
+      "jerseyNumber": "29",
+      "height": 185,
+      "userCount": 33386,
+      "gender": "M",
+      "sofascoreId": "pape",
+      "id": 1002711,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1031961600,
+      "proposedMarketValueRaw": {
+        "value": 30000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باب ماتار سار",
+          "bn": "পোপ মাতার সরর",
+          "hi": "पापे मटर सर्र"
+        },
+        "shortNameTranslation": {
+          "ar": "ب. سار",
+          "bn": "পি. এম. সর",
+          "hi": "पीएम मटर"
+        }
+      }
+    },
+    "team": {
+      "name": "Tottenham Hotspur",
+      "slug": "tottenham-hotspur",
+      "shortName": "Tottenham",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1527421,
+      "nameCode": "TOT",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 33,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000066",
+        "text": "#000066"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "توتنهام هوتسبير",
+          "hi": "टोटेनहैम हॉटस्पर ऍफ़सी",
+          "ru": "Тоттенхэм Хотспур"
+        },
+        "shortNameTranslation": {
+          "ar": "توتنهام",
+          "bn": "টটেনহ্যাম",
+          "hi": "टॉटनहैम"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 37,
+      "accuratePass": 30,
+      "totalLongBalls": 2,
+      "accurateLongBalls": 2,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 17,
+      "totalOwnHalfPasses": 17,
+      "accurateOppositionHalfPasses": 13,
+      "totalOppositionHalfPasses": 20,
+      "aerialLost": 4,
+      "aerialWon": 4,
+      "duelLost": 9,
+      "duelWon": 9,
+      "dispossessed": 5,
+      "shotOffTarget": 1,
+      "blockedScoringAttempt": 1,
+      "totalClearance": 1,
+      "interceptionWon": 3,
+      "ballRecovery": 5,
+      "totalTackle": 2,
+      "wonTackle": 2,
+      "unsuccessfulTouch": 2,
+      "wasFouled": 3,
+      "minutesPlayed": 90,
+      "touches": 63,
+      "rating": 6.4,
+      "possessionLostCtrl": 14,
+      "expectedGoals": 0.1149,
+      "expectedAssists": 0.00878271,
+      "totalBallCarriesDistance": 129.93830765737,
+      "ballCarriesCount": 14,
+      "totalProgression": 22.16597494572,
+      "bestBallCarryProgression": 19.644391305868,
+      "totalProgressiveBallCarriesDistance": 39.213670992607,
+      "progressiveBallCarriesCount": 2,
+      "ratingVersions": {
+        "original": 6.4,
+        "alternative": 6.9
+      },
+      "totalShots": 2,
+      "shotValueNormalized": -0.22,
+      "passValueNormalized": 0.01,
+      "dribbleValueNormalized": 0.09,
+      "defensiveValueNormalized": -0.18,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023981/player/1002711/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-25T17:17:48.294489Z"
+  }
+}

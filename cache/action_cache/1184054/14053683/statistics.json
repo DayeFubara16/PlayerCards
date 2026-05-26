@@ -1,0 +1,121 @@
+{
+  "player_id": 1184054,
+  "event_id": 14053683,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Kodai Sano",
+      "firstName": "Kodai Sano",
+      "lastName": "",
+      "slug": "kodai-sano",
+      "shortName": "K. Sano",
+      "position": "M",
+      "jerseyNumber": "23",
+      "height": 176,
+      "userCount": 1699,
+      "gender": "M",
+      "id": 1184054,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1064448000,
+      "proposedMarketValueRaw": {
+        "value": 12900000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماريا سوليداد موسكا"
+        },
+        "shortNameTranslation": {
+          "ar": "ك. سانو"
+        }
+      }
+    },
+    "team": {
+      "name": "NEC Nijmegen",
+      "slug": "nec-nijmegen",
+      "shortName": "NEC",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 58237,
+      "nameCode": "NIJ",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2962,
+      "teamColors": {
+        "primary": "#ff0000",
+        "secondary": "#008000",
+        "text": "#008000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نيك نيجميجين",
+          "hi": "एनईसी निज्मेगेन",
+          "ru": "ФК Неймеген"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 37,
+      "accuratePass": 34,
+      "totalLongBalls": 4,
+      "accurateLongBalls": 4,
+      "goalAssist": 1,
+      "accurateOwnHalfPasses": 14,
+      "totalOwnHalfPasses": 14,
+      "accurateOppositionHalfPasses": 20,
+      "totalOppositionHalfPasses": 23,
+      "totalCross": 2,
+      "aerialLost": 2,
+      "duelLost": 5,
+      "duelWon": 4,
+      "dispossessed": 1,
+      "totalContest": 3,
+      "wonContest": 2,
+      "bigChanceCreated": 1,
+      "totalClearance": 1,
+      "ballRecovery": 5,
+      "unsuccessfulTouch": 2,
+      "wasFouled": 2,
+      "fouls": 1,
+      "minutesPlayed": 90,
+      "touches": 50,
+      "rating": 7,
+      "possessionLostCtrl": 9,
+      "expectedAssists": 0.0374411,
+      "totalBallCarriesDistance": 135.71765322235,
+      "ballCarriesCount": 15,
+      "totalProgression": -50.085,
+      "bestBallCarryProgression": 8.82,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 7,
+        "alternative": 7.2
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.39,
+      "dribbleValueNormalized": 0.21,
+      "defensiveValueNormalized": -0.06,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14053683/player/1184054/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-25T16:38:45.776661Z"
+  }
+}
