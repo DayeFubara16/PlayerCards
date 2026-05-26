@@ -1,0 +1,119 @@
+{
+  "player_id": 1046795,
+  "event_id": 14023984,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Savinho",
+      "slug": "savio",
+      "shortName": "Savinho",
+      "position": "M",
+      "jerseyNumber": "26",
+      "height": 176,
+      "userCount": 53211,
+      "gender": "M",
+      "sofascoreId": "Savinho",
+      "id": 1046795,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1081555200,
+      "proposedMarketValueRaw": {
+        "value": 42000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سافيو",
+          "bn": "স্যাভিও",
+          "hi": "सैवियो"
+        },
+        "shortNameTranslation": {
+          "ar": "سافيو",
+          "bn": "স্যাভিও",
+          "hi": "सैवियो"
+        }
+      }
+    },
+    "team": {
+      "name": "Manchester City",
+      "slug": "manchester-city",
+      "shortName": "Man City",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 4254492,
+      "nameCode": "MCI",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 17,
+      "teamColors": {
+        "primary": "#66ccff",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مانشستر سيتي",
+          "hi": "मेनचेस्टर सिटी ऍफ़सी",
+          "ru": "Манчестер Сити"
+        },
+        "shortNameTranslation": {
+          "ar": "مان سيتي",
+          "bn": "ম্যান সিটি",
+          "hi": "मैन सिटी"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 4,
+      "accuratePass": 3,
+      "goalAssist": 0,
+      "accurateOppositionHalfPasses": 3,
+      "totalOppositionHalfPasses": 4,
+      "totalCross": 4,
+      "duelLost": 2,
+      "totalContest": 2,
+      "bigChanceMissed": 1,
+      "onTargetScoringAttempt": 2,
+      "minutesPlayed": 8,
+      "touches": 14,
+      "rating": 6.8,
+      "possessionLostCtrl": 7,
+      "expectedGoals": 0.4911,
+      "expectedAssists": 0.0112676,
+      "totalBallCarriesDistance": 106.03193280985,
+      "ballCarriesCount": 8,
+      "totalProgression": 65.498459568753,
+      "bestBallCarryProgression": 16.882466318414,
+      "totalProgressiveBallCarriesDistance": 73.797057234188,
+      "progressiveBallCarriesCount": 4,
+      "ratingVersions": {
+        "original": 6.8,
+        "alternative": 6.3
+      },
+      "totalShots": 2,
+      "shotValueNormalized": 0.02,
+      "passValueNormalized": 0.31,
+      "dribbleValueNormalized": 0.12,
+      "defensiveValueNormalized": 0.13,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023984/player/1046795/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T13:36:35.816891Z"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "player_id": 1218066,
+  "event_id": 14053837,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Anis Hadj Moussa",
+      "firstName": "",
+      "lastName": "",
+      "slug": "anis-hadj-moussa",
+      "shortName": "A. H. Moussa",
+      "position": "M",
+      "jerseyNumber": "23",
+      "height": 176,
+      "userCount": 25570,
+      "gender": "M",
+      "sofascoreId": "hadj.a20",
+      "id": 1218066,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1013385600,
+      "proposedMarketValueRaw": {
+        "value": 21000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أنيس حاج موسى",
+          "bn": "আনিস হাজ মুসা",
+          "hi": "अनीस हज़ मूसा"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. ح. موسى",
+          "bn": "এ.এইচ. মুসা",
+          "hi": "ए. एच. मूसा"
+        }
+      }
+    },
+    "team": {
+      "name": "Feyenoord",
+      "slug": "feyenoord",
+      "shortName": "Feyenoord",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 370521,
+      "nameCode": "FEY",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2959,
+      "teamColors": {
+        "primary": "#ff0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "فينورد",
+          "bn": "ফেইনুর্ড",
+          "hi": "फ़ेनोर्ड",
+          "ru": "Фейеноорд Роттердам"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 34,
+      "accuratePass": 31,
+      "totalLongBalls": 3,
+      "accurateLongBalls": 3,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 7,
+      "totalOwnHalfPasses": 8,
+      "accurateOppositionHalfPasses": 24,
+      "totalOppositionHalfPasses": 26,
+      "totalCross": 4,
+      "accurateCross": 2,
+      "aerialLost": 2,
+      "duelLost": 6,
+      "duelWon": 2,
+      "challengeLost": 1,
+      "dispossessed": 2,
+      "totalContest": 1,
+      "wonContest": 1,
+      "ballRecovery": 2,
+      "unsuccessfulTouch": 7,
+      "wasFouled": 1,
+      "fouls": 1,
+      "minutesPlayed": 90,
+      "touches": 53,
+      "rating": 6.7,
+      "possessionLostCtrl": 14,
+      "expectedAssists": 0.270961,
+      "totalBallCarriesDistance": 108.3224121377,
+      "ballCarriesCount": 15,
+      "totalProgression": 35.865263857197,
+      "bestBallCarryProgression": 7.0701581676051,
+      "totalProgressiveBallCarriesDistance": 12.312070540734,
+      "progressiveBallCarriesCount": 1,
+      "keyPass": 4,
+      "ratingVersions": {
+        "original": 6.7,
+        "alternative": 7.3
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.32,
+      "dribbleValueNormalized": 0.18,
+      "defensiveValueNormalized": -0.04,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14053837/player/1218066/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T14:19:55.197197Z"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "player_id": 962012,
+  "event_id": 14023959,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Jan Paul van Hecke",
+      "slug": "jan-paul-van-hecke",
+      "shortName": "J. P. van Hecke",
+      "position": "D",
+      "jerseyNumber": "6",
+      "height": 189,
+      "userCount": 3894,
+      "gender": "M",
+      "id": 962012,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 960422400,
+      "proposedMarketValueRaw": {
+        "value": 38000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "جان بول فان هيك",
+          "bn": "জান পল ভ্যান হেকে",
+          "hi": "जान पॉल वैन हेक"
+        },
+        "shortNameTranslation": {
+          "ar": "ج. ب. فان هيك",
+          "bn": "জে. পি. ভ্যান হেকে",
+          "hi": "जे.पी. वैन हेक"
+        }
+      }
+    },
+    "team": {
+      "name": "Brighton & Hove Albion",
+      "slug": "brighton-and-hove-albion",
+      "shortName": "Brighton",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 438650,
+      "nameCode": "BHA",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 30,
+      "teamColors": {
+        "primary": "#0054a6",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "برايتون أند هوف ألبيون",
+          "hi": "ब्राइटोन एंड होव एल्बिओन ऍफ़सी",
+          "ru": "Брайтон энд Хоув Альбион"
+        },
+        "shortNameTranslation": {
+          "ar": "برايتون",
+          "bn": "ব্রাইটন",
+          "hi": "ब्राइटन"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 71,
+      "accuratePass": 63,
+      "totalLongBalls": 12,
+      "accurateLongBalls": 5,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 40,
+      "totalOwnHalfPasses": 41,
+      "accurateOppositionHalfPasses": 23,
+      "totalOppositionHalfPasses": 30,
+      "totalCross": 2,
+      "aerialWon": 4,
+      "duelLost": 1,
+      "duelWon": 5,
+      "dispossessed": 1,
+      "totalClearance": 4,
+      "interceptionWon": 2,
+      "ballRecovery": 2,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "minutesPlayed": 90,
+      "touches": 85,
+      "rating": 7,
+      "possessionLostCtrl": 12,
+      "expectedAssists": 0.0444481,
+      "totalBallCarriesDistance": 392.62339727775,
+      "ballCarriesCount": 38,
+      "totalProgression": 262.13560080236,
+      "bestBallCarryProgression": 19.687529510226,
+      "totalProgressiveBallCarriesDistance": 97.99352126007,
+      "progressiveBallCarriesCount": 4,
+      "ratingVersions": {
+        "original": 7,
+        "alternative": 6.7
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.48,
+      "dribbleValueNormalized": 0.26,
+      "defensiveValueNormalized": -0.36,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023959/player/962012/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T17:25:24.686441Z"
+  }
+}

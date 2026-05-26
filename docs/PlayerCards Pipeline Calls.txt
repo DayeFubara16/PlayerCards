@@ -42,20 +42,20 @@ python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv --outpu
 python scripts/Player_Collapse.py --input data/processed/player_match_logs_with_ages.csv --output data/processed/player_season_totals.csv
 
 # 4. Arbitrate positions
-python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 900 --position-context data/context/position_context_by_event.json
+python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 700 --position-context data/context/position_context_by_event.json
 
 # 5. Classify roles
-python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 900
+python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 700
 
 Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=1154605
+$PLAYER_ID=830659
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues
-python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 30 --min-minutes 900 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
+python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 30 --min-minutes 1350 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
 
 # 7. Fetch player event/card data
 # IMPORTANT: output should live in cards/event_data, not project root.
@@ -71,7 +71,7 @@ python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $S
 
 # 9. Build final player card
 # Pass explicit paths so the builder does not accidentally auto-load old root files.
-python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes 900
+python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes 1350
 
 Player Finder
 ---------------------

@@ -1,0 +1,89 @@
+{
+  "player_id": 1046795,
+  "event_id": 14025108,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Savinho",
+      "slug": "savio",
+      "shortName": "Savinho",
+      "position": "M",
+      "jerseyNumber": "26",
+      "height": 176,
+      "userCount": 53211,
+      "gender": "M",
+      "sofascoreId": "Savinho",
+      "id": 1046795,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1081555200,
+      "proposedMarketValueRaw": {
+        "value": 42000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سافيو",
+          "bn": "স্যাভিও",
+          "hi": "सैवियो"
+        },
+        "shortNameTranslation": {
+          "ar": "سافيو",
+          "bn": "স্যাভিও",
+          "hi": "सैवियो"
+        }
+      }
+    },
+    "team": {
+      "name": "Manchester City",
+      "slug": "manchester-city",
+      "shortName": "Man City",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 4254492,
+      "nameCode": "MCI",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 17,
+      "teamColors": {
+        "primary": "#66ccff",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مانشستر سيتي",
+          "hi": "मेनचेस्टर सिटी ऍफ़सी",
+          "ru": "Манчестер Сити"
+        },
+        "shortNameTranslation": {
+          "ar": "مان سيتي",
+          "bn": "ম্যান সিটি",
+          "hi": "मैन सिटी"
+        }
+      }
+    },
+    "statistics": {
+      "totalShots": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025108/player/1046795/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T13:36:13.430120Z"
+  }
+}

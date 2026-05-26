@@ -119,7 +119,7 @@ ROLE_METRIC_WEIGHTS = {
 
 GRADE_CATEGORIES = {
     "progression": ["progressive", "carry", "progression", "passes_opposition_half", "long_balls", "pass_value"],
-    "defense": ["P-Adj_tackle_won", "P-Adj_interception", "blocked_shots", "P-Adj_clearance", "aerial_duels_won"],
+    "action defending": ["P-Adj_tackle_won", "P-Adj_interception", "blocked_shots", "P-Adj_clearance", "aerial_duels_won"],
     "creation": ["key_pass", "xa", "assist", "cross", "big_chances_created"],
     "scoring": ["goal", "xg", "xgot", "shot", "touches_opp_box", "big_chance_missed"],
     "possession": ["passes", "pass_accuracy", "touches", "dribble", "dispossessed", "possession_lost"],

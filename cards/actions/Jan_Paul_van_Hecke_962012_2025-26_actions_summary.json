@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "player_id": 962012,
+    "player_name": "Jan Paul van Hecke",
+    "season": "2025-26",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 36,
+    "endpoints": [
+      "rating-breakdown",
+      "statistics"
+    ],
+    "generated_at_utc": "2026-05-26T17:25:26.467527Z",
+    "cache_dir": "cache/action_cache",
+    "no_fetch": false,
+    "refresh_cache": true
+  },
+  "events": 36,
+  "events_with_any_available_endpoint": 36,
+  "flat_rows": 3373,
+  "endpoint_summary": {
+    "rating-breakdown": {
+      "available_events": 35,
+      "missing_events": 1,
+      "flat_rows": 3373
+    },
+    "statistics": {
+      "available_events": 36,
+      "missing_events": 0,
+      "flat_rows": 0
+    }
+  },
+  "category_counts": {
+    "rating-breakdown:passes": 2473,
+    "rating-breakdown:defensive": 413,
+    "rating-breakdown:dribbles": 5,
+    "rating-breakdown:ball-carries": 482
+  },
+  "endpoint_debug_sample": {
+    "rating-breakdown": [
+      {
+        "event_id": 14025020,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 81,
+            "dribbles": 0,
+            "defensive": 12,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14025077,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 87,
+            "dribbles": 0,
+            "defensive": 9,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14025094,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 40,
+            "dribbles": 0,
+            "defensive": 10,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14025121,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 57,
+            "dribbles": 0,
+            "defensive": 12,
+            "ball-carries": 0
+          }
+        }
+      },
+      {
+        "event_id": 14025157,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 30,
+            "dribbles": 0,
+            "defensive": 13,
+            "ball-carries": 0
+          }
+        }
+      }
+    ],
+    "statistics": [
+      {
+        "event_id": 14025020,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14025077,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14025094,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14025121,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 14025157,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      }
+    ]
+  },
+  "note": "For player action maps, rating-breakdown is the key endpoint. Statistics rows are usually aggregate stats, not raw actions. Raw JSON remains the source of truth because Sofascore schemas can vary."
+}

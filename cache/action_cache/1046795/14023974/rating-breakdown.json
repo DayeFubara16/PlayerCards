@@ -1,0 +1,83 @@
+{
+  "player_id": 1046795,
+  "event_id": 14023974,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 24.2,
+          "y": 11.6
+        },
+        "passEndCoordinates": {
+          "x": 34.2,
+          "y": 20.6
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 41.1,
+          "y": 29.8
+        },
+        "passEndCoordinates": {
+          "x": 62.1,
+          "y": 47.3
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false,
+        "isLongBall": true
+      }
+    ],
+    "dribbles": [],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 16.1,
+          "y": 7.9
+        },
+        "eventActionType": "tackle",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 21,
+          "y": 11
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": [
+      {
+        "playerCoordinates": {
+          "x": 21,
+          "y": 11
+        },
+        "passEndCoordinates": {
+          "x": 24.2,
+          "y": 11.6
+        },
+        "eventActionType": "ball-carry",
+        "isHome": false
+      }
+    ]
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023974/player/1046795/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T13:36:31.921956Z"
+  }
+}
