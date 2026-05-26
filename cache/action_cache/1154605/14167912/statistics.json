@@ -1,0 +1,129 @@
+{
+  "player_id": 1154605,
+  "event_id": 14167912,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Désiré Doué",
+      "firstName": "Désiré Doué",
+      "lastName": "",
+      "slug": "desire-doue",
+      "shortName": "D. Doué",
+      "position": "F",
+      "jerseyNumber": "14",
+      "height": 181,
+      "userCount": 104971,
+      "gender": "M",
+      "sofascoreId": "DD14",
+      "id": 1154605,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1117756800,
+      "proposedMarketValueRaw": {
+        "value": 93000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ديزيري دويه",
+          "bn": "ডিজায়ার ডুয়ে",
+          "hi": "डेसिरे डौए"
+        },
+        "shortNameTranslation": {
+          "ar": "ديزيري دويه",
+          "bn": "ডি. ডুয়ে",
+          "hi": "डी. डौए"
+        }
+      }
+    },
+    "team": {
+      "name": "Paris Saint-Germain",
+      "slug": "paris-saint-germain",
+      "shortName": "PSG",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 3300253,
+      "nameCode": "PSG",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 1644,
+      "teamColors": {
+        "primary": "#000066",
+        "secondary": "#ff1541",
+        "text": "#ff1541"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باريس سان جيرمان",
+          "hi": "पेरिस सेंट-जर्मेन",
+          "ru": "Пари Сен-Жермен"
+        },
+        "shortNameTranslation": {
+          "bn": "পিএসজি",
+          "hi": "पीएसजी"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 47,
+      "accuratePass": 40,
+      "totalLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 7,
+      "totalOwnHalfPasses": 7,
+      "accurateOppositionHalfPasses": 33,
+      "totalOppositionHalfPasses": 40,
+      "totalCross": 3,
+      "accurateCross": 1,
+      "duelLost": 6,
+      "duelWon": 2,
+      "dispossessed": 4,
+      "totalContest": 1,
+      "interceptionWon": 2,
+      "ballRecovery": 5,
+      "totalTackle": 2,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "fouls": 1,
+      "minutesPlayed": 60,
+      "touches": 66,
+      "rating": 6.5,
+      "possessionLostCtrl": 16,
+      "expectedAssists": 0.122343,
+      "totalBallCarriesDistance": 208.83284726446,
+      "ballCarriesCount": 24,
+      "totalProgression": 102.02925010927,
+      "bestBallCarryProgression": 27.50643792911,
+      "totalProgressiveBallCarriesDistance": 64.010397973748,
+      "progressiveBallCarriesCount": 3,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 6.5,
+        "alternative": 6.8
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.11,
+      "dribbleValueNormalized": 0.28,
+      "defensiveValueNormalized": 0.14,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14167912/player/1154605/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T01:48:02.862856Z"
+  }
+}

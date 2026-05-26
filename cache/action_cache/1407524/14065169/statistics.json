@@ -1,0 +1,125 @@
+{
+  "player_id": 1407524,
+  "event_id": 14065169,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Ibrahim Maza",
+      "firstName": "Ibrahim",
+      "lastName": "Maza",
+      "slug": "ibrahim-maza",
+      "shortName": "I. Maza",
+      "position": "F",
+      "jerseyNumber": "30",
+      "height": 181,
+      "userCount": 39823,
+      "gender": "M",
+      "sofascoreId": "ibo_mz10",
+      "id": 1407524,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1132790400,
+      "proposedMarketValueRaw": {
+        "value": 37000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إبراهيم مازة",
+          "bn": "মাজা, ইব্রাহিম",
+          "hi": "माज़ा, इब्राहिम"
+        },
+        "shortNameTranslation": {
+          "ar": "إ. مازة",
+          "bn": "আই. মাজা",
+          "hi": "आई. माज़ा"
+        }
+      }
+    },
+    "team": {
+      "name": "Bayer 04 Leverkusen",
+      "slug": "bayer-04-leverkusen",
+      "shortName": "Leverkusen",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1061953,
+      "nameCode": "B04",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2681,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#ff2222",
+        "text": "#ff2222"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باير 04 ليفركوزن",
+          "ru": "Байер Леверкузен"
+        },
+        "shortNameTranslation": {
+          "ar": "ليفركوزن",
+          "bn": "লেভারকুসেন",
+          "hi": "लेवरकुसेन"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 36,
+      "accuratePass": 34,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 9,
+      "totalOwnHalfPasses": 9,
+      "accurateOppositionHalfPasses": 25,
+      "totalOppositionHalfPasses": 27,
+      "totalCross": 2,
+      "duelLost": 2,
+      "duelWon": 4,
+      "totalContest": 1,
+      "totalClearance": 1,
+      "interceptionWon": 1,
+      "ballRecovery": 4,
+      "totalTackle": 3,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 4,
+      "wasFouled": 1,
+      "fouls": 1,
+      "minutesPlayed": 61,
+      "touches": 53,
+      "rating": 6.8,
+      "possessionLostCtrl": 9,
+      "expectedAssists": 0.189553,
+      "totalBallCarriesDistance": 163.88137898175,
+      "ballCarriesCount": 22,
+      "totalProgression": -85.05,
+      "bestBallCarryProgression": 4.515,
+      "ratingVersions": {
+        "original": 6.8,
+        "alternative": 6.8
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.16,
+      "dribbleValueNormalized": 0.22,
+      "defensiveValueNormalized": 0.14,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14065169/player/1407524/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T01:35:38.314478Z"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "player_id": 941168,
+  "event_id": 14025103,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [],
+    "dribbles": [],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 33.8,
+          "y": 16.7
+        },
+        "eventActionType": "interception",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 54.9,
+          "y": 10.2
+        },
+        "passEndCoordinates": {
+          "x": 59.7,
+          "y": 0
+        },
+        "eventActionType": "clearance",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 31.1,
+          "y": 40.1
+        },
+        "passEndCoordinates": {
+          "x": 42.5,
+          "y": 29.8
+        },
+        "eventActionType": "clearance",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025103/player/941168/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T01:24:00.594319Z"
+  }
+}

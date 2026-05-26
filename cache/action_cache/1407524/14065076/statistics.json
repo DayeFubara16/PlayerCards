@@ -1,0 +1,90 @@
+{
+  "player_id": 1407524,
+  "event_id": 14065076,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Ibrahim Maza",
+      "firstName": "Ibrahim",
+      "lastName": "Maza",
+      "slug": "ibrahim-maza",
+      "shortName": "I. Maza",
+      "position": "F",
+      "jerseyNumber": "30",
+      "height": 181,
+      "userCount": 39823,
+      "gender": "M",
+      "sofascoreId": "ibo_mz10",
+      "id": 1407524,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1132790400,
+      "proposedMarketValueRaw": {
+        "value": 37000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إبراهيم مازة",
+          "bn": "মাজা, ইব্রাহিম",
+          "hi": "माज़ा, इब्राहिम"
+        },
+        "shortNameTranslation": {
+          "ar": "إ. مازة",
+          "bn": "আই. মাজা",
+          "hi": "आई. माज़ा"
+        }
+      }
+    },
+    "team": {
+      "name": "Bayer 04 Leverkusen",
+      "slug": "bayer-04-leverkusen",
+      "shortName": "Leverkusen",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1061953,
+      "nameCode": "B04",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2681,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#ff2222",
+        "text": "#ff2222"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "باير 04 ليفركوزن",
+          "ru": "Байер Леверкузен"
+        },
+        "shortNameTranslation": {
+          "ar": "ليفركوزن",
+          "bn": "লেভারকুসেন",
+          "hi": "लेवरकुसेन"
+        }
+      }
+    },
+    "statistics": {
+      "totalShots": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14065076/player/1407524/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T01:35:14.854917Z"
+  }
+}

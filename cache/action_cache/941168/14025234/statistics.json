@@ -1,0 +1,118 @@
+{
+  "player_id": 941168,
+  "event_id": 14025234,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "William Saliba",
+      "firstName": "William",
+      "lastName": "Saliba",
+      "slug": "william-saliba",
+      "shortName": "W. Saliba",
+      "position": "D",
+      "jerseyNumber": "2",
+      "height": 193,
+      "userCount": 46935,
+      "gender": "M",
+      "sofascoreId": "WSaliba4",
+      "id": 941168,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 985392000,
+      "proposedMarketValueRaw": {
+        "value": 85000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ويليام ساليبا",
+          "bn": "উইলিয়াম সালিবা",
+          "hi": "विलियम सलीबा"
+        },
+        "shortNameTranslation": {
+          "ar": "و. ساليبا",
+          "bn": "ডব্লিউ. সালিবা",
+          "hi": "डब्लू. सलीबा"
+        }
+      }
+    },
+    "team": {
+      "name": "Arsenal",
+      "slug": "arsenal",
+      "shortName": "Arsenal",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 3628705,
+      "nameCode": "ARS",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 42,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ارسنال",
+          "bn": "আর্সেনাল",
+          "hi": "आर्सेनल",
+          "ru": "Арсенал"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 59,
+      "accuratePass": 53,
+      "totalLongBalls": 3,
+      "accurateLongBalls": 1,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 41,
+      "totalOwnHalfPasses": 44,
+      "accurateOppositionHalfPasses": 12,
+      "totalOppositionHalfPasses": 15,
+      "aerialWon": 2,
+      "duelWon": 4,
+      "totalClearance": 3,
+      "ballRecovery": 4,
+      "wasFouled": 2,
+      "minutesPlayed": 90,
+      "touches": 65,
+      "rating": 6.8,
+      "possessionLostCtrl": 6,
+      "expectedAssists": 0.00372622,
+      "totalBallCarriesDistance": 108.66889258998,
+      "ballCarriesCount": 18,
+      "totalProgression": 52.605,
+      "bestBallCarryProgression": 12.39,
+      "ratingVersions": {
+        "original": 6.8,
+        "alternative": 6.7
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.08,
+      "dribbleValueNormalized": 0.09,
+      "defensiveValueNormalized": -0.14,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025234/player/941168/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T01:24:29.185330Z"
+  }
+}

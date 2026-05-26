@@ -1,0 +1,136 @@
+{
+  "player_id": 940871,
+  "event_id": 14065184,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Nico Schlotterbeck",
+      "firstName": "Nico",
+      "lastName": "Schlotterbeck",
+      "slug": "nico-schlotterbeck",
+      "shortName": "N. Schlotterbeck",
+      "position": "D",
+      "jerseyNumber": "4",
+      "height": 191,
+      "userCount": 12218,
+      "gender": "M",
+      "sofascoreId": "nico.schlotterbeck",
+      "id": 940871,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 944006400,
+      "proposedMarketValueRaw": {
+        "value": 57000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نيكو شلوتربيك",
+          "bn": "নিকো শ্লোটারবেক",
+          "hi": "निको श्लोटरबेक"
+        },
+        "shortNameTranslation": {
+          "ar": "ن. شلوتربيك",
+          "bn": "এন. শ্লোটারবেক",
+          "hi": "एन. श्लोटरबेक"
+        }
+      }
+    },
+    "team": {
+      "name": "Borussia Dortmund",
+      "slug": "borussia-dortmund",
+      "shortName": "Dortmund",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1414026,
+      "nameCode": "BVB",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2673,
+      "teamColors": {
+        "primary": "#ffe600",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بوروسيا دورتموند",
+          "hi": "बोरुस्सिया  डॉर्टमुंड",
+          "ru": "Боруссия Дортмунд"
+        },
+        "shortNameTranslation": {
+          "ar": "دورتموند",
+          "bn": "ডর্টমুন্ড",
+          "hi": "डॉर्टमुंड"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 110,
+      "accuratePass": 102,
+      "totalLongBalls": 12,
+      "accurateLongBalls": 6,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 64,
+      "totalOwnHalfPasses": 68,
+      "accurateOppositionHalfPasses": 38,
+      "totalOppositionHalfPasses": 42,
+      "totalCross": 1,
+      "aerialWon": 7,
+      "duelLost": 2,
+      "duelWon": 11,
+      "dispossessed": 2,
+      "totalContest": 1,
+      "wonContest": 1,
+      "shotOffTarget": 1,
+      "blockedScoringAttempt": 1,
+      "totalClearance": 2,
+      "interceptionWon": 1,
+      "ballRecovery": 7,
+      "totalTackle": 3,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "minutesPlayed": 90,
+      "touches": 125,
+      "rating": 8.5,
+      "possessionLostCtrl": 13,
+      "expectedGoals": 0.162,
+      "expectedAssists": 0.195926,
+      "totalBallCarriesDistance": 297.88824875727,
+      "ballCarriesCount": 28,
+      "totalProgression": 210.25000842899,
+      "bestBallCarryProgression": 21.143844970229,
+      "totalProgressiveBallCarriesDistance": 154.85834497875,
+      "progressiveBallCarriesCount": 7,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 8.5,
+        "alternative": 7.8
+      },
+      "totalShots": 2,
+      "shotValueNormalized": -0.4,
+      "passValueNormalized": 0.57,
+      "dribbleValueNormalized": 0.27,
+      "defensiveValueNormalized": 0.22,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14065184/player/940871/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-26T01:13:11.789175Z"
+  }
+}

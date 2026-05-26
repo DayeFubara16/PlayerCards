@@ -32,6 +32,11 @@ python Player_Finder.py --list_columns
 
 Run with --help for the full list of filters.
 
+--export_excel FILENAME allows the use of exporting the file to an excel sheet for later analysis
+# Examples
+1.) Exporting the strikers with 15+ goals
+python Player_Finder.py --position ST --goals_min 15 --export_excel top_strikers
+
 Notes on stat types
 -------------------
 Counting stats (goals, tackles, etc.) represent raw season totals.
@@ -58,6 +63,7 @@ import pandas as pd
 # ── Constants ──────────────────────────────────────────────────────────────────
 
 DEFAULT_CSV = os.path.join(os.path.dirname(__file__), "..", "data", "processed", "player_season_totals_arbitrated.csv")
+EXPORT_DIR = r"C:\Users\DayeF\Documents\PlayerCards\data\queries"
 
 # Columns always shown unless --show overrides
 IDENTITY_COLS = ["player_name", "season", "league", "team", "arbitrated_position", "age", "matches", "minutes_played"]
@@ -272,6 +278,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     # ── Output controls ────────────────────────────────────────────────────────
     out_group = p.add_argument_group("Output / display options")
+    out_group.add_argument("--export_excel", metavar="FILENAME",
+                           help="Export query results to an Excel file in the queries folder")
     out_group.add_argument("--show", metavar="COL1,COL2,...",
                            help="Comma-separated columns to display (overrides defaults). Use 'all' for every column.")
     out_group.add_argument("--sort", metavar="COLUMN",
@@ -412,7 +420,30 @@ def print_results(df: pd.DataFrame, display_cols: list[str], args: argparse.Name
                                "display.float_format", "{:.3f}".format):
             print(subset.to_string(index=False))
 
+    export_to_excel(subset, args)
+
     print()
+
+def export_to_excel(df: pd.DataFrame, args: argparse.Namespace) -> None:
+    """Export results to Excel."""
+    if not args.export_excel:
+        return
+
+    os.makedirs(EXPORT_DIR, exist_ok=True)
+
+    filename = args.export_excel
+
+    # Ensure .xlsx extension
+    if not filename.lower().endswith(".xlsx"):
+        filename += ".xlsx"
+
+    output_path = os.path.join(EXPORT_DIR, filename)
+
+    try:
+        df.to_excel(output_path, index=False)
+        print(f"\n[exported] Results saved to:\n{output_path}\n")
+    except Exception as e:
+        print(f"\n[error] Failed to export Excel file:\n{e}\n")
 
 
 # ── Entry point ────────────────────────────────────────────────────────────────
