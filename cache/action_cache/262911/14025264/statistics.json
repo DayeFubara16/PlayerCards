@@ -1,0 +1,128 @@
+{
+  "player_id": 262911,
+  "event_id": 14025264,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Andy Robertson",
+      "firstName": "Andy",
+      "lastName": "Robertson",
+      "slug": "andy-robertson",
+      "shortName": "A. Robertson",
+      "position": "D",
+      "jerseyNumber": "26",
+      "height": 178,
+      "userCount": 26466,
+      "gender": "M",
+      "sofascoreId": "andyrobertson94",
+      "id": 262911,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 763344000,
+      "proposedMarketValueRaw": {
+        "value": 10700000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أندرو روبرتسون",
+          "bn": "অ্যান্ড্রু রবার্টসন",
+          "hi": "एंड्रयू रॉबर्टसन"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. روبرتسون",
+          "bn": "এ. রবার্টসন",
+          "hi": "ए. रॉबर्टसन"
+        }
+      }
+    },
+    "team": {
+      "name": "Liverpool FC",
+      "slug": "liverpool",
+      "shortName": "Liverpool",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 3826861,
+      "nameCode": "LIV",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 44,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ليفربول",
+          "bn": "লিভারপুল",
+          "hi": "लिवरपूल",
+          "ru": "Ливерпуль"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 53,
+      "accuratePass": 48,
+      "totalLongBalls": 4,
+      "accurateLongBalls": 2,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 13,
+      "totalOwnHalfPasses": 14,
+      "accurateOppositionHalfPasses": 35,
+      "totalOppositionHalfPasses": 39,
+      "totalCross": 4,
+      "accurateCross": 1,
+      "aerialLost": 3,
+      "aerialWon": 1,
+      "duelLost": 4,
+      "duelWon": 2,
+      "ballRecovery": 1,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "fouls": 1,
+      "totalOffside": 2,
+      "minutesPlayed": 66,
+      "touches": 68,
+      "rating": 6.7,
+      "possessionLostCtrl": 10,
+      "expectedAssists": 0.0195538,
+      "totalBallCarriesDistance": 96.753860007826,
+      "ballCarriesCount": 12,
+      "totalProgression": 64.47,
+      "bestBallCarryProgression": 21.63,
+      "totalProgressiveBallCarriesDistance": 24.622115993553,
+      "progressiveBallCarriesCount": 1,
+      "keyPass": 2,
+      "ratingVersions": {
+        "original": 6.7,
+        "alternative": 7
+      },
+      "totalShots": 0,
+      "passValueNormalized": -0.08,
+      "dribbleValueNormalized": 0.09,
+      "defensiveValueNormalized": 0.14,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025264/player/262911/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-27T19:16:50.507813Z"
+  }
+}

@@ -1289,10 +1289,13 @@ def family_hint_from_sources(profile_code: str | None, match_pos: str | None, ma
     groups = [position_group(c) for c in [profile_code, match_pos, match_role] if c]
     if any(g in {"CB", "FB", "WB"} for g in groups):
         return "DEF"
-    if any(g in {"DM", "CM", "AM-C", "AM-W", "WM"} for g in groups):
-        return "MID"
+    # ATT before MID: a player declared as F/ST/FW is an attacker even if they
+    # also show AM in match data. Raphinha-type cases (F + AM) must land in ATT,
+    # not MID, so the attacker splitter — not the midfield splitter — handles them.
     if any(g in {"ST", "ST-SS"} for g in groups):
         return "ATT"
+    if any(g in {"DM", "CM", "AM-C", "AM-W", "WM"} for g in groups):
+        return "MID"
     return None
 
 
@@ -1462,6 +1465,19 @@ def family_first_arbitration_v6(
         # score says the opposite very strongly.
         if source_family == "ATT" and spatial_group in {"AM-W"}:
             spatial_is_coherent = scores.get("W", 0) >= max(scores.get("ST", 0), scores.get("SS", 0)) + 0.05
+
+            # Do not let a dominant winger's wide role score be overridden by a
+            # central spatial centroid that resolves to ST or SS.
+            # Doué-type cases: W=4.3 >> ST=2.5, but avg position is central-high,
+            # so spatial yields ST. The W score evidence is far stronger than position.
+            if source_family == "ATT" and spatial_group in {"ST", "ST-SS"}:
+                winger_dominant = (
+                        scores.get("W", 0) >= scores.get("ST", 0) + 0.55
+                        and scores.get("W", 0) >= scores.get("SS", 0) + 0.55
+                        and scores.get("W", 0) >= 3.2
+                )
+                if winger_dominant:
+                    spatial_is_coherent = False
 
         if spatial_is_coherent:
             conf = confidence_from_evidence(

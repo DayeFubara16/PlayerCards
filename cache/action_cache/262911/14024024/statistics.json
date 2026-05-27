@@ -1,0 +1,88 @@
+{
+  "player_id": 262911,
+  "event_id": 14024024,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Andy Robertson",
+      "firstName": "Andy",
+      "lastName": "Robertson",
+      "slug": "andy-robertson",
+      "shortName": "A. Robertson",
+      "position": "D",
+      "jerseyNumber": "26",
+      "height": 178,
+      "userCount": 26466,
+      "gender": "M",
+      "sofascoreId": "andyrobertson94",
+      "id": 262911,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 763344000,
+      "proposedMarketValueRaw": {
+        "value": 10700000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أندرو روبرتسون",
+          "bn": "অ্যান্ড্রু রবার্টসন",
+          "hi": "एंड्रयू रॉबर्टसन"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. روبرتسون",
+          "bn": "এ. রবার্টসন",
+          "hi": "ए. रॉबर्टसन"
+        }
+      }
+    },
+    "team": {
+      "name": "Liverpool FC",
+      "slug": "liverpool",
+      "shortName": "Liverpool",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 3826861,
+      "nameCode": "LIV",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 44,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ليفربول",
+          "bn": "লিভারপুল",
+          "hi": "लिवरपूल",
+          "ru": "Ливерпуль"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalShots": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14024024/player/262911/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-27T19:17:26.760398Z"
+  }
+}
