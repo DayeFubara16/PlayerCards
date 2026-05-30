@@ -1,0 +1,6495 @@
+{
+  "meta": {
+    "player_id": 914902,
+    "season": "2025-26",
+    "league": null,
+    "source": "player_match_logs.csv + per-event Sofascore endpoints",
+    "match_log": "data\\raw\\player_match_logs.csv",
+    "events_found": 30,
+    "events_with_shots": 21,
+    "events_with_heatmap": 26,
+    "fetched_at_utc": "2026-05-29T19:40:37.288530Z"
+  },
+  "profile": {
+    "player_id": 914902,
+    "name": "Anthony Gordon",
+    "short_name": "A. Gordon",
+    "date_of_birth": "2001-02-24",
+    "nationality": "England",
+    "height_cm": 183,
+    "preferred_foot": "Right",
+    "position": "F",
+    "jersey_number": "10",
+    "team": "Newcastle United",
+    "market_value_eur": 62000000,
+    "contract_until": "2030-07-01",
+    "injury_status": null
+  },
+  "season_stats": {},
+  "shotmap": {
+    "count": 48,
+    "shots": [
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 27.8,
+        "y": 46.4,
+        "xg": 0.019288873299956,
+        "xgot": 0.042859546840191,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 90,
+        "added_time": 1,
+        "period": null,
+        "id": 5428371,
+        "block_x": 2.5,
+        "block_y": 49.5,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 47.3,
+        "goal_mouth_z": 5.7
+      },
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 32.3,
+        "y": 40.7,
+        "xg": 0.013164849020541,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "corner",
+        "minute": 72,
+        "added_time": null,
+        "period": null,
+        "id": 5428223,
+        "block_x": 21.8,
+        "block_y": 44,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.1,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 15.1,
+        "y": 34.9,
+        "xg": 0.078614763915539,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 27,
+        "added_time": null,
+        "period": null,
+        "id": 5427807,
+        "block_x": 11.8,
+        "block_y": 38.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.9,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 21.6,
+        "y": 38.7,
+        "xg": 0.020044842734933,
+        "xgot": 0.21056804060936,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "set-piece",
+        "minute": 16,
+        "added_time": null,
+        "period": null,
+        "id": 5427749,
+        "block_x": 1.6,
+        "block_y": 49.5,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 53.1,
+        "goal_mouth_z": 1.9
+      },
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 7,
+        "y": 53,
+        "xg": 0.35785120725632,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "head",
+        "situation": "assisted",
+        "minute": 11,
+        "added_time": null,
+        "period": null,
+        "id": 5427714,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 45.7,
+        "goal_mouth_z": 72.2
+      },
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 15.2,
+        "y": 38.3,
+        "xg": 0.014796512201428,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "set-piece",
+        "minute": 8,
+        "added_time": null,
+        "period": null,
+        "id": 5427700,
+        "block_x": 13.6,
+        "block_y": 39.7,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 54.3,
+        "goal_mouth_z": 8.3
+      },
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 14.1,
+        "y": 33.3,
+        "xg": 0.044259462505579,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "regular",
+        "minute": 3,
+        "added_time": null,
+        "period": null,
+        "id": 5427662,
+        "block_x": 11.8,
+        "block_y": 36.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 48.8,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14147154,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 8.9,
+        "y": 59.7,
+        "xg": 0.10168120265007,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "head",
+        "situation": "assisted",
+        "minute": 29,
+        "added_time": null,
+        "period": null,
+        "id": 5498934,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 64.2,
+        "goal_mouth_z": 9.7
+      },
+      {
+        "event_id": 14147154,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 4.9,
+        "y": 49.9,
+        "xg": 0.30170133709908,
+        "xgot": 0.31894037127495,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "regular",
+        "minute": 29,
+        "added_time": null,
+        "period": null,
+        "id": 5498948,
+        "block_x": 0.7,
+        "block_y": 51.8,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 48.7,
+        "goal_mouth_z": 2.5
+      },
+      {
+        "event_id": 14147154,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 6.9,
+        "y": 54,
+        "xg": 0.11921792477369,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "head",
+        "situation": "assisted",
+        "minute": 28,
+        "added_time": null,
+        "period": null,
+        "id": 5498928,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 53.1,
+        "goal_mouth_z": 52.8
+      },
+      {
+        "event_id": 14025202,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 18.5,
+        "y": 27.7,
+        "xg": 0.052446816116571,
+        "xgot": 0.046004939824343,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 26,
+        "added_time": null,
+        "period": null,
+        "id": 5790438,
+        "block_x": 2.2,
+        "block_y": 49.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 47.8,
+        "goal_mouth_z": 3.8
+      },
+      {
+        "event_id": 14025229,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 16,
+        "y": 42.4,
+        "xg": 0.13088224828243,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 49,
+        "added_time": null,
+        "period": null,
+        "id": 5851374,
+        "block_x": 10.9,
+        "block_y": 44.9,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.7,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025233,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 18.4,
+        "y": 45.6,
+        "xg": 0.073276177048683,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 53,
+        "added_time": null,
+        "period": null,
+        "id": 5960560,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 59.2,
+        "goal_mouth_z": 2.8
+      },
+      {
+        "event_id": 14025291,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 19.9,
+        "y": 47.8,
+        "xg": 0.059814531356096,
+        "xgot": 0.39527162909508,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 39,
+        "added_time": null,
+        "period": null,
+        "id": 6090278,
+        "block_x": 1.4,
+        "block_y": 49.6,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 53.8,
+        "goal_mouth_z": 3.2
+      },
+      {
+        "event_id": 14025141,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.5,
+        "y": 50,
+        "xg": 0.7884,
+        "xgot": 0.77119243144989,
+        "is_on_target": null,
+        "is_goal": true,
+        "goal_type": "penalty",
+        "shot_type": "goal",
+        "body_part": "right-foot",
+        "situation": "penalty",
+        "minute": 86,
+        "added_time": null,
+        "period": null,
+        "id": 6288171,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 47.3,
+        "goal_mouth_z": 18.4
+      },
+      {
+        "event_id": 14025174,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 23.4,
+        "y": 28.9,
+        "xg": 0.024347463622689,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "post",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 73,
+        "added_time": null,
+        "period": null,
+        "id": 6304819,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 46.1,
+        "goal_mouth_z": 40.5
+      },
+      {
+        "event_id": 14025174,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.5,
+        "y": 50,
+        "xg": 0.7884,
+        "xgot": 0.87474191188812,
+        "is_on_target": null,
+        "is_goal": true,
+        "goal_type": "penalty",
+        "shot_type": "goal",
+        "body_part": "right-foot",
+        "situation": "penalty",
+        "minute": 45,
+        "added_time": 8,
+        "period": null,
+        "id": 6304329,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 53.8,
+        "goal_mouth_z": 3.8
+      },
+      {
+        "event_id": 14025174,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 16.9,
+        "y": 32.5,
+        "xg": 0.038623083382845,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "post",
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 28,
+        "added_time": null,
+        "period": null,
+        "id": 6304107,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 44.5,
+        "goal_mouth_z": 15.2
+      },
+      {
+        "event_id": 14025228,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.8,
+        "y": 46.9,
+        "xg": 0.50944650173187,
+        "xgot": 0.09896145015955,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 7,
+        "added_time": null,
+        "period": null,
+        "id": 6383018,
+        "block_x": 0.7,
+        "block_y": 49.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.2,
+        "goal_mouth_z": 28.5
+      },
+      {
+        "event_id": 14025228,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 3,
+        "y": 45.4,
+        "xg": 0.44276162981987,
+        "xgot": 0.38678741455078,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 4,
+        "added_time": null,
+        "period": null,
+        "id": 6383001,
+        "block_x": 0.5,
+        "block_y": 48.4,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.7,
+        "goal_mouth_z": 12.7
+      },
+      {
+        "event_id": 14025246,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 12.8,
+        "y": 55.2,
+        "xg": 0.12778256833553,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 85,
+        "added_time": null,
+        "period": null,
+        "id": 6415218,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.3,
+        "goal_mouth_z": 81.9
+      },
+      {
+        "event_id": 14025246,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 6.1,
+        "y": 65.4,
+        "xg": 0.07184274494648,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 67,
+        "added_time": null,
+        "period": null,
+        "id": 6415180,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 61.5,
+        "goal_mouth_z": 4.2
+      },
+      {
+        "event_id": 14025258,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.9,
+        "y": 34,
+        "xg": 0.049445763230324,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 56,
+        "added_time": null,
+        "period": null,
+        "id": 6436017,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 47.9,
+        "goal_mouth_z": 73.6
+      },
+      {
+        "event_id": 14025258,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 21.2,
+        "y": 48.1,
+        "xg": 0.045385707169771,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "set-piece",
+        "minute": 33,
+        "added_time": null,
+        "period": null,
+        "id": 6435701,
+        "block_x": 13.3,
+        "block_y": 49.6,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 47.8,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025052,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 1.2,
+        "y": 39.7,
+        "xg": 0.038052167743444,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 81,
+        "added_time": null,
+        "period": null,
+        "id": 6471715,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 56.6,
+        "goal_mouth_z": 26.4
+      },
+      {
+        "event_id": 14025052,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 15.2,
+        "y": 29.1,
+        "xg": 0.03091749548912,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "regular",
+        "minute": 38,
+        "added_time": null,
+        "period": null,
+        "id": 6471233,
+        "block_x": 12.5,
+        "block_y": 32.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 52.6,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025119,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 4.2,
+        "y": 40.7,
+        "xg": 0.52805691957474,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 55,
+        "added_time": null,
+        "period": null,
+        "id": 6589077,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 53.9,
+        "goal_mouth_z": 86.1
+      },
+      {
+        "event_id": 14025137,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 22.9,
+        "y": 50.9,
+        "xg": 0.065638490021229,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 78,
+        "added_time": null,
+        "period": null,
+        "id": 6619162,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 57.5,
+        "goal_mouth_z": 4.2
+      },
+      {
+        "event_id": 14025137,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 6.9,
+        "y": 72.4,
+        "xg": 0.029145197942853,
+        "xgot": 0.034994330257177,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 39,
+        "added_time": null,
+        "period": null,
+        "id": 6618639,
+        "block_x": 1.5,
+        "block_y": 54.9,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 51.2,
+        "goal_mouth_z": 4.4
+      },
+      {
+        "event_id": 14025137,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.9,
+        "y": 63.4,
+        "xg": 0.13463918864727,
+        "xgot": 0.49774134159088,
+        "is_on_target": null,
+        "is_goal": true,
+        "goal_type": "regular",
+        "shot_type": "goal",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 36,
+        "added_time": null,
+        "period": null,
+        "id": 6618627,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 52.9,
+        "goal_mouth_z": 3.2
+      },
+      {
+        "event_id": 14025200,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 21.6,
+        "y": 58,
+        "xg": 0.020457280799747,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "set-piece",
+        "minute": 72,
+        "added_time": null,
+        "period": null,
+        "id": 6688847,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 38.5,
+        "goal_mouth_z": 47.2
+      },
+      {
+        "event_id": 14025200,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.1,
+        "y": 32.6,
+        "xg": 0.033814921975136,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "regular",
+        "minute": 66,
+        "added_time": null,
+        "period": null,
+        "id": 6688796,
+        "block_x": 9.5,
+        "block_y": 35.1,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.5,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025200,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 18.7,
+        "y": 40.1,
+        "xg": 0.056733813136816,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 48,
+        "added_time": null,
+        "period": null,
+        "id": 6688709,
+        "block_x": 17.5,
+        "block_y": 40.6,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 52.1,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14025200,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 2.6,
+        "y": 48.5,
+        "xg": 0.37422195076942,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "head",
+        "situation": "corner",
+        "minute": 30,
+        "added_time": null,
+        "period": null,
+        "id": 6688437,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 62.2,
+        "goal_mouth_z": 25
+      },
+      {
+        "event_id": 14024010,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 13.2,
+        "y": 26.8,
+        "xg": 0.047230806201696,
+        "xgot": 0.023207081481814,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 31,
+        "added_time": null,
+        "period": null,
+        "id": 6754325,
+        "block_x": 0.7,
+        "block_y": 46.7,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.5,
+        "goal_mouth_z": 14.6
+      },
+      {
+        "event_id": 14024010,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 9.3,
+        "y": 36.8,
+        "xg": 0.16035075485706,
+        "xgot": 0.097869358956814,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 17,
+        "added_time": null,
+        "period": null,
+        "id": 6754207,
+        "block_x": 1.1,
+        "block_y": 49.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 48.7,
+        "goal_mouth_z": 7.6
+      },
+      {
+        "event_id": 14023977,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 24.1,
+        "y": 63,
+        "xg": 0.025760482996702,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 78,
+        "added_time": null,
+        "period": null,
+        "id": 6799126,
+        "block_x": 17.7,
+        "block_y": 59.4,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.7,
+        "goal_mouth_z": 19
+      },
+      {
+        "event_id": 14023977,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 10.3,
+        "y": 66.4,
+        "xg": 0.051361341029406,
+        "xgot": 0.048722453415394,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "left-foot",
+        "situation": "corner",
+        "minute": 60,
+        "added_time": null,
+        "period": null,
+        "id": 6798877,
+        "block_x": 0.2,
+        "block_y": 52.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.7,
+        "goal_mouth_z": 7
+      },
+      {
+        "event_id": 14023983,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 3,
+        "y": 55.6,
+        "xg": 0.50996571779251,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "corner",
+        "minute": 66,
+        "added_time": null,
+        "period": null,
+        "id": 6827675,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 40.2,
+        "goal_mouth_z": 6.9
+      },
+      {
+        "event_id": 14023983,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 23.2,
+        "y": 58.3,
+        "xg": 0.023303560912609,
+        "xgot": 0.019885731860995,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 53,
+        "added_time": null,
+        "period": null,
+        "id": 6827621,
+        "block_x": 0.7,
+        "block_y": 52,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 48.3,
+        "goal_mouth_z": 2.5
+      },
+      {
+        "event_id": 14023983,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 11.5,
+        "y": 50,
+        "xg": 0.7884,
+        "xgot": 0.78189474344254,
+        "is_on_target": null,
+        "is_goal": true,
+        "goal_type": "penalty",
+        "shot_type": "goal",
+        "body_part": "right-foot",
+        "situation": "penalty",
+        "minute": 45,
+        "added_time": 6,
+        "period": null,
+        "id": 6827503,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 50.1,
+        "goal_mouth_z": 1.9
+      },
+      {
+        "event_id": 14023990,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 23.5,
+        "y": 51.8,
+        "xg": 0.049607545137405,
+        "xgot": 0.034644242376089,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "left-foot",
+        "situation": "assisted",
+        "minute": 82,
+        "added_time": null,
+        "period": null,
+        "id": 6886772,
+        "block_x": 2,
+        "block_y": 52.3,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 48.8,
+        "goal_mouth_z": 20.9
+      },
+      {
+        "event_id": 14023990,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 20.9,
+        "y": 41.5,
+        "xg": 0.10397319495678,
+        "xgot": 0.14437094330788,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "save",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 69,
+        "added_time": null,
+        "period": null,
+        "id": 6886651,
+        "block_x": 1.5,
+        "block_y": 50,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 47.1,
+        "goal_mouth_z": 16.5
+      },
+      {
+        "event_id": 14023990,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 6.3,
+        "y": 47,
+        "xg": 0.93133115768433,
+        "xgot": 0.99360716342926,
+        "is_on_target": null,
+        "is_goal": true,
+        "goal_type": "regular",
+        "shot_type": "goal",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 18,
+        "added_time": null,
+        "period": null,
+        "id": 6886029,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 54.1,
+        "goal_mouth_z": 1.3
+      },
+      {
+        "event_id": 14024021,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 19.8,
+        "y": 31,
+        "xg": 0.032612919807434,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 85,
+        "added_time": null,
+        "period": null,
+        "id": 6937269,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 49.9,
+        "goal_mouth_z": 66.7
+      },
+      {
+        "event_id": 14024021,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 15.5,
+        "y": 34.2,
+        "xg": 0.0491035990417,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "miss",
+        "body_part": "right-foot",
+        "situation": "fast-break",
+        "minute": 80,
+        "added_time": null,
+        "period": null,
+        "id": 6937221,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 45,
+        "goal_mouth_z": 65.3
+      },
+      {
+        "event_id": 14024021,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 7.9,
+        "y": 60.7,
+        "xg": 0.39546439051628,
+        "xgot": 0.35895416140556,
+        "is_on_target": null,
+        "is_goal": true,
+        "goal_type": "regular",
+        "shot_type": "goal",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 10,
+        "added_time": null,
+        "period": null,
+        "id": 6936236,
+        "block_x": null,
+        "block_y": null,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 54,
+        "goal_mouth_z": 10.8
+      },
+      {
+        "event_id": 14023999,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_id": 914902,
+        "player_name": "Anthony Gordon",
+        "x": 15.1,
+        "y": 40.3,
+        "xg": 0.037543389946222,
+        "xgot": null,
+        "is_on_target": null,
+        "is_goal": false,
+        "goal_type": null,
+        "shot_type": "block",
+        "body_part": "right-foot",
+        "situation": "assisted",
+        "minute": 22,
+        "added_time": null,
+        "period": null,
+        "id": 7056689,
+        "block_x": 13.2,
+        "block_y": 41.7,
+        "goal_mouth_x": 0,
+        "goal_mouth_y": 48.7,
+        "goal_mouth_z": 19
+      }
+    ],
+    "summary": {
+      "total_shots": 48,
+      "goals": 6,
+      "on_target": 0,
+      "total_xg": 8.7912,
+      "total_xgot": 6.1812,
+      "by_body_part": {
+        "right-foot": 37,
+        "head": 4,
+        "left-foot": 7
+      },
+      "by_situation": {
+        "assisted": 25,
+        "corner": 4,
+        "fast-break": 8,
+        "set-piece": 4,
+        "regular": 4,
+        "penalty": 3
+      },
+      "by_shot_type": {
+        "save": 14,
+        "block": 11,
+        "miss": 15,
+        "goal": 6,
+        "post": 2
+      }
+    },
+    "note": "Aggregated by fetching /event/{event_id}/shotmap for each match and filtering shots by player_id."
+  },
+  "heatmap": {
+    "points": [
+      {
+        "x": 0.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 0.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 2.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 2.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 2.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 5.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 6.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 6.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 6.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 6.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 7.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 8.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 8.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 8.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 9.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 9.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 9.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 10.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 10.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 11.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 11.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 11.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 11.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 11.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 12.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 12.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 12.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 12.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 12.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 13.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 14.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 15.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 15.0,
+        "y": 67.0,
+        "value": 2.0
+      },
+      {
+        "x": 15.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 15.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 16.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 16.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 17.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 17.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 17.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 17.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 17.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 18.0,
+        "y": 31.0,
+        "value": 1.0
+      },
+      {
+        "x": 18.0,
+        "y": 39.0,
+        "value": 1.0
+      },
+      {
+        "x": 18.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 19.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 20.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 20.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 20.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 20.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 20.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 20.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 21.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 22.0,
+        "y": 33.0,
+        "value": 1.0
+      },
+      {
+        "x": 22.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 22.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 22.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 23.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 24.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 24.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 24.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 25.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 25.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 25.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 25.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 25.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 40.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 26.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 69.0,
+        "value": 2.0
+      },
+      {
+        "x": 27.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 27.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 14.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 43.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 54.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 28.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 29.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
+        "y": 5.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 30.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 31.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 4.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 32.0,
+        "y": 89.0,
+        "value": 2.0
+      },
+      {
+        "x": 32.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 56.0,
+        "value": 2.0
+      },
+      {
+        "x": 33.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 84.0,
+        "value": 2.0
+      },
+      {
+        "x": 33.0,
+        "y": 91.0,
+        "value": 3.0
+      },
+      {
+        "x": 33.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 33.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 11.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 34.0,
+        "y": 92.0,
+        "value": 2.0
+      },
+      {
+        "x": 34.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 28.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 35.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 15.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 37.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 36.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 36.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 37.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 37.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 37.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 38.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 6.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 43.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 66.0,
+        "value": 2.0
+      },
+      {
+        "x": 39.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 90.0,
+        "value": 2.0
+      },
+      {
+        "x": 39.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 39.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 40.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 74.0,
+        "value": 2.0
+      },
+      {
+        "x": 40.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 40.0,
+        "y": 90.0,
+        "value": 2.0
+      },
+      {
+        "x": 40.0,
+        "y": 91.0,
+        "value": 2.0
+      },
+      {
+        "x": 40.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 92.0,
+        "value": 2.0
+      },
+      {
+        "x": 41.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 41.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 39.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 42.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 43.0,
+        "y": 92.0,
+        "value": 4.0
+      },
+      {
+        "x": 43.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 6.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 24.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 29.0,
+        "value": 2.0
+      },
+      {
+        "x": 44.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 44.0,
+        "y": 95.0,
+        "value": 2.0
+      },
+      {
+        "x": 44.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 45.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 45.0,
+        "y": 97.0,
+        "value": 2.0
+      },
+      {
+        "x": 46.0,
+        "y": 2.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 46.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 47.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 20.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 48.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 49.0,
+        "y": 20.0,
+        "value": 1.0
+      },
+      {
+        "x": 49.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 49.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 49.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 50.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 50.0,
+        "y": 49.0,
+        "value": 5.0
+      },
+      {
+        "x": 50.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 50.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 50.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 50.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 51.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 51.0,
+        "y": 98.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 12.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 17.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 80.0,
+        "value": 2.0
+      },
+      {
+        "x": 52.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 52.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 66.0,
+        "value": 2.0
+      },
+      {
+        "x": 53.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 53.0,
+        "y": 81.0,
+        "value": 2.0
+      },
+      {
+        "x": 53.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 52.0,
+        "value": 2.0
+      },
+      {
+        "x": 54.0,
+        "y": 63.0,
+        "value": 2.0
+      },
+      {
+        "x": 54.0,
+        "y": 77.0,
+        "value": 2.0
+      },
+      {
+        "x": 54.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 54.0,
+        "y": 97.0,
+        "value": 3.0
+      },
+      {
+        "x": 55.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 54.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 84.0,
+        "value": 2.0
+      },
+      {
+        "x": 55.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 55.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 93.0,
+        "value": 3.0
+      },
+      {
+        "x": 55.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 55.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 55.0,
+        "y": 97.0,
+        "value": 2.0
+      },
+      {
+        "x": 56.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 56.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 56.0,
+        "y": 99.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 80.0,
+        "value": 2.0
+      },
+      {
+        "x": 57.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 57.0,
+        "y": 92.0,
+        "value": 3.0
+      },
+      {
+        "x": 57.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 13.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 29.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 32.0,
+        "value": 2.0
+      },
+      {
+        "x": 58.0,
+        "y": 40.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 41.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 65.0,
+        "value": 2.0
+      },
+      {
+        "x": 58.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 82.0,
+        "value": 3.0
+      },
+      {
+        "x": 58.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 88.0,
+        "value": 3.0
+      },
+      {
+        "x": 58.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 94.0,
+        "value": 3.0
+      },
+      {
+        "x": 58.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 58.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 19.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 34.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 63.0,
+        "value": 2.0
+      },
+      {
+        "x": 59.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 59.0,
+        "y": 96.0,
+        "value": 2.0
+      },
+      {
+        "x": 60.0,
+        "y": 10.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 60.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 60.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 13.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 34.0,
+        "value": 2.0
+      },
+      {
+        "x": 61.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 63.0,
+        "value": 2.0
+      },
+      {
+        "x": 61.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 61.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 61.0,
+        "y": 96.0,
+        "value": 2.0
+      },
+      {
+        "x": 62.0,
+        "y": 20.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 34.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 44.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 62.0,
+        "y": 96.0,
+        "value": 2.0
+      },
+      {
+        "x": 62.0,
+        "y": 98.0,
+        "value": 1.0
+      },
+      {
+        "x": 62.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 24.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 75.0,
+        "value": 2.0
+      },
+      {
+        "x": 63.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 91.0,
+        "value": 2.0
+      },
+      {
+        "x": 63.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 63.0,
+        "y": 96.0,
+        "value": 2.0
+      },
+      {
+        "x": 63.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 11.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 64.0,
+        "y": 94.0,
+        "value": 3.0
+      },
+      {
+        "x": 64.0,
+        "y": 96.0,
+        "value": 3.0
+      },
+      {
+        "x": 64.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 37.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 40.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 43.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 65.0,
+        "value": 2.0
+      },
+      {
+        "x": 65.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 65.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 65.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 65.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 64.0,
+        "value": 2.0
+      },
+      {
+        "x": 66.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 81.0,
+        "value": 2.0
+      },
+      {
+        "x": 66.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 66.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 41.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 43.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 45.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 67.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 67.0,
+        "y": 95.0,
+        "value": 3.0
+      },
+      {
+        "x": 67.0,
+        "y": 98.0,
+        "value": 2.0
+      },
+      {
+        "x": 68.0,
+        "y": 7.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 22.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 54.0,
+        "value": 2.0
+      },
+      {
+        "x": 68.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 67.0,
+        "value": 2.0
+      },
+      {
+        "x": 68.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 84.0,
+        "value": 2.0
+      },
+      {
+        "x": 68.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 68.0,
+        "y": 96.0,
+        "value": 3.0
+      },
+      {
+        "x": 69.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 55.0,
+        "value": 2.0
+      },
+      {
+        "x": 69.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 59.0,
+        "value": 2.0
+      },
+      {
+        "x": 69.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 90.0,
+        "value": 3.0
+      },
+      {
+        "x": 69.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 69.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 69.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 24.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 28.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 31.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 40.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 59.0,
+        "value": 2.0
+      },
+      {
+        "x": 70.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 94.0,
+        "value": 3.0
+      },
+      {
+        "x": 70.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 70.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 3.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 6.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 23.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 29.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 62.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 63.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 93.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 96.0,
+        "value": 2.0
+      },
+      {
+        "x": 71.0,
+        "y": 98.0,
+        "value": 1.0
+      },
+      {
+        "x": 71.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 8.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 31.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 34.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 72.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 72.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 10.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 27.0,
+        "value": 2.0
+      },
+      {
+        "x": 73.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 56.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 92.0,
+        "value": 2.0
+      },
+      {
+        "x": 73.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 73.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 5.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 74.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 74.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 74.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 0.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 22.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 37.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 43.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 80.0,
+        "value": 2.0
+      },
+      {
+        "x": 75.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 92.0,
+        "value": 2.0
+      },
+      {
+        "x": 75.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 75.0,
+        "y": 98.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 22.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 23.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 41.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 48.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 75.0,
+        "value": 2.0
+      },
+      {
+        "x": 76.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 86.0,
+        "value": 2.0
+      },
+      {
+        "x": 76.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 76.0,
+        "y": 97.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 8.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 79.0,
+        "value": 2.0
+      },
+      {
+        "x": 77.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 77.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 77.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 19.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 45.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 51.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 54.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 64.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 76.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 82.0,
+        "value": 3.0
+      },
+      {
+        "x": 78.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 78.0,
+        "y": 92.0,
+        "value": 2.0
+      },
+      {
+        "x": 79.0,
+        "y": 0.0,
+        "value": 2.0
+      },
+      {
+        "x": 79.0,
+        "y": 10.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 33.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 79.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 29.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 71.0,
+        "value": 2.0
+      },
+      {
+        "x": 80.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 80.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 26.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 54.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 58.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 65.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 70.0,
+        "value": 2.0
+      },
+      {
+        "x": 81.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 81.0,
+        "y": 90.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 91.0,
+        "value": 2.0
+      },
+      {
+        "x": 81.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 81.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 82.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 83.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 83.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 83.0,
+        "y": 94.0,
+        "value": 2.0
+      },
+      {
+        "x": 84.0,
+        "y": 6.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 61.0,
+        "value": 2.0
+      },
+      {
+        "x": 84.0,
+        "y": 65.0,
+        "value": 2.0
+      },
+      {
+        "x": 84.0,
+        "y": 68.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 84.0,
+        "y": 95.0,
+        "value": 2.0
+      },
+      {
+        "x": 85.0,
+        "y": 17.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 24.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 51.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 52.0,
+        "value": 2.0
+      },
+      {
+        "x": 85.0,
+        "y": 61.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 88.0,
+        "value": 2.0
+      },
+      {
+        "x": 85.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 85.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 42.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 69.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 70.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 73.0,
+        "value": 3.0
+      },
+      {
+        "x": 86.0,
+        "y": 79.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 80.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 86.0,
+        "y": 88.0,
+        "value": 2.0
+      },
+      {
+        "x": 86.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 44.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 75.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 80.0,
+        "value": 2.0
+      },
+      {
+        "x": 87.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 83.0,
+        "value": 2.0
+      },
+      {
+        "x": 87.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 86.0,
+        "value": 2.0
+      },
+      {
+        "x": 87.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 93.0,
+        "value": 1.0
+      },
+      {
+        "x": 87.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 15.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 36.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 38.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 50.0,
+        "value": 3.0
+      },
+      {
+        "x": 88.0,
+        "y": 51.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 61.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 66.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 67.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 76.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 81.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 82.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 92.0,
+        "value": 2.0
+      },
+      {
+        "x": 88.0,
+        "y": 95.0,
+        "value": 1.0
+      },
+      {
+        "x": 88.0,
+        "y": 97.0,
+        "value": 2.0
+      },
+      {
+        "x": 89.0,
+        "y": 24.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 31.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 33.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 39.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 62.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 64.0,
+        "value": 2.0
+      },
+      {
+        "x": 89.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 89.0,
+        "y": 89.0,
+        "value": 2.0
+      },
+      {
+        "x": 89.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 22.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 30.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 63.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 71.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 76.0,
+        "value": 2.0
+      },
+      {
+        "x": 90.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 87.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 88.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 91.0,
+        "value": 3.0
+      },
+      {
+        "x": 90.0,
+        "y": 92.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 90.0,
+        "y": 96.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 1.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 32.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 40.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 51.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 74.0,
+        "value": 2.0
+      },
+      {
+        "x": 91.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 78.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 91.0,
+        "y": 84.0,
+        "value": 2.0
+      },
+      {
+        "x": 91.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 91.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 91.0,
+        "y": 88.0,
+        "value": 2.0
+      },
+      {
+        "x": 92.0,
+        "y": 17.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 39.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 85.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 92.0,
+        "y": 100.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 25.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 27.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 29.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 34.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 46.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 73.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 93.0,
+        "y": 86.0,
+        "value": 2.0
+      },
+      {
+        "x": 93.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 94.0,
+        "y": 9.0,
+        "value": 1.0
+      },
+      {
+        "x": 94.0,
+        "y": 47.0,
+        "value": 1.0
+      },
+      {
+        "x": 94.0,
+        "y": 71.0,
+        "value": 2.0
+      },
+      {
+        "x": 94.0,
+        "y": 82.0,
+        "value": 2.0
+      },
+      {
+        "x": 94.0,
+        "y": 84.0,
+        "value": 2.0
+      },
+      {
+        "x": 94.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 95.0,
+        "y": 50.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 57.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 59.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 83.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 95.0,
+        "y": 89.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 29.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 52.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 72.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 96.0,
+        "y": 85.0,
+        "value": 2.0
+      },
+      {
+        "x": 96.0,
+        "y": 94.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 22.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 35.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 37.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 44.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 51.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 54.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 74.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 77.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 84.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 86.0,
+        "value": 1.0
+      },
+      {
+        "x": 97.0,
+        "y": 87.0,
+        "value": 2.0
+      },
+      {
+        "x": 97.0,
+        "y": 91.0,
+        "value": 1.0
+      },
+      {
+        "x": 98.0,
+        "y": 17.0,
+        "value": 1.0
+      },
+      {
+        "x": 98.0,
+        "y": 49.0,
+        "value": 1.0
+      },
+      {
+        "x": 98.0,
+        "y": 53.0,
+        "value": 1.0
+      },
+      {
+        "x": 98.0,
+        "y": 55.0,
+        "value": 1.0
+      },
+      {
+        "x": 98.0,
+        "y": 60.0,
+        "value": 1.0
+      },
+      {
+        "x": 98.0,
+        "y": 81.0,
+        "value": 2.0
+      },
+      {
+        "x": 98.0,
+        "y": 82.0,
+        "value": 1.0
+      },
+      {
+        "x": 99.0,
+        "y": 81.0,
+        "value": 1.0
+      },
+      {
+        "x": 99.0,
+        "y": 99.0,
+        "value": 4.0
+      },
+      {
+        "x": 100.0,
+        "y": 52.0,
+        "value": 1.0
+      }
+    ],
+    "raw_points_count": 1116,
+    "cell_count": 954,
+    "total_weight": 1116.0,
+    "note": "Aggregated from /event/{event_id}/player/{player_id}/heatmap; x/y on Sofascore 0-100 pitch scale."
+  },
+  "touch_positions": {
+    "count": 0,
+    "points": [],
+    "note": "Sofascore public per-event raw touch positions were not used; heatmap is available per event instead."
+  },
+  "recent_form": {
+    "matches_fetched": 30,
+    "events": [
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 7,
+        "heatmap_points": 53
+      },
+      {
+        "event_id": 14147154,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 3,
+        "heatmap_points": 33
+      },
+      {
+        "event_id": 14025202,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 41
+      },
+      {
+        "event_id": 14025229,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 43
+      },
+      {
+        "event_id": 14025233,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 54
+      },
+      {
+        "event_id": 14025269,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 51
+      },
+      {
+        "event_id": 14025291,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 31
+      },
+      {
+        "event_id": 14025105,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 2
+      },
+      {
+        "event_id": 14025141,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 15
+      },
+      {
+        "event_id": 14025174,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 3,
+        "heatmap_points": 71
+      },
+      {
+        "event_id": 14025207,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 28
+      },
+      {
+        "event_id": 14025228,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 2,
+        "heatmap_points": 45
+      },
+      {
+        "event_id": 14025246,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 2,
+        "heatmap_points": 65
+      },
+      {
+        "event_id": 14025258,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 2,
+        "heatmap_points": 67
+      },
+      {
+        "event_id": 14025288,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 44
+      },
+      {
+        "event_id": 14025052,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 2,
+        "heatmap_points": 49
+      },
+      {
+        "event_id": 14025092,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 61
+      },
+      {
+        "event_id": 14025119,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 27
+      },
+      {
+        "event_id": 14025137,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 3,
+        "heatmap_points": 48
+      },
+      {
+        "event_id": 14025200,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 4,
+        "heatmap_points": 44
+      },
+      {
+        "event_id": 14024010,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 2,
+        "heatmap_points": 22
+      },
+      {
+        "event_id": 14023977,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 2,
+        "heatmap_points": 53
+      },
+      {
+        "event_id": 14023983,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 3,
+        "heatmap_points": 53
+      },
+      {
+        "event_id": 14023990,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 3,
+        "heatmap_points": 38
+      },
+      {
+        "event_id": 14024021,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 3,
+        "heatmap_points": 36
+      },
+      {
+        "event_id": 14023999,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 1,
+        "heatmap_points": 42
+      },
+      {
+        "event_id": 14023949,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023943,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023957,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023965,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Anthony Gordon",
+        "shots": 0,
+        "heatmap_points": 0
+      }
+    ],
+    "note": "Derived from player_match_logs.csv, not /player/{id}/last-matches/{n}."
+  }
+}

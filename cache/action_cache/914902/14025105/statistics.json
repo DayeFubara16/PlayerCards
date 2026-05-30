@@ -1,0 +1,101 @@
+{
+  "player_id": 914902,
+  "event_id": 14025105,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Anthony Gordon",
+      "firstName": "Anthony",
+      "lastName": "Gordon",
+      "slug": "anthony-gordon",
+      "shortName": "A. Gordon",
+      "position": "F",
+      "jerseyNumber": "10",
+      "height": 183,
+      "userCount": 32051,
+      "gender": "M",
+      "sofascoreId": "AGordon",
+      "id": 914902,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 982972800,
+      "proposedMarketValueRaw": {
+        "value": 62000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أنتوني غوردون",
+          "bn": "গর্ডন, অ্যান্টনি",
+          "hi": "गॉर्डन, एंथनी"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. غوردون",
+          "bn": "এ. গর্ডন",
+          "hi": "ए. गॉर्डन"
+        }
+      }
+    },
+    "team": {
+      "name": "Newcastle United",
+      "slug": "newcastle-united",
+      "shortName": "Newcastle",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 931314,
+      "nameCode": "NEW",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 39,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نيوكاسل يونايتد",
+          "hi": "न्यू कास्सेल यूनाइटेड ऍफ़सी",
+          "ru": "Ньюкасл Юнайтед"
+        },
+        "shortNameTranslation": {
+          "ar": "نيوكاسل",
+          "bn": "নিউক্যাসল",
+          "hi": "न्यूकैसल"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 1,
+      "accuratePass": 1,
+      "goalAssist": 0,
+      "accurateOppositionHalfPasses": 1,
+      "totalOppositionHalfPasses": 1,
+      "aerialLost": 1,
+      "duelLost": 1,
+      "minutesPlayed": 1,
+      "touches": 1,
+      "expectedAssists": 0.000408,
+      "totalShots": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025105/player/914902/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-29T19:41:10.780539Z"
+  }
+}

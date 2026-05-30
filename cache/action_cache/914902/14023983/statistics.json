@@ -1,0 +1,139 @@
+{
+  "player_id": 914902,
+  "event_id": 14023983,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Anthony Gordon",
+      "firstName": "Anthony",
+      "lastName": "Gordon",
+      "slug": "anthony-gordon",
+      "shortName": "A. Gordon",
+      "position": "F",
+      "jerseyNumber": "10",
+      "height": 183,
+      "userCount": 32051,
+      "gender": "M",
+      "sofascoreId": "AGordon",
+      "id": 914902,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 982972800,
+      "proposedMarketValueRaw": {
+        "value": 62000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أنتوني غوردون",
+          "bn": "গর্ডন, অ্যান্টনি",
+          "hi": "गॉर्डन, एंथनी"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. غوردون",
+          "bn": "এ. গর্ডন",
+          "hi": "ए. गॉर्डन"
+        }
+      }
+    },
+    "team": {
+      "name": "Newcastle United",
+      "slug": "newcastle-united",
+      "shortName": "Newcastle",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 931314,
+      "nameCode": "NEW",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 39,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نيوكاسل يونايتد",
+          "hi": "न्यू कास्सेल यूनाइटेड ऍफ़सी",
+          "ru": "Ньюкасл Юнайтед"
+        },
+        "shortNameTranslation": {
+          "ar": "نيوكاسل",
+          "bn": "নিউক্যাসল",
+          "hi": "न्यूकैसल"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 20,
+      "accuratePass": 16,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 6,
+      "totalOwnHalfPasses": 7,
+      "accurateOppositionHalfPasses": 10,
+      "totalOppositionHalfPasses": 13,
+      "totalCross": 1,
+      "aerialLost": 3,
+      "aerialWon": 1,
+      "duelLost": 6,
+      "duelWon": 6,
+      "dispossessed": 1,
+      "totalContest": 1,
+      "bigChanceMissed": 1,
+      "shotOffTarget": 1,
+      "onTargetScoringAttempt": 2,
+      "goals": 1,
+      "totalClearance": 1,
+      "ballRecovery": 5,
+      "totalTackle": 1,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 3,
+      "wasFouled": 4,
+      "fouls": 1,
+      "penaltyWon": 1,
+      "minutesPlayed": 85,
+      "touches": 42,
+      "rating": 7.9,
+      "possessionLostCtrl": 10,
+      "expectedGoals": 1.3217,
+      "expectedGoalsOnTarget": 0.8018,
+      "expectedAssists": 0.131521,
+      "totalBallCarriesDistance": 138.67415816497,
+      "ballCarriesCount": 10,
+      "totalProgression": 63.666239274737,
+      "bestBallCarryProgression": 34.51211686,
+      "totalProgressiveBallCarriesDistance": 84.472870833104,
+      "progressiveBallCarriesCount": 3,
+      "keyPass": 2,
+      "ratingVersions": {
+        "original": 7.9,
+        "alternative": 7.6
+      },
+      "totalShots": 3,
+      "shotValueNormalized": 0.21,
+      "passValueNormalized": 0.35,
+      "dribbleValueNormalized": 0.29,
+      "defensiveValueNormalized": 0.21,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14023983/player/914902/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-05-29T19:41:46.839716Z"
+  }
+}

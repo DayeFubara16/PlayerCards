@@ -103,20 +103,67 @@ VALUE_COLUMNS = {
 }
 
 SPATIAL_COLUMNS = {
-    "season_avg_x",
-    "season_avg_y",
+    # ===== PRIMARY ROLE LOCATION =====
+    "adj_avg_x",
+    "avg_y",
+
+    # ===== ROLE SHAPE / FREEDOM =====
     "season_std_x",
     "season_std_y",
+
+    # ===== HORIZONTAL OCCUPATION =====
     "spatial_wide_pct",
     "spatial_right_pct",
     "spatial_left_pct",
     "spatial_central_pct",
+
+    # ===== VERTICAL OCCUPATION =====
     "spatial_high_pct",
     "spatial_mid_pct",
     "spatial_deep_pct",
+
+    # ===== HYBRID SIGNATURES =====
     "spatial_high_wide_pct",
     "spatial_mid_wide_pct",
     "spatial_deep_central_pct",
+
+    # ===== NEW IMPORTANT CONTEXT =====
+    "spatial_inverted_pct",
+    "spatial_touchline_pct",
+    "spatial_halfspace_pct",
+
+    "spatial_box_arrival_pct",
+    "spatial_buildout_pct",
+
+    "spatial_roaming_index",
+    "spatial_vertical_volatility",
+}
+
+SPATIAL_WEIGHTS = {
+    # Most important tactical descriptors
+    "adj_avg_x": 2.25,
+
+    "spatial_high_pct": 1.90,
+    "spatial_mid_pct": 1.50,
+    "spatial_deep_pct": 1.90,
+
+    "spatial_wide_pct": 1.70,
+    "spatial_central_pct": 1.40,
+
+    "spatial_right_pct": 1.20,
+    "spatial_left_pct": 1.20,
+
+    # Hybrid-role descriptors
+    "spatial_high_wide_pct": 1.60,
+    "spatial_mid_wide_pct": 1.25,
+    "spatial_deep_central_pct": 1.60,
+
+    # Secondary descriptors
+    "adj_avg_x": 0.75,
+    "avg_y": 0.75,
+
+    "season_std_x": 0.60,
+    "season_std_y": 0.60,
 }
 
 BIO_COLUMNS = {
@@ -129,11 +176,12 @@ ADJACENT_FAMILIES = {
     "CB": ["CB", "CB-FB", "DM"],
     "CB-FB": ["CB-FB", "CB", "FB"],
     "FB": ["FB", "WB", "CB-FB"],
-    "WB": ["WB", "FB", "W"],
+    "WB": ["WB", "FB", "WM", "W"],
     "DM": ["DM", "CM", "CB"],
-    "CM": ["CM", "DM", "AM"],
+    "CM": ["CM", "DM", "AM", "WM"],
+    "WM": ["WM", "W", "WB", "CM"],
     "AM": ["AM", "CM", "W", "ST"],
-    "W": ["W", "WB", "AM", "ST"],
+    "W": ["W", "WM", "WB", "AM", "ST"],
     "ST": ["ST", "W", "AM"],
 }
 
@@ -187,6 +235,14 @@ ROLE_WEIGHTS: dict[str, dict[str, float]] = {
         "gk": 1.80, "pass": 0.70, "long": 0.80, "spatial": 0.20,
         "shot": 0.0, "xg": 0.0, "dribble": 0.0,
     },
+    "WM": {
+        "carry": 1.10, "progressive": 1.05, "cross": 1.10,
+        "recovery": 1.20, "tackle": 1.10, "interception": 1.00, "duel": 0.95,
+        "pass": 0.95, "key": 0.90, "xa": 0.85,
+        "dribble": 0.85, "contest": 0.80,
+        "shot": 0.60, "xg": 0.50, "touches_opp_box": 0.70,
+        "spatial": 1.35, "gk": 0.0,
+    },
 }
 
 
@@ -200,6 +256,7 @@ CORE_BUCKETS: dict[str, set[str]] = {
     "CM": {"pass", "long", "key", "xa", "tackle", "interception", "recovery", "carry", "progressive", "spatial"},
     "DM": {"tackle", "interception", "recovery", "duel", "pass", "long", "clearance", "spatial"},
     "AM": {"key", "xa", "pass_value", "pass", "shot", "xg", "dribble", "carry", "touches_opp_box", "spatial"},
+    "WM": {"carry", "progressive", "cross", "recovery", "tackle", "interception", "pass", "key", "spatial"},
     "GK": {"gk", "pass", "long"},
 }
 
@@ -228,7 +285,7 @@ ROLE_RESULTS_COLUMNS = [
     "role_source_column", "role_source_value", "role_model_family",
     "arbitrated_position", "arbitrated_role_group", "arbitrated_lane",
     "arbitrated_confidence", "position_conflict_flag",
-    "season_avg_x", "season_avg_y", "season_position_zone",
+    "season_avg_x", "season_avg_y", "adj_avg_x", "season_position_zone",
     "spatial_matches_used", "spatial_wide_pct", "spatial_right_pct",
     "spatial_left_pct", "spatial_high_wide_pct",
     "primary_role", "secondary_role", "role_score", "role_bvalue",
@@ -318,7 +375,9 @@ def normalize_family(value: Any) -> str | None:
         return "WB"
     if text.startswith("WB"):
         return "WB"
-    if text in {"RW", "LW", "W", "AM-W", "AMR", "AML", "WM", "RM", "LM"}:
+    if text in {"WM", "RM", "LM"}:
+        return "WM"
+    if text in {"RW", "LW", "W", "AM-W", "AMR", "AML"}:
         return "W"
     if text in {"AM-C", "AM", "AMC", "AM-HYB", "AM-W-C", "AM-C-W"}:
         return "AM"
@@ -484,6 +543,14 @@ def feature_weight(col: str, family: str | None, age_weight: float) -> float:
 
 
 def is_candidate_feature(df: pd.DataFrame, col: str) -> bool:
+    if (
+        "_x_per90" in col
+        or "_y_per90" in col
+        or "std_x_per90" in col
+        or "std_y_per90" in col
+    ):
+        return False
+
     if col in IDENTITY_COLUMNS or col in JUNK_NUMERIC_COLUMNS:
         return False
     if col.endswith("_id") or col.endswith("_count") or col.endswith("_matches"):
@@ -560,24 +627,41 @@ def spatial_similarity(target: pd.Series, comp: pd.Series) -> float:
     if not cols:
         return 0.0
 
-    t = pd.to_numeric(pd.Series([target.get(c) for c in cols]), errors="coerce")
-    c = pd.to_numeric(pd.Series([comp.get(c) for c in cols]), errors="coerce")
-    valid = t.notna() & c.notna()
-    if not valid.any():
-        return 0.0
+    weighted_diff_sum = 0.0
+    weight_total = 0.0
 
-    # Normalize approximate spatial columns to 0..1.
-    diffs = []
-    for col, tv, cv in zip(cols, t, c):
+    for col in cols:
+        tv = pd.to_numeric(pd.Series([target.get(col)]), errors="coerce").iloc[0]
+        cv = pd.to_numeric(pd.Series([comp.get(col)]), errors="coerce").iloc[0]
+
         if pd.isna(tv) or pd.isna(cv):
             continue
-        scale = 100.0 if col in {"season_avg_x", "season_avg_y", "season_std_x", "season_std_y"} else 1.0
-        diffs.append(abs(float(tv) - float(cv)) / scale)
 
-    if not diffs:
+        scale = (
+            100.0
+            if col in {
+                "adj_avg_x",
+                "avg_y",
+                "season_avg_x",
+                "season_avg_y",
+                "season_std_x",
+                "season_std_y",
+            }
+            else 1.0
+        )
+
+        diff = abs(float(tv) - float(cv)) / scale
+
+        weight = SPATIAL_WEIGHTS.get(col, 1.0)
+
+        weighted_diff_sum += diff * weight
+        weight_total += weight
+
+    if weight_total <= 0:
         return 0.0
 
-    dist = float(np.mean(diffs))
+    dist = weighted_diff_sum / weight_total
+
     return max(0.0, min(1.0, 1.0 - dist))
 
 
@@ -709,7 +793,7 @@ def main() -> None:
     ap.add_argument("--min-cohort-size", type=int, default=25)
     ap.add_argument("--z-weight", type=float, default=0.55)
     ap.add_argument("--percentile-weight", type=float, default=0.25)
-    ap.add_argument("--spatial-weight", type=float, default=0.12)
+    ap.add_argument("--spatial-weight", type=float, default=0.18)
     ap.add_argument("--role-bonus-weight", type=float, default=0.08)
     ap.add_argument("--core-share", type=float, default=0.65, help="Share of statistical similarity from role-core features; remainder comes from broad-style features.")
     ap.add_argument("--age-weight", type=float, default=0.25)
