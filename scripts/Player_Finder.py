@@ -99,6 +99,7 @@ NUMERIC_STATS = [
     "minutes_played",
     "age",
     "height_cm",
+    "birth_year",
 
     # ── Attacking — counting + per-90 ─────────────────────────────────────────
     "goals",                            "goals_per90",
@@ -311,6 +312,10 @@ def load_data(csv_path: str) -> pd.DataFrame:
 def apply_filters(df: pd.DataFrame, args: argparse.Namespace) -> pd.DataFrame:
     mask = pd.Series([True] * len(df), index=df.index)
 
+    # birth_year: extracted from date_of_birth (format YYYY-MM-DD)
+    if "date_of_birth" in df.columns and "birth_year" not in df.columns:
+        df["birth_year"] = pd.to_datetime(df["date_of_birth"], errors="coerce").dt.year
+
     # ── Categorical ────────────────────────────────────────────────────────────
     for arg_name, col_name in CATEGORICAL_FILTERS.items():
         val = getattr(args, arg_name, None)
@@ -320,8 +325,10 @@ def apply_filters(df: pd.DataFrame, args: argparse.Namespace) -> pd.DataFrame:
             print(f"  [warning] Column '{col_name}' not found in CSV, skipping filter '{arg_name}'.")
             continue
         # Position: exact match (case-insensitive); all others: substring
+        # Position uses a list of pos allowing for use cases like LB,RB or LW,RW etc
         if arg_name == "position":
-            mask &= df[col_name].str.upper() == val.upper()
+            positions = [p.strip().upper() for p in val.split(",")]
+            mask &= df[col_name].str.upper().isin(positions)
         else:
             mask &= df[col_name].str.contains(val, case=False, na=False)
 
