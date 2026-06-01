@@ -1,0 +1,121 @@
+{
+  "player_id": 1008471,
+  "event_id": 14059628,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Hayden Hackney",
+      "firstName": "Hayden",
+      "lastName": "Hackney",
+      "slug": "hayden-hackney",
+      "shortName": "H. Hackney",
+      "position": "M",
+      "jerseyNumber": "7",
+      "height": 178,
+      "userCount": 1627,
+      "gender": "M",
+      "id": 1008471,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1025049600,
+      "proposedMarketValueRaw": {
+        "value": 30000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "هايدن هاكني"
+        },
+        "shortNameTranslation": {
+          "ar": "ه. هاكني"
+        }
+      }
+    },
+    "team": {
+      "name": "Middlesbrough",
+      "slug": "middlesbrough",
+      "shortName": "Middlesbrough",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 60713,
+      "nameCode": "MID",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 36,
+      "teamColors": {
+        "primary": "#d90000",
+        "secondary": "#d90000",
+        "text": "#d90000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ميدلزبورو",
+          "ru": "Мидлсбро"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 47,
+      "accuratePass": 41,
+      "totalLongBalls": 3,
+      "accurateLongBalls": 2,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 22,
+      "totalOwnHalfPasses": 24,
+      "accurateOppositionHalfPasses": 19,
+      "totalOppositionHalfPasses": 23,
+      "totalCross": 3,
+      "aerialLost": 1,
+      "duelLost": 8,
+      "duelWon": 3,
+      "challengeLost": 2,
+      "dispossessed": 3,
+      "onTargetScoringAttempt": 1,
+      "goals": 1,
+      "totalClearance": 2,
+      "interceptionWon": 1,
+      "ballRecovery": 4,
+      "totalTackle": 2,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "wasFouled": 1,
+      "fouls": 2,
+      "minutesPlayed": 90,
+      "touches": 68,
+      "rating": 7.3,
+      "possessionLostCtrl": 15,
+      "expectedGoals": 0.1039,
+      "expectedGoalsOnTarget": 0.4901,
+      "expectedAssists": 0.0431607,
+      "ratingVersions": {
+        "original": 7.3,
+        "alternative": 7.3
+      },
+      "totalShots": 1,
+      "shotValueNormalized": 0.52,
+      "passValueNormalized": 0.25,
+      "dribbleValueNormalized": 0.1,
+      "defensiveValueNormalized": -0.13,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14059628/player/1008471/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-06-01T13:41:47.181397Z"
+  }
+}

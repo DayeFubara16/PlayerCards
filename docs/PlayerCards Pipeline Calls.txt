@@ -28,8 +28,11 @@ PlayerCards/
 Global dataset build
 --------------------
 
+$LEAGUE=18
+
 # 1. Scrape all leagues for matchweek
 python scripts/Player_Scraper.py --season 2025-26 --matchweek 38 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
+python scripts/Player_Scraper.py --season 2025-26 --matchweek 46 --league $LEAGUE --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
 
 # 1b. Build positional context
 python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --enrich-csv data/raw/player_match_logs.csv --season 2025-26 --delay 1.2
@@ -54,7 +57,7 @@ Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=914902
+$PLAYER_ID=1008471
 $SEASON="2025-26"
 
 # 6. Similar players, all leagues

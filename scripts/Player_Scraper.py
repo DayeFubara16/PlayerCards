@@ -41,6 +41,7 @@ API_BASE = "https://api.sofascore.com/api/v1"
 LEAGUE_NAMES: dict[int, str] = {
     8: "La Liga",
     17: "Premier League",
+    18: "Championship",
     23: "Serie A",
     34: "Ligue 1",
     35: "Bundesliga",
@@ -51,6 +52,7 @@ LEAGUE_NAMES: dict[int, str] = {
 SEASON_IDS: dict[int, dict[str, int]] = {
     8: {"2023-24": 52376, "2024-25": 61643, "2025-26": 77559},
     17: {"2023-24": 52186, "2024-25": 61627, "2025-26": 76986},
+    18: {"2023-24": 52367, "2024-25": 61961, "2025-26": 77347},
     23: {"2023-24": 52760, "2024-25": 63515, "2025-26": 76457},
     34: {"2023-24": 52571, "2024-25": 61736, "2025-26": 77356},
     35: {"2023-24": 52608, "2024-25": 63516, "2025-26": 77333},
@@ -74,6 +76,9 @@ LEAGUE_ALIASES: dict[str, int] = {
     "premier league": 17,
     "epl": 17,
     "england": 17,
+    "championship": 18,
+    "efl championship": 18,
+    "eflchampionship": 18,
     "seriea": 23,
     "serie a": 23,
     "italy": 23,
