@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "player_id": 547410,
+    "player_name": "Martin Ødegaard",
+    "season": "2026-27",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 3,
+    "endpoints": [
+      "rating-breakdown",
+      "statistics"
+    ],
+    "generated_at_utc": "2026-09-13T15:13:57.101627Z",
+    "cache_dir": "cache/action_cache",
+    "no_fetch": false,
+    "refresh_cache": true
+  },
+  "events": 3,
+  "events_with_any_available_endpoint": 3,
+  "flat_rows": 254,
+  "endpoint_summary": {
+    "rating-breakdown": {
+      "available_events": 3,
+      "missing_events": 0,
+      "flat_rows": 254
+    },
+    "statistics": {
+      "available_events": 3,
+      "missing_events": 0,
+      "flat_rows": 0
+    }
+  },
+  "category_counts": {
+    "rating-breakdown:passes": 161,
+    "rating-breakdown:ball-carries": 75,
+    "rating-breakdown:defensive": 16,
+    "rating-breakdown:dribbles": 2
+  },
+  "endpoint_debug_sample": {
+    "rating-breakdown": [
+      {
+        "event_id": 16363633,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 59,
+            "dribbles": 0,
+            "defensive": 8,
+            "ball-carries": 26
+          }
+        }
+      },
+      {
+        "event_id": 16363245,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 45,
+            "dribbles": 2,
+            "defensive": 5,
+            "ball-carries": 23
+          }
+        }
+      },
+      {
+        "event_id": 16363257,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "passes",
+            "dribbles",
+            "defensive",
+            "ball-carries"
+          ],
+          "list_lengths": {
+            "passes": 57,
+            "dribbles": 0,
+            "defensive": 3,
+            "ball-carries": 26
+          }
+        }
+      }
+    ],
+    "statistics": [
+      {
+        "event_id": 16363633,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 16363245,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      },
+      {
+        "event_id": 16363257,
+        "available": true,
+        "source": "fetch",
+        "status_code": 200,
+        "debug": {
+          "type": "dict",
+          "keys": [
+            "player",
+            "team",
+            "statistics",
+            "position",
+            "extra"
+          ],
+          "list_lengths": {}
+        }
+      }
+    ]
+  },
+  "note": "For player action maps, rating-breakdown is the key endpoint. Statistics rows are usually aggregate stats, not raw actions. Raw JSON remains the source of truth because Sofascore schemas can vary."
+}

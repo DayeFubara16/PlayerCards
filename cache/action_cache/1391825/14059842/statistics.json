@@ -1,0 +1,126 @@
+{
+  "player_id": 1391825,
+  "event_id": 14059842,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Will Lankshear",
+      "slug": "will-lankshear",
+      "shortName": "W. Lankshear",
+      "position": "F",
+      "jerseyNumber": "42",
+      "height": 189,
+      "userCount": 1624,
+      "gender": "M",
+      "sofascoreId": "kmp659",
+      "id": 1391825,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1113955200,
+      "proposedMarketValueRaw": {
+        "value": 6800000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ويل لانكشير",
+          "bn": "উইল ল্যাঙ্কশিয়ার",
+          "hi": "विल लंकशीर",
+          "ru": "Уилл Ланкшир"
+        },
+        "shortNameTranslation": {
+          "ar": "و. لانكشير",
+          "bn": "ডব্লিউ. ল্যাঙ্কশিয়ার",
+          "hi": "डब्ल्यू. लंकशीर",
+          "ru": "У. Ланкшир"
+        }
+      }
+    },
+    "team": {
+      "name": "Oxford United",
+      "slug": "oxford-united",
+      "shortName": "Oxford Utd",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 29072,
+      "nameCode": "OXU",
+      "national": false,
+      "type": 0,
+      "id": 95,
+      "teamColors": {
+        "primary": "#f1ea39",
+        "secondary": "#0b2254",
+        "text": "#0b2254"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أوكسفورد يونايتد",
+          "hi": "ऑक्सफ़ोर्ड यूनाइटेड",
+          "ru": "Оксфорд Юнайтед"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 8,
+      "accuratePass": 3,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 1,
+      "totalOwnHalfPasses": 2,
+      "accurateOppositionHalfPasses": 2,
+      "totalOppositionHalfPasses": 6,
+      "aerialLost": 2,
+      "duelLost": 5,
+      "duelWon": 2,
+      "dispossessed": 1,
+      "totalContest": 1,
+      "totalClearance": 1,
+      "unsuccessfulTouch": 2,
+      "wasFouled": 2,
+      "fouls": 1,
+      "totalOffside": 1,
+      "minutesPlayed": 87,
+      "touches": 21,
+      "rating": 6,
+      "possessionLostCtrl": 9,
+      "expectedAssists": 0.00076241,
+      "topSpeed": 34.03,
+      "kilometersCovered": 10.35,
+      "numberOfSprints": 16,
+      "totalBallCarriesDistance": 32.335120031351,
+      "ballCarriesCount": 4,
+      "totalProgression": -0.71885056419972,
+      "progressiveBallCarriesCount": 0,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 6,
+        "alternative": 6.4
+      },
+      "totalShots": 0,
+      "passValueNormalized": -0.17,
+      "dribbleValueNormalized": -0.03,
+      "defensiveValueNormalized": 0.14,
+      "metersCoveredRunningKm": 1.45,
+      "metersCoveredHighSpeedRunningKm": 0.63,
+      "metersCoveredSprintingKm": 0.33,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "F",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14059842/player/1391825/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-07-21T13:13:53.758256Z"
+  }
+}

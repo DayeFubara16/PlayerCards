@@ -1,0 +1,2939 @@
+[
+  {
+    "path": "$",
+    "type": "dict",
+    "keys": [
+      "passes",
+      "dribbles",
+      "defensive",
+      "ball-carries"
+    ],
+    "len": 4,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes",
+    "type": "list",
+    "len": 43,
+    "sample_type": "dict",
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome",
+      "outcome",
+      "keypass",
+      "isLongBall"
+    ],
+    "len": 7,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].eventActionType",
+    "type": "str",
+    "sample": "pass",
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].isHome",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].outcome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].keypass",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].isLongBall",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.dribbles",
+    "type": "list",
+    "len": 0,
+    "sample_type": null,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive",
+    "type": "list",
+    "len": 16,
+    "sample_type": "dict",
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome",
+      "outcome",
+      "keypass"
+    ],
+    "len": 6,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].eventActionType",
+    "type": "str",
+    "sample": "clearance",
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].isHome",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].outcome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].keypass",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries",
+    "type": "list",
+    "len": 14,
+    "sample_type": "dict",
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome"
+    ],
+    "len": 4,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].eventActionType",
+    "type": "str",
+    "sample": "ball-carry",
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].isHome",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$",
+    "type": "dict",
+    "keys": [
+      "player",
+      "team",
+      "statistics",
+      "position",
+      "extra"
+    ],
+    "len": 5,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "shortName",
+      "position",
+      "jerseyNumber",
+      "height",
+      "userCount",
+      "gender",
+      "sofascoreId",
+      "id",
+      "marketValueCurrency",
+      "dateOfBirthTimestamp",
+      "proposedMarketValueRaw",
+      "fieldTranslations"
+    ],
+    "len": 14,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.name",
+    "type": "str",
+    "sample": "Antonín Kinský",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.slug",
+    "type": "str",
+    "sample": "antonin-kinsky",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.shortName",
+    "type": "str",
+    "sample": "A. Kinský",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.position",
+    "type": "str",
+    "sample": "G",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.jerseyNumber",
+    "type": "str",
+    "sample": "31",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.height",
+    "type": "int",
+    "sample": 190,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.userCount",
+    "type": "int",
+    "sample": 10575,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.gender",
+    "type": "str",
+    "sample": "M",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.sofascoreId",
+    "type": "str",
+    "sample": "utzizf",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.id",
+    "type": "int",
+    "sample": 1031251,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.marketValueCurrency",
+    "type": "str",
+    "sample": "EUR",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.dateOfBirthTimestamp",
+    "type": "int",
+    "sample": 1047513600,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw",
+    "type": "dict",
+    "keys": [
+      "value",
+      "currency"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw.value",
+    "type": "int",
+    "sample": 15700000,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw.currency",
+    "type": "str",
+    "sample": "EUR",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations",
+    "type": "dict",
+    "keys": [
+      "nameTranslation",
+      "shortNameTranslation"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations.nameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi",
+      "ru"
+    ],
+    "len": 4,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations.shortNameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi",
+      "ru"
+    ],
+    "len": 4,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "shortName",
+      "gender",
+      "sport",
+      "userCount",
+      "nameCode",
+      "disabled",
+      "national",
+      "type",
+      "id",
+      "teamColors",
+      "fieldTranslations"
+    ],
+    "len": 13,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.name",
+    "type": "str",
+    "sample": "Tottenham Hotspur",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.slug",
+    "type": "str",
+    "sample": "tottenham-hotspur",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.shortName",
+    "type": "str",
+    "sample": "Tottenham",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.gender",
+    "type": "str",
+    "sample": "M",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "id"
+    ],
+    "len": 3,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.name",
+    "type": "str",
+    "sample": "Football",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.slug",
+    "type": "str",
+    "sample": "football",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.id",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.userCount",
+    "type": "int",
+    "sample": 1674684,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.nameCode",
+    "type": "str",
+    "sample": "TOT",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.disabled",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.national",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.type",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.id",
+    "type": "int",
+    "sample": 33,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors",
+    "type": "dict",
+    "keys": [
+      "primary",
+      "secondary",
+      "text"
+    ],
+    "len": 3,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.primary",
+    "type": "str",
+    "sample": "#ffffff",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.secondary",
+    "type": "str",
+    "sample": "#000066",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.text",
+    "type": "str",
+    "sample": "#000066",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations",
+    "type": "dict",
+    "keys": [
+      "nameTranslation",
+      "shortNameTranslation"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations.nameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "hi",
+      "ru"
+    ],
+    "len": 3,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations.shortNameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi"
+    ],
+    "len": 3,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics",
+    "type": "dict",
+    "keys": [
+      "totalPass",
+      "accuratePass",
+      "totalLongBalls",
+      "accurateLongBalls",
+      "goalAssist",
+      "accurateOwnHalfPasses",
+      "totalOwnHalfPasses",
+      "accurateOppositionHalfPasses",
+      "totalOppositionHalfPasses",
+      "aerialWon",
+      "duelWon",
+      "totalClearance",
+      "ballRecovery",
+      "savedShotsFromInsideTheBox",
+      "penaltyFaced",
+      "saves",
+      "punches",
+      "totalKeeperSweeper",
+      "accurateKeeperSweeper",
+      "minutesPlayed",
+      "touches",
+      "rating",
+      "possessionLostCtrl",
+      "expectedAssists",
+      "topSpeed",
+      "kilometersCovered",
+      "numberOfSprints",
+      "totalBallCarriesDistance",
+      "ballCarriesCount",
+      "totalProgression",
+      "progressiveBallCarriesCount",
+      "keeperSaveValue",
+      "ratingVersions",
+      "totalShots",
+      "goalsPrevented",
+      "passValueNormalized",
+      "dribbleValueNormalized",
+      "defensiveValueNormalized",
+      "goalkeeperValueNormalized",
+      "metersCoveredRunningKm",
+      "metersCoveredHighSpeedRunningKm",
+      "metersCoveredSprintingKm",
+      "statisticsType"
+    ],
+    "len": 43,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalPass",
+    "type": "int",
+    "sample": 43,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accuratePass",
+    "type": "int",
+    "sample": 31,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalLongBalls",
+    "type": "int",
+    "sample": 15,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateLongBalls",
+    "type": "int",
+    "sample": 4,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalAssist",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateOwnHalfPasses",
+    "type": "int",
+    "sample": 28,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalOwnHalfPasses",
+    "type": "int",
+    "sample": 34,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateOppositionHalfPasses",
+    "type": "int",
+    "sample": 3,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalOppositionHalfPasses",
+    "type": "int",
+    "sample": 9,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.aerialWon",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.duelWon",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalClearance",
+    "type": "int",
+    "sample": 4,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ballRecovery",
+    "type": "int",
+    "sample": 12,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.savedShotsFromInsideTheBox",
+    "type": "int",
+    "sample": 4,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.penaltyFaced",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.saves",
+    "type": "int",
+    "sample": 5,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.punches",
+    "type": "int",
+    "sample": 2,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalKeeperSweeper",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateKeeperSweeper",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.minutesPlayed",
+    "type": "int",
+    "sample": 90,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.touches",
+    "type": "int",
+    "sample": 60,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.rating",
+    "type": "float",
+    "sample": 6.8,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.possessionLostCtrl",
+    "type": "int",
+    "sample": 12,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.expectedAssists",
+    "type": "float",
+    "sample": 0.00175594,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.topSpeed",
+    "type": "float",
+    "sample": 23.40072,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.kilometersCovered",
+    "type": "float",
+    "sample": 5.9872644,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.numberOfSprints",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalBallCarriesDistance",
+    "type": "float",
+    "sample": 90.133536801202,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ballCarriesCount",
+    "type": "int",
+    "sample": 14,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalProgression",
+    "type": "float",
+    "sample": 44.119457480799,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.progressiveBallCarriesCount",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.keeperSaveValue",
+    "type": "float",
+    "sample": 0.6252,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions",
+    "type": "dict",
+    "keys": [
+      "original",
+      "alternative"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions.original",
+    "type": "float",
+    "sample": 6.8,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions.alternative",
+    "type": "float",
+    "sample": 7.1,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalShots",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalsPrevented",
+    "type": "float",
+    "sample": 0.1213,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.passValueNormalized",
+    "type": "float",
+    "sample": 0.07,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.dribbleValueNormalized",
+    "type": "float",
+    "sample": 0.01,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.defensiveValueNormalized",
+    "type": "float",
+    "sample": -0.23,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalkeeperValueNormalized",
+    "type": "float",
+    "sample": 0.43,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredRunningKm",
+    "type": "float",
+    "sample": 0.08,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredHighSpeedRunningKm",
+    "type": "float",
+    "sample": 0.01,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredSprintingKm",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType",
+    "type": "dict",
+    "keys": [
+      "sportSlug",
+      "statisticsType"
+    ],
+    "len": 2,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType.sportSlug",
+    "type": "str",
+    "sample": "football",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType.statisticsType",
+    "type": "str",
+    "sample": "player",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.position",
+    "type": "str",
+    "sample": "G",
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.extra",
+    "type": "NoneType",
+    "sample": null,
+    "event_id": 16363242,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$",
+    "type": "dict",
+    "keys": [
+      "passes",
+      "dribbles",
+      "defensive",
+      "ball-carries"
+    ],
+    "len": 4,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes",
+    "type": "list",
+    "len": 39,
+    "sample_type": "dict",
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome",
+      "outcome",
+      "keypass"
+    ],
+    "len": 6,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].eventActionType",
+    "type": "str",
+    "sample": "pass",
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].isHome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].outcome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].keypass",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.dribbles",
+    "type": "list",
+    "len": 0,
+    "sample_type": null,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive",
+    "type": "list",
+    "len": 6,
+    "sample_type": "dict",
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "eventActionType",
+      "isHome",
+      "outcome",
+      "keypass"
+    ],
+    "len": 5,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].eventActionType",
+    "type": "str",
+    "sample": "ball-recovery",
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].isHome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].outcome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].keypass",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries",
+    "type": "list",
+    "len": 15,
+    "sample_type": "dict",
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome"
+    ],
+    "len": 4,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].eventActionType",
+    "type": "str",
+    "sample": "ball-carry",
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].isHome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363256,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$",
+    "type": "dict",
+    "keys": [
+      "player",
+      "team",
+      "statistics",
+      "position",
+      "extra"
+    ],
+    "len": 5,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "shortName",
+      "position",
+      "jerseyNumber",
+      "height",
+      "userCount",
+      "gender",
+      "sofascoreId",
+      "id",
+      "marketValueCurrency",
+      "dateOfBirthTimestamp",
+      "proposedMarketValueRaw",
+      "fieldTranslations"
+    ],
+    "len": 14,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.name",
+    "type": "str",
+    "sample": "Antonín Kinský",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.slug",
+    "type": "str",
+    "sample": "antonin-kinsky",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.shortName",
+    "type": "str",
+    "sample": "A. Kinský",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.position",
+    "type": "str",
+    "sample": "G",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.jerseyNumber",
+    "type": "str",
+    "sample": "31",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.height",
+    "type": "int",
+    "sample": 190,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.userCount",
+    "type": "int",
+    "sample": 10575,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.gender",
+    "type": "str",
+    "sample": "M",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.sofascoreId",
+    "type": "str",
+    "sample": "utzizf",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.id",
+    "type": "int",
+    "sample": 1031251,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.marketValueCurrency",
+    "type": "str",
+    "sample": "EUR",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.dateOfBirthTimestamp",
+    "type": "int",
+    "sample": 1047513600,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw",
+    "type": "dict",
+    "keys": [
+      "value",
+      "currency"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw.value",
+    "type": "int",
+    "sample": 15700000,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw.currency",
+    "type": "str",
+    "sample": "EUR",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations",
+    "type": "dict",
+    "keys": [
+      "nameTranslation",
+      "shortNameTranslation"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations.nameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi",
+      "ru"
+    ],
+    "len": 4,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations.shortNameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi",
+      "ru"
+    ],
+    "len": 4,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "shortName",
+      "gender",
+      "sport",
+      "userCount",
+      "nameCode",
+      "disabled",
+      "national",
+      "type",
+      "id",
+      "teamColors",
+      "fieldTranslations"
+    ],
+    "len": 13,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.name",
+    "type": "str",
+    "sample": "Tottenham Hotspur",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.slug",
+    "type": "str",
+    "sample": "tottenham-hotspur",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.shortName",
+    "type": "str",
+    "sample": "Tottenham",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.gender",
+    "type": "str",
+    "sample": "M",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "id"
+    ],
+    "len": 3,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.name",
+    "type": "str",
+    "sample": "Football",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.slug",
+    "type": "str",
+    "sample": "football",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.id",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.userCount",
+    "type": "int",
+    "sample": 1674684,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.nameCode",
+    "type": "str",
+    "sample": "TOT",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.disabled",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.national",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.type",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.id",
+    "type": "int",
+    "sample": 33,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors",
+    "type": "dict",
+    "keys": [
+      "primary",
+      "secondary",
+      "text"
+    ],
+    "len": 3,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.primary",
+    "type": "str",
+    "sample": "#ffffff",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.secondary",
+    "type": "str",
+    "sample": "#000066",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.text",
+    "type": "str",
+    "sample": "#000066",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations",
+    "type": "dict",
+    "keys": [
+      "nameTranslation",
+      "shortNameTranslation"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations.nameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "hi",
+      "ru"
+    ],
+    "len": 3,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations.shortNameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi"
+    ],
+    "len": 3,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics",
+    "type": "dict",
+    "keys": [
+      "totalPass",
+      "accuratePass",
+      "totalLongBalls",
+      "accurateLongBalls",
+      "goalAssist",
+      "accurateOwnHalfPasses",
+      "totalOwnHalfPasses",
+      "accurateOppositionHalfPasses",
+      "totalOppositionHalfPasses",
+      "duelLost",
+      "challengeLost",
+      "ballRecovery",
+      "unsuccessfulTouch",
+      "minutesPlayed",
+      "touches",
+      "rating",
+      "possessionLostCtrl",
+      "expectedAssists",
+      "topSpeed",
+      "kilometersCovered",
+      "numberOfSprints",
+      "totalBallCarriesDistance",
+      "ballCarriesCount",
+      "totalProgression",
+      "progressiveBallCarriesCount",
+      "ratingVersions",
+      "totalShots",
+      "goalsPrevented",
+      "passValueNormalized",
+      "dribbleValueNormalized",
+      "defensiveValueNormalized",
+      "goalkeeperValueNormalized",
+      "metersCoveredRunningKm",
+      "metersCoveredHighSpeedRunningKm",
+      "metersCoveredSprintingKm",
+      "statisticsType"
+    ],
+    "len": 36,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalPass",
+    "type": "int",
+    "sample": 39,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accuratePass",
+    "type": "int",
+    "sample": 32,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalLongBalls",
+    "type": "int",
+    "sample": 11,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateLongBalls",
+    "type": "int",
+    "sample": 4,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalAssist",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateOwnHalfPasses",
+    "type": "int",
+    "sample": 29,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalOwnHalfPasses",
+    "type": "int",
+    "sample": 29,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateOppositionHalfPasses",
+    "type": "int",
+    "sample": 3,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalOppositionHalfPasses",
+    "type": "int",
+    "sample": 10,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.duelLost",
+    "type": "int",
+    "sample": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.challengeLost",
+    "type": "int",
+    "sample": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ballRecovery",
+    "type": "int",
+    "sample": 6,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.unsuccessfulTouch",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.minutesPlayed",
+    "type": "int",
+    "sample": 90,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.touches",
+    "type": "int",
+    "sample": 45,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.rating",
+    "type": "float",
+    "sample": 5.6,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.possessionLostCtrl",
+    "type": "int",
+    "sample": 8,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.expectedAssists",
+    "type": "float",
+    "sample": 0.0031074,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.topSpeed",
+    "type": "float",
+    "sample": 22.31496,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.kilometersCovered",
+    "type": "float",
+    "sample": 5.7487395,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.numberOfSprints",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalBallCarriesDistance",
+    "type": "float",
+    "sample": 92.444931086625,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ballCarriesCount",
+    "type": "int",
+    "sample": 15,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalProgression",
+    "type": "float",
+    "sample": 76.744700920959,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.progressiveBallCarriesCount",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions",
+    "type": "dict",
+    "keys": [
+      "original",
+      "alternative"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions.original",
+    "type": "float",
+    "sample": 5.6,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions.alternative",
+    "type": "int",
+    "sample": 6,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalShots",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalsPrevented",
+    "type": "float",
+    "sample": -1.3147,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.passValueNormalized",
+    "type": "float",
+    "sample": 0.04,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.dribbleValueNormalized",
+    "type": "float",
+    "sample": 0.02,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.defensiveValueNormalized",
+    "type": "float",
+    "sample": -0.34,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalkeeperValueNormalized",
+    "type": "float",
+    "sample": -0.88,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredRunningKm",
+    "type": "float",
+    "sample": 0.14,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredHighSpeedRunningKm",
+    "type": "float",
+    "sample": 0.01,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredSprintingKm",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType",
+    "type": "dict",
+    "keys": [
+      "sportSlug",
+      "statisticsType"
+    ],
+    "len": 2,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType.sportSlug",
+    "type": "str",
+    "sample": "football",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType.statisticsType",
+    "type": "str",
+    "sample": "player",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.position",
+    "type": "str",
+    "sample": "G",
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.extra",
+    "type": "NoneType",
+    "sample": null,
+    "event_id": 16363256,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$",
+    "type": "dict",
+    "keys": [
+      "passes",
+      "dribbles",
+      "defensive",
+      "ball-carries"
+    ],
+    "len": 4,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes",
+    "type": "list",
+    "len": 34,
+    "sample_type": "dict",
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome",
+      "keypass",
+      "isLongBall"
+    ],
+    "len": 6,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].eventActionType",
+    "type": "str",
+    "sample": "pass",
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].isHome",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].keypass",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.passes[0].isLongBall",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.dribbles",
+    "type": "list",
+    "len": 0,
+    "sample_type": null,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive",
+    "type": "list",
+    "len": 10,
+    "sample_type": "dict",
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "eventActionType",
+      "isHome",
+      "outcome",
+      "keypass"
+    ],
+    "len": 5,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].eventActionType",
+    "type": "str",
+    "sample": "ball-recovery",
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].isHome",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].outcome",
+    "type": "bool",
+    "sample": true,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.defensive[0].keypass",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries",
+    "type": "list",
+    "len": 14,
+    "sample_type": "dict",
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0]",
+    "type": "dict",
+    "keys": [
+      "playerCoordinates",
+      "passEndCoordinates",
+      "eventActionType",
+      "isHome"
+    ],
+    "len": 4,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].playerCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].passEndCoordinates",
+    "type": "dict",
+    "keys": [
+      "x",
+      "y"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].eventActionType",
+    "type": "str",
+    "sample": "ball-carry",
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$.ball-carries[0].isHome",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "rating-breakdown"
+  },
+  {
+    "path": "$",
+    "type": "dict",
+    "keys": [
+      "player",
+      "team",
+      "statistics",
+      "position",
+      "extra"
+    ],
+    "len": 5,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "shortName",
+      "position",
+      "jerseyNumber",
+      "height",
+      "userCount",
+      "gender",
+      "sofascoreId",
+      "id",
+      "marketValueCurrency",
+      "dateOfBirthTimestamp",
+      "proposedMarketValueRaw",
+      "fieldTranslations"
+    ],
+    "len": 14,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.name",
+    "type": "str",
+    "sample": "Antonín Kinský",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.slug",
+    "type": "str",
+    "sample": "antonin-kinsky",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.shortName",
+    "type": "str",
+    "sample": "A. Kinský",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.position",
+    "type": "str",
+    "sample": "G",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.jerseyNumber",
+    "type": "str",
+    "sample": "31",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.height",
+    "type": "int",
+    "sample": 190,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.userCount",
+    "type": "int",
+    "sample": 10575,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.gender",
+    "type": "str",
+    "sample": "M",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.sofascoreId",
+    "type": "str",
+    "sample": "utzizf",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.id",
+    "type": "int",
+    "sample": 1031251,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.marketValueCurrency",
+    "type": "str",
+    "sample": "EUR",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.dateOfBirthTimestamp",
+    "type": "int",
+    "sample": 1047513600,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw",
+    "type": "dict",
+    "keys": [
+      "value",
+      "currency"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw.value",
+    "type": "int",
+    "sample": 15700000,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.proposedMarketValueRaw.currency",
+    "type": "str",
+    "sample": "EUR",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations",
+    "type": "dict",
+    "keys": [
+      "nameTranslation",
+      "shortNameTranslation"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations.nameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi",
+      "ru"
+    ],
+    "len": 4,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.player.fieldTranslations.shortNameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi",
+      "ru"
+    ],
+    "len": 4,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "shortName",
+      "gender",
+      "sport",
+      "userCount",
+      "nameCode",
+      "disabled",
+      "national",
+      "type",
+      "id",
+      "teamColors",
+      "fieldTranslations"
+    ],
+    "len": 13,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.name",
+    "type": "str",
+    "sample": "Tottenham Hotspur",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.slug",
+    "type": "str",
+    "sample": "tottenham-hotspur",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.shortName",
+    "type": "str",
+    "sample": "Tottenham",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.gender",
+    "type": "str",
+    "sample": "M",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport",
+    "type": "dict",
+    "keys": [
+      "name",
+      "slug",
+      "id"
+    ],
+    "len": 3,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.name",
+    "type": "str",
+    "sample": "Football",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.slug",
+    "type": "str",
+    "sample": "football",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.sport.id",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.userCount",
+    "type": "int",
+    "sample": 1674684,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.nameCode",
+    "type": "str",
+    "sample": "TOT",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.disabled",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.national",
+    "type": "bool",
+    "sample": false,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.type",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.id",
+    "type": "int",
+    "sample": 33,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors",
+    "type": "dict",
+    "keys": [
+      "primary",
+      "secondary",
+      "text"
+    ],
+    "len": 3,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.primary",
+    "type": "str",
+    "sample": "#ffffff",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.secondary",
+    "type": "str",
+    "sample": "#000066",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.teamColors.text",
+    "type": "str",
+    "sample": "#000066",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations",
+    "type": "dict",
+    "keys": [
+      "nameTranslation",
+      "shortNameTranslation"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations.nameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "hi",
+      "ru"
+    ],
+    "len": 3,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.team.fieldTranslations.shortNameTranslation",
+    "type": "dict",
+    "keys": [
+      "ar",
+      "bn",
+      "hi"
+    ],
+    "len": 3,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics",
+    "type": "dict",
+    "keys": [
+      "totalPass",
+      "accuratePass",
+      "totalLongBalls",
+      "accurateLongBalls",
+      "goalAssist",
+      "accurateOwnHalfPasses",
+      "totalOwnHalfPasses",
+      "accurateOppositionHalfPasses",
+      "totalOppositionHalfPasses",
+      "duelWon",
+      "totalClearance",
+      "ballRecovery",
+      "wasFouled",
+      "goodHighClaim",
+      "saves",
+      "punches",
+      "totalKeeperSweeper",
+      "accurateKeeperSweeper",
+      "minutesPlayed",
+      "touches",
+      "rating",
+      "possessionLostCtrl",
+      "expectedAssists",
+      "topSpeed",
+      "kilometersCovered",
+      "numberOfSprints",
+      "totalBallCarriesDistance",
+      "ballCarriesCount",
+      "totalProgression",
+      "progressiveBallCarriesCount",
+      "keeperSaveValue",
+      "keyPass",
+      "ratingVersions",
+      "totalShots",
+      "goalsPrevented",
+      "passValueNormalized",
+      "dribbleValueNormalized",
+      "defensiveValueNormalized",
+      "goalkeeperValueNormalized",
+      "metersCoveredRunningKm",
+      "metersCoveredHighSpeedRunningKm",
+      "metersCoveredSprintingKm",
+      "statisticsType"
+    ],
+    "len": 43,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalPass",
+    "type": "int",
+    "sample": 34,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accuratePass",
+    "type": "int",
+    "sample": 18,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalLongBalls",
+    "type": "int",
+    "sample": 24,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateLongBalls",
+    "type": "int",
+    "sample": 8,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalAssist",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateOwnHalfPasses",
+    "type": "int",
+    "sample": 16,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalOwnHalfPasses",
+    "type": "int",
+    "sample": 17,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateOppositionHalfPasses",
+    "type": "int",
+    "sample": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalOppositionHalfPasses",
+    "type": "int",
+    "sample": 17,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.duelWon",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalClearance",
+    "type": "int",
+    "sample": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ballRecovery",
+    "type": "int",
+    "sample": 8,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.wasFouled",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goodHighClaim",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.saves",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.punches",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalKeeperSweeper",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.accurateKeeperSweeper",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.minutesPlayed",
+    "type": "int",
+    "sample": 90,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.touches",
+    "type": "int",
+    "sample": 44,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.rating",
+    "type": "float",
+    "sample": 6.8,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.possessionLostCtrl",
+    "type": "int",
+    "sample": 16,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.expectedAssists",
+    "type": "float",
+    "sample": 0.00047468,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.topSpeed",
+    "type": "float",
+    "sample": 23.8806,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.kilometersCovered",
+    "type": "float",
+    "sample": 5.8609966,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.numberOfSprints",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalBallCarriesDistance",
+    "type": "float",
+    "sample": 77.248783345016,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ballCarriesCount",
+    "type": "int",
+    "sample": 14,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalProgression",
+    "type": "float",
+    "sample": 40.143939037447,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.progressiveBallCarriesCount",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.keeperSaveValue",
+    "type": "float",
+    "sample": -0.0001,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.keyPass",
+    "type": "int",
+    "sample": 1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions",
+    "type": "dict",
+    "keys": [
+      "original",
+      "alternative"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions.original",
+    "type": "float",
+    "sample": 6.8,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.ratingVersions.alternative",
+    "type": "float",
+    "sample": 7.1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.totalShots",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalsPrevented",
+    "type": "float",
+    "sample": 0.0149,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.passValueNormalized",
+    "type": "float",
+    "sample": 0.05,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.dribbleValueNormalized",
+    "type": "float",
+    "sample": 0.01,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.defensiveValueNormalized",
+    "type": "float",
+    "sample": 0.18,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.goalkeeperValueNormalized",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredRunningKm",
+    "type": "float",
+    "sample": 0.1,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredHighSpeedRunningKm",
+    "type": "float",
+    "sample": 0.02,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.metersCoveredSprintingKm",
+    "type": "int",
+    "sample": 0,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType",
+    "type": "dict",
+    "keys": [
+      "sportSlug",
+      "statisticsType"
+    ],
+    "len": 2,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType.sportSlug",
+    "type": "str",
+    "sample": "football",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.statistics.statisticsType.statisticsType",
+    "type": "str",
+    "sample": "player",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.position",
+    "type": "str",
+    "sample": "G",
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  },
+  {
+    "path": "$.extra",
+    "type": "NoneType",
+    "sample": null,
+    "event_id": 16363638,
+    "endpoint": "statistics"
+  }
+]

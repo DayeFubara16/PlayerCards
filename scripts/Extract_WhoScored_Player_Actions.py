@@ -2,11 +2,20 @@
 Extract_WhoScored_Player_Actions.py
 ─────────────────────────────────────
 Offline layer. Reads matches already cached by Fetch_WhoScored_Matchweek.py
-and pulls out one player's passes/dribbles/defensive actions/derived
-carries. Makes NO network requests — if a needed match isn't cached yet,
-it's reported and skipped rather than fetched on the spot, to keep the
+and pulls out every action one player performed or had performed on them —
+passes, aerials/headers, touches, saves, challenges, tackles, shots, cards,
+everything WhoScored reports except pure match-bookkeeping (kickoff/end
+markers, substitution/formation-change entries) — plus derived carries.
+Makes NO network requests — if a needed match isn't cached yet, it's
+reported and skipped rather than fetched on the spot, to keep the
 fetch/extract boundary honest (extraction should never silently trigger
 a scrape).
+
+Each action keeps its own WhoScored type as its category (Pass, Aerial,
+BallTouch, Save, Challenge, ...) rather than being folded into a fixed
+handful of buckets, plus the event's full qualifiers dict (pass length/
+angle/zone, cross/through-ball flags, shot placement, save type, etc.)
+and goal-frame/block coordinates where WhoScored provides them.
 
 This is the step you re-run freely: a new player, a re-cut of an
 existing player's season, a different competition slice — all of it is
@@ -27,6 +36,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -109,26 +119,19 @@ def main() -> None:
             continue
 
         events = wc.player_events(match_centre, args.whoscored_player_id)
-        categorized = wc.categorize(events)
-        categorized["carries"] = wc.derive_carries(events)
-
-        flat = wc.flatten_categories(categorized, match_id)
+        actions = wc.extract_player_actions(events)
+        carries = wc.derive_carries(events)
+        flat = wc.attach_match_id(actions + carries, match_id)
         all_flat_rows.extend(flat)
 
-        print(
-            f"  match {match_id} ({row.get('date', '?')}): "
-            f"{len(categorized['passes'])} passes, "
-            f"{len(categorized['dribbles'])} dribbles, "
-            f"{len(categorized['defensive_actions'])} defensive, "
-            f"{len(categorized['carries'])} carries (derived)"
-        )
+        counts = Counter(a["category"] for a in flat)
+        top = ", ".join(f"{v} {k}" for k, v in counts.most_common(5))
+        print(f"  match {match_id} ({row.get('date', '?')}): {len(flat)} actions ({top}{', ...' if len(counts) > 5 else ''})")
         match_summaries.append({
             "match_id": match_id,
             "status": "ok",
-            "passes": len(categorized["passes"]),
-            "dribbles": len(categorized["dribbles"]),
-            "defensive_actions": len(categorized["defensive_actions"]),
-            "carries_derived": len(categorized["carries"]),
+            "total_actions": len(flat),
+            "by_category": dict(counts),
         })
 
     if missing_from_cache:
@@ -137,7 +140,7 @@ def main() -> None:
         for mid in missing_from_cache:
             print(f"    {mid}")
 
-    base = f"{wc.clean_filename(args.player_name, f'player_{args.player_id}')}_whoscored"
+    base = f"{args.player_id}_{wc.clean_filename(args.player_name, 'player')}_whoscored"
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -154,7 +157,10 @@ def main() -> None:
                 "matches_not_cached": len(missing_from_cache),
                 "extracted_at_utc": wc.utc_now(),
                 "note": "Offline extraction — no network requests made. Missing matches must be "
-                        "fetched via Fetch_WhoScored_Matchweek.py first.",
+                        "fetched via Fetch_WhoScored_Matchweek.py first. Every WhoScored action "
+                        "type is included except structural bookkeeping events "
+                        "(Start/End/SubstitutionOn/SubstitutionOff/FormationChange); "
+                        "'category' is each action's own WhoScored type, not a collapsed bucket.",
             },
             "match_summaries": match_summaries,
             "actions": all_flat_rows,

@@ -153,7 +153,7 @@ def summarize_positions(group: pd.DataFrame, min_minutes_for_position: float = 9
 NEVER_SUM = {
     "player_id", "event_id", "match_id", "MW", "shirt_number", "sub_on_minute", "sub_off_minute",
     "age", "height_cm", "age_as_of", "date_of_birth",
-    "pass_accuracy_pct", "duel_win_pct", "aerial_win_pct", "dribble_success_pct",
+    "pass_accuracy_pct", "duel_win_pct", "aerial_win_pct", "dribble_success_pct", "top_speed_kmh"
 }
 
 TEXT_OR_METADATA = {
@@ -177,6 +177,10 @@ KNOWN_SUM_COLS = {
     "touches", "unsuccessful_touches", "dribbles_attempted", "carries", "carry_distance",
     "progressive_carries", "progressive_carry_distance", "best_carry_progression", "total_progression",
     "dispossessed", "possession_lost",
+    # Physical Tracking Data
+    "distance_total_km","sprints_total",
+    # Discipline / attacking / goalkeeping event counts
+    "own_goals","penalties_missed",
     # P-Adj defensive stats (raw versions are dropped before collapsing; only these land in the output)
     "P-Adj_tackles_total", "P-Adj_tackles_won", "P-Adj_interceptions", "P-Adj_clearances", "P-Adj_recoveries",
     # Non-adjusted defensive stats that are NOT possession-driven
@@ -187,7 +191,7 @@ KNOWN_SUM_COLS = {
     "penalties_won", "penalties_conceded", "penalties_faced", "distance_walking_km",
     "distance_jogging_km", "distance_running_km", "distance_high_speed_running_km", "distance_sprinting_km",
     "gk_saves", "gk_saves_inside_box", "gk_xgot_faced", "gk_goals_prevented", "gk_goals_prevented_raw",
-    "gk_save_value", "gk_high_claims", "gk_punches", "gk_sweeper_total", "gk_sweeper_accurate",
+    "gk_save_value", "gk_high_claims", "gk_punches", "gk_sweeper_total", "gk_sweeper_accurate", "gk_penalty_saves","gk_cross_not_claimed"
 }
 
 

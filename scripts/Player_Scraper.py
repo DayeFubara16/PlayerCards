@@ -50,15 +50,15 @@ LEAGUE_NAMES: dict[int, str] = {
     238: "Liga Portugal Betclic",
 }
 SEASON_IDS: dict[int, dict[str, int]] = {
-    8: {"2023-24": 52376, "2024-25": 61643, "2025-26": 77559},
-    17: {"2023-24": 52186, "2024-25": 61627, "2025-26": 76986},
-    18: {"2023-24": 52367, "2024-25": 61961, "2025-26": 77347},
-    23: {"2023-24": 52760, "2024-25": 63515, "2025-26": 76457},
-    34: {"2023-24": 52571, "2024-25": 61736, "2025-26": 77356},
-    35: {"2023-24": 52608, "2024-25": 63516, "2025-26": 77333},
-    37: {"2023-24": 52554, "2024-25": 61666, "2025-26": 77012},
-    38: {"2023-24": 52383, "2024-25": 61459, "2025-26": 77040},
-    238:{"2023-24": 52769, "2024-25": 63670, "2025-26": 77806},
+    8: {"2023-24": 52376, "2024-25": 61643, "2025-26": 77559, "2026-27": 97268},
+    17: {"2023-24": 52186, "2024-25": 61627, "2025-26": 76986, "2026-27":96668},
+    18: {"2023-24": 52367, "2024-25": 61961, "2025-26": 77347, "2026-27":97037},
+    23: {"2023-24": 52760, "2024-25": 63515, "2025-26": 76457, "2026-27":95836},
+    34: {"2023-24": 52571, "2024-25": 61736, "2025-26": 77356, "2026-27":96127},
+    35: {"2023-24": 52608, "2024-25": 63516, "2025-26": 77333, "2026-27":97464},
+    37: {"2023-24": 52554, "2024-25": 61666, "2025-26": 77012, "2026-27":96143},
+    38: {"2023-24": 52383, "2024-25": 61459, "2025-26": 77040, "2026-27":96616},
+    238:{"2023-24": 52769, "2024-25": 63670, "2025-26": 77806, "2026-27":97436},
 }
 
 DEFAULT_TOURNAMENT_ID = 35
@@ -135,12 +135,15 @@ CSV_COLUMNS = [
     "fouls_committed", "fouls_drawn",
     "yellow_cards", "red_cards",
     "penalties_won", "penalties_conceded", "penalties_faced",
+    "penalties_missed", "own_goals",
     "distance_walking_km", "distance_jogging_km", "distance_running_km",
     "distance_high_speed_running_km", "distance_sprinting_km",
+    "distance_total_km", "top_speed_kmh", "sprints_total",
     "gk_saves", "gk_saves_inside_box",
     "gk_xgot_faced", "gk_goals_prevented", "gk_goals_prevented_raw",
     "gk_save_value", "gk_high_claims", "gk_punches",
     "gk_sweeper_total", "gk_sweeper_accurate",
+    "gk_penalty_saves", "gk_cross_not_claimed",
     "flags",
 ]
 
@@ -215,11 +218,16 @@ PLAYER_STAT_MAP: list[tuple[str, set[str]]] = [
     ("penalties_won", {"penaltywon"}),
     ("penalties_conceded", {"penaltyconceded"}),
     ("penalties_faced", {"penaltyfaced"}),
+    ("penalties_missed", {"penaltymiss", "penaltymissed"}),
+    ("own_goals", {"owngoals", "owngoal"}),
     ("distance_walking_km", {"meterscoveredwalkingkm"}),
     ("distance_jogging_km", {"meterscoveredjoggingkm"}),
     ("distance_running_km", {"meterscoveredrunningkm"}),
     ("distance_high_speed_running_km", {"meterscoveredhighspeedrunningkm"}),
     ("distance_sprinting_km", {"meterscoveredsprintingkm"}),
+    ("distance_total_km", {"kilometerscovered", "kilometrescovered"}),
+    ("top_speed_kmh", {"topspeed"}),
+    ("sprints_total", {"numberofsprints", "totalsprints"}),
     ("gk_saves", {"saves", "totalsaves", "goalkeepersave"}),
     ("gk_saves_inside_box", {"savesinsidebox", "savedshotsfrominsidethebox"}),
     ("gk_goals_prevented_raw", {"goalsprevented"}),
@@ -228,6 +236,8 @@ PLAYER_STAT_MAP: list[tuple[str, set[str]]] = [
     ("gk_punches", {"punches"}),
     ("gk_sweeper_total", {"totalkeepersweeper"}),
     ("gk_sweeper_accurate", {"accuratekeepersweeper"}),
+    ("gk_penalty_saves", {"penaltysave", "penaltysaves"}),
+    ("gk_cross_not_claimed", {"crossnotclaimed"}),
     ("minutes_played", {"minutesplayed", "minutessincestat"}),
 ]
 
@@ -237,7 +247,7 @@ STAT_FAMILIES: dict[str, str] = {
     "goals": "attacking", "assists": "attacking", "shots_total": "attacking", "shots_on_target": "attacking",
     "shots_off_target": "attacking", "xg": "attacking", "xgot": "attacking", "xa": "attacking",
     "big_chances_created": "attacking", "big_chance_missed": "attacking", "touches_opp_box": "attacking",
-    "offsides": "attacking", "hit_woodwork": "attacking",
+    "offsides": "attacking", "hit_woodwork": "attacking", "penalties_missed": "attacking",
     "passes_total": "passing", "passes_accurate": "passing", "pass_accuracy_pct": "passing",
     "passes_own_half_total": "passing", "passes_own_half_accurate": "passing",
     "passes_opposition_half_total": "passing", "passes_opposition_half_accurate": "passing",
@@ -255,11 +265,14 @@ STAT_FAMILIES: dict[str, str] = {
     "errors_leading_to_shot": "defending", "errors_leading_to_goal": "defending",
     "fouls_committed": "discipline", "fouls_drawn": "discipline", "yellow_cards": "discipline", "red_cards": "discipline",
     "penalties_won": "discipline", "penalties_conceded": "discipline", "penalties_faced": "discipline",
+    "own_goals": "discipline",
     "distance_walking_km": "physical", "distance_jogging_km": "physical", "distance_running_km": "physical",
     "distance_high_speed_running_km": "physical", "distance_sprinting_km": "physical",
+    "distance_total_km": "physical", "top_speed_kmh": "physical", "sprints_total": "physical",
     "gk_saves": "goalkeeping", "gk_saves_inside_box": "goalkeeping", "gk_xgot_faced": "goalkeeping",
     "gk_goals_prevented": "goalkeeping", "gk_goals_prevented_raw": "goalkeeping", "gk_save_value": "goalkeeping",
     "gk_high_claims": "goalkeeping", "gk_punches": "goalkeeping", "gk_sweeper_total": "goalkeeping", "gk_sweeper_accurate": "goalkeeping",
+    "gk_penalty_saves": "goalkeeping", "gk_cross_not_claimed": "goalkeeping",
 }
 
 def _norm(s: Any) -> str:

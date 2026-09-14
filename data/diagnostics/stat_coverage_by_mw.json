@@ -1,131 +1,143 @@
 {
-  "Championship|MW46": {
+  "Liga Portugal Betclic|MW6": {
     "ratings": {
-      "rows_with_value": 1116,
+      "rows_with_value": 843,
       "raw_keys_seen": {
-        "rating": 372,
-        "original": 372,
-        "alternative": 372
+        "rating": 281,
+        "original": 281,
+        "alternative": 281
       }
     },
     "value": {
-      "rows_with_value": 1314,
+      "rows_with_value": 978,
       "raw_keys_seen": {
-        "defensivevaluenormalized": 371,
-        "passvaluenormalized": 367,
-        "dribblevaluenormalized": 361,
-        "shotvaluenormalized": 190,
-        "goalkeepervaluenormalized": 25
+        "defensivevaluenormalized": 280,
+        "passvaluenormalized": 279,
+        "dribblevaluenormalized": 273,
+        "shotvaluenormalized": 128,
+        "goalkeepervaluenormalized": 18
       }
     },
     "attacking": {
-      "rows_with_value": 1836,
+      "rows_with_value": 1403,
       "raw_keys_seen": {
-        "totalshots": 480,
-        "goalassist": 376,
-        "expectedassists": 366,
-        "expectedgoals": 190,
-        "shotofftarget": 96,
-        "ontargetscoringattempt": 87,
-        "expectedgoalsontarget": 85,
-        "bigchancecreated": 43,
-        "totaloffside": 39,
-        "bigchancemissed": 37,
-        "goals": 30,
-        "hitwoodwork": 7
+        "totalshots": 411,
+        "goalassist": 285,
+        "expectedassists": 278,
+        "expectedgoals": 128,
+        "shotofftarget": 71,
+        "ontargetscoringattempt": 62,
+        "expectedgoalsontarget": 61,
+        "bigchancecreated": 30,
+        "goals": 28,
+        "bigchancemissed": 24,
+        "totaloffside": 16,
+        "hitwoodwork": 9
       }
     },
     "passing": {
-      "rows_with_value": 3034,
+      "rows_with_value": 2244,
       "raw_keys_seen": {
-        "totalpass": 370,
-        "totaloppositionhalfpasses": 367,
-        "accuratepass": 364,
-        "accurateoppositionhalfpasses": 355,
-        "totalownhalfpasses": 352,
-        "accurateownhalfpasses": 342,
-        "totallongballs": 276,
-        "accuratelongballs": 209,
-        "keypass": 167,
-        "totalcross": 159,
-        "accuratecross": 73
+        "totalpass": 280,
+        "accuratepass": 277,
+        "totaloppositionhalfpasses": 277,
+        "accurateoppositionhalfpasses": 266,
+        "totalownhalfpasses": 258,
+        "accurateownhalfpasses": 254,
+        "totallongballs": 192,
+        "accuratelongballs": 162,
+        "totalcross": 115,
+        "keypass": 109,
+        "accuratecross": 54
       }
     },
     "ball_contact": {
-      "rows_with_value": 589,
+      "rows_with_value": 440,
       "raw_keys_seen": {
-        "touches": 376,
-        "unsuccessfultouch": 213
+        "touches": 283,
+        "unsuccessfultouch": 157
       }
     },
     "carrying": {
-      "rows_with_value": 1780,
+      "rows_with_value": 1370,
       "raw_keys_seen": {
-        "ballcarriescount": 362,
-        "totalballcarriesdistance": 362,
-        "progressiveballcarriescount": 362,
-        "totalprogression": 362,
-        "totalprogressiveballcarriesdistance": 166,
-        "bestballcarryprogression": 166
+        "ballcarriescount": 273,
+        "totalballcarriesdistance": 273,
+        "progressiveballcarriescount": 273,
+        "totalprogression": 273,
+        "totalprogressiveballcarriesdistance": 139,
+        "bestballcarryprogression": 139
       }
     },
     "ball_security": {
-      "rows_with_value": 486,
+      "rows_with_value": 368,
       "raw_keys_seen": {
-        "possessionlostctrl": 365,
-        "dispossessed": 121
+        "possessionlostctrl": 273,
+        "dispossessed": 95
       }
     },
     "defending": {
-      "rows_with_value": 2402,
+      "rows_with_value": 1882,
       "raw_keys_seen": {
-        "ballrecovery": 310,
-        "duellost": 305,
-        "duelwon": 300,
-        "totalclearance": 191,
-        "aeriallost": 186,
-        "aerialwon": 181,
-        "totaltackle": 176,
-        "totalcontest": 146,
-        "wontackle": 128,
-        "interceptionwon": 120,
-        "challengelost": 103,
-        "woncontest": 92,
-        "blockedscoringattempt": 90,
-        "outfielderblock": 75,
+        "duellost": 246,
+        "duelwon": 241,
+        "ballrecovery": 234,
+        "totalclearance": 153,
+        "totaltackle": 149,
+        "aeriallost": 144,
+        "aerialwon": 131,
+        "totalcontest": 125,
+        "wontackle": 122,
+        "interceptionwon": 89,
+        "challengelost": 75,
+        "woncontest": 67,
+        "blockedscoringattempt": 48,
+        "outfielderblock": 44,
         "errorleadtoashot": 6,
         "errorleadtoagoal": 5,
-        "lastmantackle": 4,
-        "clearanceoffline": 3
+        "clearanceoffline": 3,
+        "lastmantackle": 2
       }
     },
     "goalkeeping": {
-      "rows_with_value": 137,
+      "rows_with_value": 91,
       "raw_keys_seen": {
-        "goalsprevented": 25,
-        "saves": 24,
-        "keepersavevalue": 24,
-        "savedshotsfrominsidethebox": 22,
-        "totalkeepersweeper": 12,
-        "goodhighclaim": 11,
-        "accuratekeepersweeper": 11,
-        "punches": 8
+        "goalsprevented": 18,
+        "saves": 17,
+        "keepersavevalue": 17,
+        "savedshotsfrominsidethebox": 15,
+        "goodhighclaim": 9,
+        "totalkeepersweeper": 6,
+        "accuratekeepersweeper": 6,
+        "punches": 3
       }
     },
     "other": {
-      "rows_with_value": 376,
+      "rows_with_value": 285,
       "raw_keys_seen": {
-        "minutesplayed": 376
+        "minutesplayed": 285
       }
     },
     "discipline": {
-      "rows_with_value": 316,
+      "rows_with_value": 319,
       "raw_keys_seen": {
-        "fouls": 159,
-        "wasfouled": 154,
-        "penaltywon": 1,
-        "penaltyfaced": 1,
-        "penaltyconceded": 1
+        "fouls": 156,
+        "wasfouled": 144,
+        "penaltyconceded": 6,
+        "penaltyfaced": 6,
+        "penaltywon": 6,
+        "owngoals": 1
+      }
+    },
+    "physical": {
+      "rows_with_value": 846,
+      "raw_keys_seen": {
+        "meterscoveredrunningkm": 141,
+        "meterscoveredhighspeedrunningkm": 141,
+        "meterscoveredsprintingkm": 141,
+        "kilometerscovered": 141,
+        "topspeed": 141,
+        "numberofsprints": 141
       }
     }
   }

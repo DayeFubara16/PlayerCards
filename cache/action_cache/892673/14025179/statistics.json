@@ -1,0 +1,143 @@
+{
+  "player_id": 892673,
+  "event_id": 14025179,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Sandro Tonali",
+      "firstName": "",
+      "lastName": "",
+      "slug": "sandro-tonali",
+      "shortName": "S. Tonali",
+      "position": "M",
+      "jerseyNumber": "8",
+      "height": 181,
+      "userCount": 17398,
+      "gender": "M",
+      "sofascoreId": "sandrotonali",
+      "id": 892673,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 957744000,
+      "proposedMarketValueRaw": {
+        "value": 74000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ساندرو تونالي",
+          "bn": "সান্দ্রো টোনালি",
+          "hi": "सैंड्रो टोनाली",
+          "ru": "Сандро Тонали"
+        },
+        "shortNameTranslation": {
+          "ar": "س. تونالي",
+          "bn": "এস. টোনালি",
+          "hi": "एस. टोनाली",
+          "ru": "С. Тонали"
+        }
+      }
+    },
+    "team": {
+      "name": "Newcastle United",
+      "slug": "newcastle-united",
+      "shortName": "Newcastle",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 935334,
+      "nameCode": "NEW",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 39,
+      "teamColors": {
+        "primary": "#000000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نيوكاسل يونايتد",
+          "hi": "न्यू कास्सेल यूनाइटेड ऍफ़सी",
+          "ru": "Ньюкасл Юнайтед"
+        },
+        "shortNameTranslation": {
+          "ar": "نيوكاسل",
+          "bn": "নিউক্যাসল",
+          "hi": "न्यूकैसल"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 48,
+      "accuratePass": 41,
+      "totalLongBalls": 6,
+      "accurateLongBalls": 5,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 19,
+      "totalOwnHalfPasses": 19,
+      "accurateOppositionHalfPasses": 22,
+      "totalOppositionHalfPasses": 29,
+      "totalCross": 4,
+      "aerialLost": 2,
+      "duelLost": 3,
+      "duelWon": 4,
+      "shotOffTarget": 2,
+      "blockedScoringAttempt": 1,
+      "totalClearance": 2,
+      "interceptionWon": 1,
+      "ballRecovery": 4,
+      "totalTackle": 2,
+      "wonTackle": 1,
+      "unsuccessfulTouch": 1,
+      "wasFouled": 2,
+      "fouls": 1,
+      "minutesPlayed": 87,
+      "touches": 64,
+      "rating": 6.6,
+      "possessionLostCtrl": 12,
+      "expectedGoals": 0.162,
+      "expectedAssists": 0.027952,
+      "topSpeed": 33.52,
+      "kilometersCovered": 10.1,
+      "numberOfSprints": 18,
+      "totalBallCarriesDistance": 198.84793676896,
+      "ballCarriesCount": 24,
+      "totalProgression": 49.983363523721,
+      "bestBallCarryProgression": 10.998169566621,
+      "totalProgressiveBallCarriesDistance": 13.710571140547,
+      "progressiveBallCarriesCount": 1,
+      "keyPass": 1,
+      "ratingVersions": {
+        "original": 6.6,
+        "alternative": 6.9
+      },
+      "totalShots": 3,
+      "shotValueNormalized": -0.39,
+      "passValueNormalized": -0.01,
+      "dribbleValueNormalized": 0.12,
+      "defensiveValueNormalized": -0.14,
+      "metersCoveredRunningKm": 1.64,
+      "metersCoveredHighSpeedRunningKm": 0.61,
+      "metersCoveredSprintingKm": 0.28,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "M",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14025179/player/892673/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-07-17T13:41:10.310106Z"
+  }
+}

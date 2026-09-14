@@ -24,6 +24,12 @@ python scripts/Player_Finder.py --key_passes_min 20 --sort key_passes --desc --l
 # Goalkeepers with the best goals prevented:
 python Player_Finder.py --position GK --gk_goals_prevented_min 1 --sort gk_goals_prevented --desc
 
+# Players with high physical workload:
+python Player_Finder.py --distance_total_km_per90_min 10 --sprints_total_per90_min 20
+
+# Goalkeepers with penalty saves:
+python Player_Finder.py --position GK --gk_penalty_saves_min 2
+
 # Search by name (partial, case-insensitive):
 python Player_Finder.py --name "Messi"
 
@@ -94,12 +100,16 @@ CATEGORICAL_FILTERS = {
 # the CSV but those are nonsensical for filtering; only the raw avg is exposed.
 
 NUMERIC_STATS = [
-    # ── Playing time (no per-90; these ARE the denominator) ───────────────────
+    # ── Playing time / player measurements ────────────────────────────────────
+    # Playing time is the denominator for per-90 calculations.
     "matches",
     "minutes_played",
+
+    # Player measurements — no per-90
     "age",
     "height_cm",
     "birth_year",
+    "top_speed_kmh",
 
     # ── Attacking — counting + per-90 ─────────────────────────────────────────
     "goals",                            "goals_per90",
@@ -116,6 +126,10 @@ NUMERIC_STATS = [
     "hit_woodwork",                     "hit_woodwork_per90",
     "penalties_won",                    "penalties_won_per90",
 
+    # Discipline / attacking event counts
+    "own_goals",                        "own_goals_per90",
+    "penalties_missed",                 "penalties_missed_per90",
+
     # ── Passing — counting + per-90 ───────────────────────────────────────────
     "passes_total",                     "passes_total_per90",
     "passes_accurate",                  "passes_accurate_per90",
@@ -128,6 +142,7 @@ NUMERIC_STATS = [
     "long_balls_accurate",              "long_balls_accurate_per90",
     "crosses_total",                    "crosses_total_per90",
     "crosses_accurate",                 "crosses_accurate_per90",
+
     # Passing rate — no per-90 (already a percentage)
     "pass_accuracy_pct",
 
@@ -140,19 +155,15 @@ NUMERIC_STATS = [
     "carry_distance",                   "carry_distance_per90",
     "progressive_carries",              "progressive_carries_per90",
     "progressive_carry_distance",       "progressive_carry_distance_per90",
-    "best_carry_progression",           "best_carry_progression_per90",
+    "best_carry_progression",            "best_carry_progression_per90",
     "total_progression",                "total_progression_per90",
     "dispossessed",                     "dispossessed_per90",
     "possession_lost",                  "possession_lost_per90",
+
     # Dribble rate — no per-90 (already a percentage)
     "dribble_success_pct",
 
     # ── Possession-adjusted (P-Adj) defensive stats — counting + per-90 ───────
-    # Raw tackles_total, tackles_won, interceptions, clearances, recoveries have
-    # been removed from this dataset and replaced by these P-Adj versions.
-    # Adjustment formula per match: raw_stat × (oppo_poss_pct / 50).
-    # A neutral 50/50 game gives a multiplier of 1.0; facing a ball-dominant
-    # opponent (e.g. 65% poss) gives ×1.30; a low-poss opponent gives <1.0.
     "P-Adj_tackles_total",              "P-Adj_tackles_total_per90",
     "P-Adj_tackles_won",                "P-Adj_tackles_won_per90",
     "P-Adj_interceptions",              "P-Adj_interceptions_per90",
@@ -160,10 +171,6 @@ NUMERIC_STATS = [
     "P-Adj_recoveries",                 "P-Adj_recoveries_per90",
 
     # ── Non-adjusted defensive stats — counting + per-90 ──────────────────────
-    # These are NOT possession-adjusted (consistent with StatsBomb/Opta/FBref):
-    # duels include offensive actions; aerials are 50/50 contests; blocked shots
-    # depend on shots faced; last-man tackles and clearance_off_line are too
-    # rare and context-specific to adjust reliably.
     "last_man_tackles",                 "last_man_tackles_per90",
     "clearance_off_line",               "clearance_off_line_per90",
     "blocked_shots",                    "blocked_shots_per90",
@@ -174,36 +181,41 @@ NUMERIC_STATS = [
     "aerial_duels_won",                 "aerial_duels_won_per90",
     "aerial_duels_lost",                "aerial_duels_lost_per90",
     "challenges_lost",                  "challenges_lost_per90",
+
     # Win-rate ratios — no per-90 (already percentages)
     "duel_win_pct",
     "aerial_win_pct",
 
     # ── Errors & discipline — counting + per-90 ───────────────────────────────
-    "errors_leading_to_shot",           "errors_leading_to_shot_per90",
-    "errors_leading_to_goal",           "errors_leading_to_goal_per90",
-    "fouls_committed",                  "fouls_committed_per90",
-    "fouls_drawn",                      "fouls_drawn_per90",
-    "yellow_cards",                     "yellow_cards_per90",
-    "red_cards",                        "red_cards_per90",
-    "penalties_conceded",               "penalties_conceded_per90",
+    "errors_leading_to_shot",            "errors_leading_to_shot_per90",
+    "errors_leading_to_goal",            "errors_leading_to_goal_per90",
+    "fouls_committed",                   "fouls_committed_per90",
+    "fouls_drawn",                       "fouls_drawn_per90",
+    "yellow_cards",                      "yellow_cards_per90",
+    "red_cards",                         "red_cards_per90",
+    "penalties_conceded",                "penalties_conceded_per90",
 
     # ── Goalkeeping — counting + per-90 ───────────────────────────────────────
-    "gk_saves",                         "gk_saves_per90",
-    "gk_saves_inside_box",              "gk_saves_inside_box_per90",
-    "gk_xgot_faced",                    "gk_xgot_faced_per90",
-    "gk_goals_prevented",               "gk_goals_prevented_per90",
-    "gk_goals_prevented_raw",           "gk_goals_prevented_raw_per90",
-    "gk_high_claims",                   "gk_high_claims_per90",
-    "gk_punches",                       "gk_punches_per90",
-    "gk_sweeper_total",                 "gk_sweeper_total_per90",
-    "gk_sweeper_accurate",              "gk_sweeper_accurate_per90",
+    "gk_saves",                          "gk_saves_per90",
+    "gk_saves_inside_box",               "gk_saves_inside_box_per90",
+    "gk_xgot_faced",                     "gk_xgot_faced_per90",
+    "gk_goals_prevented",                "gk_goals_prevented_per90",
+    "gk_goals_prevented_raw",            "gk_goals_prevented_raw_per90",
+    "gk_high_claims",                     "gk_high_claims_per90",
+    "gk_punches",                         "gk_punches_per90",
+    "gk_sweeper_total",                   "gk_sweeper_total_per90",
+    "gk_sweeper_accurate",                "gk_sweeper_accurate_per90",
+    "gk_penalty_saves",                   "gk_penalty_saves_per90",
+    "gk_cross_not_claimed",               "gk_cross_not_claimed_per90",
 
     # ── Physical / distance — counting + per-90 ───────────────────────────────
-    "distance_walking_km",              "distance_walking_km_per90",
-    "distance_jogging_km",              "distance_jogging_km_per90",
-    "distance_running_km",              "distance_running_km_per90",
-    "distance_high_speed_running_km",   "distance_high_speed_running_km_per90",
-    "distance_sprinting_km",            "distance_sprinting_km_per90",
+    "distance_total_km",                 "distance_total_km_per90",
+    "sprints_total",                     "sprints_total_per90",
+    "distance_walking_km",               "distance_walking_km_per90",
+    "distance_jogging_km",               "distance_jogging_km_per90",
+    "distance_running_km",               "distance_running_km_per90",
+    "distance_high_speed_running_km",    "distance_high_speed_running_km_per90",
+    "distance_sprinting_km",             "distance_sprinting_km_per90",
 
     # ── Spatial / positioning ─────────────────────────────────────────────────
     # Average x/y coordinates (pitch position). No per-90 exposed — the per-90
@@ -212,6 +224,7 @@ NUMERIC_STATS = [
     "avg_y",
     "season_avg_x",
     "season_avg_y",
+
     # Spatial percentage breakdowns — already proportions, no per-90
     "spatial_wide_pct",
     "spatial_right_pct",
@@ -224,7 +237,7 @@ NUMERIC_STATS = [
     "spatial_mid_wide_pct",
     "spatial_deep_central_pct",
 
-    # ── Arbitration metadata ───────────────────────────────────────────────────
+    # ── Arbitration metadata ─────────────────────────────────────────────────
     # Useful for filtering by how confident the position arbitrator was.
     "arbitrated_confidence",
 ]

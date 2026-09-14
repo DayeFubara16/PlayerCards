@@ -45,6 +45,65 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 
+# ── League ID → display name mapping ──────────────────────────────────────────
+# Edit the names here to match exactly what appears in your CSV's `league` column.
+# The numeric keys are Sofascore / Scoresway competition IDs.
+# You can also pass --league by name (case-insensitive) or by numeric ID.
+LEAGUE_NAMES: dict[int, str] = {
+    8:   "La Liga",
+    17:  "Premier League",
+    18:  "Championship",
+    23:  "Serie A",
+    34:  "Ligue 1",
+    35:  "Bundesliga",
+    37:  "VriendenLoterij Eredivisie",
+    38:  "Pro League",
+    238: "Liga Portugal Betclic",
+}
+
+# Reverse lookup: lowercase name → canonical name (for --league by-name support)
+_LEAGUE_NAME_LOWER: dict[str, str] = {v.lower(): v for v in LEAGUE_NAMES.values()}
+
+
+def _resolve_single_league(value: str) -> str:
+    """Resolve one league token (ID or name) to its canonical CSV string."""
+    try:
+        league_id = int(value)
+        if league_id in LEAGUE_NAMES:
+            return LEAGUE_NAMES[league_id]
+    except ValueError:
+        pass
+    canonical = _LEAGUE_NAME_LOWER.get(value.strip().lower())
+    if canonical:
+        return canonical
+    return value
+
+
+def resolve_league(values: list[str] | str | None) -> set[str]:
+    """
+    Resolve one or more --league tokens to a set of canonical names.
+
+    Accepts any mix of numeric IDs and league names, in any of these forms:
+      ["8", "17"]               -> {"La Liga", "Premier League"}
+      ["8,17,23"]               -> {"La Liga", "Premier League", "Serie A"}
+      ["8,17", "Bundesliga"]    -> {"La Liga", "Premier League", "Bundesliga"}
+      ["premier league"]        -> {"Premier League"}
+      "17"                      -> {"Premier League"}   (single string, legacy)
+      None                      -> empty set (no filter applied)
+
+    Both --league 8 17 23 and --league 8,17,23 are accepted.
+    """
+    if not values:
+        return set()
+    if isinstance(values, str):
+        values = [values]
+    # Flatten any comma-joined tokens (e.g. "8,17,23" -> ["8", "17", "23"])
+    tokens: list[str] = []
+    for v in values:
+        tokens.extend(part.strip() for part in v.split(",") if part.strip())
+    return {_resolve_single_league(t) for t in tokens}
+
+
 ROLE_PREF = [
     "role_model_family",
     "arbitrated_role_group",
@@ -782,7 +841,7 @@ def main() -> None:
     ap.add_argument("--prefer-input-roles", action="store_true", help="Keep role columns from --input when both files contain the same role fields.")
     ap.add_argument("--player-id", type=int, required=True)
     ap.add_argument("--season", default=None)
-    ap.add_argument("--league", default=None)
+    ap.add_argument("--league", nargs="+", default=None, metavar="LEAGUE", help="One or more league IDs or names (e.g. --league 8 17 or --league 'La Liga' 'Premier League').")
     ap.add_argument("--role-column", default=None)
     ap.add_argument("--top", type=int, default=25)
     ap.add_argument("--min-minutes", type=float, default=450)
@@ -806,7 +865,8 @@ def main() -> None:
     if args.season and "season" in df.columns:
         df = df.loc[df["season"].astype(str) == str(args.season)].copy()
     if args.league and "league" in df.columns:
-        df = df.loc[df["league"].astype(str).str.lower() == str(args.league).lower()].copy()
+        resolved_leagues = resolve_league(args.league)
+        df = df.loc[df["league"].astype(str).str.lower().isin({l.lower() for l in resolved_leagues})].copy()
     if "minutes_played" in df.columns and args.min_minutes is not None:
         df = df.loc[pd.to_numeric(df["minutes_played"], errors="coerce").fillna(0) >= float(args.min_minutes)].copy()
 

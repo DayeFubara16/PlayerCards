@@ -1,0 +1,128 @@
+{
+  "player_id": 1031251,
+  "event_id": 16363256,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Antonín Kinský",
+      "slug": "antonin-kinsky",
+      "shortName": "A. Kinský",
+      "position": "G",
+      "jerseyNumber": "31",
+      "height": 190,
+      "userCount": 10575,
+      "gender": "M",
+      "sofascoreId": "utzizf",
+      "id": 1031251,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 1047513600,
+      "proposedMarketValueRaw": {
+        "value": 15700000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أنطونين كينسكي",
+          "bn": "আন্তোনিন কিনস্কি",
+          "hi": "एंटोनिन किंस्की",
+          "ru": "Антонин Кинский"
+        },
+        "shortNameTranslation": {
+          "ar": "أ. كينسكي",
+          "bn": "এ. কিনস্কি",
+          "hi": "ए. किंस्की",
+          "ru": "А. Кинский"
+        }
+      }
+    },
+    "team": {
+      "name": "Tottenham Hotspur",
+      "slug": "tottenham-hotspur",
+      "shortName": "Tottenham",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 1674684,
+      "nameCode": "TOT",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 33,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000066",
+        "text": "#000066"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "توتنهام هوتسبير",
+          "hi": "टोटेनहैम हॉटस्पर ऍफ़सी",
+          "ru": "Тоттенхэм Хотспур"
+        },
+        "shortNameTranslation": {
+          "ar": "توتنهام",
+          "bn": "টটেনহ্যাম",
+          "hi": "टॉटनहैम"
+        }
+      }
+    },
+    "statistics": {
+      "totalPass": 39,
+      "accuratePass": 32,
+      "totalLongBalls": 11,
+      "accurateLongBalls": 4,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 29,
+      "totalOwnHalfPasses": 29,
+      "accurateOppositionHalfPasses": 3,
+      "totalOppositionHalfPasses": 10,
+      "duelLost": 2,
+      "challengeLost": 2,
+      "ballRecovery": 6,
+      "unsuccessfulTouch": 1,
+      "minutesPlayed": 90,
+      "touches": 45,
+      "rating": 5.6,
+      "possessionLostCtrl": 8,
+      "expectedAssists": 0.0031074,
+      "topSpeed": 22.31496,
+      "kilometersCovered": 5.7487395,
+      "numberOfSprints": 0,
+      "totalBallCarriesDistance": 92.444931086625,
+      "ballCarriesCount": 15,
+      "totalProgression": 76.744700920959,
+      "progressiveBallCarriesCount": 0,
+      "ratingVersions": {
+        "original": 5.6,
+        "alternative": 6
+      },
+      "totalShots": 0,
+      "goalsPrevented": -1.3147,
+      "passValueNormalized": 0.04,
+      "dribbleValueNormalized": 0.02,
+      "defensiveValueNormalized": -0.34,
+      "goalkeeperValueNormalized": -0.88,
+      "metersCoveredRunningKm": 0.14,
+      "metersCoveredHighSpeedRunningKm": 0.01,
+      "metersCoveredSprintingKm": 0,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "G",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/16363256/player/1031251/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-09-08T19:28:16.870455Z"
+  }
+}

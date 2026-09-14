@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "player_id": 1159759,
+    "player_name": "Nathaniel Brown",
+    "season": "2025-26",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 33,
+    "endpoints": [
+      "rating-breakdown",
+      "statistics"
+    ],
+    "generated_at_utc": "2026-06-13T00:02:28.104133Z",
+    "cache_dir": "cache/action_cache",
+    "no_fetch": false,
+    "refresh_cache": true
+  },
+  "events": 33,
+  "events_with_any_available_endpoint": 0,
+  "flat_rows": 0,
+  "endpoint_summary": {
+    "rating-breakdown": {
+      "available_events": 0,
+      "missing_events": 33,
+      "flat_rows": 0
+    },
+    "statistics": {
+      "available_events": 0,
+      "missing_events": 33,
+      "flat_rows": 0
+    }
+  },
+  "category_counts": {},
+  "endpoint_debug_sample": {
+    "rating-breakdown": [
+      {
+        "event_id": 14057744,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065071,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065076,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065087,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065092,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      }
+    ],
+    "statistics": [
+      {
+        "event_id": 14057744,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065071,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065076,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065087,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      },
+      {
+        "event_id": 14065092,
+        "available": false,
+        "source": "fetch",
+        "status_code": 403,
+        "debug": {
+          "type": "NoneType"
+        }
+      }
+    ]
+  },
+  "note": "For player action maps, rating-breakdown is the key endpoint. Statistics rows are usually aggregate stats, not raw actions. Raw JSON remains the source of truth because Sofascore schemas can vary."
+}

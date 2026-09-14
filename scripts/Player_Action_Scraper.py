@@ -731,21 +731,21 @@ def flatten_rating_breakdown(data: Any, endpoint: str) -> list[dict[str, Any]]:
             # ─────────────────────────────────────────────
             # DEBUG PASS METADATA
             # ─────────────────────────────────────────────
-            if category == "passes":
-
-                interesting = {
-                    k: v for k, v in item.items()
-                    if (
-                        "assist" in k.lower()
-                        or "key" in k.lower()
-                        or "chance" in k.lower()
-                        or "pass" in k.lower()
-                    )
-                }
-
-                if interesting:
-                    print("\nPASS DEBUG:")
-                    print(json.dumps(interesting, indent=2, ensure_ascii=False))
+            # if category == "passes":
+            #
+            #     interesting = {
+            #         k: v for k, v in item.items()
+            #         if (
+            #             "assist" in k.lower()
+            #             or "key" in k.lower()
+            #             or "chance" in k.lower()
+            #             or "pass" in k.lower()
+            #         )
+            #     }
+            #
+            #     if interesting:
+            #         print("\nPASS DEBUG:")
+            #         print(json.dumps(interesting, indent=2, ensure_ascii=False))
 
             rows.append(
                 normalize_action_item(

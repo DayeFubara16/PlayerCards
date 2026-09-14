@@ -3,12 +3,17 @@ Player_Card_Builder.py
 ──────────────────────
 Build one Observable-ready player-card JSON from the scouting pipeline.
 
-V3 / action-ready rewrite:
+V4 / dual-source rewrite:
 - Preserves the existing card shape: profile, position, role, grades, season_stats,
   per90, percentiles, similar_players, shotmap, heatmap, summary.
-- Adds an Observable-friendly actions block for passes, ball carries, dribbles,
-  defensive actions, and any other normalized action category.
-- Accepts either the new action scraper flat CSV or raw JSON.
+- The "actions" block is now sourced from WhoScored (Extract_WhoScored_Player_Actions.py)
+  instead of Sofascore's rating-breakdown scraper — every WhoScored action type is
+  preserved as its own category (not folded into a fixed pass/carry/dribble/defensive
+  set), plus full qualifiers and shot/save placement coordinates where present.
+  Every other block remains Sofascore-sourced. See card["meta"]["data_sources"] and
+  card["actions"]["source"] for the explicit split — this matters once both feed the
+  same Observable workbook.
+- Accepts the WhoScored extractor's flat CSV or raw JSON for --actions.
 - Keeps raw action payloads out of the final card by default so the JSON stays UI-friendly.
 - Produces compact summaries, zone shares, and map-ready point arrays.
 
@@ -136,15 +141,56 @@ ACTION_CATEGORY_ALIASES = {
     "carry": "carries",
     "dribbles": "dribbles",
     "dribble": "dribbles",
+    "takeon": "dribbles",
+    "take_on": "dribbles",
     "defensive": "defensive",
     "defence": "defensive",
     "defense": "defensive",
     "tackles": "defensive",
+    "tackle": "defensive",
     "interceptions": "defensive",
+    "interception": "defensive",
     "recoveries": "defensive",
+    "ballrecovery": "defensive",
+    "ball_recovery": "defensive",
+    "clearance": "defensive",
+    "clearances": "defensive",
+    "blockedpass": "defensive",
+    "blocked_pass": "defensive",
+    "challenge": "defensive",
+    # WhoScored-specific action types with no natural Sofascore-era equivalent —
+    # given their own buckets rather than falling into "other".
+    "aerial": "aerials",
+    "aerials": "aerials",
+    "balltouch": "touches",
+    "ball_touch": "touches",
+    "save": "goalkeeping",
+    "keeperpickup": "goalkeeping",
+    "keeper_pickup": "goalkeeping",
+    "keepersweeper": "goalkeeping",
+    "keeper_sweeper": "goalkeeping",
+    "smother": "goalkeeping",
+    "savedshot": "shots",
+    "saved_shot": "shots",
+    "missedshots": "shots",
+    "missed_shots": "shots",
+    "goal": "shots",
+    "foul": "fouls",
+    "offsidegiven": "offside",
+    "offsidepass": "offside",
+    "offsideprovoked": "offside",
+    "dispossessed": "possession_lost",
+    "card": "discipline",
+    "error": "errors",
+    "cornerawarded": "other",
+    "corner_awarded": "other",
 }
 
-MAP_CATEGORY_ORDER = ["passes", "carries", "dribbles", "defensive", "other"]
+MAP_CATEGORY_ORDER = [
+    "passes", "carries", "dribbles", "defensive", "aerials", "touches",
+    "shots", "goalkeeping", "fouls", "offside", "possession_lost",
+    "discipline", "errors", "other",
+]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -307,7 +353,10 @@ def auto_find_json(player_id: int, season: str, kind: str, search_dir: str | Pat
         patterns = [f"similar_{player_id}.json", f"*{player_id}*{season_clean}*similarit*.json", f"*{player_id}*similar*.json"]
         exclude = ["card", "heatmap"]
     elif kind == "actions":
-        patterns = [f"*{player_id}*{season_clean}*actions_flat.csv", f"*{player_id}*actions_flat.csv", f"*{player_id}*actions_raw.json"]
+        # Player actions now come from Extract_WhoScored_Player_Actions.py
+        # (filenames end "_whoscored.json"/"_whoscored.csv"), not the old
+        # Sofascore action-scraper output.
+        patterns = [f"*{player_id}*whoscored.json", f"*{player_id}*whoscored.csv"]
         exclude = ["card"]
     else:
         return None
@@ -589,6 +638,12 @@ def normalize_action_category(category: Any, action_type: Any = None) -> str:
         return ACTION_CATEGORY_ALIASES[raw]
     if key in ACTION_CATEGORY_ALIASES:
         return ACTION_CATEGORY_ALIASES[key]
+    # WhoScored's own type strings are PascalCase (TakeOn, BallRecovery, ...);
+    # Sofascore's legacy categories were already lowercase. Case-fold both
+    # the incoming value and the alias keys so one dict serves both sources.
+    key_lower = key.lower()
+    if key_lower in ACTION_CATEGORY_ALIASES:
+        return ACTION_CATEGORY_ALIASES[key_lower]
     low = raw.lower()
     if "pass" in low:
         return "passes"
@@ -766,6 +821,31 @@ def get_any(row: dict[str, Any], names: Iterable[str]) -> Any:
 
 
 def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
+    # WhoScored packs cross/through-ball/key-pass/etc. flags into a nested
+    # 'qualifiers' dict rather than flat fields the way Sofascore's rows
+    # were shaped. Bridge the ones this card format already knows how to
+    # display, without discarding the full qualifiers dict (preserved raw
+    # below via PRESERVE_OPTIONAL_FIELDS).
+    qualifiers = row.get("qualifiers")
+    if isinstance(qualifiers, dict) and qualifiers:
+        row = dict(row)
+        flag_map = {
+            "Cross": "cross", "Longball": "longBall", "Throughball": "throughBall",
+            "KeyPass": "keypass", "BigChanceCreated": "bigChanceCreated",
+            "BigChance": "bigChance", "IntentionalAssist": "assist",
+            "IntentionalGoalAssist": "isGoalAssist", "ShotAssist": "isShotAssist",
+        }
+        for qname, field in flag_map.items():
+            if qname in qualifiers and row.get(field) in (None, ""):
+                row[field] = qualifiers[qname]
+        if row.get("body_part") in (None, ""):
+            if "Head" in qualifiers:
+                row["body_part"] = "Head"
+            elif "LeftFoot" in qualifiers:
+                row["body_part"] = "Left Foot"
+            elif "RightFoot" in qualifiers:
+                row["body_part"] = "Right Foot"
+
     category_raw = get_any(row, ["category", "_source_path", "type", "action_type", "name"])
     action_type = get_any(row, ["action_type", "type", "name", "event_type", "eventType"])
     category = normalize_action_category(category_raw, action_type)
@@ -841,6 +921,16 @@ def compact_action_row(row: dict[str, Any]) -> dict[str, Any]:
         # Debug / source references
         "passEndCoordinates",
         "playerCoordinates",
+
+        # WhoScored-specific raw detail, preserved even after the flag
+        # bridge above — the full qualifiers dict, shot-frame placement,
+        # and WhoScored's own derived-event ID list.
+        "qualifiers",
+        "goal_mouth_y",
+        "goal_mouth_z",
+        "blocked_x",
+        "blocked_y",
+        "satisfied_event_types",
     ]
 
     # Fields that must be stored as proper Python booleans (not strings).
@@ -988,6 +1078,7 @@ def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: i
     ]
 
     return {
+        "source": "whoscored",
         "count": len(valid),
         "raw_count": len(rows),
         "categories": {cat: {k: v for k, v in info.items() if k != "points"} for cat, info in categories.items()},
@@ -996,7 +1087,11 @@ def summarize_action_rows(rows: list[dict[str, Any]], max_points_per_category: i
         "points_by_category": {cat: info["points"] for cat, info in categories.items()},
         "all_points": valid[:max_points_per_category],
         "all_points_truncated": len(valid) > max_points_per_category,
-        "note": "Action rows are normalized for Observable maps. Use points_by_category for layered pass/carry/dribble/defensive plots.",
+        "note": "Action rows are sourced from WhoScored (Extract_WhoScored_Player_Actions.py), "
+                "covering every action type WhoScored reports, not a fixed pass/carry/dribble/"
+                "defensive set. Every other block in this card (season_stats, per90, percentiles, "
+                "role, position, similar_players, shotmap, heatmap) is Sofascore-sourced — "
+                "see meta.data_sources.",
     }
 
 
@@ -1145,6 +1240,17 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
             "league": args.league,
             "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
             "schema_version": "player-card-v3-actions",
+            "data_sources": {
+                "season_stats": "sofascore",
+                "per90": "sofascore",
+                "percentiles": "sofascore",
+                "role": "sofascore",
+                "position": "sofascore",
+                "similar_players": "sofascore",
+                "shotmap": "sofascore",
+                "heatmap": "sofascore",
+                "actions": "whoscored",
+            },
             "input_files": {
                 "season_totals": str(args.season_totals),
                 "roles": str(args.roles) if args.roles else None,
@@ -1181,7 +1287,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--similarity", default=None)
     ap.add_argument("--event-data", default=None)
     ap.add_argument("--heatmap", default=None)
-    ap.add_argument("--actions", default=None, help="Action scraper flat CSV or raw JSON.")
+    ap.add_argument("--actions", default=None, help="WhoScored action extractor output (*_whoscored.json or .csv from Extract_WhoScored_Player_Actions.py).")
     ap.add_argument("--search-dir", default=".")
     ap.add_argument("--out", "-o", default=None)
     ap.add_argument("--max-percentiles", type=int, default=18)

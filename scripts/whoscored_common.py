@@ -32,6 +32,11 @@ DEFENSIVE_TYPES = {"Tackle", "Interception", "Clearance", "BallRecovery", "Block
 CARRY_MIN_DISTANCE = 5.0     # pitch units (0-100 scale) to count as a meaningful carry
 CARRY_MAX_GAP_SECONDS = 8.0  # consecutive touches further apart than this aren't one carry
 
+# Structural/bookkeeping event types — not something a player "did" or "had
+# done to them," just match-state markers. Excluded from action extraction.
+# Everything else WhoScored reports is kept.
+STRUCTURAL_TYPES = {"Start", "End", "SubstitutionOn", "SubstitutionOff", "FormationChange"}
+
 SESSION = cf_requests.Session(impersonate="safari")
 SESSION.headers.update({
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -203,6 +208,9 @@ def player_events(match_centre: dict[str, Any], whoscored_player_id: int) -> lis
 
 
 def categorize(events: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    """DEPRECATED — kept only for anything external still importing it.
+    Use extract_player_actions() instead, which captures every action type
+    rather than collapsing everything down to three buckets."""
     passes, dribbles, defensive = [], [], []
     for ev in events:
         type_name = (ev.get("type") or {}).get("displayName", "")
@@ -226,6 +234,68 @@ def categorize(events: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
     return {"passes": passes, "dribbles": dribbles, "defensive_actions": defensive}
 
 
+def _qualifiers_dict(ev: dict[str, Any]) -> dict[str, Any]:
+    """Qualifiers are WhoScored's per-event metadata array — things like pass
+    length/angle/zone, cross/through-ball/long-ball flags, shot placement
+    descriptors, etc. Most are flag-only (no 'value' key present at all,
+    e.g. {"type": {"displayName": "BoxCentre"}}); those become True. Ones
+    that do carry a value (Length, Angle, PassEndX, GoalMouthY, ...) keep it."""
+    out: dict[str, Any] = {}
+    for q in ev.get("qualifiers") or []:
+        name = (q.get("type") or {}).get("displayName")
+        if not name:
+            continue
+        out[name] = q.get("value", True)
+    return out
+
+
+def extract_player_actions(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """
+    Every action a player performed or had performed on them, with nothing
+    collapsed and nothing dropped except pure match-bookkeeping (see
+    STRUCTURAL_TYPES). Category is the event's own WhoScored type name
+    (Pass, Aerial, BallTouch, Save, Challenge, Tackle, ...) — not squeezed
+    into a fixed handful of buckets.
+
+    Each record carries:
+      - core fields: type, outcome, minute, second, x, y, end_x, end_y
+      - shot/save-specific fields when present: goal_mouth_y, goal_mouth_z
+        (where the shot was headed on the goal frame), blocked_x/blocked_y
+        (where a shot was blocked)
+      - qualifiers: full dict of WhoScored's per-event metadata (pass
+        length/angle/zone, cross/through-ball/long-ball flags, shot
+        placement descriptors, save type, etc.) — nothing summarized away
+      - satisfied_event_types: WhoScored's own derived-event ID list
+        (unmapped here — see note in whoscored_common docstring history —
+        but preserved raw so a future mapping can be applied without
+        re-fetching anything)
+    """
+    out = []
+    for ev in events:
+        type_name = (ev.get("type") or {}).get("displayName", "")
+        if not type_name or type_name in STRUCTURAL_TYPES:
+            continue
+
+        record = {
+            "type": type_name,
+            "outcome": (ev.get("outcomeType") or {}).get("displayName", ""),
+            "minute": ev.get("minute"),
+            "second": ev.get("second"),
+            "x": to_float(ev.get("x")),
+            "y": to_float(ev.get("y")),
+            "end_x": to_float(ev.get("endX")),
+            "end_y": to_float(ev.get("endY")),
+            "goal_mouth_y": to_float(ev.get("goalMouthY")),
+            "goal_mouth_z": to_float(ev.get("goalMouthZ")),
+            "blocked_x": to_float(ev.get("blockedX")),
+            "blocked_y": to_float(ev.get("blockedY")),
+            "qualifiers": _qualifiers_dict(ev),
+            "satisfied_event_types": ev.get("satisfiedEventsTypes") or [],
+        }
+        out.append(record)
+    return out
+
+
 def derive_carries(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
     Heuristic, NOT a native WhoScored event type. A "carry" is inferred
@@ -234,6 +304,10 @@ def derive_carries(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
     moved a meaningful distance — the same general approach used by
     open-source event-data packages (socceraction / kloppy) for deriving
     carries from touch events. Treat the output as an approximation.
+
+    Shaped to match extract_player_actions()'s record schema (same keys)
+    so carries slot into the same flat action list rather than needing
+    separate handling downstream.
     """
     on_ball = [
         ev for ev in events
@@ -262,20 +336,33 @@ def derive_carries(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
             continue
 
         carries.append({
-            "start_minute": prev.get("minute"),
-            "start_second": prev.get("second"),
+            "type": "Carry",
+            "outcome": "Successful",
+            "minute": prev.get("minute"),
+            "second": prev.get("second"),
             "x": start_x, "y": start_y,
             "end_x": dest_x, "end_y": dest_y,
-            "distance": round(distance, 2),
-            "gap_seconds": round(gap, 1),
+            "goal_mouth_y": None, "goal_mouth_z": None,
+            "blocked_x": None, "blocked_y": None,
+            "qualifiers": {"distance": round(distance, 2), "gap_seconds": round(gap, 1)},
+            "satisfied_event_types": [],
             "note": "derived (gap+distance heuristic), not a native WhoScored event",
         })
     return carries
 
 
 def flatten_categories(categorized: dict[str, list[dict[str, Any]]], match_id: str) -> list[dict[str, Any]]:
+    """DEPRECATED — paired with the old categorize(). Use attach_match_id()
+    with extract_player_actions()'s flat list instead."""
     rows = []
     for category, items in categorized.items():
         for item in items:
             rows.append({"match_id": match_id, "category": category, **item})
     return rows
+
+
+def attach_match_id(actions: list[dict[str, Any]], match_id: str) -> list[dict[str, Any]]:
+    """Stamp match_id onto a flat action list, and set 'category' equal to
+    each action's own 'type' — every action gets its native WhoScored type
+    as its category rather than being folded into a handful of buckets."""
+    return [{"match_id": match_id, "category": a.get("type"), **a} for a in actions]

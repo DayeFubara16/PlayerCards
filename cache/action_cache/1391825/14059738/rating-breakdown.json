@@ -1,0 +1,50 @@
+{
+  "player_id": 1391825,
+  "event_id": 14059738,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 60.5,
+          "y": 29.7
+        },
+        "passEndCoordinates": {
+          "x": 55.8,
+          "y": 12.9
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 6.6,
+          "y": 39.7
+        },
+        "passEndCoordinates": {
+          "x": 33,
+          "y": 25.6
+        },
+        "eventActionType": "clearance",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14059738/player/1391825/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-07-21T13:13:31.668176Z"
+  }
+}

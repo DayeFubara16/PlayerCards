@@ -161,6 +161,42 @@ class MatchRecord:
     away_norm: str = field(default="")
 
 
+def derive_home_away(
+    row: dict[str, Any],
+    home_cols: list[str],
+    away_cols: list[str],
+    team_cols: list[str] | None,
+    opponent_cols: list[str] | None,
+    venue_cols: list[str] | None,
+) -> tuple[Any, Any]:
+    """Direct home_team/away_team columns win if present. Otherwise, fall
+    back to a player-centric schema (team/opponent/venue) — common for
+    per-player-per-match logs where there's no standalone fixture table."""
+    home = first_present(row, home_cols)
+    away = first_present(row, away_cols)
+    if home is not None and away is not None:
+        return home, away
+
+    if team_cols and opponent_cols and venue_cols:
+        team = first_present(row, team_cols)
+        opponent = first_present(row, opponent_cols)
+        venue = first_present(row, venue_cols)
+        if team is not None and opponent is not None and venue is not None:
+            v = str(venue).strip().lower()
+            if v in ("home", "h"):
+                return team, opponent
+            if v in ("away", "a"):
+                return opponent, team
+    return None, None
+
+
+def normalize_round(raw: Any) -> str | None:
+    if raw in (None, ""):
+        return None
+    s = str(raw).strip()
+    return str(int(s)) if s.isdigit() else s
+
+
 def load_matches(
     rows: list[dict[str, Any]],
     source: str,
@@ -171,12 +207,14 @@ def load_matches(
     comp_cols: list[str],
     aliases: dict[str, str],
     round_cols: list[str] | None = None,
+    team_cols: list[str] | None = None,
+    opponent_cols: list[str] | None = None,
+    venue_cols: list[str] | None = None,
 ) -> list[MatchRecord]:
     seen: dict[str, MatchRecord] = {}
     for row in rows:
         match_id = first_present(row, id_cols)
-        home = first_present(row, home_cols)
-        away = first_present(row, away_cols)
+        home, away = derive_home_away(row, home_cols, away_cols, team_cols, opponent_cols, venue_cols)
         if match_id is None or home is None or away is None:
             continue
         match_id = str(match_id).strip()
@@ -189,7 +227,7 @@ def load_matches(
             home=str(home).strip(),
             away=str(away).strip(),
             competition=first_present(row, comp_cols),
-            round_label=first_present(row, round_cols) if round_cols else None,
+            round_label=normalize_round(first_present(row, round_cols)) if round_cols else None,
             home_norm=normalize_team(home, aliases),
             away_norm=normalize_team(away, aliases),
         )
@@ -202,27 +240,68 @@ def canonical_key(date: str | None, home_norm: str, away_norm: str) -> str:
     return f"{date}|{home_norm}|{away_norm}"
 
 
+def group_key(rec: MatchRecord) -> str:
+    """Group candidates by round/matchweek when available (reliable, and
+    doesn't require either source to have a date column); fall back to
+    date otherwise. Round beats date when both are present, since a date
+    off-by-one (timezone, kickoff-vs-calendar-day) is a more common
+    failure mode than a wrong matchweek number."""
+    if rec.round_label:
+        return f"round:{rec.round_label}"
+    return f"date:{rec.date}"
+
+
+def _round_sort_value(round_label: Any) -> tuple[int, int, str]:
+    """Numeric rounds sort in true numeric order (1, 2, ..., 10 — not
+    string order, which would put '10' before '2'). Non-numeric or blank
+    round values sort after all numeric ones, then alphabetically."""
+    s = str(round_label or "").strip()
+    if s.isdigit():
+        return (0, int(s), s)
+    return (1, 0, s)
+
+
+def sort_results(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Arrange by competition, then round (numeric-aware), then date/home
+    team for stability within a round. whoscored_only rows — WhoScored
+    fixtures with no resolved Sofascore counterpart — are sorted the same
+    way among themselves but kept trailing as their own block rather than
+    interleaved into the main sequence, since they represent leftover,
+    not-yet-resolved matches rather than part of the ordered schedule."""
+    def key(row: dict[str, Any]) -> tuple:
+        return (
+            str(row.get("competition") or ""),
+            _round_sort_value(row.get("round")),
+            str(row.get("date") or ""),
+            str(row.get("home_team") or ""),
+        )
+
+    primary = sorted((r for r in results if r["match_method"] != "whoscored_only"), key=key)
+    ws_only = sorted((r for r in results if r["match_method"] == "whoscored_only"), key=key)
+    return primary + ws_only
+
+
 def resolve(
     sofascore: list[MatchRecord],
     whoscored: list[MatchRecord],
     min_confidence: float,
 ) -> list[dict[str, Any]]:
-    ws_by_date: dict[str, list[MatchRecord]] = {}
+    ws_by_group: dict[str, list[MatchRecord]] = {}
     for m in whoscored:
-        ws_by_date.setdefault(m.date or "", []).append(m)
+        ws_by_group.setdefault(group_key(m), []).append(m)
 
     used_ws_ids: set[str] = set()
     results: list[dict[str, Any]] = []
 
-    # Pass 1 + 2 combined per sofascore row: try exact key first, then fuzzy
-    # against same-date WhoScored candidates.
     for sf in sofascore:
         exact_key = canonical_key(sf.date, sf.home_norm, sf.away_norm)
         match: MatchRecord | None = None
         confidence = 0.0
         method = "unmatched"
 
-        candidates = ws_by_date.get(sf.date or "", [])
+        candidates = ws_by_group.get(group_key(sf), [])
+
+        # Pass 1: exact, same order (home==home, away==away)
         for cand in candidates:
             if cand.match_id in used_ws_ids:
                 continue
@@ -230,18 +309,38 @@ def resolve(
                 match, confidence, method = cand, 100.0, "exact"
                 break
 
+        # Pass 2: exact, swapped order — sources disagree on who's home
+        if match is None:
+            for cand in candidates:
+                if cand.match_id in used_ws_ids:
+                    continue
+                if cand.home_norm == sf.away_norm and cand.away_norm == sf.home_norm:
+                    match, confidence, method = cand, 100.0, "exact_swapped"
+                    break
+
+        # Pass 3: fuzzy, same order
         if match is None:
             best, best_score = None, 0.0
             for cand in candidates:
                 if cand.match_id in used_ws_ids:
                     continue
-                home_score = _similarity(sf.home_norm, cand.home_norm)
-                away_score = _similarity(sf.away_norm, cand.away_norm)
-                score = min(home_score, away_score)
+                score = min(_similarity(sf.home_norm, cand.home_norm), _similarity(sf.away_norm, cand.away_norm))
                 if score > best_score:
                     best, best_score = cand, score
             if best is not None and best_score >= min_confidence:
                 match, confidence, method = best, round(best_score, 1), "fuzzy"
+
+        # Pass 4: fuzzy, swapped order
+        if match is None:
+            best, best_score = None, 0.0
+            for cand in candidates:
+                if cand.match_id in used_ws_ids:
+                    continue
+                score = min(_similarity(sf.home_norm, cand.away_norm), _similarity(sf.away_norm, cand.home_norm))
+                if score > best_score:
+                    best, best_score = cand, score
+            if best is not None and best_score >= min_confidence:
+                match, confidence, method = best, round(best_score, 1), "fuzzy_swapped"
 
         if match is not None:
             used_ws_ids.add(match.match_id)
@@ -322,7 +421,10 @@ def main() -> None:
         away_cols=["away_team", "awayTeam", "away"],
         date_cols=["date", "match_date", "start_date", "startDate", "startTimestamp"],
         comp_cols=["league", "competition", "tournament", "uniqueTournament"],
-        round_cols=["round", "roundInfo", "gameweek", "matchweek"],
+        round_cols=["round", "roundInfo", "gameweek", "matchweek", "MW"],
+        team_cols=["team"],
+        opponent_cols=["opponent"],
+        venue_cols=["venue"],
         aliases=aliases,
     )
     whoscored = load_matches(
@@ -341,23 +443,32 @@ def main() -> None:
     print(f"WhoScored matches loaded:  {len(whoscored)}")
 
     results = resolve(sofascore, whoscored, args.min_confidence)
+    results = sort_results(results)
     write_csv(results, args.out)
 
     exact = sum(1 for r in results if r["match_method"] == "exact")
+    exact_swapped = sum(1 for r in results if r["match_method"] == "exact_swapped")
     fuzzy = sum(1 for r in results if r["match_method"] == "fuzzy")
+    fuzzy_swapped = sum(1 for r in results if r["match_method"] == "fuzzy_swapped")
     unmatched = sum(1 for r in results if r["match_method"] == "unmatched")
     ws_only = sum(1 for r in results if r["match_method"] == "whoscored_only")
 
     print(f"\n{'─' * 50}")
-    print(f"  Exact matches:       {exact}")
-    print(f"  Fuzzy matches:       {fuzzy}  (>= {args.min_confidence} confidence)")
+    print(f"  Exact matches:            {exact}")
+    print(f"  Exact (home/away swapped): {exact_swapped}")
+    print(f"  Fuzzy matches:            {fuzzy}  (>= {args.min_confidence} confidence)")
+    print(f"  Fuzzy (home/away swapped): {fuzzy_swapped}")
     print(f"  Unmatched (Sofascore only): {unmatched}")
-    print(f"  WhoScored-only rows: {ws_only}")
+    print(f"  WhoScored-only rows:      {ws_only}")
     print(f"  Output: {Path(args.out).resolve()}")
     print(f"{'─' * 50}")
+    if exact_swapped or fuzzy_swapped:
+        print(f"\n{exact_swapped + fuzzy_swapped} match(es) resolved with home/away reversed between "
+              f"sources — see match_method == '*_swapped' rows in the output. Worth spot-checking "
+              f"which source is actually correct for those.")
     if unmatched or ws_only:
         print("\nReview rows with match_method in {unmatched, whoscored_only} — "
-              "add aliases to --alias-file or check for date/competition mismatches.")
+              "add aliases to --alias-file or check for round/competition mismatches.")
 
 
 if __name__ == "__main__":

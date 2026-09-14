@@ -1,0 +1,128 @@
+{
+  "player_id": 965828,
+  "event_id": 13980072,
+  "endpoint": "statistics",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "player": {
+      "name": "Mario Gila",
+      "firstName": "Mario",
+      "lastName": "Gila",
+      "slug": "mario-gila",
+      "shortName": "M. Gila",
+      "position": "D",
+      "jerseyNumber": "34",
+      "height": 185,
+      "userCount": 2303,
+      "gender": "M",
+      "sofascoreId": "q44w7x",
+      "id": 965828,
+      "marketValueCurrency": "EUR",
+      "dateOfBirthTimestamp": 967507200,
+      "proposedMarketValueRaw": {
+        "value": 31000000,
+        "currency": "EUR"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ماريو جيلا",
+          "bn": "মারিও গিলা ফুয়েন্তেস",
+          "hi": "मारियो गिला फ़ुएंटेस",
+          "ru": "Марио Гила"
+        },
+        "shortNameTranslation": {
+          "ar": "م. جيلا",
+          "bn": "এম. গিলা",
+          "hi": "एम. गिला",
+          "ru": "М. Гила"
+        }
+      }
+    },
+    "team": {
+      "name": "Lazio",
+      "slug": "lazio",
+      "shortName": "Lazio",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "userCount": 395546,
+      "nameCode": "LAZ",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2699,
+      "teamColors": {
+        "primary": "#64b6e1",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "لاتسيو",
+          "bn": "ল্যাজিও",
+          "hi": "लाज़ियो",
+          "ru": "Лацио"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "statistics": {
+      "totalPass": 34,
+      "accuratePass": 30,
+      "totalLongBalls": 6,
+      "accurateLongBalls": 4,
+      "goalAssist": 0,
+      "accurateOwnHalfPasses": 18,
+      "totalOwnHalfPasses": 19,
+      "accurateOppositionHalfPasses": 12,
+      "totalOppositionHalfPasses": 15,
+      "aerialLost": 1,
+      "duelLost": 3,
+      "ballRecovery": 4,
+      "unsuccessfulTouch": 1,
+      "fouls": 2,
+      "minutesPlayed": 45,
+      "touches": 37,
+      "rating": 6.3,
+      "possessionLostCtrl": 5,
+      "expectedAssists": 0.00616993,
+      "topSpeed": 30.7,
+      "kilometersCovered": 4.52,
+      "numberOfSprints": 4,
+      "totalBallCarriesDistance": 146.8760127159,
+      "ballCarriesCount": 15,
+      "totalProgression": 23.091498385802,
+      "bestBallCarryProgression": 20.038294592728,
+      "totalProgressiveBallCarriesDistance": 42.280495992916,
+      "progressiveBallCarriesCount": 2,
+      "ratingVersions": {
+        "original": 6.3,
+        "alternative": 6.3
+      },
+      "totalShots": 0,
+      "passValueNormalized": 0.14,
+      "dribbleValueNormalized": 0.1,
+      "defensiveValueNormalized": -0.14,
+      "metersCoveredRunningKm": 0.47,
+      "metersCoveredHighSpeedRunningKm": 0.2,
+      "metersCoveredSprintingKm": 0.08,
+      "statisticsType": {
+        "sportSlug": "football",
+        "statisticsType": "player"
+      }
+    },
+    "position": "D",
+    "extra": null
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/13980072/player/965828/statistics",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-07-17T14:00:32.491614Z"
+  }
+}

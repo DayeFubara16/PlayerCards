@@ -1,0 +1,74 @@
+{
+  "player_id": 1391825,
+  "event_id": 14059727,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 35.3,
+          "y": 50.2
+        },
+        "passEndCoordinates": {
+          "x": 46.2,
+          "y": 39.5
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 75.1,
+          "y": 71.9
+        },
+        "passEndCoordinates": {
+          "x": 82.4,
+          "y": 63.3
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": true,
+        "isAssist": true
+      },
+      {
+        "playerCoordinates": {
+          "x": 47.4,
+          "y": 74
+        },
+        "passEndCoordinates": {
+          "x": 41.7,
+          "y": 85.6
+        },
+        "eventActionType": "pass",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "dribbles": [],
+    "defensive": [
+      {
+        "playerCoordinates": {
+          "x": 47.4,
+          "y": 74
+        },
+        "eventActionType": "ball-recovery",
+        "isHome": true,
+        "outcome": true,
+        "keypass": false
+      }
+    ],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14059727/player/1391825/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-07-21T13:13:29.083747Z"
+  }
+}

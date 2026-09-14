@@ -1,0 +1,1719 @@
+{
+  "meta": {
+    "player_id": 1159759,
+    "player_name": "Nathaniel Brown",
+    "season": "2025-26",
+    "league": null,
+    "match_log": "data/raw/player_match_logs.csv",
+    "events_found": 33,
+    "endpoints": [
+      "rating-breakdown",
+      "statistics"
+    ],
+    "generated_at_utc": "2026-06-13T00:02:28.104133Z",
+    "cache_dir": "cache/action_cache",
+    "no_fetch": false,
+    "refresh_cache": true
+  },
+  "summary": {
+    "events": 33,
+    "events_with_any_available_endpoint": 0,
+    "flat_rows": 0,
+    "endpoint_summary": {
+      "rating-breakdown": {
+        "available_events": 0,
+        "missing_events": 33,
+        "flat_rows": 0
+      },
+      "statistics": {
+        "available_events": 0,
+        "missing_events": 33,
+        "flat_rows": 0
+      }
+    },
+    "category_counts": {},
+    "endpoint_debug_sample": {
+      "rating-breakdown": [
+        {
+          "event_id": 14057744,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065071,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065076,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065087,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065092,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "event_id": 14057744,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065071,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065076,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065087,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        },
+        {
+          "event_id": 14065092,
+          "available": false,
+          "source": "fetch",
+          "status_code": 403,
+          "debug": {
+            "type": "NoneType"
+          }
+        }
+      ]
+    },
+    "note": "For player action maps, rating-breakdown is the key endpoint. Statistics rows are usually aggregate stats, not raw actions. Raw JSON remains the source of truth because Sofascore schemas can vary."
+  },
+  "events": [
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14057744,
+      "event": {
+        "event_id": 14057744,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 8.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14057744,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14057744/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.048605Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14057744,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14057744/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.154611Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065071,
+      "event": {
+        "event_id": 14065071,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 27.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065071,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065071/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.186817Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065071,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065071/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.211276Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065076,
+      "event": {
+        "event_id": 14065076,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 80.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065076,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065076/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.235353Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065076,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065076/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.259380Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065087,
+      "event": {
+        "event_id": 14065087,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065087,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065087/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.284706Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065087,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065087/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.313942Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065092,
+      "event": {
+        "event_id": 14065092,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 78.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065092,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065092/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.342463Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065092,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065092/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.367928Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065100,
+      "event": {
+        "event_id": 14065100,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065100,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065100/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.414596Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065100,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065100/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.434568Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065111,
+      "event": {
+        "event_id": 14065111,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065111,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065111/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.460867Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065111,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065111/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.487246Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065120,
+      "event": {
+        "event_id": 14065120,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065120,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065120/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.517558Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065120,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065120/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.549865Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065136,
+      "event": {
+        "event_id": 14065136,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 63.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065136,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065136/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.571893Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065136,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065136/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.604452Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065140,
+      "event": {
+        "event_id": 14065140,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065140,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065140/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.638679Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065140,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065140/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.686721Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065155,
+      "event": {
+        "event_id": 14065155,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 89.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065155,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065155/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.720175Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065155,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065155/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.744494Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065157,
+      "event": {
+        "event_id": 14065157,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065157,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065157/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.773547Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065157,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065157/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.804977Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065167,
+      "event": {
+        "event_id": 14065167,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 69.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065167,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065167/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.833488Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065167,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065167/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.862322Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065176,
+      "event": {
+        "event_id": 14065176,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 45.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065176,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065176/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.903325Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065176,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065176/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.935838Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062140,
+      "event": {
+        "event_id": 14062140,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062140,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062140/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.960841Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062140,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062140/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:26.983838Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062141,
+      "event": {
+        "event_id": 14062141,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062141,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062141/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.018357Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062141,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062141/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.052405Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062174,
+      "event": {
+        "event_id": 14062174,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062174,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062174/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.072934Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062174,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062174/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.113415Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062180,
+      "event": {
+        "event_id": 14062180,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062180,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062180/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.156928Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062180,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062180/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.180338Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062190,
+      "event": {
+        "event_id": 14062190,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 84.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062190,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062190/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.220367Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062190,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062190/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.252599Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062202,
+      "event": {
+        "event_id": 14062202,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062202,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062202/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.276465Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062202,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062202/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.301713Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062208,
+      "event": {
+        "event_id": 14062208,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062208,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062208/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.325822Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062208,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062208/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.352813Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062215,
+      "event": {
+        "event_id": 14062215,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062215,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062215/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.376043Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062215,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062215/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.403570Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14062224,
+      "event": {
+        "event_id": 14062224,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14062224,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062224/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.443939Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14062224,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14062224/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.464976Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065181,
+      "event": {
+        "event_id": 14065181,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065181,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065181/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.501841Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065181,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065181/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.523780Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065190,
+      "event": {
+        "event_id": 14065190,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065190,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065190/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.548842Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065190,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065190/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.580916Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065194,
+      "event": {
+        "event_id": 14065194,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 45.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065194,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065194/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.603098Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065194,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065194/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.637645Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065204,
+      "event": {
+        "event_id": 14065204,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065204,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065204/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.670472Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065204,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065204/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.692587Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065216,
+      "event": {
+        "event_id": 14065216,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065216,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065216/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.725393Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065216,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065216/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.744748Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065223,
+      "event": {
+        "event_id": 14065223,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065223,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065223/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.783493Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065223,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065223/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.814505Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065231,
+      "event": {
+        "event_id": 14065231,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065231,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065231/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.844023Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065231,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065231/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.885304Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065239,
+      "event": {
+        "event_id": 14065239,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065239,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065239/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.919861Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065239,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065239/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.954926Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065245,
+      "event": {
+        "event_id": 14065245,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065245,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065245/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:27.978062Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065245,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065245/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:28.009306Z"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": 1159759,
+      "player_name": "Nathaniel Brown",
+      "season": "2025-26",
+      "league": null,
+      "event_id": 14065560,
+      "event": {
+        "event_id": 14065560,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "team": "Eintracht Frankfurt",
+        "minutes": 90.0,
+        "player_name": "Nathaniel Brown"
+      },
+      "endpoints": [
+        {
+          "player_id": 1159759,
+          "event_id": 14065560,
+          "endpoint": "rating-breakdown",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065560/player/1159759/rating-breakdown",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:28.035331Z"
+          }
+        },
+        {
+          "player_id": 1159759,
+          "event_id": 14065560,
+          "endpoint": "statistics",
+          "available": false,
+          "source": "fetch",
+          "data": null,
+          "meta": {
+            "url": "https://api.sofascore.com/api/v1/event/14065560/player/1159759/statistics",
+            "status_code": 403,
+            "ok": false,
+            "error": "HTTP 403: {\"error\": {\"code\": 403, \"reason\": \"challenge\" }}",
+            "fetched_at_utc": "2026-06-13T00:02:28.077430Z"
+          }
+        }
+      ]
+    }
+  ]
+}

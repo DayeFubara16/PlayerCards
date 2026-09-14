@@ -1,0 +1,102 @@
+{
+  "player_id": 1391825,
+  "event_id": 14059661,
+  "endpoint": "rating-breakdown",
+  "available": true,
+  "source": "fetch",
+  "data": {
+    "passes": [
+      {
+        "playerCoordinates": {
+          "x": 98,
+          "y": 68.1
+        },
+        "passEndCoordinates": {
+          "x": 85.5,
+          "y": 65.8
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 41.5,
+          "y": 92.9
+        },
+        "passEndCoordinates": {
+          "x": 30.6,
+          "y": 84.2
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 62.6,
+          "y": 71.7
+        },
+        "passEndCoordinates": {
+          "x": 80.8,
+          "y": 65.3
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 57,
+          "y": 72
+        },
+        "passEndCoordinates": {
+          "x": 41.5,
+          "y": 63.6
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 72.8,
+          "y": 19.4
+        },
+        "passEndCoordinates": {
+          "x": 72.5,
+          "y": 23.3
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "outcome": true,
+        "keypass": false
+      },
+      {
+        "playerCoordinates": {
+          "x": 73.4,
+          "y": 10.8
+        },
+        "passEndCoordinates": {
+          "x": 79.5,
+          "y": 0
+        },
+        "eventActionType": "pass",
+        "isHome": false,
+        "keypass": false
+      }
+    ],
+    "dribbles": [],
+    "defensive": [],
+    "ball-carries": []
+  },
+  "meta": {
+    "url": "https://api.sofascore.com/api/v1/event/14059661/player/1391825/rating-breakdown",
+    "status_code": 200,
+    "ok": true,
+    "error": null,
+    "fetched_at_utc": "2026-07-21T13:13:13.408342Z"
+  }
+}

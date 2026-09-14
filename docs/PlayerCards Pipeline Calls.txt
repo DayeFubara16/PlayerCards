@@ -28,27 +28,39 @@ PlayerCards/
 Global dataset build
 --------------------
 
-$LEAGUE=18
+$LEAGUE=238
 
 # 1. Scrape all leagues for matchweek
-python scripts/Player_Scraper.py --season 2025-26 --matchweek 38 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
-python scripts/Player_Scraper.py --season 2025-26 --matchweek 46 --league $LEAGUE --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.2
+python scripts/Player_Scraper.py --season 2026-27 --matchweek 1 --all-leagues --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 1.5
+python scripts/Player_Scraper.py --season 2026-27 --matchweek 6 --league $LEAGUE --csv data/raw/player_match_logs.csv --unmapped-out data/diagnostics/unmapped_stats.json --coverage-out data/diagnostics/stat_coverage_by_mw.json --delay 2.5
 
 # 1b. Build positional context
-python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --enrich-csv data/raw/player_match_logs.csv --season 2025-26 --delay 1.2
+python scripts/Build_Position_Context.py --input data/raw/player_match_logs.csv --output data/context/position_context_by_event.json --enrich-csv data/raw/player_match_logs.csv --season 2026-27 --delay 2.5
+
+------------------------------------------------------------
+
+# 1c. Resolve Sofascore <-> WhoScored match IDs  (NEW)
+# Full recompute each run — safe to rerun any time either input changes.
+python scripts/match_resolver.py --sofascore-log data/raw/player_match_logs.csv --whoscored-fixtures data/raw/whoscored_fixtures.csv --out data/raw/match_id_map.csv --alias-file data/raw/team_aliases.json
+
+# 1d. Fetch the matchweek's raw WhoScored event data  (NEW)
+# Player-agnostic — one fetch covers every player in every match.
+python scripts/Fetch_WhoScored_Matchweek.py --match-id-map data/raw/match_id_map.csv --round 6 --cache-dir cache/whoscored_cache --delay 7.0
+
+------------------------------------------------------------
 
 # 2. Add ages / DOBs
 # Uses previous enriched CSV/cache so it does not refetch everyone.
-python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv --output data/processed/player_match_logs_with_ages.csv --cache cache/player_profile_cache.json --seed-from data/processed/player_match_logs_with_ages.csv --delay 1.2
+python scripts/Add_Player_Ages.py --input data/raw/player_match_logs.csv --output data/processed/player_match_logs_with_ages.csv --cache cache/player_profile_cache.json --seed-from data/processed/player_match_logs_with_ages.csv --delay 2.5
 
 # 3. Collapse to season totals
 python scripts/Player_Collapse.py --input data/processed/player_match_logs_with_ages.csv --output data/processed/player_season_totals.csv
 
 # 4. Arbitrate positions
-python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2025-26 --min-minutes 0 --position-context data/context/position_context_by_event.json
+python scripts/Position_Arbitrator.py --input data/processed/player_season_totals.csv --output data/processed/player_season_totals_arbitrated.csv --season 2026-27 --min-minutes 0 --position-context data/context/position_context_by_event.json
 
 # 5. Classify roles
-python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2025-26 --min-minutes 0
+python scripts/Player_Role_Classifier.py --input data/processed/player_season_totals_arbitrated.csv --output data/processed/player_roles.csv --season 2026-27 --min-minutes 0
 
 # 5b. Normalize current club
 python scripts/Normalize_Current_Club.py
@@ -57,27 +69,37 @@ Player-specific build
 ---------------------
 
 # Edit these per card
-$PLAYER_ID=1008471
-$SEASON="2025-26"
+$PLAYER_ID=547410
+$SEASON="2026-27"
+$MINUTES=90
 
 # 6. Similar players, all leagues
-python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 30 --min-minutes 900 --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
+python scripts/Find_Similar_Players.py --input data/processed/player_season_totals_arbitrated.csv --roles-input data/processed/player_roles.csv --player-id $PLAYER_ID --season $SEASON --top 30 --min-minutes $MINUTES --format both --output-prefix cards/similarities/similar_${PLAYER_ID}_all_leagues
 
 # 7. Fetch player event/card data
 # IMPORTANT: output should live in cards/event_data, not project root.
-python scripts/Fetch_Player_Event_Data.py --player-id $PLAYER_ID --season $SEASON --delay 1.2 --out cards/event_data
+python scripts/Fetch_Player_Event_Data.py --player-id $PLAYER_ID --season $SEASON --delay 2.5 --out cards/event_data
 
 # 7b. Optional action scraping
 # Player-specific only. Do not run this for the whole dataset.
 python scripts/Player_Action_Scraper.py --player-id $PLAYER_ID --season $SEASON --refresh-cache --schema-debug
 
+------------------------------------------------------------
+
+# 7c. WhoScored action extraction  (NEW — offline, no network)
+python scripts/Extract_WhoScored_Player_Actions.py --player-id $PLAYER_ID --whoscored-player-id <lookup once per player> --match-id-map data/raw/match_id_map.csv --cache-dir cache/whoscored_cache --out-dir cards/whoscored_actions
+python scripts/Extract_WhoScored_Player_Actions.py --player-id $PLAYER_ID --whoscored-player-id 247454 --match-id-map data/raw/match_id_map.csv --cache-dir cache/whoscored_cache --out-dir cards/whoscored_actions
+
+------------------------------------------------------------
+
 # 8. Build visual-only heatmap
 # IMPORTANT: output should live in cards/heatmaps, not project root.
-python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv --out-dir cards/heatmaps --delay 1.2 --format both
+python scripts/Build_Player_Season_Heatmap.py --player-id $PLAYER_ID --season $SEASON --match-log data/raw/player_match_logs.csv --out-dir cards/heatmaps --delay 2.5 --format both
 
 # 9. Build final player card
 # Pass explicit paths so the builder does not accidentally auto-load old root files.
-python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes 900
+python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes $MINUTES
+python scripts/Player_Card_Builder.py --player-id $PLAYER_ID --season $SEASON --season-totals data/processed/player_season_totals_arbitrated.csv --roles data/processed/player_roles.csv --similarity cards/similarities/similar_${PLAYER_ID}_all_leagues.json --search-dir cards --out cards/output/player_card_${PLAYER_ID}_${SEASON}.json --min-minutes $MINUTES
 
 Player Finder
 ---------------------
@@ -100,7 +122,7 @@ Output controls:
 --no_truncate                # disable column width capping
 When using percentage stats like --aerial_win_pct_min or --dribble_success_pct_min, pair them with a volume filter (e.g. --aerial_duels_total_min 30) to avoid small-sample noise.
 --key_passes_per90_min 5 returned no results because no player in this dataset quite reaches that threshold — the column is definitely there and queryable at a lower bound.
-Run python Player_Finder.py --list_columns to see all 251 column names you can filter or display.
+Run python scripts/Player_Finder.py --list_columns to see all 251 column names you can filter or display.
 
 Housekeeping rules
 ------------------

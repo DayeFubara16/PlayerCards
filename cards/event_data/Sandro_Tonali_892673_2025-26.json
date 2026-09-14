@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "player_id": 892673,
+    "season": "2025-26",
+    "league": null,
+    "source": "player_match_logs.csv + per-event Sofascore endpoints",
+    "match_log": "data\\raw\\player_match_logs.csv",
+    "events_found": 35,
+    "events_with_shots": 0,
+    "events_with_heatmap": 0,
+    "fetched_at_utc": "2026-07-18T11:42:59.176872Z"
+  },
+  "profile": {
+    "player_id": 892673,
+    "name": "Sandro Tonali",
+    "team": "Newcastle United",
+    "position": "M"
+  },
+  "season_stats": {},
+  "shotmap": {
+    "count": 0,
+    "shots": [],
+    "summary": {},
+    "note": "Aggregated by fetching /event/{event_id}/shotmap for each match and filtering shots by player_id."
+  },
+  "heatmap": {
+    "points": [],
+    "raw_points_count": 0,
+    "cell_count": 0,
+    "total_weight": 0,
+    "note": "Aggregated from /event/{event_id}/player/{player_id}/heatmap; x/y on Sofascore 0-100 pitch scale."
+  },
+  "touch_positions": {
+    "count": 0,
+    "points": [],
+    "note": "Sofascore public per-event raw touch positions were not used; heatmap is available per event instead."
+  },
+  "recent_form": {
+    "matches_fetched": 35,
+    "events": [
+      {
+        "event_id": 14025016,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14147154,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025100,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025145,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025151,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025202,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025229,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025233,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025269,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025291,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025017,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025087,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025105,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025141,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025174,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025207,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025228,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025246,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025258,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025288,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025052,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025092,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025119,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025137,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025179,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025200,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14024010,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023977,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023983,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023999,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025040,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14025045,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023949,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023943,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      },
+      {
+        "event_id": 14023957,
+        "date": null,
+        "home_team": null,
+        "away_team": null,
+        "round": null,
+        "player_name_from_csv": "Sandro Tonali",
+        "shots": 0,
+        "heatmap_points": 0
+      }
+    ],
+    "note": "Derived from player_match_logs.csv, not /player/{id}/last-matches/{n}."
+  }
+}
